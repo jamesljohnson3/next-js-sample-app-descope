@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 
 export default function Home({ data }: { data: string }) {
+  
   const { authenticated, user, logout, me } = useAuth();
   const onLogout = useCallback(() => {
     // Delete Descope refresh token cookie.
