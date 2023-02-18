@@ -226,22 +226,7 @@ export default function Home({ data }: { data: string }) {
 
       <Container my="md">
       <SimpleGrid cols={2} spacing="md" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-        <Skeleton height={PRIMARY_COL_HEIGHT} radius="md" animate={false} />
-        <Grid gutter="md">
-          <Grid.Col>
-            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
-          </Grid.Col>
-          <Grid.Col span={6}>
-            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
-          </Grid.Col>
-        </Grid>
-      </SimpleGrid>
-    </Container>
-    </div>
-      <main className={styles.main}>
+        <Skeleton height={PRIMARY_COL_HEIGHT} radius="md" animate={true} />
         <h1 className={styles.title}>
           Welcome to{" "}
           <a href="https://github.com/descope-sample-apps/next-js-sample-app">
@@ -266,6 +251,22 @@ export default function Home({ data }: { data: string }) {
           </>
         )}
 
+        <Grid gutter="md">
+          <Grid.Col>
+            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
+          </Grid.Col>
+          <Grid.Col span={6}>
+            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
+          </Grid.Col>
+          <Grid.Col span={6}>
+            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
+          </Grid.Col>
+        </Grid>
+      </SimpleGrid>
+    </Container>
+    </div>
+      <main className={styles.main}>
+       
         <p className={styles.description}>
           Get started by editing{" "}
           <code className={styles.code}>pages/index.tsx</code>
