@@ -332,9 +332,7 @@ export default function Home({ data }: { data: string }) {
     </Container>
               <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
             </Grid.Col>
-            <Grid.Col span={6}>
-              <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
-            </Grid.Col>
+           
           </Grid>
         </SimpleGrid>
       </Container><div className=''>
