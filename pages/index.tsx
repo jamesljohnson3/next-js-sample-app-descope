@@ -30,7 +30,8 @@ import {
   IconChevronDown,
 } from '@tabler/icons';
 import {  Grid, SimpleGrid, Skeleton, useMantineTheme } from '@mantine/core';
-
+import {  Anchor, ActionIcon } from '@mantine/core';
+import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
 const PRIMARY_COL_HEIGHT = 600;
 
 
@@ -271,7 +272,24 @@ export default function Home({ data }: { data: string }) {
             </Grid.Col>
           </Grid>
         </SimpleGrid>
-      </Container></>
+      </Container><div className=''>
+      <div className=''>
+
+        <Group className=''>test</Group>
+
+        <Group spacing="xs" position="right" noWrap>
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <IconBrandTwitter size={18} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <IconBrandYoutube size={18} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg" variant="default" radius="xl">
+            <IconBrandInstagram size={18} stroke={1.5} />
+          </ActionIcon>
+        </Group>
+      </div>
+    </div></>
    
   );
 }
