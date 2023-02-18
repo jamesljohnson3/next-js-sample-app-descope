@@ -246,7 +246,7 @@ export default function Home({ data }: { data: string }) {
               </form>
             </>
           )}
-          <Skeleton height={PRIMARY_COL_HEIGHT} radius="md" animate={true} />
+          <Skeleton height={PRIMARY_COL_HEIGHT} radius="md" animate={false} />
 
 
           <Grid gutter="md">
