@@ -38,6 +38,7 @@ import { useRef } from 'react';
 import {  Button, } from '@mantine/core';
 import { Dropzone, MIME_TYPES } from '@mantine/dropzone';
 import { IconCloudUpload, IconX, IconDownload } from '@tabler/icons';
+import { SignIn } from "@clerk/nextjs";
 
 const PRIMARY_COL_HEIGHT = 600;
 const mockdata = [
@@ -324,6 +325,10 @@ export default function Home({ data }: { data: string }) {
               </div>
               <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
             </Grid.Col>
+
+            <SignIn/>
+
+
             <Grid.Col span={6}>
             <Container py="xl">
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
