@@ -196,7 +196,9 @@ export default function Home({ data }: { data: string }) {
                 Change account
               </Menu.Item>
 
-            <button onClick={onLogout}>    <Menu.Item icon={<IconLogout size={14} stroke={1.5} />}>Logout</Menu.Item></button>
+              <Menu.Item icon={<IconLogout size={14} stroke={1.5} />} onClick={onLogout}>
+  Logout
+</Menu.Item>
 
               <Menu.Divider />
 
@@ -278,10 +280,7 @@ export default function Home({ data }: { data: string }) {
       </SimpleGrid>
     </Container>
     </div>
-      <main className={styles.main}>
-       
-       
-      </main>
+      
     </div>
   );
 }
