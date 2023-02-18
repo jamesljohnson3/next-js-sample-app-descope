@@ -190,7 +190,8 @@ export default function Home({ data }: { data: string }) {
               </Menu.Item>
 
               <Menu.Label>Settings</Menu.Label>
-              <Menu.Item icon={<IconSettings size={14} stroke={1.5} />}>Account settings</Menu.Item>
+
+              <a href="https://connect.unlimitpotential.com/user "><Menu.Item icon={<IconSettings size={14} stroke={1.5} />}>Account settings</Menu.Item></a>
               <Menu.Item icon={<IconSwitchHorizontal size={14} stroke={1.5} />}>
                 Change account
               </Menu.Item>
