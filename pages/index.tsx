@@ -284,12 +284,7 @@ export default function Home({ data }: { data: string }) {
         </Tabs>
       </Container><Container my="md">
         <SimpleGrid cols={2} spacing="md" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-          <h1 className={styles.title}>
-            Welcome to{" "}
-            <a href="https://github.com/descope-sample-apps/next-js-sample-app">
-              Descope Next.js Sample App
-            </a>
-          </h1>
+       
           {!authenticated && (
             <Link href="/login" passHref>
               <button>Login</button>
@@ -312,10 +307,7 @@ export default function Home({ data }: { data: string }) {
 
           <Grid gutter="md">
             <Grid.Col>
-              <p className={styles.description}>
-                Get started by editing{" "}
-                <code className={styles.code}>pages/index.tsx</code>
-              </p>
+            
 
               <div className={styles.grid}>
                 <div>Server Side Props Data:</div>
@@ -331,9 +323,7 @@ export default function Home({ data }: { data: string }) {
 
             <Grid.Col span={6}>
             <Container py="xl">
-      <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-        {cards}
-      </SimpleGrid>
+     
     </Container>
               <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
             </Grid.Col>
