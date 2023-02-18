@@ -13,7 +13,7 @@ const App = () => {
 
      if(isAuthenticated){
         return (
-            <><p>Hello ${user.email}</p><button onClick={logout}>Logout</button></>
+            <><p>Hello ${user.name}, {user.phone},{user.email} </p><button onClick={logout}>Logout</button></>
         )
     }
 
