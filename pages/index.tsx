@@ -29,7 +29,6 @@ import {
   IconSwitchHorizontal,
   IconChevronDown,
 } from '@tabler/icons';
-import { MantineLogo } from '@mantine/ds';
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -143,7 +142,7 @@ export default function Home({ data }: { data: string }) {
       <div className={classes.header}>
       <Container className={classes.mainSection}>
         <Group position="apart">
-          <MantineLogo size={28} inverted />
+          Unlimited Now
 
           <Burger
             opened={opened}
