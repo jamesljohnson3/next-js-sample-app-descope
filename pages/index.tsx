@@ -295,7 +295,7 @@ export default function Home({ data }: { data: string }) {
               <div className={styles.description}>
                 Hello {getUserDisplayName(user)}
               </div>
-              <button onClick={onLogout}>Logout</button>
+            
               <div className={styles.description}>Submit API Form</div>
               <form onSubmit={handleSubmit}>
                 <button type="submit">Submit</button>
