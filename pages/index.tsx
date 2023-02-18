@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import { useAuth } from "@descope/react-sdk";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
@@ -7,168 +6,106 @@ import { SyntheticEvent, useCallback, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 import { useState } from 'react';
-import { createStyles, Navbar, UnstyledButton, Tooltip, Title } from '@mantine/core';
 import {
-  IconHome2,
-  IconGauge,
-  IconDeviceDesktopAnalytics,
-  IconFingerprint,
-  IconCalendarStats,
-  IconUser,
+  createStyles,
+  Container,
+  Avatar,
+  UnstyledButton,
+  Group,
+  Text,
+  Menu,
+  Tabs,
+  Burger,
+} from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import {
+  IconLogout,
+  IconHeart,
+  IconStar,
+  IconMessage,
   IconSettings,
+  IconPlayerPause,
+  IconTrash,
+  IconSwitchHorizontal,
+  IconChevronDown,
 } from '@tabler/icons';
 import { MantineLogo } from '@mantine/ds';
+
 const useStyles = createStyles((theme) => ({
-  wrapper: {
-    display: 'flex',
-  },
-
-  aside: {
-    flex: '0 0 60px',
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    borderRight: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]
-    }`,
-  },
-
-  main: {
-    flex: 1,
+  header: {
+    paddingTop: theme.spacing.sm,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+    borderBottom: `1px solid ${
+      theme.colorScheme === 'dark' ? 'transparent' : theme.colors.gray[2]
+    }`,
+    marginBottom: 120,
   },
 
-  mainLink: {
-    width: 44,
-    height: 44,
-    borderRadius: theme.radius.md,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
+  mainSection: {
+    paddingBottom: theme.spacing.sm,
+  },
+
+  user: {
+    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+    padding: `${theme.spacing.xs}px ${theme.spacing.sm}px`,
+    borderRadius: theme.radius.sm,
+    transition: 'background-color 100ms ease',
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[0],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
+    },
+
+    [theme.fn.smallerThan('xs')]: {
+      display: 'none',
     },
   },
 
-  mainLinkActive: {
-    '&, &:hover': {
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-      color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+  burger: {
+    [theme.fn.largerThan('xs')]: {
+      display: 'none',
     },
   },
 
-  title: {
-    boxSizing: 'border-box',
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    marginBottom: theme.spacing.xl,
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    padding: theme.spacing.md,
-    paddingTop: 18,
-    height: 60,
-    borderBottom: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]
-    }`,
+  userActive: {
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
   },
 
-  logo: {
-    boxSizing: 'border-box',
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    height: 60,
-    paddingTop: theme.spacing.md,
-    borderBottom: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]
-    }`,
-    marginBottom: theme.spacing.xl,
+  tabs: {
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
+    },
   },
 
-  link: {
-    boxSizing: 'border-box',
-    display: 'block',
-    textDecoration: 'none',
-    borderTopRightRadius: theme.radius.md,
-    borderBottomRightRadius: theme.radius.md,
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
-    padding: `0 ${theme.spacing.md}px`,
-    fontSize: theme.fontSizes.sm,
-    marginRight: theme.spacing.md,
+  tabsList: {
+    borderBottom: '0 !important',
+  },
+
+  tab: {
     fontWeight: 500,
-    height: 44,
-    lineHeight: '44px',
+    height: 38,
+    backgroundColor: 'transparent',
 
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
-      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     },
-  },
 
-  linkActive: {
-    '&, &:hover': {
-      borderLeftColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor })
-        .background,
-      backgroundColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor })
-        .background,
-      color: theme.white,
+    '&[data-active]': {
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+      borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[2],
     },
   },
 }));
 
-const mainLinksMockdata = [
-  { icon: IconHome2, label: 'Home' },
-  { icon: IconGauge, label: 'Dashboard' },
-  { icon: IconDeviceDesktopAnalytics, label: 'Analytics' },
-  { icon: IconCalendarStats, label: 'Releases' },
-  { icon: IconUser, label: 'Account' },
-  { icon: IconFingerprint, label: 'Security' },
-  { icon: IconSettings, label: 'Settings' },
-];
+interface HeaderTabsProps {
+  user: { name: string; image: string };
+  tabs: string[];
+}
 
-const linksMockdata = [
-  'Security',
-  'Settings',
-  'Dashboard',
-  'Releases',
-  'Account',
-  'Orders',
-  'Clients',
-  'Databases',
-  'Pull Requests',
-  'Open Issues',
-  'Wiki pages',
-];
 export default function Home({ data }: { data: string }) {
-  const { classes, cx } = useStyles();
-  const [active, setActive] = useState('Releases');
-  const [activeLink, setActiveLink] = useState('Settings');
+    const { classes, theme, cx } = useStyles();
+  const [opened, { toggle }] = useDisclosure(false);
+  const [userMenuOpened, setUserMenuOpened] = useState(false);
 
-  const mainLinks = mainLinksMockdata.map((link) => (
-    <Tooltip label={link.label} position="right" withArrow transitionDuration={0} key={link.label}>
-      <UnstyledButton
-        onClick={() => setActive(link.label)}
-        className={cx(classes.mainLink, { [classes.mainLinkActive]: link.label === active })}
-      >
-        <link.icon stroke={1.5} />
-      </UnstyledButton>
-    </Tooltip>
-  ));
-
-  const links = linksMockdata.map((link) => (
-    <a
-      className={cx(classes.link, { [classes.linkActive]: activeLink === link })}
-      href="/"
-      onClick={(event) => {
-        event.preventDefault();
-        setActiveLink(link);
-      }}
-      key={link}
-    >
-      {link}
-    </a>
-  ));
 
   const { authenticated, user, logout, me } = useAuth();
   const onLogout = useCallback(() => {
@@ -197,29 +134,84 @@ export default function Home({ data }: { data: string }) {
   };
 
   return (
-    <><Navbar height={750} width={{ sm: 300 }}>
-        <Navbar.Section grow className={classes.wrapper}>
-          <div className={classes.aside}>
-            <div className={classes.logo}>
-              <MantineLogo type="mark" size={30} />
-            </div>
-            {mainLinks}
-          </div>
-          <div className={classes.main}>
-            <Title order={4} className={classes.title}>
-              {active}
-            </Title>
-
-            {links}
-          </div>
-        </Navbar.Section>
-      </Navbar><div className={styles.container}>
+    <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <meta name="description" content="Generated by create next app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={classes.header}>
+      <Container className={classes.mainSection}>
+        <Group position="apart">
+          <MantineLogo size={28} />
 
+          <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+
+          <Menu
+            width={260}
+            position="bottom-end"
+            transition="pop-top-right"
+            onClose={() => setUserMenuOpened(false)}
+            onOpen={() => setUserMenuOpened(true)}
+          >
+            <Menu.Target>
+              <UnstyledButton
+                className={cx(classes.user, { [classes.userActive]: userMenuOpened })}
+              >
+                <Group spacing={7}>
+                  <Avatar src='{user.image}' alt='{user.name}' radius="xl" size={20} />
+                  <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3}>
+                  {getUserDisplayName(user)}
+                  </Text>
+                  <IconChevronDown size={12} stroke={1.5} />
+                </Group>
+              </UnstyledButton>
+            </Menu.Target>
+            <Menu.Dropdown>
+              <Menu.Item icon={<IconHeart size={14} color={theme.colors.red[6]} stroke={1.5} />}>
+                Liked posts
+              </Menu.Item>
+              <Menu.Item icon={<IconStar size={14} color={theme.colors.yellow[6]} stroke={1.5} />}>
+                Saved posts
+              </Menu.Item>
+              <Menu.Item icon={<IconMessage size={14} color={theme.colors.blue[6]} stroke={1.5} />}>
+                Your comments
+              </Menu.Item>
+
+              <Menu.Label>Settings</Menu.Label>
+              <Menu.Item icon={<IconSettings size={14} stroke={1.5} />}>Account settings</Menu.Item>
+              <Menu.Item icon={<IconSwitchHorizontal size={14} stroke={1.5} />}>
+                Change account
+              </Menu.Item>
+              <Menu.Item icon={<IconLogout size={14} stroke={1.5} />}>Logout</Menu.Item>
+
+              <Menu.Divider />
+
+              <Menu.Label>Danger zone</Menu.Label>
+              <Menu.Item icon={<IconPlayerPause size={14} stroke={1.5} />}>
+                Pause subscription
+              </Menu.Item>
+              <Menu.Item color="red" icon={<IconTrash size={14} stroke={1.5} />}>
+                Delete account
+              </Menu.Item>
+            </Menu.Dropdown>
+          </Menu>
+        </Group>
+      </Container>
+      <Container>
+        <Tabs
+          defaultValue="Home"
+          variant="outline"
+          classNames={{
+            root: classes.tabs,
+            tabsList: classes.tabsList,
+            tab: classes.tab,
+          }}
+        >
+      
+        </Tabs>
+      </Container>
+    </div>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to{" "}
@@ -257,7 +249,7 @@ export default function Home({ data }: { data: string }) {
           </div>
         </div>
       </main>
-    </div></>
+    </div>
   );
 }
 
