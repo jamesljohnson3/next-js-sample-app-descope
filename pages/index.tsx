@@ -195,7 +195,8 @@ export default function Home({ data }: { data: string }) {
               <Menu.Item icon={<IconSwitchHorizontal size={14} stroke={1.5} />}>
                 Change account
               </Menu.Item>
-              <Menu.Item icon={<IconLogout size={14} stroke={1.5} />}>Logout</Menu.Item>
+
+            <button onClick={onLogout}>    <Menu.Item icon={<IconLogout size={14} stroke={1.5} />}>Logout</Menu.Item></button>
 
               <Menu.Divider />
 
