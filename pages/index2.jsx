@@ -1,6 +1,6 @@
 import { useDescope, useSession, useUser } from '@descope/react-sdk'
 
-const App = () => {
+export default function Home() {
     // NOTE - `useDescope`, `useSession`, `useUser` should be used inside `AuthProvider` context,
     // and will throw an exception if this requirement is not met
     const { isAuthenticated, isSessionLoading } = useSession()
