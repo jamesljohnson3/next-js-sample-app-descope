@@ -130,7 +130,7 @@ import { useForm } from '@mantine/form';
 
         <Checkbox
           mt="md"
-          label="I agree to sell my privacy"
+          label="I agree to the privac policy"
           {...form.getInputProps('termsOfService', { type: 'checkbox' })}
         />
 
