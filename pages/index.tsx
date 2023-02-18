@@ -143,9 +143,15 @@ export default function Home({ data }: { data: string }) {
       <div className={classes.header}>
       <Container className={classes.mainSection}>
         <Group position="apart">
-          <MantineLogo size={28} />
+          <MantineLogo size={28} inverted />
 
-          <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            className={classes.burger}
+            size="sm"
+            color={theme.white}
+          />
 
           <Menu
             width={260}
@@ -159,7 +165,7 @@ export default function Home({ data }: { data: string }) {
                 className={cx(classes.user, { [classes.userActive]: userMenuOpened })}
               >
                 <Group spacing={7}>
-                  <Avatar src='{user.image}' alt='{user.name}' radius="xl" size={20} />
+                <Avatar src='{user.image}' alt='{user.name}' radius="xl" size={20} />
                   <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3}>
                   {getUserDisplayName(user)}
                   </Text>
@@ -168,13 +174,13 @@ export default function Home({ data }: { data: string }) {
               </UnstyledButton>
             </Menu.Target>
             <Menu.Dropdown>
-              <Menu.Item icon={<IconHeart size={14} color={theme.colors.red[6]} stroke={1.5} />}>
+              <Menu.Item icon={<IconHeart size={14} stroke={1.5} color={theme.colors.red[6]} />}>
                 Liked posts
               </Menu.Item>
-              <Menu.Item icon={<IconStar size={14} color={theme.colors.yellow[6]} stroke={1.5} />}>
+              <Menu.Item icon={<IconStar size={14} stroke={1.5} color={theme.colors.yellow[6]} />}>
                 Saved posts
               </Menu.Item>
-              <Menu.Item icon={<IconMessage size={14} color={theme.colors.blue[6]} stroke={1.5} />}>
+              <Menu.Item icon={<IconMessage size={14} stroke={1.5} color={theme.colors.blue[6]} />}>
                 Your comments
               </Menu.Item>
 
