@@ -14,7 +14,7 @@ import {
   SystemProps,
 } from '@chakra-ui/react'
 
-import { Section, SectionTitle, SectionTitleProps } from 'components/section'
+import { Section, SectionTitle, SectionTitleProps } from '../../components/section'
 
 const Revealer = ({ children }: any) => {
   return children
