@@ -1,11 +1,25 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { Image } from '@nextui-org/react';
-import Post from '../ui/Post';
 import { ReactNode } from 'react';
-import { Suspense } from 'react';
-import { builder, BuilderComponent } from '@builder.io/react'
-import { BuilderContent } from '@builder.io/sdk';
-builder.init('c1b3106624e34af79d2e33c90a9e9021');
+import * as React from "react"
+import {
+  Album,
+  ListMusic,
+  PlusCircle,
+} from "lucide-react"
+
+import { cn } from "../../lib/utils"
+import { AspectRatio } from "../../components/ui/aspect-ratio"
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuSeparator,
+  ContextMenuSub,
+  ContextMenuSubContent,
+  ContextMenuSubTrigger,
+  ContextMenuTrigger,
+} from "../../components/ui/context-menu"
 
 interface PostItem {
 	name: string;
@@ -43,10 +57,108 @@ const items: PostItem[] = [
 ];
 
 
+const playlists = [
+	"Recently Added",
+	"Recently Played",
+	"Top Songs",
+	"Top Albums",
+	"Top Artists",
+	"Logic Discography",
+	"Bedtime Beats",
+	"Feeling Happy",
+	"I miss Y2K Pop",
+	"Runtober",
+	"Mellow Days",
+	"Eminem Essentials",
+  ]
+  
+interface Album {
+	name: string
+	artist: string
+	cover: string
+  }
+  
+  const listenNowAlbums: Album[] = [
+	{
+	  name: "Async Awakenings",
+	  artist: "Nina Netcode",
+	  cover:
+		"https://images.unsplash.com/photo-1547355253-ff0740f6e8c1?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "The Art of Reusability",
+	  artist: "Lena Logic",
+	  cover:
+		"https://images.unsplash.com/photo-1576075796033-848c2a5f3696?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "Stateful Symphony",
+	  artist: "Beth Binary",
+	  cover:
+		"https://images.unsplash.com/photo-1606542758304-820b04394ac2?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "React Rendezvous",
+	  artist: "Ethan Byte",
+	  cover:
+		"https://images.unsplash.com/photo-1598295893369-1918ffaf89a2?w=300&dpr=2&q=80",
+	},
+  ]
+  
+  const madeForYouAlbums: Album[] = [
+	{
+	  name: "Async Awakenings",
+	  artist: "Nina Netcode",
+	  cover:
+		"https://images.unsplash.com/photo-1580428180098-24b353d7e9d9?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "Stateful Symphony",
+	  artist: "Beth Binary",
+	  cover:
+		"https://images.unsplash.com/photo-1606542758304-820b04394ac2?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "Stateful Symphony",
+	  artist: "Beth Binary",
+	  cover:
+		"https://images.unsplash.com/photo-1598062548091-a6fb6a052562?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "The Art of Reusability",
+	  artist: "Lena Logic",
+	  cover:
+		"https://images.unsplash.com/photo-1626759486966-c067e3f79982?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "Thinking Components",
+	  artist: "Lena Logic",
+	  cover:
+		"https://images.unsplash.com/photo-1576075796033-848c2a5f3696?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "Functional Fury",
+	  artist: "Beth Binary",
+	  cover:
+		"https://images.unsplash.com/photo-1606542758304-820b04394ac2?w=300&dpr=2&q=80",
+	},
+	{
+	  name: "React Rendezvous",
+	  artist: "Ethan Byte",
+	  cover:
+		"https://images.unsplash.com/photo-1598295893369-1918ffaf89a2?w=300&dpr=2&q=80",
+	},
+  ]
 
-const Feed = (props: { content: BuilderContent | undefined; }) => (
-<>      <BuilderComponent model="twitter" content={props.content} />
-</>
+
+const Feed = () => (
+<> {listenNowAlbums.map((album) => (
+                          <AlbumArtwork
+                            key={album.name}
+                            album={album}
+                            className="w-[250px]"
+                          />
+                        ))}</>
 );
 
 export default Feed;
@@ -54,3 +166,65 @@ export default Feed;
 function Loading() {
 	return <h2>Loading...</h2>;
 }
+
+interface AlbumArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
+	album: Album
+	aspectRatio?: number
+  }
+function AlbumArtwork({
+	album,
+	aspectRatio = 3 / 4,
+	className,
+	...props
+  }: AlbumArtworkProps) {
+	return (
+	  <div className={cn("space-y-3", className)} {...props}>
+		<ContextMenu>
+		  <ContextMenuTrigger>
+			<AspectRatio
+			  ratio={aspectRatio}
+			  className="overflow-hidden rounded-md"
+			>
+			  <Image
+				src={album.cover}
+				alt={album.name}
+				className="object-cover transition-all hover:scale-105"
+			  />
+			</AspectRatio>
+		  </ContextMenuTrigger>
+		  <ContextMenuContent className="w-40">
+			<ContextMenuItem>Add to Library</ContextMenuItem>
+			<ContextMenuSub>
+			  <ContextMenuSubTrigger>Add to Playlist</ContextMenuSubTrigger>
+			  <ContextMenuSubContent className="w-48">
+				<ContextMenuItem>
+				  <PlusCircle className="mr-2 h-4 w-4" />
+				  New Playlist
+				</ContextMenuItem>
+				<ContextMenuSeparator />
+				{playlists.map((playlist) => (
+				  <ContextMenuItem key={playlist}>
+					<ListMusic className="mr-2 h-4 w-4" /> {playlist}
+				  </ContextMenuItem>
+				))}
+			  </ContextMenuSubContent>
+			</ContextMenuSub>
+			<ContextMenuSeparator />
+			<ContextMenuItem>Play Next</ContextMenuItem>
+			<ContextMenuItem>Play Later</ContextMenuItem>
+			<ContextMenuItem>Create Station</ContextMenuItem>
+			<ContextMenuSeparator />
+			<ContextMenuItem>Like</ContextMenuItem>
+			<ContextMenuItem>Share</ContextMenuItem>
+		  </ContextMenuContent>
+		</ContextMenu>
+		<div className="space-y-1 text-sm">
+		  <h3 className="font-medium leading-none">{album.name}</h3>
+		  <p className="text-xs text-slate-500 dark:text-slate-400">
+			{album.artist}
+		  </p>
+		</div>
+	  </div>
+	)
+  }
+  

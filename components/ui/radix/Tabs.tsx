@@ -57,7 +57,7 @@ const Tabs = () => (
 		</TabsPrimitive.List>
 		<TabsPrimitive.Content value="tab1" className="TabsContent ">
 			<TweetForm width="default" />
-			<Feed content={undefined} />
+			<Feed />
 		</TabsPrimitive.Content>
 		<TabsPrimitive.Content value="tab2" className="TabsContent ">
 			<TweetForm width="default" />
