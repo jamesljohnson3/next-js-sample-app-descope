@@ -6,16 +6,16 @@ import "/styles/globals.css"
 import "../styles/styles.css";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
+  return ( <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
     <ClerkProvider {...pageProps} >
 
     <AuthProvider
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     >
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem> <Component {...pageProps} /></ThemeProvider> 
+      <Component {...pageProps} />
     </AuthProvider>
-    </ClerkProvider>
+    </ClerkProvider></ThemeProvider> 
 
   );
 }
