@@ -27,7 +27,6 @@ const darkTheme = createTheme({
 
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
-  const publicPages = ["/index2b"];
   const privatePages = ["/"];
 
   return ( <NextThemesProvider
@@ -50,11 +49,8 @@ export default function App({ Component, pageProps }: AppProps) {
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     > 
     <SignedOut>
-    {publicPages.includes(pathname) ? (
-            <RedirectToSignUp /> 
-          ) : (
-            <Component {...pageProps} />
-          )}</SignedOut>
+    <Component {...pageProps} />
+  </SignedOut>
          
 
     </AuthProvider>
