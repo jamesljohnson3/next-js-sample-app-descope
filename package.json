@@ -71,6 +71,7 @@
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
     "cmdk": "^0.1.21",
+    "commandbar": "^1.7.3",
     "contentlayer": "^0.3.0",
     "dayjs": "^1.11.7",
     "embla-carousel-react": "^7.0.9",
