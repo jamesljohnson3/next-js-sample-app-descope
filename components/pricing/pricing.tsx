@@ -9,7 +9,6 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { ButtonLink, ButtonLinkProps } from '../../components/button-link/button-link'
-import { BackgroundGradient } from '../../components/gradients/background-gradient'
 import { Section, SectionProps, SectionTitle } from '../../components/section'
 import React from 'react'
 import { FiCheck } from 'react-icons/fi'
@@ -34,7 +33,6 @@ export const Pricing: React.FC<PricingProps> = (props) => {
 
   return (
     <Section id="pricing" pos="relative" {...rest}>
-      <BackgroundGradient height="100%" />
       <Box zIndex="2" pos="relative">
         <SectionTitle title={title} description={description}></SectionTitle>
 
