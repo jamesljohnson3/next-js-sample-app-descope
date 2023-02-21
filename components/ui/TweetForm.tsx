@@ -1,6 +1,5 @@
-import Avatar from '@rd/Avatar';
+import Avatar from '../ui/radix/Avatar';
 import Link from 'next/link';
-import Button from '@ui/Button';
 import {
 	RiImage2Line,
 	RiFileGifLine,

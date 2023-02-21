@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Post from '@ui/Post';
+import Post from '../ui/Post';
 import { ReactNode } from 'react';
 import { Suspense } from 'react';
 
