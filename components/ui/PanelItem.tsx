@@ -1,5 +1,5 @@
-import Avatar from '@rd/Avatar';
-import Button from '@ui/Button';
+import Avatar from '../ui/radix/Avatar';
+import Button from '../ui/Button2';
 
 interface Props {
 	name: string;
