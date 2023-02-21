@@ -152,13 +152,15 @@ interface Album {
 
 
 const Feed = () => (
-<> {listenNowAlbums.map((album) => (
+<>  <div className="relative flex space-x-4">
+                        {listenNowAlbums.map((album) => (
                           <AlbumArtwork
                             key={album.name}
                             album={album}
                             className="w-[250px]"
                           />
-                        ))}</>
+                        ))}
+                      </div></>
 );
 
 export default Feed;
