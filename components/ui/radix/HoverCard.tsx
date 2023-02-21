@@ -1,8 +1,8 @@
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 import cx from 'classnames';
-import Button from '@ui/Button';
-import Avatar from '@rd/Avatar';
-import UserCard from '@ui/UserCard';
+import Button from '../../ui/Button2';
+import Avatar from '../../ui/radix/Avatar';
+import UserCard from '../../ui/UserCard';
 
 interface Props {
 	src: string;
