@@ -38,20 +38,18 @@ export default function App({ Component, pageProps }: AppProps) {
     }}
   >
   <NextUIProvider>
-    <ClerkProvider {...pageProps} > <SignedIn> {privatePages.includes(pathname) ? (
-            <RedirectToSignUp /> 
-          ) : (
-            <Component {...pageProps} />
-          )}</SignedIn>
+    <ClerkProvider {...pageProps} >
 
     <AuthProvider
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     > 
-    <SignedOut>
-    <Component {...pageProps} />
-  </SignedOut>
-         
+   
+  <SignedIn> {privatePages.includes(pathname) ? (
+            <RedirectToSignUp /> 
+          ) : (
+            <Component {...pageProps} />
+          )}</SignedIn>
 
     </AuthProvider>
     </ClerkProvider>
