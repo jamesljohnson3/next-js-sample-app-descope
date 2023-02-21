@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
+import Post from '../../components/ui/Post';
+import { Suspense } from 'react';
 import { Image } from '@nextui-org/react';
 import { ReactNode } from 'react';
 import * as React from "react"
@@ -160,7 +162,43 @@ const Feed = () => (
                             className="w-[450px]"
                           />
                         ))}
-                      </div></>
+                      </div><Suspense fallback={<Loading />}>
+		<ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
+			{items.map(
+				(
+					{
+						name,
+						username,
+						content,
+						date,
+						src,
+						initials,
+						image,
+						following,
+						followers,
+						description,
+					},
+					i,
+				) => (
+					<li key={`username-${i}`} className="p-4">
+						<Post
+							name={name}
+							username={username}
+							content={content}
+							date={date}
+							src={src}
+							initials={initials}
+							description={description}
+							followers={followers}
+							following={following}
+						>
+							{image}
+						</Post>
+					</li>
+				),
+			)}
+		</ul>
+	</Suspense></>
 );
 
 export default Feed;
