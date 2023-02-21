@@ -5,8 +5,16 @@ import { getUserDisplayName, validateRequestSession } from "../../utils/auth";
 import { useAuth } from "@descope/react-sdk";
 
 import { HiOutlineEllipsisHorizontal } from 'react-icons/hi2';
+import { useEffect } from 'react';
 
 const { authenticated, user, logout, me } = useAuth();
+useEffect(() => {
+    if (authenticated) {
+      // get current user (me) so they can later be used to display user information
+      // this may be simplified later by the SDK
+      me();
+    }
+  }, [authenticated]);
 const AccountNavItem = () => (
 	<div className="flex flex-1 items-center gap-x-2 px-4 py-8 ">
 		<div className="flex items-center gap-x-3 flex-1">
