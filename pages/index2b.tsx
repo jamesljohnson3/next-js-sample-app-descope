@@ -8,6 +8,7 @@ import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
 import { ClerkProvider } from "@clerk/clerk-react";
+import { UserButton,  useUser, SignIn, SignedOut } from "@clerk/clerk-react";
 
 
 import { useAuth } from "@descope/react-sdk";
@@ -119,9 +120,9 @@ export default function Home({ data }: { data: string }) {
 								initials="RB"
 							/>
 						</Panel>{!authenticated && (
-          <Link href="/login" passHref>
-            <button>Login</button>
-          </Link>
+          <><Link href="/login" passHref>
+									  <button>Login</button>
+								  </Link><Greeting /></>   
         )}
         {authenticated && (
           <>
@@ -153,3 +154,16 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     },
   };
 };
+function Greeting() {
+	// Use the useUser hook to get the Clerk.user object
+	// This hook causes a re-render on user changes
+	const { isLoaded, isSignedIn, user } = useUser();
+	
+	if (!isLoaded || !isSignedIn) {
+	  // You can handle the loading or signed state separately
+	  return null;
+	}
+	
+	return <div>Hello, {user.username}!</div>;
+  }
+  
