@@ -28,6 +28,7 @@ const darkTheme = createTheme({
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const publicPages = ["/"];
+  const privatePages = ["/"];
 
   return ( <NextThemesProvider
     defaultTheme="system"
@@ -38,7 +39,11 @@ export default function App({ Component, pageProps }: AppProps) {
     }}
   >
   <NextUIProvider>
-    <ClerkProvider {...pageProps} >
+    <ClerkProvider {...pageProps} > <SignedIn> {privatePages.includes(pathname) ? (
+            <RedirectToSignUp /> 
+          ) : (
+            <Component {...pageProps} />
+          )}</SignedIn>
 
     <AuthProvider
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
@@ -50,6 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
           ) : (
             <Component {...pageProps} />
           )}</SignedOut>
+         
 
     </AuthProvider>
     </ClerkProvider>
