@@ -8,9 +8,9 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
-import { ButtonLink, ButtonLinkProps } from 'components/button-link/button-link'
-import { BackgroundGradient } from 'components/gradients/background-gradient'
-import { Section, SectionProps, SectionTitle } from 'components/section'
+import { ButtonLink, ButtonLinkProps } from '../../components/button-link/button-link'
+import { BackgroundGradient } from '../../components/gradients/background-gradient'
+import { Section, SectionProps, SectionTitle } from '../../components/section'
 import React from 'react'
 import { FiCheck } from 'react-icons/fi'
 
