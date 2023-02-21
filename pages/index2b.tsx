@@ -157,15 +157,7 @@ export default function Home (props: any) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const validated = await validateRequestSession(context.req);
 
-  return {
-    props: {
-      data: validated ? "Validated" : "Not Validated",
-    },
-  };
-};
 function Greeting() {
 	// Use the useUser hook to get the Clerk.user object
 	// This hook causes a re-render on user changes
