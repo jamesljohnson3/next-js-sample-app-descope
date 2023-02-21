@@ -154,15 +154,7 @@ interface Album {
 
 
 const Feed = () => (
-<>  <div className="relative flex space-x-4">
-                        {listenNowAlbums.map((album) => (
-                          <AlbumArtwork
-                            key={album.name}
-                            album={album}
-                            className="w-[450px]"
-                          />
-                        ))}
-                      </div><Suspense fallback={<Loading />}>
+<> <Suspense fallback={<Loading />}>
 		<ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
 			{items.map(
 				(
@@ -198,7 +190,15 @@ const Feed = () => (
 				),
 			)}
 		</ul>
-	</Suspense></>
+	</Suspense> <div className="relative flex space-x-4">
+                        {listenNowAlbums.map((album) => (
+                          <AlbumArtwork
+                            key={album.name}
+                            album={album}
+                            className="w-[450px]"
+                          />
+                        ))}
+                      </div></>
 );
 
 export default Feed;
