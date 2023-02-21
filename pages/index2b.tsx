@@ -119,10 +119,10 @@ export default function Home({ data }: { data: string }) {
 								username="robpotter"
 								initials="RB"
 							/>
-						</Panel>{!authenticated && (
+						</Panel><Greeting />{!authenticated && (
           <><Link href="/login" passHref>
 									  <button>Login</button>
-								  </Link><Greeting /></>   
+								  </Link></>   
         )}
         {authenticated && (
           <>
