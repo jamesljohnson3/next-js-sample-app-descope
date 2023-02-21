@@ -46,9 +46,9 @@ export default function App({ Component, pageProps }: AppProps) {
     > 
    
   <SignedOut> {publicPages.includes(pathname) ? (
-            <RedirectToSignUp /> 
+           <Component {...pageProps} />
           ) : (
-            <Component {...pageProps} />
+             <RedirectToSignUp /> 
           )}</SignedOut>
 
     </AuthProvider>
