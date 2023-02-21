@@ -81,9 +81,7 @@ export default function Home (props: any) {
 				<Nav />
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /> <BuilderComponent
-    content={props.content}
-    model="sections" /></SignedIn>
+					<SignedIn><Tabs /> </SignedIn>
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">
