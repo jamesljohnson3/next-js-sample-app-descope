@@ -44,7 +44,6 @@ import {
   FiUserPlus,
 } from 'react-icons/fi'
 import { Features } from '../components/features'
-import { BackgroundGradient } from '../components/gradients/background-gradient'
 import { Faq } from '../components/faq'
 import { Pricing } from '../components/pricing/pricing'
 
@@ -85,7 +84,6 @@ const Home: NextPage = () => {
 const HeroSection: React.FC = () => {
   return (
     <Box position="relative" overflow="hidden">
-      <BackgroundGradient height="100%" />
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
