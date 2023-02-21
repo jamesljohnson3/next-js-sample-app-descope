@@ -60,8 +60,8 @@ const Nav = () => (
 			<div className="flex flex-col flex-1">
 				<NavItem href="/home" width="inline" size="default">
 				<Image src="https://res.cloudinary.com/unlimitednow/image/upload/v1673587332/favicon_upb50k.png"   alt="gallery"
-      width={40}
-      height={30} />
+      width={80}
+      height={60} />
 				</NavItem>
 				{items.map(({ href, text, icon }, i) => (
 					<div
