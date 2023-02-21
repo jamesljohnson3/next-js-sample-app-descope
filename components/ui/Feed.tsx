@@ -1,4 +1,5 @@
-import Image from 'next/image';
+/* eslint-disable jsx-a11y/alt-text */
+import { Image } from '@nextui-org/react';
 import Post from '../ui/Post';
 import { ReactNode } from 'react';
 import { Suspense } from 'react';
@@ -31,11 +32,7 @@ const items: PostItem[] = [
 		image: (
 			<div className="w-full relative -z-10 h-80 mb-4">
 				<Image
-					fill={true}
-					style={{ objectFit: 'cover' }}
-					className="rounded-3xl"
 					src="https://res.cloudinary.com/unlimitednow/image/upload/v1670607966/site/aa7d04145690529.62a27e3b4c57f_fhaxae.jpg"
-					alt="Gradient"
 				/>
 			</div>
 		),
