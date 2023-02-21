@@ -1,7 +1,7 @@
 import * as PopoverPrimitive from '@radix-ui/react-popover';
 import * as SeparatorPrimitive from '@radix-ui/react-separator';
-import NavItem from '@ui/NavItem';
-import Accordion from '@rd/Accordion';
+import NavItem from '../../ui/NavItem';
+import Accordion from '../../ui/radix/Accordion';
 import { ReactNode } from 'react';
 
 import {
