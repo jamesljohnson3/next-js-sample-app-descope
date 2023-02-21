@@ -48,7 +48,7 @@ function TweetForm({ width }: { width: 'default' | 'full' }) {
 		  alt="Roy Quilor"
 		  initials="RQ"
 		/>
-		<form className="flex flex-col flex-1 gap-y-4" onSubmit={handleSubmit}>
+		<form className="flex flex-col flex-1 gap-y-4" >
 		  <div className="flex flex-1">
 			<input
 			  value={input}
@@ -83,7 +83,7 @@ function TweetForm({ width }: { width: 'default' | 'full' }) {
 			</div>
 			<div>
 			  <button
-				disabled={!input}
+				onSubmit={handleSubmit}
 				type="submit"
 				className="inline-flex items-center font-bold rounded-full border px-4 py-2 text-sm bg-slate-900 text-white border-transparent disabled:opacity-50 transition-opacity duration-200"
 			  >
