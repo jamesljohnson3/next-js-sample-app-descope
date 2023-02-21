@@ -1,10 +1,12 @@
 import { HiMagnifyingGlass } from 'react-icons/hi2';
+import CommandMenu from "../command";
+import "superkey/styles.css";
 
 const Search = () => (
 	<div className="sticky top-0 bg-white py-2 mb-3">
 		<form className="flex flex-col flex-1 gap-y-4">
 			<div className="flex flex-1 relative">
-				<HiMagnifyingGlass className="w-5 h-5 left-2.5 top-2 absolute flex items-center" />
+			<CommandMenu/><HiMagnifyingGlass className="w-5 h-5 left-2.5 top-2 absolute flex items-center" />
 				<input
 					type="search"
 					placeholder="Search"

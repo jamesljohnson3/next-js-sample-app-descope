@@ -7,8 +7,7 @@ import Panel from '../components/ui/Panel';
 import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
-import CommandMenu from "../components/command";
-import "superkey/styles.css";
+
 
 import {
 	createTheme,
@@ -39,7 +38,7 @@ export default function Home() {
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">
-						<Search /> <CommandMenu/>
+						<Search /> 
 						<Panel title="What's happening" href="/">
 							<PanelItemTrends
 								title="Next JS"
