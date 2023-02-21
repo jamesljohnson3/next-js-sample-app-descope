@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import {ClerkProvider, RedirectToSignUp, SignedIn, SignedOut,} from "@clerk/nextjs";
 import { ThemeProvider } from "next-themes"
 import "../styles/styles.css";
+import { SaasProvider } from '@saas-ui/react'
 import { createTheme, NextUIProvider } from "@nextui-org/react"
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { useTheme as useNextTheme } from 'next-themes'
@@ -43,8 +44,10 @@ export default function App({ Component, pageProps }: AppProps) {
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     > 
-   
+       <SaasProvider>
+
    <Component {...pageProps} />
+   </SaasProvider>
 
     </AuthProvider>
     </ClerkProvider>
