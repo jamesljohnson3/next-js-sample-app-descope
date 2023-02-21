@@ -3,6 +3,7 @@ import DialogDemo from '../ui/radix/Dialog';
 import PopoverDemo from '../ui/radix/PopoverDemo';
 import NavItem from './NavItem';
 import AccountNavItem from './AccountNavItem';
+import { Image } from '@nextui-org/react';
 
 import { SiTwitter } from 'react-icons/si';
 import {
@@ -58,7 +59,9 @@ const Nav = () => (
 		<div className="flex flex-1 xl:w-60 flex-col fixed h-full">
 			<div className="flex flex-col flex-1">
 				<NavItem href="/home" width="inline" size="default">
-					<SiTwitter className="w-6 h-6" />
+				<Image src="https://res.cloudinary.com/unlimitednow/image/upload/v1673587332/favicon_upb50k.png"   alt="gallery"
+      width={40}
+      height={30} />
 				</NavItem>
 				{items.map(({ href, text, icon }, i) => (
 					<div
