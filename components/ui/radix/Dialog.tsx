@@ -9,7 +9,7 @@ const DialogDemo = () => (
 			<div className="w-full flex justify-center xl:justify-start mt-5 appearance-none">
 				<Button size="large">
 					<HiOutlinePencil className="w-6 h-6 xl:hidden" />
-					<span className="hidden xl:flex">Tweet</span>
+					<span className="hidden xl:flex">Boost</span>
 				</Button>
 			</div>
 		</DialogPrimitive.Trigger>
@@ -25,10 +25,10 @@ const DialogDemo = () => (
 					</button>
 				</DialogPrimitive.Close>
 				<DialogPrimitive.Title className="DialogTitle sr-only">
-					Tweet
+					Boost
 				</DialogPrimitive.Title>
 				<DialogPrimitive.Description className="DialogDescription sr-only">
-					Make a Tweet
+					Supercharged
 				</DialogPrimitive.Description>
 
 				<TweetForm width="full" />
