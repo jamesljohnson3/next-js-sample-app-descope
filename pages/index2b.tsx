@@ -31,15 +31,7 @@ import {
   });
   
   const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
-  export const getStaticProps = async (context: { resolvedUrl: any; }) => {
-	const content = await builder.get('sections', { url: context.resolvedUrl }).promise();
-  
-	return { 
-	  props: { content }, 
-	  revalidate: true,
-	  notFound: !content
-	}
-  }
+
 export default function Home (props: any) {
   
   const { authenticated, user, logout, me } = useAuth();
