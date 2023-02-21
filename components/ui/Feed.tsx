@@ -157,7 +157,7 @@ const Feed = () => (
                           <AlbumArtwork
                             key={album.name}
                             album={album}
-                            className="w-[250px]"
+                            className="w-[450px]"
                           />
                         ))}
                       </div></>
