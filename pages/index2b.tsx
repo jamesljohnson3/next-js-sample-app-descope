@@ -17,6 +17,7 @@ import Link from "next/link";
 import { SyntheticEvent, useCallback, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
+import { builder, BuilderComponent } from '@builder.io/react'
 
 import {
 	createTheme,
@@ -30,8 +31,16 @@ import {
   });
   
   const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
-
-export default function Home({ data }: { data: string }) {
+  export const getStaticProps = async (context: { resolvedUrl: any; }) => {
+	const content = await builder.get('sections', { url: context.resolvedUrl }).promise();
+  
+	return { 
+	  props: { content }, 
+	  revalidate: true,
+	  notFound: !content
+	}
+  }
+export default function Home (props: any) {
   
   const { authenticated, user, logout, me } = useAuth();
   const onLogout = useCallback(() => {
@@ -72,7 +81,9 @@ export default function Home({ data }: { data: string }) {
 				<Nav />
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /></SignedIn>
+					<SignedIn><Tabs /> <BuilderComponent
+    content={props.content}
+    model="sections" /></SignedIn>
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">

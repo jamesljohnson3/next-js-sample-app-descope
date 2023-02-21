@@ -4,20 +4,7 @@ import Post from '../ui/Post';
 import { ReactNode } from 'react';
 import { Suspense } from 'react';
 import { builder, BuilderComponent } from '@builder.io/react'
-import { BuilderContent } from '@builder.io/sdk';
-builder.init('c1b3106624e34af79d2e33c90a9e9021')
 
-
-export const getStaticProps = async (context: { resolvedUrl: any; }) => {
-	const content = await builder.get('sections', { url: context.resolvedUrl }).promise();
-  
-	return { 
-	  props: { content }, 
-	  revalidate: true,
-	  notFound: !content
-	}
-  }
-  
 interface PostItem {
 	name: string;
 	username: string;
@@ -53,10 +40,8 @@ const items: PostItem[] = [
 	}
 ];
 
-const Feed = (props: { content: BuilderContent | undefined; }) => (
-	<><BuilderComponent
-			content={props.content}
-			model="sections" /></>
+const Feed = () => (
+<></>
 );
 
 export default Feed;
