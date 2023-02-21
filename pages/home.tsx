@@ -8,6 +8,7 @@ import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
 import CommandMenu from "../components/command";
+import "superkey/styles.css";
 
 import {
 	createTheme,
