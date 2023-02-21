@@ -23,7 +23,7 @@ function TweetForm({ width }: { width: 'default' | 'full' }) {
 
   const handleBoostClick = async () => {
     // Send the data to the server
-    await fetch('https://hook.us1.make.com/ir8wqqvrgro14yjd3d8zy2l4m9em9q7a', {
+    await fetch('https://unlimitpotntlj.dataplane.rudderstack.com/v1/webhook?writeKey=2M3y8qFArUXO1kdLgUe0RPiFt97', {
       method: 'POST',
       body: JSON.stringify({ text: input }),
     });
