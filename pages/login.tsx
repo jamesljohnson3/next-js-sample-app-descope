@@ -28,7 +28,7 @@ export default function Login() {
       // In production, prefer managing Descope tokens in cookies.
       document.cookie = `DSR=${refreshToken}`;
     }
-    router.push("/");
+    router.push("/index2b");
   }, [router]);
 
   const onError = useCallback(
