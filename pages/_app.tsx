@@ -12,6 +12,8 @@ import { theme as baseTheme } from '@saas-ui/theme-glass'
 import { Switch, useTheme } from '@nextui-org/react'
 import { builder, Builder, withChildren } from '@builder.io/react';
 import { useRouter } from "next/router";
+import { Layout } from '../components/layout'
+
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
 // 2. Call `createTheme` and pass your custom values
@@ -43,6 +45,7 @@ export const theme = extendTheme(
 )
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
+  const { announcement, header, footer } = pageProps
 
   return ( <NextThemesProvider
     defaultTheme="system"
@@ -60,8 +63,12 @@ export default function App({ Component, pageProps }: AppProps) {
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     > 
     <SaasProvider theme={theme}>
-
-   <Component {...pageProps} />
+    <Layout
+          announcementProps={announcement}
+          headerProps={header}
+          footerProps={footer}
+        >
+   <Component {...pageProps} /> </Layout>
    </SaasProvider>
 
     </AuthProvider>
