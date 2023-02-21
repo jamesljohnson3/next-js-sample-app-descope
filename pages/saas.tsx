@@ -51,9 +51,9 @@ import { Pricing } from '../components/pricing/pricing'
 import { ButtonLink } from '../components/button-link/button-link'
 import { Testimonial, Testimonials } from '../components/testimonials'
 
-import faq from 'data/faq'
-import testimonials from 'data/testimonials'
-import pricing from 'data/pricing'
+import faq from '../data/faq'
+import testimonials from '../data/testimonials'
+import pricing from '../data/pricing'
 
 import {
   Highlights,
@@ -64,10 +64,7 @@ import {
 const Home: NextPage = () => {
   return (
     <Box>
-      <SEO
-        title="Saas UI Landingspage"
-        description="Free SaaS landingspage starter kit"
-      />
+     
       <Box>
         <HeroSection />
 
