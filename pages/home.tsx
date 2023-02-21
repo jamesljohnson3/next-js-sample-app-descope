@@ -7,8 +7,7 @@ import Panel from '../components/ui/Panel';
 import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
-import {init} from 'commandbar';
-init('c2025881');
+import CommandMenu from "../components/command";
 
 import {
 	createTheme,
@@ -21,13 +20,8 @@ import {
 	}
   });
   
-
-
+  
 export default function Home() {
-	const loggedInUserId = "user123"; // example
-window.CommandBar.boot(loggedInUserId), { formFactor: { type: 'inline', rootElement: 'commandbar-inline-root' } };
-window.CommandBar.setFormFactor({ type: 'inline', rootElement: 'commandbar-inline-root' });
-
 	return (
 		<>
 			<Head>
@@ -44,7 +38,7 @@ window.CommandBar.setFormFactor({ type: 'inline', rootElement: 'commandbar-inlin
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">
-						<Search />
+						<Search /> <CommandMenu/>
 						<Panel title="What's happening" href="/">
 							<PanelItemTrends
 								title="Next JS"
