@@ -157,57 +157,7 @@ interface Album {
 
 
 const Feed = () => (
-<> <Suspense fallback={<Loading />}>
-		<ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
-			{items.map(
-				(
-					{
-						name,
-						username,
-						content,
-						date,
-						src,
-						initials,
-						image,
-						following,
-						followers,
-						description,
-					},
-					i,
-				) => (
-					<li key={`username-${i}`} className="p-4">
-						<Post
-							name={name}
-							username={username}
-							content={content}
-							date={date}
-							initials={initials}
-							description={description}
-							followers={followers}
-							following={following} src={''}						>
-							{image}
-						</Post>
-						
-					</li>
-				),
-			)}
-		</ul>
-	</Suspense> <div className="relative flex space-x-4">
-                        {listenNowAlbums.map((album) => (
-                          <AlbumArtwork
-                            key={album.name}
-                            album={album}
-                            className="w-[450px]"
-                          />
-                        ))}
-                      </div><div className="w-full relative -z-10 h-80 mb-4">
-				<Image
-				fill={true} 
-					style={{ objectFit: 'cover' }}
-					className="rounded-3xl"
-					src="https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80"
-					alt="Gradient"/>
-			</div></>
+<> </>
 );
 
 export default Feed;
