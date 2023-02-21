@@ -25,7 +25,7 @@ width: 'default',
 function TweetForm({ width }: { width: 'default' | 'full' }) {
 const [input, setInput] = useState<string>('');
 const handleBoostClick = async () => {
-const response = await fetch('https://connect.unlimitednow.site', {
+const response = await fetch('https://hook.us1.make.com/ir8wqqvrgro14yjd3d8zy2l4m9em9q7a', {
 method: 'POST',
 body: JSON.stringify({ tweet: input }),
 headers: {
