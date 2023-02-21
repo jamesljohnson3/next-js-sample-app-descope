@@ -8,7 +8,7 @@ import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
 import { ClerkProvider } from "@clerk/clerk-react";
-import { UserButton,  useUser, SignIn, SignedOut } from "@clerk/clerk-react";
+import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 
 
 import { useAuth } from "@descope/react-sdk";
@@ -72,7 +72,7 @@ export default function Home({ data }: { data: string }) {
 				<Nav />
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<Tabs />
+					<SignedIn><Tabs /></SignedIn>
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">
