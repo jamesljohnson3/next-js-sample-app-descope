@@ -28,7 +28,7 @@ const darkTheme = createTheme({
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const publicPages = ["/"];
-  const privatePages = ["/"];
+  const privatePages = ["/index2b"];
 
   return ( <NextThemesProvider
     defaultTheme="system"
