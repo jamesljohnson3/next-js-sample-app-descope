@@ -7,6 +7,8 @@ import { createTheme, NextUIProvider } from "@nextui-org/react"
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { useTheme as useNextTheme } from 'next-themes'
 import { Switch, useTheme } from '@nextui-org/react'
+import { builder, Builder, withChildren } from '@builder.io/react';
+builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
 // 2. Call `createTheme` and pass your custom values
 const lightTheme = createTheme({
