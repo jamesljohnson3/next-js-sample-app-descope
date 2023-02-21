@@ -78,6 +78,7 @@ export default function Home({ data }: { data: string }) {
 					<div className="sticky top-0">
 						<Search /> 
 						<Panel title="What's happening" href="/">
+						<Greeting />
 							<PanelItemTrends
 								title="Next JS"
 								category="Development"
@@ -119,7 +120,7 @@ export default function Home({ data }: { data: string }) {
 								username="robpotter"
 								initials="RB"
 							/>
-						</Panel><Greeting />{!authenticated && (
+						</Panel>{!authenticated && (
           <><Link href="/login" passHref>
 									  <button>Login</button>
 								  </Link></>   
