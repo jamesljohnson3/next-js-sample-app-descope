@@ -1,7 +1,8 @@
 import { AuthProvider } from "@descope/react-sdk";
 import type { AppProps } from "next/app";
-import "../styles/globals.css";
 import { ClerkProvider } from '@clerk/nextjs';
+import { ThemeProvider } from "next-themes"
+import "/styles/globals.css"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     >
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem> <Component {...pageProps} /></ThemeProvider> 
     </AuthProvider>
     </ClerkProvider>
 
