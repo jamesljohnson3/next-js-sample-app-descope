@@ -60,6 +60,7 @@
     "@radix-ui/react-toggle-group": "^1.0.1",
     "@radix-ui/react-tooltip": "^1.0.3",
     "@saas-ui/react": "^1.9.1",
+    "@saas-ui/theme-glass": "^0.3.1",
     "@tabler/icons": "^1.119.0",
     "@tiptap/extension-link": "^2.0.0-beta.218",
     "@tiptap/react": "^2.0.0-beta.218",
