@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["avatars.githubusercontent.com", "images.unsplash.com", "res.cloudinary.com", "cdn.builder.io"],
+    domains: ["avatars.githubusercontent.com", "images.unsplash.com", "res.cloudinary.com", "cdn.builder.io","pbs.twimg.com", ],
   },
   experimental: {
     appDir: true,
