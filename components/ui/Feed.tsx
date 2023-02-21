@@ -3,7 +3,21 @@ import { Image } from '@nextui-org/react';
 import Post from '../ui/Post';
 import { ReactNode } from 'react';
 import { Suspense } from 'react';
+import { builder, BuilderComponent } from '@builder.io/react'
+import { BuilderContent } from '@builder.io/sdk';
+builder.init('c1b3106624e34af79d2e33c90a9e9021')
 
+
+export const getStaticProps = async (context: { resolvedUrl: any; }) => {
+	const content = await builder.get('sections', { url: context.resolvedUrl }).promise();
+  
+	return { 
+	  props: { content }, 
+	  revalidate: true,
+	  notFound: !content
+	}
+  }
+  
 interface PostItem {
 	name: string;
 	username: string;
@@ -39,24 +53,15 @@ const items: PostItem[] = [
 	}
 ];
 
-const Feed = () => (
-	<Suspense fallback={<Loading />}>
+const Feed = (props: { content: BuilderContent | undefined; }) => (
+	<><Suspense fallback={<Loading />}>
 		<ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
 			{items.map(
 				(
 					{
-						name,
-						username,
-						content,
-						date,
-						src,
-						initials,
-						image,
-						following,
-						followers,
-						description,
+						name, username, content, date, src, initials, image, following, followers, description,
 					},
-					i,
+					i
 				) => (
 					<li key={`username-${i}`} className="p-4">
 						<Post
@@ -73,10 +78,12 @@ const Feed = () => (
 							{image}
 						</Post>
 					</li>
-				),
+				)
 			)}
 		</ul>
-	</Suspense>
+	</Suspense><BuilderComponent
+			content={props.content}
+			model="sections" /></>
 );
 
 export default Feed;
