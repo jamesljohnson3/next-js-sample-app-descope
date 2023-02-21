@@ -8,9 +8,7 @@ import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
 import {init} from 'commandbar';
-if (typeof window !== "undefined") {
-  init("c2025881");
-}
+init('c2025881');
 
 import {
 	createTheme,
