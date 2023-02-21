@@ -59,7 +59,7 @@ export default function Page({ page }: InferGetStaticPropsType<typeof getStaticP
              <Head>
      
       </Head><SignedIn>
-      <BuilderComponent model="page" content={page} /></SignedIn>
+      <BuilderComponent model="page" content={page} /></SignedIn> <SignedOut> <RedirectToSignUp></RedirectToSignUp></SignedOut>
     </>
   );
 }
