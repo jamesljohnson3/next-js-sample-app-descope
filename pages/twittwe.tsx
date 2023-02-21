@@ -6,6 +6,7 @@ import PanelItem from '../components/ui/PanelItem';
 import Panel from '../components/ui/Panel';
 import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
+import Tabs from '../components/ui/radix/Tabs';
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 				<Nav />
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
+					<Tabs />
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">
