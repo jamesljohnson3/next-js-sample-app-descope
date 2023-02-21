@@ -46,9 +46,9 @@ export default function App({ Component, pageProps }: AppProps) {
     > 
     <SignedIn>
     {publicPages.includes(pathname) ? (
-            <Component {...pageProps} />
+            <RedirectToSignUp /> 
           ) : (
-            <RedirectToSignUp />
+            <Component {...pageProps} />
           )}</SignedIn>
 
     </AuthProvider>
