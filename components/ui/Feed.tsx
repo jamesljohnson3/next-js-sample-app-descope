@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Post from '../../components/ui/Post';
 import { Suspense } from 'react';
-import { Image } from '@nextui-org/react';
+import Image from 'next/image';
 import { ReactNode } from 'react';
 import * as React from "react"
 import {
@@ -51,8 +51,7 @@ const items: PostItem[] = [
 		image: (
 			<div className="w-full relative -z-10 h-80 mb-4">
 				<Image
-					src="https://res.cloudinary.com/unlimitednow/image/upload/v1670607966/site/aa7d04145690529.62a27e3b4c57f_fhaxae.jpg"
-				/>
+					src="https://res.cloudinary.com/unlimitednow/image/upload/v1670607966/site/aa7d04145690529.62a27e3b4c57f_fhaxae.jpg" alt={''}				/>
 			</div>
 		),
 	}
