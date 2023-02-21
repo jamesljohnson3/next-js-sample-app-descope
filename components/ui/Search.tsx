@@ -1,12 +1,4 @@
 import { HiMagnifyingGlass } from 'react-icons/hi2';
-import {init} from 'commandbar';
-if (typeof window !== "undefined") {
-  init("c2025881");
-}
-
-const loggedInUserId = "user123"; // example
-window.CommandBar.boot(loggedInUserId), { formFactor: { type: 'inline', rootElement: 'commandbar-inline-root' } };
-window.CommandBar.setFormFactor({ type: 'inline', rootElement: 'commandbar-inline-root' });
 
 const Search = () => (
 	<div className="sticky top-0 bg-white py-2 mb-3">

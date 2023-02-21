@@ -7,6 +7,11 @@ import Panel from '../components/ui/Panel';
 import PanelItemTrends from '../components/ui/PanelItemTrends';
 import Footer from '../components/ui/Footer';
 import Tabs from '../components/ui/radix/Tabs';
+import {init} from 'commandbar';
+if (typeof window !== "undefined") {
+  init("c2025881");
+}
+
 import {
 	createTheme,
 	NextUIProvider } from "@nextui-org/react";
@@ -18,8 +23,13 @@ import {
 	}
   });
   
-  
+
+
 export default function Home() {
+	const loggedInUserId = "user123"; // example
+window.CommandBar.boot(loggedInUserId), { formFactor: { type: 'inline', rootElement: 'commandbar-inline-root' } };
+window.CommandBar.setFormFactor({ type: 'inline', rootElement: 'commandbar-inline-root' });
+
 	return (
 		<>
 			<Head>
