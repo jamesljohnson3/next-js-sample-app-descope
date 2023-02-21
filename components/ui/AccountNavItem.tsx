@@ -1,20 +1,8 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import Avatar from '../ui/radix/Avatar';
 import Link from 'next/link';
-import { getUserDisplayName, validateRequestSession } from "../../utils/auth";
-import { useAuth } from "@descope/react-sdk";
 
 import { HiOutlineEllipsisHorizontal } from 'react-icons/hi2';
-import { useEffect } from 'react';
 
-const { authenticated, user, logout, me } = useAuth();
-useEffect(() => {
-    if (authenticated) {
-      // get current user (me) so they can later be used to display user information
-      // this may be simplified later by the SDK
-      me();
-    }
-  }, [authenticated]);
 const AccountNavItem = () => (
 	<div className="flex flex-1 items-center gap-x-2 px-4 py-8 ">
 		<div className="flex items-center gap-x-3 flex-1">
@@ -25,16 +13,8 @@ const AccountNavItem = () => (
 					initials="RQ"
 				/>
 			</div>
-			<div className="hidden xl:flex flex-col "> 
-				<p className="text-base font-semibold">{authenticated && (
-          <>
-         
-             {getUserDisplayName(user)}
-           
-      
-          
-          </>
-        )}</p>
+			<div className="hidden xl:flex flex-col ">
+				<p className="text-base font-semibold">Roy Quilor</p>
 				<p className="text-sm text-slate-600 font-medium">@RoyQuilor</p>
 			</div>
 		</div>
