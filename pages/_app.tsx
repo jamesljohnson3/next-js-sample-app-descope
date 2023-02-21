@@ -44,12 +44,12 @@ export default function App({ Component, pageProps }: AppProps) {
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
     > 
-    <SignedIn>
+    <SignedOut>
     {publicPages.includes(pathname) ? (
             <RedirectToSignUp /> 
           ) : (
             <Component {...pageProps} />
-          )}</SignedIn>
+          )}</SignedOut>
 
     </AuthProvider>
     </ClerkProvider>
