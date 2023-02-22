@@ -13,6 +13,7 @@ import { Switch, useTheme } from '@nextui-org/react'
 import { builder, Builder, withChildren } from '@builder.io/react';
 import { useRouter } from "next/router";
 import { Layout } from '../components/layout'
+import { theme as glassTheme } from '@saas-ui/theme-glass'
 
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
@@ -41,8 +42,9 @@ export const theme = extendTheme(
   {
     // your overrides
   },
-  baseTheme
-)
+
+  glassTheme,
+  baseTheme)
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const { announcement, header, footer } = pageProps
