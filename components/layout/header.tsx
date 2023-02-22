@@ -26,39 +26,6 @@ export const Header = (props: HeaderProps) => {
   const bg = useColorModeValue('whiteAlpha.700', 'rgba(29, 32, 37, 0.7)')
 
   return (
-    <Box
-      ref={ref}
-      as="header"
-      top="0"
-      w="full"
-      position="fixed"
-      backdropFilter="blur(5px)"
-      zIndex="sticky"
-      borderColor="whiteAlpha.100"
-      transitionProperty="common"
-      transitionDuration="normal"
-      bg={y > height ? bg : ''}
-      boxShadow={y > height ? 'md' : ''}
-      borderBottomWidth={y > height ? '1px' : ''}
-      {...props}
-    >
-      <Container maxW="container.2xl" px="8" py="4">
-        <Flex width="full" align="center" justify="space-between">
-          <Logo
-            onClick={(e) => {
-              if (window.location.pathname === '/') {
-                e.preventDefault()
-
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth',
-                })
-              }
-            }}
-          />
-          <Navigation />
-        </Flex>
-      </Container>
-    </Box>
+    <></>
   )
 }
