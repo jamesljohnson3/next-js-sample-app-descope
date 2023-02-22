@@ -81,7 +81,7 @@ const Nav = () => (
 				<DialogDemo />
 			</div>
 			<div>
-				<AccountNavItem />
+		<a href="https://space.unlimitpotential.com/">	Open Bid</a>
 			</div>
 		</div>
 	</header>
