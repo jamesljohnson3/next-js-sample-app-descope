@@ -21,6 +21,9 @@ const TweetFormStyles = cva('flex flex-1 gap-x-2', {
 function TweetForm({ width }: { width: 'default' | 'full' }) {
   const { user } = useUser();
 const username = user?.username ?? '';
+const profileImageUrl = user?.profileImageUrl ?? '';
+
+const fullName = user?.fullName ?? '';
   
   const [input, setInput] = useState<string>('');
   const router = useRouter();
@@ -40,7 +43,7 @@ const username = user?.username ?? '';
   
   return (
     <div className={TweetFormStyles({ width })}>
-      <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" initials="RQ" />
+      <Avatar src={profileImageUrl} alt={fullName} initials="RQ" />
       <form className="flex flex-col flex-1 gap-y-4">
         <div className="flex flex-1">
           <input
