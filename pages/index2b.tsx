@@ -53,13 +53,20 @@ export default function Home (props: any) {
   }, [authenticated]);
 
   const handleSubmit = async (event: SyntheticEvent) => {
-    event.preventDefault();
-
-    const response = await fetch("/api/form", { method: "POST" });
-
-    const result = await response.json();
-    alert(`Result: ${result.data}`);
+	event.preventDefault();
+  
+	const response = await fetch("/api/form", {
+	  method: "POST",
+	  body: JSON.stringify({ user }),
+	  headers: {
+		"Content-Type": "application/json",
+	  },
+	});
+  
+	const result = await response.json();
+	alert(`Result: ${result.success ? "Success" : "Error"}`);
   };
+  
 
   return (
     <div className={styles.container}>
