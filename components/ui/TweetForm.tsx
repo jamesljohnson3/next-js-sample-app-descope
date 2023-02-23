@@ -83,7 +83,7 @@ const fullName = user?.fullName ?? '';
               onClick={handleBoostClick}
               className="inline-flex items-center font-bold rounded-full border px-4 py-2 text-sm bg-slate-900 text-white border-transparent disabled:opacity-50 transition-opacity duration-200"
             >
-              Boost
+              Do more
             </button>
           </div>
         </div>
