@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import * as React from 'react'
 import type { NextPage } from 'next'
 import Image from 'next/image'
@@ -64,13 +65,19 @@ import {
 } from '../components/highlights'
 
 import { Layout } from '../components/layout'
+import type { AppProps } from 'next/app'
 
 
-const Home: NextPage = () => {
+const Home: NextPage = ({ Component, pageProps }: AppProps) => {
+  const { announcement, header, footer } = pageProps
+
   return (
     <Box>
-     <Layout>
-      <Box>
+ <Layout
+          announcementProps={announcement}
+          headerProps={header}
+          footerProps={footer}
+        >      <Box>
         <HeroSection />
 
         <HighlightsSection />
