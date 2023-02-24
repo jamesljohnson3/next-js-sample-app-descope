@@ -78,7 +78,16 @@ export default function Home (props: any) {
 			</Head>   
 <NextUIProvider theme={lightTheme}>
 			<div className="min-h-screen flex max-w-7xl mx-auto xl:grid xl:grid-cols-10 gap-5">
-				<Nav />
+				{!authenticated && (
+          <Link href="/login" passHref>
+            <button>Login</button>
+          </Link>
+        )}
+        {authenticated && (
+          <>
+          <Nav />
+          </>
+        )}
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
 					<SignedIn><Tabs /> </SignedIn>       <SignedOut>   <SignIn/> </SignedOut>   
