@@ -1,7 +1,34 @@
 import React from "react";
-import Logo from "../../assets/svg/Logo.svg";
-import ArrowLeft from "../../assets/svg/ArrowLeft.svg";
-
+import {
+  AlertTriangle,
+  ArrowRight,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Circle,
+  ClipboardCheck,
+  Copy,
+  CreditCard,
+  File,
+  FileText,
+  HelpCircle,
+  Image,
+  ArrowLeft,
+  Laptop,
+  Loader2,
+  LucideProps,
+  Moon,
+  MoreVertical,
+  Pizza,
+  Plus,
+  Settings,
+  SunMedium,
+  Trash,
+  Twitter,
+  User,
+  X,
+  type Icon as LucideIcon,
+} from "lucide-react"
 import styles from "./SignInForm.module.css";
 import {Notice} from "../common/Notice";
 import {Title} from "../common/Title";
@@ -89,7 +116,7 @@ export function SignInForm() {
         <BackButton onClick={() => setFormStep(SignInFormSteps.EMAIL)} />
       )}
       <div>
-        <Logo fill={"var(--color-primary)"} />
+        Logo
       </div>
       <Title
         content={"Sign in to your account"}

@@ -12,6 +12,7 @@ import {
   FileText,
   HelpCircle,
   Image,
+  ArrowLeft,
   Laptop,
   Loader2,
   LucideProps,
