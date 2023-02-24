@@ -68,8 +68,8 @@ import { Layout } from '../components/layout'
 import type { AppProps } from 'next/app'
 
 
-const Home: NextPage = ({ Component, pageProps }: AppProps) => {
-  const { announcement, header, footer } = pageProps
+function MyApp({ Component, pageProps }: AppProps) {
+    const { announcement, header, footer } = pageProps
 
   return (
     <Box>
@@ -527,7 +527,7 @@ const FaqSection = () => {
   return <Faq {...faq} />
 }
 
-export default Home
+export default MyApp
 
 export async function getStaticProps() {
   return {
