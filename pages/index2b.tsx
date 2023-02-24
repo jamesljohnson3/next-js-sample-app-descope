@@ -10,6 +10,7 @@ import Tabs from '../components/ui/radix/Tabs';
 import { ClerkProvider } from "@clerk/clerk-react";
 import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/nextjs";
+import {SignInForm} from "../components/SignInForm";
 
 
 import { useAuth } from "@descope/react-sdk";
@@ -96,7 +97,8 @@ export default function Home (props: any) {
         )}
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /> </SignedIn>       <SignedOut>   <SignIn/> </SignedOut>   
+					<SignedIn><Tabs /> </SignedIn>       <SignedOut>          <SignInForm />
+</SignedOut>   
 
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
