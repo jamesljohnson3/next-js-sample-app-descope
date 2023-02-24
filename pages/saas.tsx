@@ -46,6 +46,8 @@ import {
 import { Features } from '../components/features'
 import { Faq } from '../components/faq'
 import { Pricing } from '../components/pricing/pricing'
+import { SyntheticEvent, useCallback, useEffect } from "react";
+import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 import { useAuth } from "@descope/react-sdk";
 
 import { ButtonLink } from '../components/button-link/button-link'
@@ -60,6 +62,8 @@ import {
   HighlightsItem,
   HighlightsTestimonialItem,
 } from '../components/highlights'
+
+
 
 const Home: NextPage = () => {
   return (
@@ -83,9 +87,60 @@ const Home: NextPage = () => {
 }
 
 const HeroSection: React.FC = () => {
+
+  const { authenticated, user, logout, me } = useAuth();
+  const onLogout = useCallback(() => {
+    // Delete Descope refresh token cookie.
+    // This is only required if Descope tokens are NOT managed in cookies.
+    document.cookie = "DSR=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+    logout();
+  }, [logout]);
+
+  useEffect(() => {
+    if (authenticated) {
+      // get current user (me) so they can later be used to display user information
+      // this may be simplified later by the SDK
+      me();
+    }
+  }, [authenticated]);
+
+  const handleSubmit = async (event: SyntheticEvent) => {
+    event.preventDefault();
+  
+    const response = await fetch("/api/form", {
+      method: "POST",
+      body: JSON.stringify({ user }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  
+    const result = await response.json();
+    alert(`Result: ${result.success ? "Success" : "Error"}`);
+  };
+  
+
   return (
     <Box position="relative" overflow="hidden">
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
+      {!authenticated && (
+          <Link href="/login">
+            <button>Login</button>
+          </Link>
+        )}
+        {authenticated && (
+          <>
+            <div >
+              Hello {getUserDisplayName(user)}
+            </div>
+            <button onClick={onLogout}>Logout</button>
+            <div >Submit API Form</div>
+            <form onSubmit={handleSubmit}>
+              <button type="submit">Submit</button>
+            </form>
+          </>
+        )}
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
             id="home"
