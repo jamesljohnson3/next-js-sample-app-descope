@@ -5,10 +5,14 @@ import { customerHasFeature } from "use-stripe-subscription";
 import { findOrCreateCustomerId } from "../../utils/findOrCreateCustomerId";
 
 const handler = (async (req: RequestLike, res: { status: (arg0: number) => { (): any; new(): any; send: { (arg0: string): void; new(): any; }; }; send: (arg0: string) => void; }) => {
-  // Determine the Stripe Customer ID for this request
-  // use-stripe-subscription doesn't care how you implement this...
-  // you can make it specific to the user, or specific to their organization
-  // but we implemented it here with Clerk for user management
+  try {
+    // Your code here
+    res.send("Success!"); // Send a success message in the response
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Something went wrong!"); // Send an error message in the response
+  }
+  
   const { userId } = getAuth(req);
   if(!userId){
     res.status(401).send("Not logged in");
