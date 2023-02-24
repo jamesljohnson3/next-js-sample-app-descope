@@ -160,9 +160,9 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
+                Unlimited Now a <Em>Next-Gen Tool</Em>
+                <Br /> For Sellers, Small Business Owners <Br />{' '}
+                and Creators
               </FallInPlace>
             }
           >
@@ -172,12 +172,11 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
-                </ButtonLink>
+                <ButtonLink colorScheme="primary" size="lg" href="https://accounts.unlimitpotential.com/">
+Manage Site          </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="https://connect.unlimitpotential.com/"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -192,7 +191,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  View demo
+                  View Feed
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
