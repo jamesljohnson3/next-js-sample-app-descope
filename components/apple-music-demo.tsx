@@ -26,7 +26,7 @@ import {
   UserPlus,
   Users,
 } from "lucide-react"
-
+import Link from "next/link";
 import { cn } from "../lib/utils"
 import { AspectRatio } from "../components/ui/aspect-ratio"
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar"
@@ -85,6 +85,9 @@ import {
 import { ScrollArea, ScrollBar } from "../components/ui/scroll-area"
 import { Separator } from "../components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
+import { SyntheticEvent, useCallback, useEffect } from "react";
+import { getUserDisplayName, validateRequestSession } from "../utils/auth";
+import { useAuth } from "@descope/react-sdk";
 
 const playlists = [
   "Recently Added",
@@ -180,6 +183,39 @@ const madeForYouAlbums: Album[] = [
 ]
 
 export function AppleMusicDemo() {
+  const { authenticated, user, logout, me } = useAuth();
+  const onLogout = useCallback(() => {
+    // Delete Descope refresh token cookie.
+    // This is only required if Descope tokens are NOT managed in cookies.
+    document.cookie = "DSR=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+    logout();
+  }, [logout]);
+
+  useEffect(() => {
+    if (authenticated) {
+      // get current user (me) so they can later be used to display user information
+      // this may be simplified later by the SDK
+      me();
+    }
+  }, [authenticated]);
+
+  const handleSubmit = async (event: SyntheticEvent) => {
+    event.preventDefault();
+  
+    const response = await fetch("/api/form", {
+      method: "POST",
+      body: JSON.stringify({ user }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  
+    const result = await response.json();
+    alert(`Result: ${result.success ? "Success" : "Error"}`);
+  };
+  
+
   return (
     <div className="overflow-hidden rounded-md border border-slate-200 bg-gradient-to-b from-rose-500 to-indigo-700 shadow-2xl dark:border-slate-800">
       <Menubar className="rounded-none border-b border-none dark:bg-slate-900">
@@ -561,6 +597,23 @@ export function AppleMusicDemo() {
                         </p>
                       </div>
                     </div>
+                    {!authenticated && (
+          <Link href="/login" passHref>
+            <button>Login</button>
+          </Link>
+        )}
+        {authenticated && (
+          <>
+            <div>
+              Hello {getUserDisplayName(user)}
+            </div>
+            <button onClick={onLogout}>Logout</button>
+            <div >Submit API Form</div>
+            <form onSubmit={handleSubmit}>
+              <button type="submit">Submit</button>
+            </form>
+          </>
+        )}
                     <Separator className="my-4" />
                     <div className="relative">
                       <DemoIndicator className="right-auto left-24 top-32 z-30" />

@@ -46,6 +46,7 @@ import {
 import { Features } from '../components/features'
 import { Faq } from '../components/faq'
 import { Pricing } from '../components/pricing/pricing'
+import { useAuth } from "@descope/react-sdk";
 
 import { ButtonLink } from '../components/button-link/button-link'
 import { Testimonial, Testimonials } from '../components/testimonials'
