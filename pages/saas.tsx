@@ -63,12 +63,13 @@ import {
   HighlightsTestimonialItem,
 } from '../components/highlights'
 
+import { Layout } from '../components/layout'
 
 
 const Home: NextPage = () => {
   return (
     <Box>
-     
+     <Layout>
       <Box>
         <HeroSection />
 
@@ -81,7 +82,7 @@ const Home: NextPage = () => {
         <PricingSection />
 
         <FaqSection />
-      </Box>
+      </Box></Layout>
     </Box>
   )
 }
