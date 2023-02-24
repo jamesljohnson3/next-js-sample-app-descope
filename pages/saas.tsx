@@ -168,7 +168,6 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
