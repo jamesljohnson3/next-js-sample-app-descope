@@ -117,8 +117,14 @@ const HeroSection: React.FC = () => {
     });
   
     const result = await response.json();
-    alert(`Result: ${result.success ? "Success" : "Error"}`);
+    const message = result.success ? "Success" : "Error";
+    alert(`Result: ${message}`);
+    
+    if (result.success) {
+      window.location.href = "https://console.unlimitpotential.com/sign-in";
+    }
   };
+  
   
 
   return (
