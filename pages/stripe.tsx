@@ -15,7 +15,7 @@ export default function Home() {
     return null;
   }
 
-  const alertResponse = async (path) => {
+  const alertResponse = async (path: RequestInfo | URL) => {
     const res = await fetch(path);
     const body = await res.text();
     alert(`Path requested: ${path}\nResponse: ${body}`);
@@ -28,25 +28,7 @@ export default function Home() {
       </Head>
       <h1>use-stripe-subscription demo</h1>
       <h2>Plans</h2>
-      {products.map(({ product, prices }) => (
-        <div key={product.id}>
-          <h4>{product.name}</h4>
-          <Gate unsubscribed>
-            {prices.map((price) => (
-              <button
-                key={price.id}
-                onClick={() => redirectToCheckout({ price: price.id })}
-              >
-                Purchase {price.unit_amount} {price.currency}
-              </button>
-            ))}
-          </Gate>
-          <Gate product={product}>Active plan</Gate>
-          <Gate product={product} negate>
-            
-          </Gate>
-        </div>
-      ))}
+      
       <h2>Features</h2>
       <div>
         <Gate feature="feature1">Plan has &quot;feature1&quot;</Gate>
