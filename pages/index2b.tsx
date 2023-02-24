@@ -141,9 +141,9 @@ export default function Home (props: any) {
               Hello {getUserDisplayName(user)}
             </div>
             <button onClick={onLogout}>Logout</button>
-            <div className={styles.description}>Submit API Form</div>
+            <div className={styles.description}>Go Pro Now </div><br>free for a limited time only</br>
             <form onSubmit={handleSubmit}>
-              <button type="submit">Submit</button>
+              <button type="submit">Activate Pro Account</button>
             </form>
           </>
         )}
