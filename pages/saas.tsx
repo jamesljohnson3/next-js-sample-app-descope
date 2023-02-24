@@ -1,4 +1,3 @@
-/* eslint-disable react/no-children-prop */
 import * as React from 'react'
 import type { NextPage } from 'next'
 import Image from 'next/image'
@@ -64,20 +63,13 @@ import {
   HighlightsTestimonialItem,
 } from '../components/highlights'
 
-import { Layout } from '../components/layout'
-import type { AppProps } from 'next/app'
 
 
-function MyApp({ Component, pageProps }: AppProps) {
-    const { announcement, header, footer } = pageProps
-
+const Home: NextPage = () => {
   return (
     <Box>
- <Layout
-          announcementProps={announcement}
-          headerProps={header}
-          footerProps={footer}
-        >      <Box>
+     
+      <Box>
         <HeroSection />
 
         <HighlightsSection />
@@ -89,7 +81,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <PricingSection />
 
         <FaqSection />
-      </Box></Layout>
+      </Box>
     </Box>
   )
 }
@@ -527,7 +519,7 @@ const FaqSection = () => {
   return <Faq {...faq} />
 }
 
-export default MyApp
+export default Home
 
 export async function getStaticProps() {
   return {
