@@ -1,7 +1,6 @@
 import styles from "./Notice.module.css";
 import Link from "next/link";
 
-import Exclamation from "../../assets/svg/Exclamation.svg";
 
 export function Notice({
   content,
@@ -14,7 +13,6 @@ export function Notice({
 }): JSX.Element {
   return (
     <div className={styles.notice}>
-      <Exclamation />
       <span>{content}</span>
       <Link href={actionLink}>
         <a>{actionMessage}</a>
