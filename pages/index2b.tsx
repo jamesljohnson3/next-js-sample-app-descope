@@ -11,6 +11,7 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/nextjs";
 import {SignInForm} from "../components/SignInForm";
+import { Gate, useSubscription } from "use-stripe-subscription";
 
 
 import { useAuth } from "@descope/react-sdk";
@@ -33,7 +34,11 @@ import {
   });
   
   const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
-
+  const alertResponse = async (path: RequestInfo | URL) => {
+    const res = await fetch(path);
+    const body = await res.text();
+    alert(`Path requested: ${path}\nResponse: ${body}`);
+  };
 export default function Home (props: any) {
   
   const { authenticated, user, logout, me } = useAuth();
@@ -95,7 +100,15 @@ export default function Home (props: any) {
 				</main>
 				<aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
 					<div className="sticky top-0">
-						<Search /> 
+						<Search /> <div>
+        <Gate feature="feature1">Plan has &quot;feature1&quot;</Gate>
+        <Gate feature="feature1" negate>
+          Plan does not have &quot;feature1&quot;
+        </Gate>{" "}
+        <button onClick={() => alertResponse("/api/tryFeature1")}>
+          Test the backend!
+        </button>
+      </div>
 						<Panel title="What's happening" href="/">
 						<Greeting />
 							<PanelItemTrends
