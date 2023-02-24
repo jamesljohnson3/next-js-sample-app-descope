@@ -14,6 +14,7 @@ import { builder, Builder, withChildren } from '@builder.io/react';
 import { useRouter } from "next/router";
 import { Layout } from '../components/layout'
 import { theme as glassTheme } from '@saas-ui/theme-glass'
+import { SubscriptionProvider } from "use-stripe-subscription";
 
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
@@ -58,6 +59,9 @@ export default function App({ Component, pageProps }: AppProps) {
     }}
   >
   <NextUIProvider>
+  <SubscriptionProvider
+      stripePublishableKey='pk_live_51JAmIGBrSm8eSKa6hU793rP2rh9ELoTELaxp0lZDHVzuVKvXMGya86NF7VtUyVtjH5VboYcxVH3jEsFDcp0iDln700WeOC9jix'
+    >
     <ClerkProvider {...pageProps} >
 
     <AuthProvider
@@ -74,7 +78,8 @@ export default function App({ Component, pageProps }: AppProps) {
    </SaasProvider>
 
     </AuthProvider>
-    </ClerkProvider>
+    </ClerkProvider>    </SubscriptionProvider>
+
   </NextUIProvider>
 </NextThemesProvider>
 
