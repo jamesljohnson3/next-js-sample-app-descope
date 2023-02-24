@@ -16,7 +16,7 @@ export const findOrCreateCustomerId = async ({
       name: user.firstName + " " + user.lastName,
       email: user.emailAddresses.find(
         (x) => x.id === user.primaryEmailAddressId
-      ).emailAddress,
+        )?.emailAddress,
       metadata: {
         clerkUserId: user.id,
       },
