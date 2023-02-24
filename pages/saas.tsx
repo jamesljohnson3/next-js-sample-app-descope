@@ -147,7 +147,7 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="https://res.cloudinary.com/unlimitednow/image/upload/v1677207023/Screen_Shot_2023-02-23_at_9.43.47_PM_gjbu32.png"
                   layout="fixed"
                   width={1200}
                   height={762}
