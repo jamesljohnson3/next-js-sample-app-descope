@@ -610,7 +610,7 @@ export function AppleMusicDemo() {
             <button onClick={onLogout}>Logout</button>
             <div >Submit API Form</div>
             <form onSubmit={handleSubmit}>
-              <button type="submit">Submit</button>
+              <button type="submit">Upgrade</button>
             </form>
           </>
         )}

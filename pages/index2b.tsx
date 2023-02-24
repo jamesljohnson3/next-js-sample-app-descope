@@ -150,7 +150,7 @@ export default function Home (props: any) {
               Hello {getUserDisplayName(user)}
             </div>
             <button onClick={onLogout}>Logout</button>
-            <div className={styles.description}>Go Pro Now </div><br>free for a limited time only</br>
+            <div className={styles.description}>Go Pro Now </div>free for a limited time only
             <form onSubmit={handleSubmit}>
               <button type="submit">Activate Pro Account</button>
             </form>
