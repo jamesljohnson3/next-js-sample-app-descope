@@ -6,14 +6,38 @@ import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
 import { useState } from 'react';
 
 export default function MyComponent(props: any) {
-    const [browserFingerprint, setBrowserFingerPrint] = useState("");
-    const getBrowserFingerPrint = () => {
-      getCurrentBrowserFingerPrint().then((res) => {
-        setBrowserFingerPrint(res)
-      }).catch((err) => {
-        setBrowserFingerPrint(JSON.stringify(err))
-      })
-   }
+  const [email, setEmail] = useState('');
+  const [visitorId, setVisitorId] = useState('');
+  const [browserFingerprint, setBrowserFingerprint] = useState('');
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleVisitorIdChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setVisitorId(event.target.value);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    console.log({
+      email: data.get('email'),
+      visitorId: data.get('visitorId'),
+      browserFingerprint: browserFingerprint
+    });
+    // use data to send form data to server
+  };
+
+  const getBrowserFingerPrint = () => {
+    getCurrentBrowserFingerPrint().then((res) => {
+      setBrowserFingerprint(res);
+    }).catch((err) => {
+      setBrowserFingerprint(JSON.stringify(err));
+    });
+  };
+
   return (
     <>
       <div className="div">
@@ -226,75 +250,30 @@ export default function MyComponent(props: any) {
                                   </section>
                                 </div>
                                 <div className="div-27">
-                                <form
-  action="https://connect.unlimitednow.site"
-  method="Post"
-  className="form-2"
-  onSubmit={(event) => {
-    event.preventDefault();
-    const fingerprint = getBrowserFingerPrint();
-    document.getElementById('visitor_id').value = fingerprint;
-    event.target.submit();
-  }}
->
-  <div className="div-28">
-    <div className="div-29">
-      <div className="div-30">
-        <div className="div-31">
-          <div className="div-32">
-            <input
-              type="email"
-              aria-required="true"
-              placeholder="   Your email"
-              aria-invalid="false"
-              name="input"
-              className="input-3"
-            />
-            <input
-              type="hidden"
-              name="visitor_id"
-              value=""
-              placeholder="Email"
-              id="visitor_id"
-              className="input-4"
-            />
-            <input
-              type="hidden"
-              aria-required="true"
-              aria-invalid="false"
-              name="input2"
-              value="unlimitednow"
-              className="input-5"
-            />
+                                <form onSubmit={handleSubmit} action="https://connect.unlimitednow.site" method="post" className="form-2">
+      <div className="div-28">
+        <div className="div-29">
+          <div className="div-30">
+            <div className="div-31">
+              <div className="div-32">
+                <input type="email" aria-required="true" placeholder="   Your email" aria-invalid="false" name="email" className="input-3" value={email} onChange={handleEmailChange} />
+                <input type="text" aria-required="true" placeholder="Visitor ID" aria-invalid="false" name="visitorId" className="input-4" value={visitorId} onChange={handleVisitorIdChange} />
+                <input type="hidden" aria-required="true" aria-invalid="false" name="input2" value="unlimitednow" className="input-5" />
+              </div>
+            </div>
           </div>
+          <button type="button" onClick={getBrowserFingerPrint} className="button-6">Generate FingerPrint</button>
+          <button type="submit" property="" data-inputbox=".t-input-group" className="button-4">
+            <span data-automationid="splitbuttonprimary" className="span-7">
+              <span className="span-8">Join the waitlist</span>
+            </span>
+          </button>
+        </div>
+        <div className="div-33">
+          <p>We'll email you instructions for how to log in once we've given you access to Unlimited Now.</p>
         </div>
       </div>
-      <button
-        type="submit"
-        property=""
-        data-inputbox=".t-input-group"
-        className="button-4"
-      >
-        <span
-          data-automationid="splitbuttonprimary"
-          className="span-7"
-        >
-          <span className="span-8">
-            Join the waitlist
-          </span>
-        </span>
-      </button>
-    </div>
-    <div className="div-33">
-      <p>
-        We'll email you instructions for how
-        to log in once we've given you access
-        to Unlimited Now.
-      </p>
-    </div>
-  </div>
-</form>
-
+    </form>
                                 </div>
                                 <div
                                   className="div-34"
@@ -3324,3 +3303,4 @@ export default function MyComponent(props: any) {
     </>
   );
 }
+
