@@ -171,69 +171,30 @@ export default function MyComponent(props: any) {
                             <div className="div-15">
                               <div className="div-16">
                                 <div className="div-17">
-                                  <form
-                                    action="https://connect.unlimitednow.site"
-                                    encType="multipart/form-data"
-                                    method="post"
-                                    className="form"
-                                  >
-                                    <div className="div-18">
-                                      <div className="div-19">
-                                        <div className="div-20">
-                                          <div className="div-21">
-                                            <div className="div-22">
-                                              <input
-                                                type="email"
-                                                aria-required="true"
-                                                placeholder="   Your email"
-                                                aria-invalid="false"
-                                                name="input"
-                                                className="input"
-                                              />
-                                              <input
-                                                type="hidden"
-                                                name="visitor_id"
-                                                value="visitor_id"
-                                                placeholder="Email"
-                                                id="visitor_id"
-                                                className="input-2"
-                                              />
-                                              <input
-                                                type="hidden"
-                                                aria-required="true"
-                                                placeholder="   Your email"
-                                                aria-invalid="false"
-                                                name="input2"
-                                                value="unlimitednow"
-                                                className="input"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <button
-                                          type="submit"
-                                          data-inputbox=".t-input-group"
-                                          className="button-3"
-                                        >
-                                          <span
-                                            data-automationid="splitbuttonprimary"
-                                            className="span-5"
-                                          >
-                                            <span className="span-6">
-                                              Join the waitlist
-                                            </span>
-                                          </span>
-                                        </button>
-                                      </div>
-                                      <div className="div-23">
-                                        <p>
-                                          We'll email you instructions for how
-                                          to log in once we've given you access
-                                          to Unlimited Now.
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </form>
+                                <form onSubmit={handleSubmit} action="https://connect.unlimitednow.site" method="post" className="form-2">
+      <div className="div-28">
+        <div className="div-29">
+          <div className="div-30">
+            <div className="div-31">
+              <div className="div-32">
+                <input type="email" aria-required="true" placeholder="   Your email" aria-invalid="false" name="email" className="input-3" value={email} onChange={handleEmailChange} />
+                <input type="text" aria-required="true" placeholder="Visitor ID" aria-invalid="false" name="visitorId" className="input-4" value={visitorId} onChange={handleVisitorIdChange} />
+                <input type="hidden" aria-required="true" aria-invalid="false" name="input2" value="unlimitednow" className="input-5" />
+              </div>
+            </div>
+          </div>
+          <button type="button" onClick={getBrowserFingerPrint} className="button-6">Generate FingerPrint</button>
+          <button type="submit" property="" data-inputbox=".t-input-group" className="button-4">
+            <span data-automationid="splitbuttonprimary" className="span-7">
+              <span className="span-8">Join the waitlist</span>
+            </span>
+          </button>
+        </div>
+        <div className="div-33">
+          <p>We'll email you instructions for how to log in once we've given you access to Unlimited Now.</p>
+        </div>
+      </div>
+    </form>
                                 </div>
                                 <div
                                   className="div-24"
