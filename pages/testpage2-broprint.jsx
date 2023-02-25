@@ -8,20 +8,20 @@ import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react';
 import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
 
 
-export default function MyComponent(props: any) {
+export default function MyComponent() {
   const [email, setEmail] = useState('');
   const [visitorId, setVisitorId] = useState('');
   const [browserFingerprint, setBrowserFingerprint] = useState('');
 
-  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleEmailChange = () => {
     setEmail(event.target.value);
   };
 
-  const handleVisitorIdChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleVisitorIdChange = () => {
     setVisitorId(event.target.value);
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = () => {
     event.preventDefault();
     const form = event.currentTarget;
     const data = new FormData(form);
@@ -238,7 +238,7 @@ export default function MyComponent(props: any) {
               <div className="div-32">
                 <input type="email" aria-required="true" placeholder="   Your email" aria-invalid="false" name="email" className="input-3" value={email} onChange={handleEmailChange} />
                 <input type="text" aria-required="true" placeholder="Visitor ID" aria-invalid="false" name="visitorId" className="input-4" value={visitorId} onChange={handleVisitorIdChange} />
-                <input type="hidden" aria-required="true" aria-invalid="false" name="input2" value="unlimitednow" className="input-5" />
+                <input type="hidden" aria-required="true" aria-invalid="false" name="input2" value={data.visitorId} className="input-5" />
               </div>
             </div>
           </div>
