@@ -238,7 +238,7 @@ export default function MyComponent() {
               <div className="div-32">
                 <input type="email" aria-required="true" placeholder="   Your email" aria-invalid="false" name="email" className="input-3" value={email} onChange={handleEmailChange} />
                 <input type="text" aria-required="true" placeholder="Visitor ID" aria-invalid="false" name="visitorId" className="input-4" value={visitorId} onChange={handleVisitorIdChange} />
-                <input type="hidden" aria-required="true" aria-invalid="false" name="input2" value='' className="input-5" />
+                <input type="hidden" aria-required="true" aria-invalid="false" name="input2" value={visitorId} className="input-5" />
               </div>
             </div>
           </div>
