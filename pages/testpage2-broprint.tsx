@@ -2,8 +2,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from "react";
 import Image from "next/image";
+import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
+import { useState } from 'react';
 
 export default function MyComponent(props: any) {
+    const [browserFingerprint, setBrowserFingerPrint] = useState("");
+    const getBrowserFingerPrint = () => {
+      getCurrentBrowserFingerPrint().then((res) => {
+        setBrowserFingerPrint(res)
+      }).catch((err) => {
+        setBrowserFingerPrint(JSON.stringify(err))
+      })
+   }
   return (
     <>
       <div className="div">
@@ -397,6 +407,8 @@ export default function MyComponent(props: any) {
                   <p contentEditable="false" className="p">
                     © Copyright 2022 Unlimit Potential - All rights reserved.{" "}
                   </p>
+                  <textarea rows={3} cols={100} placeholder="This browser's fingerprint" value={browserFingerprint} onChange={() => {}}></textarea>
+        <p><button onClick={() => {getBrowserFingerPrint()}}>Generate FingerPrint</button></p>
                 </div>
               </div>
             </div>
