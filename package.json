@@ -17,6 +17,7 @@
     "@descope/react-sdk": "0.0.52-alpha.24",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fingerprintjs/fingerprintjs-pro-react": "^2.3.0",
     "@mantine/carousel": "^5.10.4",
     "@mantine/core": "^5.10.4",
     "@mantine/dates": "^5.10.4",

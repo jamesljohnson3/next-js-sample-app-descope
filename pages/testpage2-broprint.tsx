@@ -4,6 +4,9 @@ import * as React from "react";
 import Image from "next/image";
 import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
 import { useState } from 'react';
+import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react';
+import { useVisitorData } from '@fingerprintjs/fingerprintjs-pro-react'
+
 
 export default function MyComponent(props: any) {
   const [email, setEmail] = useState('');
@@ -38,8 +41,24 @@ export default function MyComponent(props: any) {
     });
   };
 
+  const {
+    isLoading,
+    error,
+    data,
+  } = useVisitorData();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>An error occurred: {error.message}</div>;}
+
   return (
-    <>
+    <><FpjsProvider
+    loadOptions={{
+      apiKey: "L97FAMI8f2OvG1SdVJjl"
+    }}
+  >
       <div className="div">
         <div className="box">
           <div
@@ -361,7 +380,7 @@ export default function MyComponent(props: any) {
             </div>
           </div>
         </div>
-      </div>
+      </div></FpjsProvider>
       <style jsx>{`
         .div {
           border-bottom: 0px;
