@@ -15,6 +15,8 @@ import { useRouter } from "next/router";
 import { Layout } from '../components/layout'
 import { theme as glassTheme } from '@saas-ui/theme-glass'
 import { SubscriptionProvider } from "use-stripe-subscription";
+import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
+import { useState } from "react";
 
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
@@ -49,7 +51,14 @@ export const theme = extendTheme(
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const { announcement, header, footer } = pageProps
-
+  const [browserFingerprint, setBrowserFingerPrint] = useState("");
+  const getBrowserFingerPrint = () => {
+    getCurrentBrowserFingerPrint().then((res) => {
+      setBrowserFingerPrint(res)
+    }).catch((err) => {
+      setBrowserFingerPrint(JSON.stringify(err))
+    })
+ }
   return ( <NextThemesProvider
     defaultTheme="system"
     attribute="class"
