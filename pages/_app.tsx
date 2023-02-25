@@ -17,6 +17,7 @@ import { theme as glassTheme } from '@saas-ui/theme-glass'
 import { SubscriptionProvider } from "use-stripe-subscription";
 import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
 import { useState } from "react";
+import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react';
 
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
@@ -59,7 +60,11 @@ export default function App({ Component, pageProps }: AppProps) {
       setBrowserFingerPrint(JSON.stringify(err))
     })
  }
-  return ( <NextThemesProvider
+  return (<FpjsProvider
+    loadOptions={{
+      apiKey: "L97FAMI8f2OvG1SdVJjl"
+    }}
+  > <NextThemesProvider
     defaultTheme="system"
     attribute="class"
     value={{
@@ -90,7 +95,7 @@ export default function App({ Component, pageProps }: AppProps) {
     </ClerkProvider>    </SubscriptionProvider>
 
   </NextUIProvider>
-</NextThemesProvider>
+</NextThemesProvider></FpjsProvider>
 
   );
 }
