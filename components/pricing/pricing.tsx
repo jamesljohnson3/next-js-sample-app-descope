@@ -29,10 +29,47 @@ export interface PricingProps extends SectionProps {
 }
 
 export const Pricing: React.FC<PricingProps> = (props) => {
-  const { children, plans,  description, ...rest } = props
+  const { children, plans, title, description, ...rest } = props
 
   return (
-   <></>
+    <Section id="pricing" pos="relative" {...rest}>
+      <Box zIndex="2" pos="relative">
+        <SectionTitle title={title} description={description}></SectionTitle>
+
+        <SimpleGrid columns={[1, null, 3]} spacing={4}>
+          {plans?.map((plan) => (
+            <PricingBox
+              key={plan.id}
+              title={plan.title}
+              description={plan.description}
+              price={plan.price}
+              sx={
+                plan.isRecommended
+                  ? {
+                      borderColor: 'primary.500',
+                      _dark: {
+                        borderColor: 'primary.500',
+                        bg: 'blackAlpha.300',
+                      },
+                    }
+                  : {}
+              }
+            >
+              <PricingFeatures>
+                {plan.features.map((feature, i) =>
+                  feature ? <PricingFeature key={i} {...feature} /> : <br />
+                )}
+              </PricingFeatures>
+              <ButtonLink colorScheme="primary" {...plan.action}>
+                {plan.action.label || 'Sign Up'}
+              </ButtonLink>
+            </PricingBox>
+          ))}
+        </SimpleGrid>
+
+        {children}
+      </Box>
+    </Section>
   )
 }
 
@@ -76,7 +113,7 @@ export interface PricingBoxProps extends Omit<StackProps, 'title'> {
 }
 
 const PricingBox: React.FC<PricingBoxProps> = (props) => {
-  const { title, description, price, ...rest } = props
+  const { title, description, price, children, ...rest } = props
   return (
     <VStack
       zIndex="2"
@@ -93,7 +130,7 @@ const PricingBox: React.FC<PricingBoxProps> = (props) => {
       }}
       {...rest}
     >
-      <Heading size="md" fontWeight="bold" fontSize="lg" mb="2">
+      <Heading as="h3" size="md" fontWeight="bold" fontSize="lg" mb="2">
         {title}
       </Heading>
       <Box color="muted">{description}</Box>
@@ -101,6 +138,7 @@ const PricingBox: React.FC<PricingBoxProps> = (props) => {
         {price}
       </Box>
       <VStack align="stretch" justifyContent="stretch" spacing="4" flex="1">
+        {children}
       </VStack>
     </VStack>
   )

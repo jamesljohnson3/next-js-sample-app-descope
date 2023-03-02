@@ -1,7 +1,7 @@
+/* eslint-disable react/no-children-prop */
 /* eslint-disable linebreak-style */
 /* eslint-disable max-len */
 /* eslint-disable react/no-unused-prop-types */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button, Tooltip } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 import { IconCopy, IconCheck } from '@tabler/icons';
@@ -20,8 +20,7 @@ export function ButtonCopy({ copyData }: ButtonCopyProps) {
       radius="md"
       transition="slide-down"
       transitionDuration={100}
-      opened={clipboard.copied}
-    >
+      opened={clipboard.copied} children={undefined}    >
       <Button
         variant="light"
         rightIcon={
