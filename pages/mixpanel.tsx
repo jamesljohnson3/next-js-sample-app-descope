@@ -11,7 +11,8 @@ export default function Home({ data }: { data: string }) {
     mixpanel.init('e5c0352c20459df6af09133edde98ba2', {debug: true}); 
     const handleClick = () => {
         mixpanel.track('Button Clicked', {
-          user_id: mixpanel.get_distinct_id(),
+          distinct_id: mixpanel.get_distinct_id(),
+          user_id: 'user1234', // replace with actual user ID
         });
       };
 
