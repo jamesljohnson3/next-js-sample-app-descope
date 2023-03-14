@@ -11,8 +11,7 @@ export default function Home({ data }: { data: string }) {
     mixpanel.init('e5c0352c20459df6af09133edde98ba2', {debug: true}); 
     const handleClick = () => {
         mixpanel.track('Button Clicked', {
-          distinct_id: mixpanel.get_distinct_id(),
-          user_id: 'user1234', // replace with actual user ID
+          user_id: mixpanel.get_distinct_id(),
         });
       };
 
@@ -88,7 +87,13 @@ export default function Home({ data }: { data: string }) {
             </form>
           </>
         )}
-
+<div>
+    
+      <main>
+        <h1>Mixpanel Example</h1>
+        <button onClick={handleClick}>Track Button Click</button>
+      </main>
+    </div>
         <p className={styles.description}>
           Get started by editing{" "}
           <code className={styles.code}>pages/index.tsx</code>
@@ -101,17 +106,7 @@ export default function Home({ data }: { data: string }) {
           </div>
         </div>
       </main>
-      <div>
-      <Head>
-        <title>Mixpanel Example</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>Mixpanel Example</h1>
-        <button onClick={handleClick}>Track Button Click</button>
-      </main>
-    </div>
+      
     </div>
   );
 }
