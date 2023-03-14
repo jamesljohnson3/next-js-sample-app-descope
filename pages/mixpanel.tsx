@@ -5,9 +5,17 @@ import Link from "next/link";
 import { SyntheticEvent, useCallback, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
+import mixpanel from 'mixpanel-browser';
 
 export default function Home({ data }: { data: string }) {
-  
+    mixpanel.init('e5c0352c20459df6af09133edde98ba2', {debug: true}); 
+    const handleClick = () => {
+        mixpanel.track('Button Clicked', {
+          user_id: mixpanel.get_distinct_id(),
+        });
+      };
+
+      
   const { authenticated, user, logout, me } = useAuth();
   const onLogout = useCallback(() => {
     // Delete Descope refresh token cookie.
@@ -92,7 +100,17 @@ export default function Home({ data }: { data: string }) {
           </div>
         </div>
       </main>
-      
+      <div>
+      <Head>
+        <title>Mixpanel Example</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+        <h1>Mixpanel Example</h1>
+        <button onClick={handleClick}>Track Button Click</button>
+      </main>
+    </div>
     </div>
   );
 }
