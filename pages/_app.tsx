@@ -92,8 +92,10 @@ export default function App({ Component, pageProps }: AppProps) {
           announcementProps={announcement}
           headerProps={header}
           footerProps={footer}
-        >
-   <Component {...pageProps} /> </Layout>
+        ><StyletronProvider value={engine}>
+        <BaseProvider theme={LightTheme}>
+   <Component {...pageProps} /> </BaseProvider>
+    </StyletronProvider></Layout>
    </SaasProvider>
 
     </AuthProvider>
