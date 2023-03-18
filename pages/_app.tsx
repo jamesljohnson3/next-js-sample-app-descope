@@ -18,11 +18,6 @@ import { SubscriptionProvider } from "use-stripe-subscription";
 import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
 import { useState } from "react";
 import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react';
-import { Client as Styletron } from 'styletron-engine-atomic';
-import { Provider as StyletronProvider } from 'styletron-react';
-import { LightTheme, BaseProvider, styled } from 'baseui';
-import { StatefulInput } from 'baseui/input';
-const engine = new Styletron();
 
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
@@ -92,10 +87,8 @@ export default function App({ Component, pageProps }: AppProps) {
           announcementProps={announcement}
           headerProps={header}
           footerProps={footer}
-        ><StyletronProvider value={engine}>
-        <BaseProvider theme={LightTheme}>
-   <Component {...pageProps} /> </BaseProvider>
-    </StyletronProvider></Layout>
+        >
+   <Component {...pageProps} /> </Layout>
    </SaasProvider>
 
     </AuthProvider>
