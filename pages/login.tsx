@@ -28,13 +28,13 @@ export default function Login() {
       // In production, prefer managing Descope tokens in cookies.
       document.cookie = `DSR=${refreshToken}`;
     }
-    router.push("/launch");
+    router.push("/demo");
   }, [router]);
 
   const onError = useCallback(
     (e: any) => {
       console.log("Descope got error", e);
-      router.push("/");
+      router.push("/login");
     },
     [router]
   );
