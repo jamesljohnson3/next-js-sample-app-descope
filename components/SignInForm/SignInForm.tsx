@@ -135,7 +135,7 @@ export function SignInForm() {
           </div>
           <Notice
             content="Don’t have an account?"
-            actionLink="/sign-up"
+            actionLink="/launch"
             actionMessage="Unlock all features"
           />
         </form>

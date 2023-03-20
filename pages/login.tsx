@@ -28,7 +28,7 @@ export default function Login() {
       // In production, prefer managing Descope tokens in cookies.
       document.cookie = `DSR=${refreshToken}`;
     }
-    router.push("/radix");
+    router.push("/launch");
   }, [router]);
 
   const onError = useCallback(
