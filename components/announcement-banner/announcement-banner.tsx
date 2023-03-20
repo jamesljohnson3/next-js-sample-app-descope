@@ -102,8 +102,7 @@ export const AnnouncementBanner: React.FC<AnnouncementBannerProps> = (
                     />
                   }
                 >
-                  Get Started for Free
-                </Button>
+Upgrade to Pro Plan                </Button>
               </BannerActions>
             </HStack>
           </Banner>
