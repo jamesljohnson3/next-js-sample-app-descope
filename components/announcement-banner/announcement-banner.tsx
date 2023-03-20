@@ -102,7 +102,7 @@ export const AnnouncementBanner: React.FC<AnnouncementBannerProps> = (
                     />
                   }
                 >
-                  Read more
+                  Get Started for Free
                 </Button>
               </BannerActions>
             </HStack>
