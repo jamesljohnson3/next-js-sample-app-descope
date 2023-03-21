@@ -39,7 +39,7 @@ const Tabs = () => (
 					<span className="h-1 w-full bg-transparent absolute left-0 bottom-0 rounded-full"></span>
 				</div>
 			</TabsPrimitive.Trigger>
-			<TabsPrimitive.Trigger
+			<a href="https://space.unlimitpotential.com/blueprints" > <TabsPrimitive.Trigger
 				value="tab3"
 				className={cx(
 					'TabsTrigger group hover:bg-slate-100',
@@ -50,10 +50,10 @@ const Tabs = () => (
 				)}
 			>
 				<div className="py-4 relative h-full ">
-					<div>Niche</div>
+					<div>Generate with A.I.</div>
 					<span className="h-1 w-full bg-transparent absolute left-0 bottom-0 rounded-full"></span>
 				</div>
-			</TabsPrimitive.Trigger>
+			</TabsPrimitive.Trigger></a>
 		</TabsPrimitive.List>
 		<TabsPrimitive.Content value="tab1" className="TabsContent ">
 			<TweetForm width="default" />
