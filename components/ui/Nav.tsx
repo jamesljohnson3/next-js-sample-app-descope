@@ -23,7 +23,7 @@ interface NavLinkItem {
 
 const items: NavLinkItem[] = [
 	{
-		href: '/home',
+		href: 'https://feed.unlimitpotential.com/',
 		text: 'Home',
 		icon: <HiOutlineHome className="w-6 h-6" />,
 	},
