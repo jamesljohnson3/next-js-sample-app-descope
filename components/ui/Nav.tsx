@@ -28,7 +28,7 @@ const items: NavLinkItem[] = [
 		icon: <HiOutlineHome className="w-6 h-6" />,
 	},
 	{
-		href: '/explore',
+		href: 'https://explore.unlimitpotential.com/',
 		text: 'Explore',
 		icon: <HiHashtag className="w-6 h-6" />,
 	},
