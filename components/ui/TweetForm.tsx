@@ -56,23 +56,23 @@ const fullName = user?.fullName ?? '';
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-x-4 px-4">
-            <Link href="/">
+            <Link href="https://accounts.unlimitpotential.com/upload">
               <RiImage2Line className="w-5 h-5" />
               <span className="sr-only">Image</span>
             </Link>
-            <Link href="/">
+            <Link href="https://accounts.unlimitpotential.com/upload">
               <RiFileGifLine className="w-5 h-5" />
               <span className="sr-only">Gif</span>
             </Link>
-            <Link href="/">
+            <Link href="https://lillieai-betav1b.unlimitpotential.com/abilene">
               <RiChatPollLine className="w-5 h-5" />
               <span className="sr-only">Poll</span>
             </Link>
-            <Link href="/">
+            <Link href="https://accounts.unlimitpotential.com/upload">
               <RiEmotionLine className="w-5 h-5" />
               <span className="sr-only">Emoji</span>
             </Link>
-            <Link href="/">
+            <Link href="https://lillieai-betav1b.unlimitpotential.com/recent">
               <RiMapPin2Line className="w-5 h-5" />
               <span className="sr-only">Tag location</span>
             </Link>
