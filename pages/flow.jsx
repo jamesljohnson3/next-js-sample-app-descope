@@ -16,9 +16,9 @@ export default function Dashboard() {
                     <svg width="35" height="30" viewBox="0 0 256 366" version="1.1" preserveAspectRatio="xMidYMid">
                         <defs>
                             <linearGradient x1="12.5189534%" y1="85.2128611%" x2="88.2282959%" y2="10.0225497%" id="linearGradient-1">
-                                <stop stop-color="#FF0057" stop-opacity="0.16" offset="0%">
+                                <stop stopColor="#FF0057" stopOpacity="0.16" offset="0%">
                                 </stop>
-                                <stop stop-color="#FF0057" offset="86.1354%">
+                                <stop stopColor="#FF0057" offset="86.1354%">
                                 </stop>
                             </linearGradient>
                         </defs>
@@ -122,7 +122,7 @@ export default function Dashboard() {
                         <div className="container relative left-0 z-50 flex w-3/4 h-auto h-full">
                             <div className="relative flex items-center w-full h-full lg:w-64 group">
                                 <div className="absolute z-50 flex items-center justify-center block w-auto h-10 p-3 pr-2 text-sm text-gray-500 uppercase cursor-pointer sm:hidden">
-                                    <svg fill="none" className="relative w-5 h-5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg fill="none" className="relative w-5 h-5" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" stroke="currentColor" viewBox="0 0 24 24">
                                         <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z">
                                         </path>
                                     </svg>
@@ -244,7 +244,7 @@ export default function Dashboard() {
                                         <div className="flex items-center">
                                             <span className="relative p-2 bg-blue-100 rounded-xl">
                                                 <svg width="25" height="25" viewBox="0 0 2447.6 2452.5" xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-rule="evenodd" fill-rule="evenodd">
+                                                    <g clipRule="evenodd" fillRule="evenodd">
                                                         <path d="m897.4 0c-135.3.1-244.8 109.9-244.7 245.2-.1 135.3 109.5 245.1 244.8 245.2h244.8v-245.1c.1-135.3-109.5-245.1-244.9-245.3.1 0 .1 0 0 0m0 654h-652.6c-135.3.1-244.9 109.9-244.8 245.2-.2 135.3 109.4 245.1 244.7 245.3h652.7c135.3-.1 244.9-109.9 244.8-245.2.1-135.4-109.5-245.2-244.8-245.3z" fill="#36c5f0">
                                                         </path>
                                                         <path d="m2447.6 899.2c.1-135.3-109.5-245.1-244.8-245.2-135.3.1-244.9 109.9-244.8 245.2v245.3h244.8c135.3-.1 244.9-109.9 244.8-245.3zm-652.7 0v-654c.1-135.2-109.4-245-244.7-245.2-135.3.1-244.9 109.9-244.8 245.2v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.3z" fill="#2eb67d">
