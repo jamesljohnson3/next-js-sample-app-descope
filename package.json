@@ -88,6 +88,8 @@
     "embla-carousel-react": "^7.0.9",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
+    "flowbite": "^1.6.4",
+    "flowbite-react": "^0.4.2",
     "framer-motion": "^6.5.1",
     "lucide-react": "0.105.0-alpha.4",
     "mixpanel-browser": "^2.45.0",
