@@ -33,4 +33,5 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  plugins: [require("tw-elements/dist/plugin")],
 }
