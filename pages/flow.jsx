@@ -1201,11 +1201,13 @@ export default function MyComponent() {
           height: auto;
           background-color: rgba(255, 255, 255, 1);
           flex-grow: 0;
+          width: auto;
+          align-self: stretch;
         }
         @media (max-width: 991px) {
           .div {
-            width: auto;
-            align-self: stretch;
+            width: 100%;
+            align-self: center;
           }
         }
         @media (max-width: 640px) {
@@ -2026,7 +2028,6 @@ export default function MyComponent() {
           width: 100vw;
           margin-left: auto;
           margin-right: auto;
-          max-width: 1280px;
           border-width: 1px;
           display: flex;
           flex-direction: column;
@@ -2045,6 +2046,7 @@ export default function MyComponent() {
             margin-bottom: 0px;
             margin-right: 0px;
             height: 100vh;
+            max-width: 341px;
           }
         }
         .div-25 {
@@ -2087,7 +2089,7 @@ export default function MyComponent() {
           transform-origin: 580.5px 361.133px;
           width: 100vw;
           align-self: center;
-          padding-left: 121px;
+          padding-left: 125px;
           flex-direction: row;
           flex-wrap: wrap;
           margin-left: auto;
