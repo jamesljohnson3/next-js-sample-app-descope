@@ -115,6 +115,387 @@ export default function MyComponent() {
             </div>
           </div>
         </nav>
+
+
+        <div className="relative pt-40 pb-20 lg:pt-44">
+    <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
+        <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">Run successful remote and <br className="lg:block hidden"></br> <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-primaryLight dark:to-secondaryLight">Hybrid teams</span>.</h1>
+        <div className="lg:flex">
+            <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+                <p className="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
+                    DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
+                </p>
+                <span className="block font-semibold text-gray-500 dark:text-gray-400">The best companion bot for your chat app.</span>
+                <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
+                    <a aria-label="add to slack" href="#" className="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
+                        <div className="flex justify-center space-x-4">
+                            <img className="w-6 h-6" src="images/slack.png" alt="slack logo" loading="lazy" width="128" height="128"></img>
+                            <span className="hidden font-medium md:block dark:text-white">Slack</span>
+                        </div>
+                    </a>    
+                    <a aria-label="add to chat" href="#" className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
+                        <div className="flex justify-center space-x-4">
+                            <img className="w-6 h-6" src="images/chat.png" alt="chat logo" loading="lazy" width="128" height="128"></img>
+                            <span className="hidden font-medium md:block dark:text-white">Google Chat</span>
+                        </div>
+                    </a>   
+                    <a aria-label="add to zoom" href="#" className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
+                        <div className="flex justify-center space-x-4">
+                            <img className="w-6 h-6" src="images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128"></img>
+                            <span className="hidden font-medium md:block dark:text-white">Zoom</span>
+                        </div>
+                    </a>    
+                </div>
+
+                <div className="dark:text-gray-300">
+                    🔥🌟 
+                    <span>Other integrations :</span> 
+                    <a href="#" className="font-semibold text-gray-700 dark:text-gray-200">Discord,</a>
+                    <a href="#" className="font-semibold text-gray-700 dark:text-gray-200">Telegram</a>
+                </div>
+
+                <div className="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
+                    <img src="./images/clients/airbnb.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="./images/clients/ge.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="./images/clients/coty.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="./images/clients/microsoft.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                </div>
+            </div>
+            <div className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
+                <div className="relative w-full">
+                    <div aria-hidden="true" className="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-primaryLight to-secondaryLight blur-3xl"></div>
+                    <img src="images/globalization-cuate.svg" className="relative w-full" alt="wath illustration" loading="lazy" width="320" height="280"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <div className="pt-32 md:py-12 xl:container m-auto px-6 md:px-12">
+    <div aria-hidden="true" className="absolute inset-0 my-auto w-96 h-32 rotate-45 bg-gradient-to-r from-primaryLight to-secondaryLight blur-3xl opacity-50 dark:opacity-20"></div>
+    <div className="relative lg:flex lg:items-center lg:gap-12">
+        <div className="text-center lg:text-left md:mt-12 lg:mt-0 sm:w-10/12 md:w-2/3 sm:mx-auto lg:mr-auto lg:w-6/12">
+            <h1 className="text-gray-900 font-bold text-4xl md:text-6xl lg:text-5xl xl:text-6xl dark:text-white">Build in your way but with our experts <span className="text-primary dark:text-primaryLight">Support.</span></h1>
+            <p className="mt-8 text-gray-600 dark:text-gray-300">Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
+            <div>
+                <form action="" className="w-full mt-12">
+                    <div className="relative flex items-center px-2 p-1 rounded-full bg-white dark:bg-gray-900 border dark:border-gray-700 border-primary/10 shadow-md md:p-2 lg:pr-3">
+                        <div className="pl-6 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-auto fill-blue-900/60 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                        </div>
+                        <input autoComplete="email" placeholder="Your mail address" className="w-full p-4 rounded-full placeholder-gray-600 dark:placeholder-white bg-transparent" type="email"></input>
+                        <div className="md:pr-1.5 lg:pr-0">
+                            <button type="button" title="Start buying" className="relative h-12 w-20 sm:w-auto ml-auto sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+                                <span className="relative hidden w-max text-white dark:text-gray-900 font-semibold md:block">
+                                    Get Started
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="relative h-6 w-6 mx-auto text-white dark:text-gray-900 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div className="mt-12 flex gap-6 lg:gap-12 justify-between grayscale dark:grayscale-0">
+                <img src="./images/clients/airbnb.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                <img src="./images/clients/ge.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                <img src="./images/clients/coty.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                <img src="./images/clients/microsoft.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+            </div>
+        </div>
+        <div className="overflow-hidden w-full lg:w-7/12 lg:-mr-16">
+            <img src="images/project.svg" alt="project illustration" height="" width=""></img>
+        </div>
+    </div>
+</div> 
+        <div className="py-20">
+  <div className="xl:container mx-auto px-6 md:px-12">
+    <div className="mb-16 md:w-2/3 lg:w-1/2">
+      <h2 className="mb-4 text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+        Tailus blocks leadership
+      </h2>
+      <p className="text-gray-600 dark:text-gray-300">
+        Tailus prides itself not only on award-winning technology, but also on the talent of its
+        people of some of the brightest minds and most experienced executives in business.
+      </p>
+    </div>
+    <div className="grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
+        <img
+          className="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+          src="images/woman1.jpg"
+          alt="woman"
+          loading="lazy"
+          width="640"
+          height="805"
+        />
+        <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
+          <div>
+            <h4 className="text-xl font-semibold dark:text-gray-700 text-white">Hentoni Doe</h4>
+            <span className="block text-sm text-gray-500">CEO-Founder</span>
+          </div>
+          <p className="mt-8 text-gray-300 dark:text-gray-600">Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?</p>
+        </div>
+        
+      </div>
+      <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
+        <img
+          className="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+          src="images/woman.jpg"
+          alt="woman"
+          loading="lazy"
+          width="640"
+          height="805"
+        />
+        <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
+          <div>
+            <h4 className="text-xl font-semibold dark:text-gray-700 text-white">Hentoni Doe</h4>
+            <span className="block text-sm text-gray-500">CEO-Founder</span>
+          </div>
+          <p className="mt-8 text-gray-300 dark:text-gray-600">Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?</p>
+        </div>
+        
+      </div>
+      <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
+        <img
+          className="mx-auto h-[26rem] w-full grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+          src="images/man.jpg"
+          alt="woman"
+          loading="lazy"
+          width="640"
+          height="805"
+        />
+        <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
+          <div>
+            <h4 className="text-xl font-semibold dark:text-gray-700 text-white">Hentoni Doe</h4>
+            <span className="block text-sm text-gray-500">CEO-Founder</span>
+          </div>
+          <p className="mt-8 text-gray-300 dark:text-gray-600">Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?</p>
+        </div>
+        
+      </div>
+      <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
+        <img
+          className="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+          src="images/woman1.jpg"
+          alt="woman"
+          loading="lazy"
+          width="640"
+          height="805"
+        />
+        <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
+          <div>
+            <h4 className="text-xl font-semibold dark:text-gray-700 text-white">Hentoni Doe</h4>
+            <span className="block text-sm text-gray-500">CEO-Founder</span>
+          </div>
+          <p className="mt-8 text-gray-300 dark:text-gray-600">Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div className="py-16">
+  <div className="container m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-20">
+    <div className="flex items-center justify-center -space-x-2">
+      <img
+        loading="lazy"
+        width="220"
+        height="220"
+        src="images/avatars/second_user.webp"
+        alt="member photo"
+        className="h-8 w-8 rounded-full object-cover"
+      />
+      <img
+        loading="lazy"
+        width="220"
+        height="220"
+        src="images/avatars/first_user.webp"
+        alt="member photo"
+        className="h-12 w-12 rounded-full object-cover"
+      />
+      <img
+        loading="lazy"
+        width="220"
+        height="220"
+        src="images/avatars/third_user.webp"
+        alt="member photo"
+        className="z-10 h-16 w-16 rounded-full object-cover"
+      />
+      <img
+        loading="lazy"
+        width="220"
+        height="220"
+        src="images/avatars/first_user.webp"
+        alt="member photo"
+        className="relative h-12 w-12 rounded-full object-cover"
+      />
+      <img
+        loading="lazy"
+        width="220"
+        height="220"
+        src="images/avatars/second_user.webp"
+        alt="member photo"
+        className="h-8 w-8 rounded-full object-cover"
+      />
+    </div>
+    <div className="m-auto space-y-6 md:w-8/12 lg:w-7/12">
+      <h1 className="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Get Started now</h1>
+      <p className="text-center text-xl text-gray-600 dark:text-gray-300">
+        Be part of millions people around the world using tailus in modern User Interfaces.
+      </p>
+      <div className="flex flex-wrap justify-center gap-6">
+        <a
+            href="#"
+            className="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span className="relative text-base font-semibold text-white dark:text-dark"
+              >Get Started</span
+            >
+          </a>
+          <a
+            href="#"
+            className="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+          >
+            <span
+              className="relative text-base font-semibold text-primary dark:text-white"
+              >More about</span
+            >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+                                    
+
+
+<div className="py-12">
+  <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+    <div className="mb-12 space-y-2 text-center">
+      <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Sharing is Caring</h2>
+      <p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-6/12">
+        Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum
+        officia aliquid explicabo? Excepturi, voluptate?
+      </p>
+    </div>
+
+    <div className="lg:w-3/4 xl:w-2/4 lg:mx-auto">
+        <div className="group relative -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-gray-800 shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300 hover:z-10">
+          <div className="sm:w-2/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1661749711934-492cd19a25c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+              alt="art cover"
+              loading="lazy"
+              width="1000"
+              height="667"
+              className="h-56 sm:h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+            />
+          </div>
+          
+          <div className="sm:p-2 sm:pl-0 sm:w-4/6">
+            <span className="mt-4 mb-2 inline-block font-medium text-gray-400 dark:text-gray-500 sm:mt-0">Jul 27 2022</span>
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
+              Provident de illo eveniet commodi fuga fugiat laboriosam expedita.
+            </h3>
+            <p className="my-6 text-gray-600 dark:text-gray-300">
+              Laudantium in, voluptates ex placeat quo harum aliquam totam,
+              doloribus eum impedit atque...
+            </p>
+
+            <div className="flex gap-4">
+              <a href="#" className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                Tailwindcss
+              </a>
+              <a href="#" className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                VueJS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="group relative hover:z-10 -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-gray-800 shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300">
+          <div className="sm:w-2/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+              alt="art cover"
+              loading="lazy"
+              width="1000"
+              height="667"
+              className="h-56 sm:h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+            />
+          </div>
+          
+          <div className="sm:p-2 sm:pl-0 sm:w-4/6">
+            <span className="mt-4 mb-2 inline-block font-medium text-gray-400 dark:text-gray-500 sm:mt-0">Jul 27 2022</span>
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
+              Provident de illo eveniet commodi fuga fugiat laboriosam expedita.
+            </h3>
+            <p className="my-6 text-gray-600 dark:text-gray-300">
+              Laudantium in, voluptates ex placeat quo harum aliquam totam,
+              doloribus eum impedit atque...
+            </p>
+
+            <div className="flex gap-4">
+              <a href="#" className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                Tailwindcss
+              </a>
+              <a href="#" className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                VueJS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="group relative hover:z-10 -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-gray-800 shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300">
+          <div className="sm:w-2/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
+            <img
+              src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+              alt="art cover"
+              loading="lazy"
+              width="1000"
+              height="667"
+              className="h-56 sm:h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+            />
+          </div>
+          
+          <div className="sm:p-2 sm:pl-0 sm:w-4/6">
+            <span className="mt-4 mb-2 inline-block font-medium text-gray-400 dark:text-gray-500 sm:mt-0">Jul 27 2022</span>
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
+              Provident de illo eveniet commodi fuga fugiat laboriosam expedita.
+            </h3>
+            <p className="my-6 text-gray-600 dark:text-gray-300">
+              Laudantium in, voluptates ex placeat quo harum aliquam totam,
+              doloribus eum impedit atque...
+            </p>
+
+            <div className="flex gap-4">
+              <a href="#" className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                Tailwindcss
+              </a>
+              <a href="#" className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                VueJS
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+                                    
+
+
+
         <div className="dashboard-style-2">
           <div className="div-6">
             <div className="div-7">
