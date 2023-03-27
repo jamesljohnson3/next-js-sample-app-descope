@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Dashboard() {
   return (
-
+    <>
    <header>
   <nav
     className="sticky top-0 z-10 flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
@@ -108,6 +108,6 @@ export default function Dashboard() {
   </div>
 </header>
 
-   
+    </>
   );
 }
