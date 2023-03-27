@@ -16,11 +16,11 @@ import {
 } from '@heroicons/react/24/outline'
 
 const solutions = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: 'https://space.unlimitpotential.com/flow', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: "Your customers' data will be safe and secure", href: 'https://accounts.unlimitpotential.com/flow', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: 'https://studio.unlimitpotential.com/flow', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: 'https://console.unlimitpotential.com/flow', icon: ArrowPathIcon },
+    { name: 'Analytics', description: 'See what others see', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
+    { name: 'Engagement', description: 'Connect with customers', href: 'https://space.unlimitpotential.com/flow', icon: CursorArrowRaysIcon },
+    { name: 'Security', description: "Update Preferences", href: 'https://accounts.unlimitpotential.com/flow', icon: FingerPrintIcon },
+    { name: 'Integrations', description: 'and Automations', href: 'https://studio.unlimitpotential.com/flow', icon: SquaresPlusIcon },
+    { name: 'Distribute', description: 'Publish and Go Live', href: 'https://console.unlimitpotential.com/flow', icon: ArrowPathIcon },
   ]
   const callsToAction = [
     { name: 'Sellers Accounts', href: 'https://lillieai-betav1b.unlimitpotential.com/flow', icon: PlayCircleIcon },
