@@ -109,6 +109,7 @@
     "swr": "^2.0.3",
     "tailwind-merge": "^1.8.0",
     "tailwindcss-animate": "^1.0.5",
+    "tw-elements": "^1.0.0-beta1",
     "typescript": "4.8.4",
     "use-stripe-subscription": "^1.0.6",
     "zod": "^3.20.2"
