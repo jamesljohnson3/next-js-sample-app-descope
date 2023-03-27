@@ -1,53 +1,197 @@
-import * as React from 'react'
+import * as React from "react";
 import Image from 'next/image'
 
 export default function MyComponent() {
   return (
-    <div className="basis-[33.3333%] max-w-[33.3333%] box-border p-[10.6667px] max-md:basis-6/12 max-md:max-w-[50%] max-sm:basis-full max-sm:max-w-full">
-      <div className="w-full">
-        <div className="shadow-[rgb(51,51,51)_0px_0px_0px_1px] bg-black border box-border transition-all duration-[0.2s] ease-[ease] delay-[0s] duration-[0.2s] rounded-[5px] border-b border-solid border-[rgba(0,0,0,0)] border-l border-transparent border-r border-t">
-          <div className="w-full p-[16px]">
-            <div className="items-center flex">
-              <span className="bg-white border box-border inline-block h-[calc(35px)] overflow-hidden overflow-x-hidden overflow-y-hidden relative align-top w-[calc(35px)] mr-[12px] rounded-[50%] border-b border-solid border-l border-white border-r border-t">
-                <Image
-                  alt="avatar"
-                  draggable="false"
-                  height="1.25"
-                  width="1.25"
-                  marginright="0.75"
-                  image="https://raw.githubusercontent.com/vercel/vercel/main/packages/frameworks/logos/other.svg"
-                  className="w-full inline-block h-full object-cover select-none max-w-full rounded-[50%]"
-                />
-              </span>
-              <div>
-                <p
-                  margin="0"
-                  className="text-[1em] leading-6 font-medium tracking-[-0.005625em]"
-                >
-                  docs
-                </p>
-                <p
-                  margin="0"
-                  font="0.875rem"
-                  className="text-sm text-[rgb(153,153,153)] leading-5 tracking-[-0.005625em]"
-                >
-                  docs.vercel.app
-                </p>
+    <>
+      <div className="div">
+        <div className="div-2">
+          <div className="div-3">
+            <div className="div-4">
+              <div className="div-5">
+                <span className="span">
+                  <Image
+                    alt="avatar"
+                    draggable="false"
+                    height="1.25"
+                    width="1.25"
+                    marginright="0.75"
+                    image="https://raw.githubusercontent.com/vercel/vercel/main/packages/frameworks/logos/other.svg"
+                    className="raw-img"
+                  />
+                </span>
+                <div>
+                  <p margin="0" className="p">
+                    docs
+                  </p>
+                  <p margin="0" font="0.875rem" className="p-2">
+                    docs.vercel.app
+                  </p>
+                </div>
               </div>
+              <div className="div-6">No Git Repository connected.</div>
+              <p marginbottom="0" font="0.875rem" className="p-3">
+                5d
+              </p>
             </div>
-            <div className="bg-[rgb(17,17,17)] border text-[rgb(136,136,136)] flex flex-col text-sm justify-center min-h-[3rem] my-[16px] px-[16px] rounded-[5px] border-b border-solid border-[rgb(51,51,51)] border-l border-r border-t">
-              No Git Repository connected.
-            </div>
-            <p
-              marginbottom="0"
-              font="0.875rem"
-              className="text-sm text-[rgb(136,136,136)] leading-[1.625em] tracking-[-0.005625em] mt-[14px]"
-            >
-              5d
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  )
+      <style jsx>{`
+        .div {
+          display: inherit;
+          flex-basis: 33.3333%;
+          max-width: 33.3333%;
+          padding-bottom: 10.6667px;
+          padding-left: 10.6667px;
+          padding-right: 10.6667px;
+          padding-top: 10.6667px;
+        }
+        @media (max-width: 991px) {
+          .div {
+            flex-basis: 50%;
+            max-width: 50%;
+          }
+        }
+        @media (max-width: 640px) {
+          .div {
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+        }
+        .div-2 {
+          width: 100%;
+        }
+        .div-3 {
+          box-shadow: rgb(51, 51, 51) 0px 0px 0px 1px;
+          background-color: rgb(0, 0, 0);
+          border-bottom: 1px solid transparent;
+          border-bottom-color: transparent;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-color: rgba(0, 0, 0, 0);
+          border-left: 1px solid transparent;
+          border-left-color: transparent;
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-radius: 5px;
+          border-right: 1px solid transparent;
+          border-right-color: transparent;
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid transparent;
+          border-top-color: transparent;
+          border-top-left-radius: 5px;
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          transition: all 0.2s ease 0s;
+          transition-duration: 0.2s;
+        }
+        .div-4 {
+          padding-bottom: 16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-top: 16px;
+          width: 100%;
+        }
+        .div-5 {
+          align-items: center;
+          display: flex;
+        }
+        .span {
+          background-color: rgb(255, 255, 255);
+          border-bottom: 1px solid rgb(255, 255, 255);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-left: 1px solid rgb(255, 255, 255);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-radius: 50%;
+          border-right: 1px solid rgb(255, 255, 255);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid rgb(255, 255, 255);
+          border-top-left-radius: 50%;
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          display: inline-block;
+          height: calc(35px);
+          margin-right: 12px;
+          overflow: hidden;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          position: relative;
+          vertical-align: top;
+          width: calc(35px);
+        }
+        .raw-img {
+          width: 100%;
+          border-radius: 50%;
+          border-top-left-radius: 50%;
+          display: inline-block;
+          height: 100%;
+          object-fit: cover;
+          user-select: none;
+          max-width: 100%;
+        }
+        .p {
+          font-size: 1em;
+          line-height: 1.5rem;
+          font-weight: 500;
+          letter-spacing: -0.005625em;
+        }
+        .p-2 {
+          font-size: 0.875rem;
+          color: rgb(153, 153, 153);
+          line-height: 1.25rem;
+          letter-spacing: -0.005625em;
+        }
+        .div-6 {
+          background-color: rgb(17, 17, 17);
+          border-bottom: 1px solid rgb(51, 51, 51);
+          border-bottom-color: rgb(51, 51, 51);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-color: rgb(51, 51, 51);
+          border-left: 1px solid rgb(51, 51, 51);
+          border-left-color: rgb(51, 51, 51);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-radius: 5px;
+          border-right: 1px solid rgb(51, 51, 51);
+          border-right-color: rgb(51, 51, 51);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid rgb(51, 51, 51);
+          border-top-color: rgb(51, 51, 51);
+          border-top-left-radius: 5px;
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          color: rgb(136, 136, 136);
+          padding-left: 16px;
+          padding-right: 16px;
+          display: flex;
+          flex-direction: column;
+          font-size: 0.875rem;
+          justify-content: center;
+          margin-bottom: 16px;
+          margin-top: 16px;
+          min-height: 3rem;
+        }
+        .p-3 {
+          margin-top: 14px;
+          font-size: 0.875rem;
+          color: rgb(136, 136, 136);
+          line-height: 1.625em;
+          letter-spacing: -0.005625em;
+        }
+      `}</style>
+    </>
+  );
 }
