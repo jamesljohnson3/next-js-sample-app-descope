@@ -24,7 +24,7 @@ const solutions = [
   ]
   const callsToAction = [
     { name: 'Sellers Accounts', href: 'https://lillieai-betav1b.unlimitpotential.com/flow', icon: PlayCircleIcon },
-    { name: 'Goals & Settings', href: 'https://go.unlimitpotential.com/', icon: PhoneIcon },
+    { name: 'Goals & Settings', href: 'https://feed.unlimitpotential.com/flow', icon: PhoneIcon },
   ]
 export default function MyComponent() {
   return (
