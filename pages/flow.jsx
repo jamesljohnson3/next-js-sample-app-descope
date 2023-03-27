@@ -38,115 +38,25 @@ export default function MyComponent() {
                   <a className="a-3">Extensions</a>
                   <a className="a-4">Apps</a>
                   <a className="a-5">Partners</a>
-                  <a target="_blank" className="a-6">
-                    Account
-                  </a>
                 </nav>
               </div>
               <a
                 href="https://dashboard.unlimitpotential.com/signin"
                 target="_blank"
-                className="a-7" rel="noreferrer"
+                className="a-6" rel="noreferrer"
               >
                 Dashboard
               </a>
             </div>
           </div>
         </nav>
-        <div className="dashboard-style-1">
+        <div className="dashboard-style-2">
           <div className="div-6">
             <div className="div-7">
               <div className="div-8">
-                <span className="span">
-                  <Image
-                    alt="Your Avatar"
-                    draggable="false"
-                    image="https://react-dashboard-design.vercel.app/assets/avatar.png"
-                    className="raw-img"
-                  />
-                </span>
                 <div className="div-9">
                   <div className="div-10">
-                    <h2 className="h2">Ofek Ashery</h2>
-                    <div className="div-11">
-                      <button type="button" href="/projects" className="button">
-                        Create Project
-                      </button>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="p">Git Integrations</p>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/ofekashery"
-                      className="a-8"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="div-12">
-              <div className="div-13">
-                <div className="div-14">
-                  <div className="div-15">
-                    <div className="div-16">
-                      <div className="div-17">
-                        <div className="div-18">
-                          <h3 className="h3">react-dashboard-design</h3>
-                          <button
-                            type="button"
-                            height="0.8"
-                            className="button-2"
-                          >
-                            Visit
-                          </button>
-                        </div>
-                      </div>
-                      <footer className="footer">
-                        ofekashery/react-dashboard-design
-                      </footer>
-                    </div>
-                  </div>
-                  <div className="div-19" />
-                  <div />
-                  <a className="a-9">View All Projects</a>
-                </div>
-                <div className="div-20">
-                  <h2 className="h2-2">Recent Activity</h2>
-                  <div className="div-21">
-                    <span className="span-2">
-                      <Image
-                        alt="ofekashery Avatar"
-                        draggable="false"
-                        image="https://react-dashboard-design.vercel.app/assets/avatar.png"
-                        className="raw-img"
-                      />
-                    </span>
-                    <p className="p-2">
-                      You deployed react-dashboard-design to{" "}
-                    </p>
-                    <p className="p-3">4m</p>
-                  </div>
-                  <a className="a-10">View All Activity</a>
-                </div>
-              </div>
-            </div>
-            <footer className="footer-2">Made with</footer>
-          </div>
-          <div />
-          <div />
-          <next-route-announcer>
-            <p aria-live="assertive" role="alert" className="p-4" />
-          </next-route-announcer>
-        </div>
-        <div className="dashboard-style-2">
-          <div className="div-22">
-            <div className="div-23">
-              <div className="div-24">
-                <div className="div-25">
-                  <div className="div-26">
-                    <span className="span-3" />
+                    <span className="span" />
                     <input
                       type="text"
                       placeholder="Search..."
@@ -159,7 +69,7 @@ export default function MyComponent() {
                   </div>
                 </div>
               </div>
-              <button type="button" marginleft="1" className="button-3">
+              <button type="button" marginleft="1" className="button">
                 New Project
               </button>
               <button
@@ -167,18 +77,18 @@ export default function MyComponent() {
                 marginleft="1"
                 px="0"
                 width="48px"
-                className="button-4"
+                className="button-2"
               >
-                <span className="span-4" />
+                <span className="span-2" />
               </button>
             </div>
-            <div margintop="1" className="div-27">
-              <div className="div-28">
-                <div className="div-29">
-                  <div className="div-30">
-                    <div className="div-31">
-                      <div className="div-32">
-                        <span className="span-5">
+            <div margintop="1" className="div-11">
+              <div className="div-12">
+                <div className="div-13">
+                  <div className="div-14">
+                    <div className="div-15">
+                      <div className="div-16">
+                        <span className="span-3">
                           <Image
                             alt="avatar"
                             draggable="false"
@@ -190,30 +100,30 @@ export default function MyComponent() {
                           />
                         </span>
                         <div>
-                          <p margin="0" className="p-5">
+                          <p margin="0" className="p">
                             react-dashboard-design
                           </p>
-                          <p margin="0" font="0.875rem" className="p-6">
+                          <p margin="0" font="0.875rem" className="p-2">
                             react-dashboard-design.vercel.app
                           </p>
                         </div>
                       </div>
-                      <div margin="0" className="div-33">
+                      <div margin="0" className="div-17">
                         Bump version
                       </div>
-                      <p marginbottom="0" font="0.875rem" className="p-7">
+                      <p marginbottom="0" font="0.875rem" className="p-3">
                         4m
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="div-34">
-                <div className="div-35">
-                  <div className="div-36">
-                    <div className="div-37">
-                      <div className="div-38">
-                        <span className="span-6">
+              <div className="div-18">
+                <div className="div-19">
+                  <div className="div-20">
+                    <div className="div-21">
+                      <div className="div-22">
+                        <span className="span-4">
                           <Image
                             alt="avatar"
                             draggable="false"
@@ -225,18 +135,18 @@ export default function MyComponent() {
                           />
                         </span>
                         <div>
-                          <p margin="0" className="p-8">
+                          <p margin="0" className="p">
                             github-blog
                           </p>
-                          <p margin="0" font="0.875rem" className="p-9">
+                          <p margin="0" font="0.875rem" className="p-4">
                             github.blog
                           </p>
                         </div>
                       </div>
-                      <div margin="0" className="div-39">
+                      <div margin="0" className="div-23">
                         Fix font-size in footer
                       </div>
-                      <p marginbottom="0" font="0.875rem" className="p-10">
+                      <p marginbottom="0" font="0.875rem" className="p-5">
                         8d
                       </p>
                     </div>
@@ -246,105 +156,105 @@ export default function MyComponent() {
             </div>
           </div>
         </div>
-        <div data-testid="purchaseoptions-section" className="div-40">
-          <div className="div-41">
-            <div className="div-42">
-              <div className="div-43">
-                <div className="div-44">Invoices (last 30 days)</div>
-                <div className="div-45">
-                  <div className="div-46">Paid</div>
+        <div data-testid="purchaseoptions-section" className="div-24">
+          <div className="div-25">
+            <div className="div-26">
+              <div className="div-27">
+                <div className="div-28">Invoices (last 30 days)</div>
+                <div className="div-29">
+                  <div className="div-30">Paid</div>
                   <a
                     data-test-invoices-overview-card-link=""
                     data-ember-action=""
                     data-ember-action-3295="3295"
-                    className="a-11"
+                    className="a-7"
                   >
                     View
                   </a>
                 </div>
-                <div className="div-47">
-                  <div className="div-48">
-                    <span className="span-7">$700.00</span>
-                    <div className="div-49">
+                <div className="div-31">
+                  <div className="div-32">
+                    <span className="span-5">$700.00</span>
+                    <div className="div-33">
+                      <span className="span-6">/ MoM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="div-34">
+              <div className="div-35">
+                <div className="div-36">Estimates</div>
+                <div className="div-37">
+                  <div className="div-38">Pending approval</div>
+                  <a
+                    data-test-invoices-overview-card-link=""
+                    data-ember-action=""
+                    data-ember-action-3302="3302"
+                    className="a-8"
+                  >
+                    View
+                  </a>
+                </div>
+                <div className="div-39">
+                  <div className="div-40">$0.00</div>
+                </div>
+              </div>
+            </div>
+            <div className="div-41">
+              <div className="div-42">
+                <div className="div-43">Invoices</div>
+                <div className="div-44">
+                  <div className="div-45">Outstanding</div>
+                  <a
+                    data-test-invoices-overview-card-link=""
+                    data-ember-action=""
+                    data-ember-action-3305="3305"
+                    className="a-9"
+                  >
+                    View
+                  </a>
+                </div>
+                <div className="div-46">
+                  <div className="div-47">$600.00</div>
+                </div>
+              </div>
+            </div>
+            <div className="div-48">
+              <div className="div-49">
+                <div className="div-50">Estimates (last 30 days)</div>
+                <div className="div-51">
+                  <div className="div-52">Accepted</div>
+                  <a
+                    data-test-invoices-overview-card-link=""
+                    data-ember-action=""
+                    data-ember-action-3308="3308"
+                    className="a-10"
+                  >
+                    View
+                  </a>
+                </div>
+                <div className="div-53">
+                  <div className="div-54">
+                    <span className="span-7">$0.00</span>
+                    <div className="div-55">
                       <span className="span-8">/ MoM</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="div-50">
-              <div className="div-51">
-                <div className="div-52">Estimates</div>
-                <div className="div-53">
-                  <div className="div-54">Pending approval</div>
-                  <a
-                    data-test-invoices-overview-card-link=""
-                    data-ember-action=""
-                    data-ember-action-3302="3302"
-                    className="a-12"
-                  >
-                    View
-                  </a>
-                </div>
-                <div className="div-55">
-                  <div className="div-56">$0.00</div>
-                </div>
-              </div>
-            </div>
-            <div className="div-57">
-              <div className="div-58">
-                <div className="div-59">Invoices</div>
-                <div className="div-60">
-                  <div className="div-61">Outstanding</div>
-                  <a
-                    data-test-invoices-overview-card-link=""
-                    data-ember-action=""
-                    data-ember-action-3305="3305"
-                    className="a-13"
-                  >
-                    View
-                  </a>
-                </div>
-                <div className="div-62">
-                  <div className="div-63">$600.00</div>
-                </div>
-              </div>
-            </div>
-            <div className="div-64">
-              <div className="div-65">
-                <div className="div-66">Estimates (last 30 days)</div>
-                <div className="div-67">
-                  <div className="div-68">Accepted</div>
-                  <a
-                    data-test-invoices-overview-card-link=""
-                    data-ember-action=""
-                    data-ember-action-3308="3308"
-                    className="a-14"
-                  >
-                    View
-                  </a>
-                </div>
-                <div className="div-69">
-                  <div className="div-70">
-                    <span className="span-9">$0.00</span>
-                    <div className="div-71">
-                      <span className="span-10">/ MoM</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="div-72">
-              <div className="div-73">
-                <div className="div-74">
-                  <div className="div-75">
+            <div className="div-56">
+              <div className="div-57">
+                <div className="div-58">
+                  <div className="div-59">
                     <h4 className="h4">You’re ready to take command</h4>
-                    <p className="p-11">
+                    <p className="p-6">
                       The more invoices and estimates sent, the more useful this
                       overview section becomes. You’ll see handy graphs,
                       reports, and everything you’ll need for smooth sailing.
                     </p>
-                    <a target="_blank" className="a-15">
+                    <a target="_blank" className="a-11">
                       Discover more
                     </a>
                   </div>
@@ -352,226 +262,226 @@ export default function MyComponent() {
               </div>
             </div>
           </div>
-          <div className="div-76">
-            <div data-testid="connect-domain-option" className="div-77">
-              <div className="div-78">Connect existing domain</div>
-              <div className="div-79">$11.99/year</div>
+          <div className="div-60">
+            <div data-testid="connect-domain-option" className="div-61">
+              <div className="div-62">Connect existing domain</div>
+              <div className="div-63">$11.99/year</div>
               <a
                 type="button"
                 href="https://app.unlimitednow.site/launch"
-                className="a-16"
+                className="a-12"
               >
                 Activate
               </a>
             </div>
-            <div data-testid="purchase-domain-option" className="div-80">
-              <div className="div-81">Purchase new domain</div>
-              <div className="div-82">$11.99/year*</div>
+            <div data-testid="purchase-domain-option" className="div-64">
+              <div className="div-65">Purchase new domain</div>
+              <div className="div-66">$11.99/year*</div>
               <a
                 type="button"
                 href="https://app.unlimitednow.site/launch"
-                className="a-17"
+                className="a-13"
               >
                 Purchase a domain
               </a>
-              <div className="div-83">
+              <div className="div-67">
                 <p>*Free connection when you buy a domain through us</p>
               </div>
             </div>
-            <div data-testid="connect-domain-option" className="div-84">
-              <div className="div-85" />
+            <div data-testid="connect-domain-option" className="div-68">
+              <div className="div-69" />
             </div>
           </div>
-          <div className="div-86">
-            <div data-testid="connect-domain-option" className="div-87">
-              <div className="div-88">Connect existing domain</div>
-              <div className="div-89">$11.99/year</div>
+          <div className="div-70">
+            <div data-testid="connect-domain-option" className="div-71">
+              <div className="div-72">Connect existing domain</div>
+              <div className="div-73">$11.99/year</div>
               <a
                 type="button"
                 href="https://app.unlimitednow.site/launch"
-                className="a-18"
+                className="a-14"
               >
                 Activate
               </a>
             </div>
-            <div data-testid="connect-domain-option" className="div-90">
-              <div className="div-91" />
-              <div data-testid="purchase-domain-option" className="div-92">
-                <div className="div-93" />
+            <div data-testid="connect-domain-option" className="div-74">
+              <div className="div-75" />
+              <div data-testid="purchase-domain-option" className="div-76">
+                <div className="div-77" />
                 <a
                   type="button"
                   href="https://app.unlimitednow.site/launch"
-                  className="a-19"
+                  className="a-15"
                 >
                   Purchase a domain
                 </a>
-                <div className="div-94">
+                <div className="div-78">
                   <p>*Free connection when you buy a domain through us</p>
                 </div>
               </div>
               <h5 className="h5">Current deals and limited offers</h5>
             </div>
           </div>
-          <div className="div-95">
+          <div className="div-79">
+            <button
+              tabIndex="-1"
+              type="button"
+              disabled=""
+              className="button-3"
+            >
+              <span className="span-9" />
+            </button>
+            <button
+              tabIndex="-1"
+              type="button"
+              disabled=""
+              className="button-4"
+            >
+              <span className="span-10">1</span>
+            </button>
+            <div className="div-80" />
             <button
               tabIndex="-1"
               type="button"
               disabled=""
               className="button-5"
             >
-              <span className="span-11" />
+              <span className="span-11">2</span>
             </button>
+            <div className="div-81" />
             <button
               tabIndex="-1"
               type="button"
               disabled=""
               className="button-6"
             >
-              <span className="span-12">1</span>
+              <span className="span-12">3</span>
             </button>
-            <div className="div-96" />
+            <div className="div-82" />
             <button
               tabIndex="-1"
               type="button"
               disabled=""
               className="button-7"
             >
-              <span className="span-13">2</span>
+              <span className="span-13">4</span>
             </button>
-            <div className="div-97" />
-            <button
-              tabIndex="-1"
-              type="button"
-              disabled=""
-              className="button-8"
-            >
-              <span className="span-14">3</span>
-            </button>
-            <div className="div-98" />
-            <button
-              tabIndex="-1"
-              type="button"
-              disabled=""
-              className="button-9"
-            >
-              <span className="span-15">4</span>
-            </button>
-            <div className="div-99">
-              <span data-for="button-tooltip-1" className="span-16">
-                <button title="Next" className="button-10">
+            <div className="div-83">
+              <span data-for="button-tooltip-1" className="span-14">
+                <button title="Next" className="button-8">
                   <p>Continue for free</p>
                 </button>
               </span>
             </div>
           </div>
-          <div className="div-100">
-            <div className="div-101">
-              <div className="div-102">
+          <div className="div-84">
+            <div className="div-85">
+              <div className="div-86">
                 <Image
                   alt=""
                   image="https://cdn.builder.io/api/v1/image/assets%2Ffc8480a6998e49d7af4ee889483a2619%2Feff799c8d367402ea517b9b6bfad1a91"
                   className="raw-img-2"
                 />
               </div>
-              <div className="div-103">
+              <div className="div-87">
                 <p>Brainstorm</p>
               </div>
             </div>
-            <div className="div-104">
-              <div className="div-105">
+            <div className="div-88">
+              <div className="div-89">
                 <Image
                   alt=""
                   image="https://cdn.builder.io/api/v1/image/assets%2Ffc8480a6998e49d7af4ee889483a2619%2F979cba573e8f4abcb51255291bdb54c9"
                   className="raw-img-3"
                 />
               </div>
-              <div className="div-106">
+              <div className="div-90">
                 <p>Validate</p>
               </div>
             </div>
-            <div className="div-107">
-              <div className="div-108">
+            <div className="div-91">
+              <div className="div-92">
                 <Image
                   alt=""
                   image="https://cdn.builder.io/api/v1/image/assets%2Ffc8480a6998e49d7af4ee889483a2619%2F87146273c310469ea4c723aa3632eae2"
                   className="raw-img-4"
                 />
               </div>
-              <div className="div-109">
+              <div className="div-93">
                 <p>Distribute</p>
               </div>
             </div>
-            <div className="div-110">
-              <div className="div-111">
+            <div className="div-94">
+              <div className="div-95">
                 <Image
                   alt=""
                   image="https://cdn.builder.io/api/v1/image/assets%2Ffc8480a6998e49d7af4ee889483a2619%2Fc07b4de58df84a78b6ad69dd841c6dec"
                   className="raw-img-5"
                 />
               </div>
-              <div className="div-112">
+              <div className="div-96">
                 <p>Capitalize</p>
               </div>
             </div>
           </div>
-          <div className="div-113">
-            <div className="div-114">
-              <h2 className="h2-3">Available discounts</h2>
-              <div className="div-115">
-                <a target="_blank" aria-label="Discounts" className="a-20">
+          <div className="div-97">
+            <div className="div-98">
+              <h2 className="h2">Available discounts</h2>
+              <div className="div-99">
+                <a target="_blank" aria-label="Discounts" className="a-16">
                   See all discounts
                 </a>
-                <div data-v-8f691bbc="" className="div-116">
+                <div data-v-8f691bbc="" className="div-100">
                   <button
                     data-v-8f691bbc=""
                     data-toggle="dropdown"
                     data-test="dPfKn2n8wXKSCJw"
-                    className="button-11"
+                    className="button-9"
                   >
                     <em data-v-8f691bbc="" aria-hidden="true" className="em" />
-                    <span data-v-8f691bbc="" className="span-17">
+                    <span data-v-8f691bbc="" className="span-15">
                       Rating
                     </span>
                   </button>
                   <div
                     data-v-f77966aa=""
                     data-v-8f691bbc=""
-                    className="div-117"
+                    className="div-101"
                   />
                 </div>
               </div>
             </div>
-            <div className="div-118">
-              <div data-v-26abab14="" className="div-119">
-                <div data-v-26abab14="" className="div-120">
-                  <div data-v-26abab14="" className="div-121">
+            <div className="div-102">
+              <div data-v-26abab14="" className="div-103">
+                <div data-v-26abab14="" className="div-104">
+                  <div data-v-26abab14="" className="div-105">
                     Sample orders
                   </div>
-                  <div data-v-26abab14="" className="div-122">
+                  <div data-v-26abab14="" className="div-106">
                     Check out your designs in real life for a special price
                   </div>
-                  <div data-v-26abab14="" className="div-123">
-                    <div data-v-26abab14="" className="div-124">
+                  <div data-v-26abab14="" className="div-107">
+                    <div data-v-26abab14="" className="div-108">
                       <em data-v-26abab14="" className="em-2" />
-                      <div data-v-26abab14="" className="div-125">
+                      <div data-v-26abab14="" className="div-109">
                         20% discount
                       </div>
                     </div>
-                    <div data-v-26abab14="" className="div-126">
+                    <div data-v-26abab14="" className="div-110">
                       <em data-v-26abab14="" className="em-3" />
-                      <div data-v-26abab14="" className="div-127">
+                      <div data-v-26abab14="" className="div-111">
                         3 products/order
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div data-v-7b348c23="" className="div-128">
-                <div data-v-7b348c23="" className="div-129">
-                  <div data-v-7b348c23="" className="div-130">
+              <div data-v-7b348c23="" className="div-112">
+                <div data-v-7b348c23="" className="div-113">
+                  <div data-v-7b348c23="" className="div-114">
                     Your monthly discounts
                   </div>
-                  <div data-v-7b348c23="" className="div-131">
+                  <div data-v-7b348c23="" className="div-115">
                     Sell more this month, and get a discount for orders made
                     next month!
                   </div>
@@ -579,49 +489,49 @@ export default function MyComponent() {
                 <div
                   data-v-f77966aa=""
                   data-v-7b348c23=""
-                  className="div-132"
+                  className="div-116"
                 />
+              </div>
+              <div className="div-117">
+                <div className="div-118">
+                  <div className="div-119">
+                    <div className="div-120">
+                      <p>Generate using A.I.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="div-121">
+                  <div className="div-122">
+                    <div className="div-123">
+                      <p>Generate using A.I.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="div-124">
+                  <div className="div-125">
+                    <div className="div-126">
+                      <p>Generate using A.I.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="div-127">
+                  <div className="div-128">
+                    <div className="div-129">
+                      <p>Generate using A.I.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="div-130">
+                  <div className="div-131">
+                    <div className="div-132">
+                      <p>Generate using A.I.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="div-133">
                 <div className="div-134">
-                  <div className="div-135">
-                    <div className="div-136">
-                      <p>Generate using A.I.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="div-137">
-                  <div className="div-138">
-                    <div className="div-139">
-                      <p>Generate using A.I.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="div-140">
-                  <div className="div-141">
-                    <div className="div-142">
-                      <p>Generate using A.I.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="div-143">
-                  <div className="div-144">
-                    <div className="div-145">
-                      <p>Generate using A.I.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="div-146">
-                  <div className="div-147">
-                    <div className="div-148">
-                      <p>Generate using A.I.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="div-149">
-                <div className="div-150">
-                  <div className="div-151" lockAspectRatio={false}>
+                  <div className="div-135" lockAspectRatio={false}>
                     <picture>
                       <source
                         srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F354d8eec95924f8194d960d291ddfd74"
@@ -636,36 +546,36 @@ export default function MyComponent() {
                     </picture>
                     <div className="builder-image-sizer image-sizer-2" />
                   </div>
-                  <div className="div-152">
+                  <div className="div-136">
                     <h4 className="h4-2">
                       How to start a print-on-demand business for beginners
                     </h4>
-                    <div data-v-b3a63e32="" className="div-153">
-                      <div data-v-b3a63e32="" className="div-154">
+                    <div data-v-b3a63e32="" className="div-137">
+                      <div data-v-b3a63e32="" className="div-138">
+                        <div data-v-b3a63e32="" className="div-139" />
+                        <div data-v-b3a63e32="" className="div-140" />
+                        <div data-v-b3a63e32="" className="div-141" />
+                        <div data-v-b3a63e32="" className="div-142" />
+                        <div data-v-b3a63e32="" className="div-143" />
+                        <div data-v-b3a63e32="" className="div-144" />
+                        <div data-v-b3a63e32="" className="div-145" />
+                        <div data-v-b3a63e32="" className="div-146" />
+                        <div data-v-b3a63e32="" className="div-147" />
+                        <div data-v-b3a63e32="" className="div-148" />
+                        <div data-v-b3a63e32="" className="div-149" />
+                        <div data-v-b3a63e32="" className="div-150" />
+                        <div data-v-b3a63e32="" className="div-151" />
+                        <div data-v-b3a63e32="" className="div-152" />
+                        <div data-v-b3a63e32="" className="div-153" />
+                        <div data-v-b3a63e32="" className="div-154" />
                         <div data-v-b3a63e32="" className="div-155" />
                         <div data-v-b3a63e32="" className="div-156" />
                         <div data-v-b3a63e32="" className="div-157" />
                         <div data-v-b3a63e32="" className="div-158" />
                         <div data-v-b3a63e32="" className="div-159" />
                         <div data-v-b3a63e32="" className="div-160" />
-                        <div data-v-b3a63e32="" className="div-161" />
-                        <div data-v-b3a63e32="" className="div-162" />
-                        <div data-v-b3a63e32="" className="div-163" />
-                        <div data-v-b3a63e32="" className="div-164" />
-                        <div data-v-b3a63e32="" className="div-165" />
-                        <div data-v-b3a63e32="" className="div-166" />
-                        <div data-v-b3a63e32="" className="div-167" />
-                        <div data-v-b3a63e32="" className="div-168" />
-                        <div data-v-b3a63e32="" className="div-169" />
-                        <div data-v-b3a63e32="" className="div-170" />
-                        <div data-v-b3a63e32="" className="div-171" />
-                        <div data-v-b3a63e32="" className="div-172" />
-                        <div data-v-b3a63e32="" className="div-173" />
-                        <div data-v-b3a63e32="" className="div-174" />
-                        <div data-v-b3a63e32="" className="div-175" />
-                        <div data-v-b3a63e32="" className="div-176" />
-                        <div data-v-b3a63e32="" className="div-177">
-                          <p data-v-b3a63e32="" className="p-12">
+                        <div data-v-b3a63e32="" className="div-161">
+                          <p data-v-b3a63e32="" className="p-7">
                             0%
                           </p>
                           <div
@@ -675,9 +585,9 @@ export default function MyComponent() {
                             title=""
                             pf-tooltip=""
                             tabIndex="0"
-                            className="div-178"
+                            className="div-162"
                           >
-                            <div className="div-179" lockAspectRatio={false}>
+                            <div className="div-163" lockAspectRatio={false}>
                               <picture>
                                 <source
                                   srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011"
@@ -697,7 +607,7 @@ export default function MyComponent() {
                               data-test="academy-dash-course-challenges-icon"
                               className="em-4"
                             />
-                            <p data-v-b3a63e32="" className="p-13">
+                            <p data-v-b3a63e32="" className="p-8">
                               200
                             </p>
                           </div>
@@ -706,45 +616,45 @@ export default function MyComponent() {
                     </div>
                   </div>
                   <hr className="hr" />
-                  <p className="p-14">
+                  <p className="p-9">
                     Start your journey in the world of print-on-demand business
                     the right way by completing this quick course! In addition
                     to the knowledge and useful information,{" "}
                   </p>
-                  <div className="div-180">
-                    <div className="div-181">
-                      <div className="div-182">
-                        <div className="div-183">
-                          <div className="div-184">
+                  <div className="div-164">
+                    <div className="div-165">
+                      <div className="div-166">
+                        <div className="div-167">
+                          <div className="div-168">
                             <p>Generate using A.I.</p>
                           </div>
                         </div>
                       </div>
-                      <p className="p-15">
+                      <p className="p-10">
                         Store owners who completed this course
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="div-185">
-                <div className="div-186">
-                  <div className="div-187">
+              <div className="div-169">
+                <div className="div-170">
+                  <div className="div-171">
                     Current deals and limited offers
                   </div>
                 </div>
-                <div className="div-188">
-                  <div className="div-189">
-                    <div className="div-190">
+                <div className="div-172">
+                  <div className="div-173">
+                    <div className="div-174">
                       <a
                         data-v-b77880aa=""
                         href="https://lively-emerald-hornet.builder.live/custom/engraved/bracelets/silver-bar-chain-bracelet"
-                        className="a-21"
+                        className="a-17"
                       >
-                        <div data-v-b77880aa="" className="div-191">
-                          <div data-v-b77880aa="" className="div-192">
-                            <div className="div-193">
-                              <div className="div-194" lockAspectRatio={false}>
+                        <div data-v-b77880aa="" className="div-175">
+                          <div data-v-b77880aa="" className="div-176">
+                            <div className="div-177">
+                              <div className="div-178" lockAspectRatio={false}>
                                 <picture>
                                   <source
                                     srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011"
@@ -761,15 +671,15 @@ export default function MyComponent() {
                               </div>
                             </div>
                           </div>
-                          <div data-v-b77880aa="" className="div-195">
-                            <p data-v-b77880aa="" className="p-16">
+                          <div data-v-b77880aa="" className="div-179">
+                            <p data-v-b77880aa="" className="p-11">
                               Engraved Silver Bar Chain Bracelet
                             </p>
-                            <p data-v-b77880aa="" className="p-17">
-                              <span data-v-b77880aa="" className="span-18">
+                            <p data-v-b77880aa="" className="p-12">
+                              <span data-v-b77880aa="" className="span-16">
                                 $23.95
                               </span>
-                              <span data-v-b77880aa="" className="span-19">
+                              <span data-v-b77880aa="" className="span-17">
                                 $17.95
                               </span>
                             </p>
@@ -777,16 +687,16 @@ export default function MyComponent() {
                         </div>
                       </a>
                     </div>
-                    <div className="div-196">
+                    <div className="div-180">
                       <a
                         data-v-b77880aa=""
                         href="https://lively-emerald-hornet.builder.live/custom/mens/tank-tops/mens-classic-tank-top-gildan-2200"
-                        className="a-22"
+                        className="a-18"
                       >
-                        <div data-v-b77880aa="" className="div-197">
-                          <div data-v-b77880aa="" className="div-198">
-                            <div className="div-199">
-                              <div className="div-200" lockAspectRatio={false}>
+                        <div data-v-b77880aa="" className="div-181">
+                          <div data-v-b77880aa="" className="div-182">
+                            <div className="div-183">
+                              <div className="div-184" lockAspectRatio={false}>
                                 <picture>
                                   <source
                                     srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011"
@@ -803,16 +713,16 @@ export default function MyComponent() {
                               </div>
                             </div>
                           </div>
-                          <div data-v-b77880aa="" className="div-201">
-                            <p data-v-b77880aa="" className="p-18">
+                          <div data-v-b77880aa="" className="div-185">
+                            <p data-v-b77880aa="" className="p-13">
                               Men's Classic Tank Top | Gildan 2200
                             </p>{" "}
-                            <p data-v-b77880aa="" className="p-19">
-                              <span data-v-b77880aa="" className="span-20">
+                            <p data-v-b77880aa="" className="p-14">
+                              <span data-v-b77880aa="" className="span-18">
                                 {" "}
                                 $13.95{" "}
                               </span>{" "}
-                              <span data-v-b77880aa="" className="span-21">
+                              <span data-v-b77880aa="" className="span-19">
                                 {" "}
                                 $11.86{" "}
                               </span>
@@ -823,12 +733,12 @@ export default function MyComponent() {
                       <a
                         data-v-b77880aa=""
                         href="https://lively-emerald-hornet.builder.live/custom/mens/t-shirts/unisex-lightweight-t-shirt-gildan-980"
-                        className="a-23"
+                        className="a-19"
                       >
-                        <div data-v-b77880aa="" className="div-202">
-                          <div data-v-b77880aa="" className="div-203">
-                            <div className="div-204">
-                              <div className="div-205" lockAspectRatio={false}>
+                        <div data-v-b77880aa="" className="div-186">
+                          <div data-v-b77880aa="" className="div-187">
+                            <div className="div-188">
+                              <div className="div-189" lockAspectRatio={false}>
                                 <picture>
                                   <source
                                     srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011"
@@ -845,16 +755,16 @@ export default function MyComponent() {
                               </div>
                             </div>
                           </div>{" "}
-                          <div data-v-b77880aa="" className="div-206">
-                            <p data-v-b77880aa="" className="p-20">
+                          <div data-v-b77880aa="" className="div-190">
+                            <p data-v-b77880aa="" className="p-15">
                               Unisex Lightweight T-Shirt | Gildan 980
                             </p>{" "}
-                            <p data-v-b77880aa="" className="p-21">
-                              <span data-v-b77880aa="" className="span-22">
+                            <p data-v-b77880aa="" className="p-16">
+                              <span data-v-b77880aa="" className="span-20">
                                 {" "}
                                 $14.50{" "}
                               </span>{" "}
-                              <span data-v-b77880aa="" className="span-23">
+                              <span data-v-b77880aa="" className="span-21">
                                 {" "}
                                 $11.48{" "}
                               </span>
@@ -865,12 +775,12 @@ export default function MyComponent() {
                       <a
                         data-v-b77880aa=""
                         href="https://lively-emerald-hornet.builder.live/custom/engraved/bracelets/silver-bar-chain-bracelet"
-                        className="a-24"
+                        className="a-20"
                       >
-                        <div data-v-b77880aa="" className="div-207">
-                          <div data-v-b77880aa="" className="div-208">
-                            <div className="div-209">
-                              <div className="div-210" lockAspectRatio={false}>
+                        <div data-v-b77880aa="" className="div-191">
+                          <div data-v-b77880aa="" className="div-192">
+                            <div className="div-193">
+                              <div className="div-194" lockAspectRatio={false}>
                                 <picture>
                                   <source
                                     srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011"
@@ -887,16 +797,16 @@ export default function MyComponent() {
                               </div>
                             </div>
                           </div>{" "}
-                          <div data-v-b77880aa="" className="div-211">
-                            <p data-v-b77880aa="" className="p-22">
+                          <div data-v-b77880aa="" className="div-195">
+                            <p data-v-b77880aa="" className="p-17">
                               Engraved Silver Bar Chain Bracelet
                             </p>{" "}
-                            <p data-v-b77880aa="" className="p-23">
-                              <span data-v-b77880aa="" className="span-24">
+                            <p data-v-b77880aa="" className="p-18">
+                              <span data-v-b77880aa="" className="span-22">
                                 {" "}
                                 $23.95{" "}
                               </span>{" "}
-                              <span data-v-b77880aa="" className="span-25">
+                              <span data-v-b77880aa="" className="span-23">
                                 {" "}
                                 $17.95{" "}
                               </span>
@@ -908,9 +818,9 @@ export default function MyComponent() {
                   </div>
                 </div>
               </div>{" "}
-              <div className="div-212" />
+              <div className="div-196" />
             </div>{" "}
-            <div className="div-213" lockAspectRatio={false}>
+            <div className="div-197" lockAspectRatio={false}>
               <picture>
                 <source srcSet="" type="image/webp" />{" "}
                 <img
@@ -921,34 +831,34 @@ export default function MyComponent() {
               </picture>{" "}
               <div className="builder-image-sizer image-sizer-8" />
             </div>{" "}
-            <div className="div-214">
+            <div className="div-198">
               <section
                 data-id="495150a"
                 data-element_type="section"
                 className="section"
               >
-                <div className="div-215">
+                <div className="div-199">
                   <div
                     data-id="a9ed715"
                     data-element_type="column"
-                    className="div-216"
+                    className="div-200"
                   >
-                    <div className="div-217">
+                    <div className="div-201">
                       <div
                         data-id="7e7e551"
                         data-element_type="widget"
                         data-widget_type="heading.default"
-                        className="div-218"
+                        className="div-202"
                       >
-                        <div className="div-219">NEW COLLECTIONS</div>
+                        <div className="div-203">NEW COLLECTIONS</div>
                       </div>{" "}
                       <div
                         data-id="4ecfcbc"
                         data-element_type="widget"
                         data-widget_type="heading.default"
-                        className="div-220"
+                        className="div-204"
                       >
-                        <div className="div-221">
+                        <div className="div-205">
                           Best Sweatshirts and tracksuits for everyone!
                         </div>
                       </div>{" "}
@@ -956,9 +866,9 @@ export default function MyComponent() {
                         data-id="a22c85a"
                         data-element_type="widget"
                         data-widget_type="heading.default"
-                        className="div-222"
+                        className="div-206"
                       >
-                        <div className="div-223">
+                        <div className="div-207">
                           Sed do eiusmod tempor incididunt ut labore et dolore
                           magna aliqua. Quis ipsum suspendisse ultrices gravida.
                           Risus commodo viverra maecenas accumsan lacus vel
@@ -971,10 +881,10 @@ export default function MyComponent() {
                         data-widget_type="clotya-button.default"
                         href="https://unlimitednow.live/Unlimitednow.html"
                         target="_blank"
-                        className="a-25" rel="noreferrer"
+                        className="a-21" rel="noreferrer"
                       >
-                        <div className="div-224">
-                          <div className="div-225">
+                        <div className="div-208">
+                          <div className="div-209">
                             <p>Read Documentation</p>
                           </div>
                         </div>
@@ -984,17 +894,17 @@ export default function MyComponent() {
                   <div
                     data-id="00033fc"
                     data-element_type="column"
-                    className="div-226"
+                    className="div-210"
                   >
-                    <div className="div-227">
+                    <div className="div-211">
                       <div
                         data-id="10801ea"
                         data-element_type="widget"
                         data-widget_type="image.default"
-                        className="div-228"
+                        className="div-212"
                       >
-                        <div className="div-229">
-                          <div className="div-230" lockAspectRatio={false}>
+                        <div className="div-213">
+                          <div className="div-214" lockAspectRatio={false}>
                             <picture>
                               <source
                                 srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F3a72c7b0c601410ba15c931b815505ba"
@@ -1016,17 +926,17 @@ export default function MyComponent() {
                   <div
                     data-id="9e58aa6"
                     data-element_type="column"
-                    className="div-231"
+                    className="div-215"
                   >
-                    <div className="div-232">
+                    <div className="div-216">
                       <div
                         data-id="a8b1bab"
                         data-element_type="widget"
                         data-widget_type="image.default"
-                        className="div-233"
+                        className="div-217"
                       >
-                        <div className="div-234">
-                          <div className="div-235" lockAspectRatio={false}>
+                        <div className="div-218">
+                          <div className="div-219" lockAspectRatio={false}>
                             <picture>
                               <source
                                 srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82"
@@ -1041,7 +951,7 @@ export default function MyComponent() {
                             </picture>{" "}
                             <div className="builder-image-sizer image-sizer-10" />
                           </div>{" "}
-                          <div className="div-236" lockAspectRatio={false}>
+                          <div className="div-220" lockAspectRatio={false}>
                             <picture>
                               <source
                                 srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Ff7033084a3d547939031e3bf37f92d01"
@@ -1062,10 +972,10 @@ export default function MyComponent() {
                   </div>
                 </div>
               </section>{" "}
-              <div className="div-237">
-                <div className="builder-columns div-238">
+              <div className="div-221">
+                <div className="builder-columns div-222">
                   <div className="builder-column column">
-                    <div className="div-239">
+                    <div className="div-223">
                       <form
                         data-hs-cf-bound="true"
                         action="https://m4i1vcb4uenczlcmje3bkp.hooks.webhookrelay.com"
@@ -1078,14 +988,14 @@ export default function MyComponent() {
                           value="{user ? user.email : undefined}"
                           className="input-2"
                         />{" "}
-                        <button className="button-12">
+                        <button className="button-10">
                           <p>Toolkits</p>
                         </button>
                       </form>
                     </div>
                   </div>{" "}
                   <div className="builder-column column-2">
-                    <div className="div-240">
+                    <div className="div-224">
                       <form
                         data-hs-cf-bound="true"
                         action="https://m4i1vcb4uenczlcmje3bkp.hooks.webhookrelay.com"
@@ -1098,14 +1008,14 @@ export default function MyComponent() {
                           value="{user ? user.email : undefined}"
                           className="input-3"
                         />{" "}
-                        <button className="button-13">
+                        <button className="button-11">
                           <p>Websites</p>
                         </button>
                       </form>
                     </div>
                   </div>{" "}
                   <div className="builder-column column-3">
-                    <div className="div-241">
+                    <div className="div-225">
                       <form
                         data-hs-cf-bound="true"
                         action="https://m4i1vcb4uenczlcmje3bkp.hooks.webhookrelay.com"
@@ -1118,14 +1028,14 @@ export default function MyComponent() {
                           value="{user ? user.email : undefined}"
                           className="input-4"
                         />{" "}
-                        <button className="button-14">
+                        <button className="button-12">
                           <p>Updates</p>
                         </button>
                       </form>
                     </div>
                   </div>{" "}
                   <div className="builder-column column-4">
-                    <div className="div-242">
+                    <div className="div-226">
                       <form
                         data-hs-cf-bound="true"
                         action="https://m4i1vcb4uenczlcmje3bkp.hooks.webhookrelay.com"
@@ -1138,7 +1048,7 @@ export default function MyComponent() {
                           value="{user ? user.email : undefined}"
                           className="input-5"
                         />{" "}
-                        <button className="button-15">
+                        <button className="button-13">
                           <p>Integrations</p>
                         </button>
                       </form>
@@ -1146,10 +1056,10 @@ export default function MyComponent() {
                   </div>
                 </div>
               </div>{" "}
-              <div className="div-243">
-                <div className="builder-columns div-244">
+              <div className="div-227">
+                <div className="builder-columns div-228">
                   <div className="builder-column column-5">
-                    <div className="div-245" lockAspectRatio={false}>
+                    <div className="div-229" lockAspectRatio={false}>
                       <picture>
                         <source
                           srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F7f00a1ae4f334a8085da2bb64deca011"
@@ -1166,7 +1076,7 @@ export default function MyComponent() {
                     </div>
                   </div>{" "}
                   <div className="builder-column column-6">
-                    <div className="div-246" lockAspectRatio={false}>
+                    <div className="div-230" lockAspectRatio={false}>
                       <picture>
                         <source
                           srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fb37e99f8b330471c950476dfcf345d82"
@@ -1183,7 +1093,7 @@ export default function MyComponent() {
                     </div>
                   </div>{" "}
                   <div className="builder-column column-7">
-                    <div className="div-247" lockAspectRatio={false}>
+                    <div className="div-231" lockAspectRatio={false}>
                       <picture>
                         <source
                           srcSet="https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507?format=webp&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507"
@@ -1198,15 +1108,15 @@ export default function MyComponent() {
                       </picture>{" "}
                       <div className="builder-image-sizer image-sizer-14" />
                     </div>{" "}
-                    <div className="div-248" maxWidth={1200} lazyLoad={false}>
+                    <div className="div-232" maxWidth={1200} lazyLoad={false}>
                       <section className="section-2">
-                        <div className="div-249">
+                        <div className="div-233">
                           <p>*Free hosting when you buy a domain through us</p>
                         </div>{" "}
                         <a
                           type="button"
                           href="https://app.unlimitednow.site/launch"
-                          className="a-26"
+                          className="a-22"
                         >
                           <p>Learn more</p>
                         </a>
@@ -1215,51 +1125,51 @@ export default function MyComponent() {
                   </div>
                 </div>
               </div>{" "}
-              <div className="div-250">
+              <div className="div-234">
+                <button
+                  tabIndex="-1"
+                  type="button"
+                  disabled=""
+                  className="button-14"
+                >
+                  <span className="span-24" />
+                </button>{" "}
+                <button
+                  tabIndex="-1"
+                  type="button"
+                  disabled=""
+                  className="button-15"
+                >
+                  <span className="span-25">1</span>
+                </button>{" "}
+                <div className="div-235" />{" "}
                 <button
                   tabIndex="-1"
                   type="button"
                   disabled=""
                   className="button-16"
                 >
-                  <span className="span-26" />
+                  <span className="span-26">2</span>
                 </button>{" "}
+                <div className="div-236" />{" "}
                 <button
                   tabIndex="-1"
                   type="button"
                   disabled=""
                   className="button-17"
                 >
-                  <span className="span-27">1</span>
+                  <span className="span-27">3</span>
                 </button>{" "}
-                <div className="div-251" />{" "}
+                <div className="div-237" />{" "}
                 <button
                   tabIndex="-1"
                   type="button"
                   disabled=""
                   className="button-18"
                 >
-                  <span className="span-28">2</span>
+                  <span className="span-28">4</span>
                 </button>{" "}
-                <div className="div-252" />{" "}
-                <button
-                  tabIndex="-1"
-                  type="button"
-                  disabled=""
-                  className="button-19"
-                >
-                  <span className="span-29">3</span>
-                </button>{" "}
-                <div className="div-253" />{" "}
-                <button
-                  tabIndex="-1"
-                  type="button"
-                  disabled=""
-                  className="button-20"
-                >
-                  <span className="span-30">4</span>
-                </button>{" "}
-                <div className="div-254">
+                <div className="div-238">
                   <form
                     data-hs-cf-bound="true"
                     action="https://sso.unlimitpotential.com"
@@ -1272,13 +1182,13 @@ export default function MyComponent() {
                       value="{user ? user.email : undefined}"
                       className="input-6"
                     />{" "}
-                    <button className="button-21">
+                    <button className="button-19">
                       <p>Continue</p>
                     </button>
                   </form>
                 </div>
               </div>{" "}
-              <div className="div-255" />
+              <div className="div-239" />
             </div>
           </div>
         </div>
@@ -1296,6 +1206,12 @@ export default function MyComponent() {
           .div {
             width: auto;
             align-self: stretch;
+          }
+        }
+        @media (max-width: 640px) {
+          .div {
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
           }
         }
         .nav {
@@ -1565,36 +1481,6 @@ export default function MyComponent() {
           border-top-color: currentcolor;
         }
         .a-6 {
-          margin-left: 8px;
-          margin-right: 0px;
-          align-items: center;
-          border-radius: 0.375rem;
-          border-top-left-radius: 0.375rem;
-          color: rgba(63, 63, 63, 1);
-          cursor: pointer;
-          display: inline-flex;
-          font-weight: 500;
-          line-height: 1.5rem;
-          padding-bottom: 4px;
-          padding-left: 4px;
-          padding-right: 4px;
-          padding-top: 4px;
-          transition-duration: 75ms;
-          transition-property: color, background-color, border-color,
-            text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-            filter, backdrop-filter, -webkit-text-decoration-color,
-            -webkit-backdrop-filter;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          border-bottom: 0px solid currentcolor;
-          border-bottom-color: currentcolor;
-          border-left: 0px solid currentcolor;
-          border-left-color: currentcolor;
-          border-right: 0px solid currentcolor;
-          border-right-color: currentcolor;
-          border-top: 0px solid currentcolor;
-          border-top-color: currentcolor;
-        }
-        .a-7 {
           justify-content: flex-end;
           flex-basis: 0%;
           flex-grow: 1;
@@ -1627,501 +1513,9 @@ export default function MyComponent() {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
         @media (max-width: 640px) {
-          .a-7 {
+          .a-6 {
             color: rgba(70, 70, 70, 1);
           }
-        }
-        .dashboard-style-1 {
-          font-size: 1rem;
-          line-height: 1.5;
-          min-height: 100%;
-          overflow-x: hidden;
-          position: relative;
-          background-color: rgb(0, 0, 0);
-        }
-        .div-6 {
-          overflow-x: hidden;
-        }
-        .div-7 {
-          border-bottom: 1px solid rgb(51, 51, 51);
-          border-bottom-color: rgb(51, 51, 51);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-        }
-        .div-8 {
-          display: flex;
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 100%;
-          padding-bottom: 85.3333px;
-          padding-left: 21.3333px;
-          padding-right: 21.3333px;
-          padding-top: 42.6667px;
-          width: 782pt;
-        }
-        .span {
-          height: 100px;
-          margin-right: 21.3333px;
-          width: 100px;
-          background-color: rgb(0, 0, 0);
-          border-bottom: 1px solid rgb(51, 51, 51);
-          border-bottom-color: rgb(51, 51, 51);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgb(51, 51, 51);
-          border-left: 1px solid rgb(51, 51, 51);
-          border-left-color: rgb(51, 51, 51);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 50%;
-          border-right: 1px solid rgb(51, 51, 51);
-          border-right-color: rgb(51, 51, 51);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(51, 51, 51);
-          border-top-color: rgb(51, 51, 51);
-          border-top-left-radius: 50%;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          display: inline-block;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          position: relative;
-          vertical-align: top;
-        }
-        @media (max-width: 640px) {
-          .span {
-            height: 80px;
-            width: 80px;
-          }
-        }
-        .raw-img {
-          border-radius: 50%;
-          border-top-left-radius: 50%;
-          display: inline-block;
-          height: 100%;
-          object-fit: cover;
-          user-select: none;
-          width: 100%;
-          max-width: 100%;
-        }
-        .div-9 {
-          display: flex;
-          flex-basis: 0%;
-          flex-direction: column;
-          flex-grow: 1;
-          justify-content: center;
-        }
-        .div-10 {
-          align-items: center;
-          display: flex;
-          flex-basis: 0%;
-          flex-grow: 1;
-        }
-        .h2 {
-          line-height: 1;
-          font-size: 2.25rem;
-          font-weight: 600;
-          letter-spacing: -0.02em;
-          margin-bottom: 11.2px;
-          color: rgba(255, 255, 255, 1);
-        }
-        @media (max-width: 640px) {
-          .h2 {
-            font-size: 1.5rem;
-          }
-        }
-        .div-11 {
-          margin-left: auto;
-        }
-        @media (max-width: 640px) {
-          .div-11 {
-            display: none;
-          }
-        }
-        .button {
-          background-color: rgb(255, 255, 255);
-          border-bottom: 1px solid rgb(255, 255, 255);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-left: 1px solid rgb(255, 255, 255);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 5px;
-          border-right: 1px solid rgb(255, 255, 255);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(255, 255, 255);
-          border-top-left-radius: 5px;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          color: rgb(0, 0, 0);
-          cursor: pointer;
-          display: inline-flex;
-          font-size: calc(14px);
-          height: calc(40px);
-          justify-content: center;
-          line-height: calc(40px);
-          min-width: min-content;
-          outline: none;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          padding-left: 18.4px;
-          padding-right: 18.4px;
-          position: relative;
-          text-align: center;
-          text-transform: capitalize;
-          transition: background-color 200ms ease 0ms, box-shadow 200ms ease 0ms,
-            border 200ms ease 0ms, color 200ms ease 0ms;
-          transition-delay: 0ms, 0ms, 0ms, 0ms;
-          transition-duration: 200ms, 200ms, 200ms, 200ms;
-          transition-property: background-color, box-shadow, border, color;
-          transition-timing-function: ease, ease, ease, ease;
-          user-select: none;
-          white-space: nowrap;
-          border-color: rgba(0, 0, 0, 0);
-          align-items: center;
-          top: -1px;
-          z-index: 1;
-        }
-        @media (max-width: 991px) {
-          .button {
-            border-color: rgb(255, 255, 255);
-          }
-        }
-        .p {
-          color: rgb(136, 136, 136);
-          font-size: 0.75rem;
-          font-weight: 500;
-          text-transform: uppercase;
-          line-height: 1.625em;
-          letter-spacing: -0.005625em;
-        }
-        .a-8 {
-          align-items: baseline;
-          display: inline-flex;
-          text-decoration: none;
-          transition: color 200ms ease 0ms;
-          transition-delay: 0ms;
-          transition-duration: 200ms;
-          transition-property: color;
-          width: fit-content;
-          cursor: pointer;
-        }
-        .div-12 {
-          background-color: rgb(17, 17, 17);
-        }
-        .div-13 {
-          display: flex;
-          flex-flow: row wrap;
-          flex-wrap: wrap;
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 100%;
-          padding-left: 21.3333px;
-          padding-right: 21.3333px;
-          transform: translateY(-35px);
-          width: 782pt;
-        }
-        @media (max-width: 991px) {
-          .div-13 {
-            align-items: stretch;
-            flex-direction: column;
-            justify-content: flex-start;
-          }
-        }
-        .div-14 {
-          margin-right: calc(64pt);
-          max-width: 100%;
-          width: 540px;
-        }
-        @media (max-width: 991px) {
-          .div-14 {
-            margin-right: unset;
-            width: 100%;
-          }
-        }
-        .div-15 {
-          margin-bottom: calc(24pt);
-        }
-        .div-16 {
-          background-color: rgb(0, 0, 0);
-          border-bottom: 1px solid transparent;
-          border-bottom-color: transparent;
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgba(0, 0, 0, 0);
-          border-left: 1px solid transparent;
-          border-left-color: transparent;
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 5px;
-          border-right: 1px solid transparent;
-          border-right-color: transparent;
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid transparent;
-          border-top-color: transparent;
-          border-top-left-radius: 5px;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          box-shadow: rgb(51, 51, 51) 0px 0px 0px 1px;
-          transition: all 0.2s ease 0s;
-          transition-duration: 0.2s;
-        }
-        .div-17 {
-          padding-bottom: 16px;
-          padding-left: 16px;
-          padding-right: 16px;
-          padding-top: 16px;
-          width: 100%;
-        }
-        .div-18 {
-          align-items: center;
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 16pt;
-        }
-        .h3 {
-          font-size: 1.5rem;
-          font-weight: 600;
-          letter-spacing: -0.02em;
-          color: rgba(255, 255, 255, 1);
-        }
-        .button-2 {
-          background-color: rgb(0, 0, 0);
-          border-bottom: 1px solid rgb(51, 51, 51);
-          border-bottom-color: rgb(51, 51, 51);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgb(51, 51, 51);
-          border-left: 1px solid rgb(51, 51, 51);
-          border-left-color: rgb(51, 51, 51);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 5px;
-          border-right: 1px solid rgb(51, 51, 51);
-          border-right-color: rgb(51, 51, 51);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(51, 51, 51);
-          border-top-color: rgb(51, 51, 51);
-          border-top-left-radius: 5px;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          color: rgb(136, 136, 136);
-          cursor: pointer;
-          display: inline-flex;
-          font-size: calc(14px);
-          height: calc(32px);
-          justify-content: center;
-          line-height: calc(32px);
-          min-width: min-content;
-          outline: none;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          padding-left: 18.4px;
-          padding-right: 18.4px;
-          position: relative;
-          text-align: center;
-          text-transform: capitalize;
-          transition: background-color 200ms ease 0ms, box-shadow 200ms ease 0ms,
-            border 200ms ease 0ms, color 200ms ease 0ms;
-          transition-delay: 0ms, 0ms, 0ms, 0ms;
-          transition-duration: 200ms, 200ms, 200ms, 200ms;
-          transition-property: background-color, box-shadow, border, color;
-          transition-timing-function: ease, ease, ease, ease;
-          user-select: none;
-          white-space: nowrap;
-          align-items: center;
-          top: -1px;
-          z-index: 1;
-        }
-        @media (max-width: 640px) {
-          .button-2 {
-            display: none;
-          }
-        }
-        .footer {
-          align-items: center;
-          display: flex;
-          font-weight: 500;
-          border-top: 1px solid rgb(51, 51, 51);
-          border-top-color: rgb(51, 51, 51);
-          border-top-style: solid;
-          border-top-width: 1px;
-          font-size: 0.875rem;
-          min-height: calc(52.8px);
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          padding-bottom: 10.56px;
-          padding-left: 20.96px;
-          padding-right: 20.96px;
-          padding-top: 10.56px;
-          margin-left: 5.33333px;
-          margin-right: 5.33333px;
-          line-height: 1.625em;
-          letter-spacing: -0.005625em;
-          color: rgba(255, 255, 255, 1);
-        }
-        .div-19 {
-          margin-bottom: calc(24pt);
-        }
-        .a-9 {
-          font-size: 0.875rem;
-          font-weight: 700;
-          margin-bottom: 32px;
-          margin-top: 32px;
-          text-align: center;
-          align-items: baseline;
-          color: rgb(50, 145, 255);
-          display: inline-flex;
-          text-decoration: none;
-          transition: color 200ms ease 0ms;
-          transition-delay: 0ms;
-          transition-duration: 200ms;
-          transition-property: color;
-          width: fit-content;
-          cursor: pointer;
-        }
-        .div-20 {
-          flex-basis: 0%;
-          flex-grow: 1;
-        }
-        .h2-2 {
-          font-size: 0.875rem;
-          font-weight: 700;
-          margin-bottom: 32px;
-          letter-spacing: -0.02em;
-        }
-        .div-21 {
-          align-items: center;
-          border-bottom: 1px solid rgb(51, 51, 51);
-          border-bottom-color: rgb(51, 51, 51);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          display: flex;
-          font-size: 0.875rem;
-          padding-bottom: 10.6667px;
-          padding-top: 10.6667px;
-        }
-        .span-2 {
-          height: 2rem;
-          margin-right: 10.6667px;
-          width: 2rem;
-          background-color: rgb(0, 0, 0);
-          border-bottom: 1px solid rgb(51, 51, 51);
-          border-bottom-color: rgb(51, 51, 51);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgb(51, 51, 51);
-          border-left: 1px solid rgb(51, 51, 51);
-          border-left-color: rgb(51, 51, 51);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 50%;
-          border-right: 1px solid rgb(51, 51, 51);
-          border-right-color: rgb(51, 51, 51);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(51, 51, 51);
-          border-top-color: rgb(51, 51, 51);
-          border-top-left-radius: 50%;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          display: inline-block;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          position: relative;
-          vertical-align: top;
-        }
-        .p-2 {
-          flex-basis: 0%;
-          flex-grow: 1;
-          font-size: 1em;
-          line-height: 1.625em;
-          letter-spacing: -0.005625em;
-          color: rgba(255, 255, 255, 1);
-        }
-        .p-3 {
-          color: rgb(102, 102, 102);
-          margin-left: auto;
-          padding-left: 8pt;
-          text-align: right;
-          font-size: 1em;
-          line-height: 1.625em;
-          letter-spacing: -0.005625em;
-        }
-        .a-10 {
-          font-size: 0.875rem;
-          font-weight: 700;
-          margin-bottom: 32px;
-          margin-top: 32px;
-          text-align: center;
-          align-items: baseline;
-          color: rgb(50, 145, 255);
-          display: inline-flex;
-          text-decoration: none;
-          transition: color 200ms ease 0ms;
-          transition-delay: 0ms;
-          transition-duration: 200ms;
-          transition-property: color;
-          width: fit-content;
-          cursor: pointer;
-        }
-        .footer-2 {
-          border-top: 1px solid rgb(51, 51, 51);
-          border-top-color: rgb(51, 51, 51);
-          border-top-style: solid;
-          border-top-width: 1px;
-          padding-bottom: 5.33333px;
-          padding-left: 21.3333px;
-          padding-right: 21.3333px;
-          padding-top: 5.33333px;
-          text-align: center;
-          font-size: 1em;
-          line-height: 1.625em;
-          margin-bottom: 16px;
-          margin-top: 16px;
-          letter-spacing: -0.005625em;
-        }
-        .p-4 {
-          font-size: 1em;
-          line-height: 1.625em;
-          margin-bottom: -1px;
-          margin-left: -1px;
-          margin-right: -1px;
-          margin-top: -1px;
-          letter-spacing: -0.005625em;
-          border: 0px;
-          border-bottom: 0px;
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          clip: rect(0px, 0px, 0px, 0px);
-          height: 1px;
-          margin: -1px;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          position: absolute;
-          white-space: nowrap;
-          width: 1px;
         }
         .dashboard-style-2 {
           background-color: rgb(17, 17, 17);
@@ -2129,7 +1523,7 @@ export default function MyComponent() {
           width: 100vw;
           margin-left: calc(50% - 50vw);
         }
-        .div-22 {
+        .div-6 {
           display: flex;
           flex-flow: row wrap;
           flex-wrap: wrap;
@@ -2142,23 +1536,23 @@ export default function MyComponent() {
           padding-top: 32px;
           width: 782pt;
         }
-        .div-23 {
+        .div-7 {
           display: flex;
           width: 100%;
         }
-        .div-24 {
+        .div-8 {
           display: inline-block;
           font-size: calc(15.75px);
           height: 40.5px;
           width: 100%;
         }
-        .div-25 {
+        .div-9 {
           align-items: center;
           display: inline-flex;
           height: 40.5px;
           width: 100%;
         }
-        .div-26 {
+        .div-10 {
           background-color: rgb(0, 0, 0);
           align-items: center;
           border-bottom: 1px solid rgb(51, 51, 51);
@@ -2194,7 +1588,7 @@ export default function MyComponent() {
           user-select: none;
           vertical-align: middle;
         }
-        .span-3 {
+        .span {
           align-items: center;
           cursor: default;
           display: inline-flex;
@@ -2218,7 +1612,7 @@ export default function MyComponent() {
           outline: none;
           width: 100%;
         }
-        .button-3 {
+        .button {
           background-color: rgb(255, 255, 255);
           border-bottom: 1px solid rgb(255, 255, 255);
           border-bottom-style: solid;
@@ -2268,11 +1662,11 @@ export default function MyComponent() {
           z-index: 1;
         }
         @media (max-width: 991px) {
-          .button-3 {
+          .button {
             border-color: rgb(255, 255, 255);
           }
         }
-        .button-4 {
+        .button-2 {
           background-color: rgb(0, 0, 0);
           border-bottom: 1px solid rgb(51, 51, 51);
           border-bottom-color: rgb(51, 51, 51);
@@ -2320,7 +1714,7 @@ export default function MyComponent() {
           user-select: none;
           white-space: nowrap;
         }
-        .span-4 {
+        .span-2 {
           right: 0px;
           align-items: center;
           color: rgb(136, 136, 136);
@@ -2329,7 +1723,7 @@ export default function MyComponent() {
           top: 50%;
           z-index: 1;
         }
-        .div-27 {
+        .div-11 {
           justify-content: flex-start;
           display: flex;
           flex-wrap: wrap;
@@ -2339,7 +1733,7 @@ export default function MyComponent() {
           margin-right: -10.6667px;
           margin-top: 16px;
         }
-        .div-28 {
+        .div-12 {
           display: inherit;
           flex-basis: 33.3333%;
           max-width: 33.3333%;
@@ -2349,21 +1743,21 @@ export default function MyComponent() {
           padding-top: 10.6667px;
         }
         @media (max-width: 991px) {
-          .div-28 {
+          .div-12 {
             flex-basis: 50%;
             max-width: 50%;
           }
         }
         @media (max-width: 640px) {
-          .div-28 {
+          .div-12 {
             flex-basis: 100%;
             max-width: 100%;
           }
         }
-        .div-29 {
+        .div-13 {
           width: 100%;
         }
-        .div-30 {
+        .div-14 {
           box-shadow: rgb(51, 51, 51) 0px 0px 0px 1px;
           background-color: rgb(0, 0, 0);
           border-bottom: 1px solid transparent;
@@ -2390,18 +1784,18 @@ export default function MyComponent() {
           transition: all 0.2s ease 0s;
           transition-duration: 0.2s;
         }
-        .div-31 {
+        .div-15 {
           padding-bottom: 16px;
           padding-left: 16px;
           padding-right: 16px;
           padding-top: 16px;
           width: 100%;
         }
-        .div-32 {
+        .div-16 {
           align-items: center;
           display: flex;
         }
-        .span-5 {
+        .span-3 {
           background-color: rgb(255, 255, 255);
           border-bottom: 1px solid rgb(255, 255, 255);
           border-bottom-style: solid;
@@ -2428,162 +1822,166 @@ export default function MyComponent() {
           position: relative;
           vertical-align: top;
           width: calc(35px);
+        }
+        .raw-img {
+          width: 100%;
+          border-radius: 50%;
+          border-top-left-radius: 50%;
+          display: inline-block;
+          height: 100%;
+          object-fit: cover;
+          user-select: none;
+          max-width: 100%;
+        }
+        .p {
+          font-size: 1em;
+          line-height: 1.5rem;
+          font-weight: 500;
+          letter-spacing: -0.005625em;
+        }
+        .p-2 {
+          font-size: 0.875rem;
+          color: rgb(153, 153, 153);
+          line-height: 1.25rem;
+          letter-spacing: -0.005625em;
+        }
+        .div-17 {
+          display: flex;
+          flex-direction: column;
+          font-size: 1em;
+          justify-content: center;
+          margin-bottom: 16px;
+          margin-top: 16px;
+          min-height: 3rem;
+          color: rgb(153, 153, 153);
+          line-height: 1.625em;
+          font-weight: 500;
+          letter-spacing: -0.005625em;
+        }
+        .p-3 {
+          margin-top: 14px;
+          font-size: 0.875rem;
+          color: rgb(136, 136, 136);
+          line-height: 1.625em;
+          letter-spacing: -0.005625em;
+        }
+        .div-18 {
+          display: inherit;
+          flex-basis: 33.3333%;
+          max-width: 33.3333%;
+          padding-bottom: 10.6667px;
+          padding-left: 10.6667px;
+          padding-right: 10.6667px;
+          padding-top: 10.6667px;
+        }
+        @media (max-width: 991px) {
+          .div-18 {
+            flex-basis: 50%;
+            max-width: 50%;
+          }
+        }
+        @media (max-width: 640px) {
+          .div-18 {
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+        }
+        .div-19 {
+          width: 100%;
+        }
+        .div-20 {
+          box-shadow: rgb(51, 51, 51) 0px 0px 0px 1px;
+          background-color: rgb(0, 0, 0);
+          border-bottom: 1px solid transparent;
+          border-bottom-color: transparent;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-color: rgba(0, 0, 0, 0);
+          border-left: 1px solid transparent;
+          border-left-color: transparent;
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-radius: 5px;
+          border-right: 1px solid transparent;
+          border-right-color: transparent;
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid transparent;
+          border-top-color: transparent;
+          border-top-left-radius: 5px;
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          transition: all 0.2s ease 0s;
+          transition-duration: 0.2s;
+        }
+        .div-21 {
+          padding-bottom: 16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-top: 16px;
+          width: 100%;
+        }
+        .div-22 {
+          align-items: center;
+          display: flex;
+        }
+        .span-4 {
+          background-color: rgb(255, 255, 255);
+          border-bottom: 1px solid rgb(255, 255, 255);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-left: 1px solid rgb(255, 255, 255);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-radius: 50%;
+          border-right: 1px solid rgb(255, 255, 255);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid rgb(255, 255, 255);
+          border-top-left-radius: 50%;
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          display: inline-block;
+          height: calc(35px);
+          margin-right: 12px;
+          overflow: hidden;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          position: relative;
+          vertical-align: top;
+          width: calc(35px);
+        }
+        .p-4 {
+          font-size: 0.875rem;
+          color: rgb(153, 153, 153);
+          line-height: 1.25rem;
+          letter-spacing: -0.005625em;
+        }
+        .div-23 {
+          display: flex;
+          flex-direction: column;
+          font-size: 1em;
+          justify-content: center;
+          margin-bottom: 16px;
+          margin-top: 16px;
+          min-height: 3rem;
+          color: rgb(153, 153, 153);
+          line-height: 1.625em;
+          font-weight: 500;
+          letter-spacing: -0.005625em;
         }
         .p-5 {
-          font-size: 1em;
-          line-height: 1.5rem;
-          font-weight: 500;
-          letter-spacing: -0.005625em;
-        }
-        .p-6 {
-          font-size: 0.875rem;
-          color: rgb(153, 153, 153);
-          line-height: 1.25rem;
-          letter-spacing: -0.005625em;
-        }
-        .div-33 {
-          display: flex;
-          flex-direction: column;
-          font-size: 1em;
-          justify-content: center;
-          margin-bottom: 16px;
-          margin-top: 16px;
-          min-height: 3rem;
-          color: rgb(153, 153, 153);
-          line-height: 1.625em;
-          font-weight: 500;
-          letter-spacing: -0.005625em;
-        }
-        .p-7 {
           margin-top: 14px;
           font-size: 0.875rem;
           color: rgb(136, 136, 136);
           line-height: 1.625em;
           letter-spacing: -0.005625em;
         }
-        .div-34 {
-          display: inherit;
-          flex-basis: 33.3333%;
-          max-width: 33.3333%;
-          padding-bottom: 10.6667px;
-          padding-left: 10.6667px;
-          padding-right: 10.6667px;
-          padding-top: 10.6667px;
-        }
-        @media (max-width: 991px) {
-          .div-34 {
-            flex-basis: 50%;
-            max-width: 50%;
-          }
-        }
-        @media (max-width: 640px) {
-          .div-34 {
-            flex-basis: 100%;
-            max-width: 100%;
-          }
-        }
-        .div-35 {
-          width: 100%;
-        }
-        .div-36 {
-          box-shadow: rgb(51, 51, 51) 0px 0px 0px 1px;
-          background-color: rgb(0, 0, 0);
-          border-bottom: 1px solid transparent;
-          border-bottom-color: transparent;
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgba(0, 0, 0, 0);
-          border-left: 1px solid transparent;
-          border-left-color: transparent;
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 5px;
-          border-right: 1px solid transparent;
-          border-right-color: transparent;
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid transparent;
-          border-top-color: transparent;
-          border-top-left-radius: 5px;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          transition: all 0.2s ease 0s;
-          transition-duration: 0.2s;
-        }
-        .div-37 {
-          padding-bottom: 16px;
-          padding-left: 16px;
-          padding-right: 16px;
-          padding-top: 16px;
-          width: 100%;
-        }
-        .div-38 {
-          align-items: center;
-          display: flex;
-        }
-        .span-6 {
-          background-color: rgb(255, 255, 255);
-          border-bottom: 1px solid rgb(255, 255, 255);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-left: 1px solid rgb(255, 255, 255);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-radius: 50%;
-          border-right: 1px solid rgb(255, 255, 255);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(255, 255, 255);
-          border-top-left-radius: 50%;
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          display: inline-block;
-          height: calc(35px);
-          margin-right: 12px;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          position: relative;
-          vertical-align: top;
-          width: calc(35px);
-        }
-        .p-8 {
-          font-size: 1em;
-          line-height: 1.5rem;
-          font-weight: 500;
-          letter-spacing: -0.005625em;
-        }
-        .p-9 {
-          font-size: 0.875rem;
-          color: rgb(153, 153, 153);
-          line-height: 1.25rem;
-          letter-spacing: -0.005625em;
-        }
-        .div-39 {
-          display: flex;
-          flex-direction: column;
-          font-size: 1em;
-          justify-content: center;
-          margin-bottom: 16px;
-          margin-top: 16px;
-          min-height: 3rem;
-          color: rgb(153, 153, 153);
-          line-height: 1.625em;
-          font-weight: 500;
-          letter-spacing: -0.005625em;
-        }
-        .p-10 {
-          margin-top: 14px;
-          font-size: 0.875rem;
-          color: rgb(136, 136, 136);
-          line-height: 1.625em;
-          letter-spacing: -0.005625em;
-        }
-        .div-40 {
+        .div-24 {
           border-bottom: 0px;
           border-bottom-color: rgb(34, 34, 34);
           border-color: rgb(234, 234, 234) rgb(34, 34, 34) rgb(34, 34, 34);
@@ -2635,12 +2033,12 @@ export default function MyComponent() {
           height: 100vh;
         }
         @media (max-width: 991px) {
-          .div-40 {
+          .div-24 {
             min-height: 1759px;
           }
         }
         @media (max-width: 640px) {
-          .div-40 {
+          .div-24 {
             min-height: 817px;
             padding-bottom: 0px;
             margin-left: 0px;
@@ -2649,7 +2047,7 @@ export default function MyComponent() {
             height: 100vh;
           }
         }
-        .div-41 {
+        .div-25 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -2696,19 +2094,23 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 991px) {
-          .div-41 {
+          .div-25 {
             margin-top: 80px;
+            padding-left: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
           }
         }
         @media (max-width: 640px) {
-          .div-41 {
+          .div-25 {
             width: 100vw;
             align-self: center;
             margin-left: calc(50% - 50vw);
             padding-left: 12px;
           }
         }
-        .div-42 {
+        .div-26 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -2745,13 +2147,19 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
+        @media (max-width: 991px) {
+          .div-26 {
+            width: auto;
+            flex-grow: 1;
+          }
+        }
         @media (max-width: 640px) {
-          .div-42 {
+          .div-26 {
             width: auto;
             flex-grow: 0;
           }
         }
-        .div-43 {
+        .div-27 {
           border-bottom: 1px solid rgb(247, 247, 247);
           border-bottom-color: rgb(247, 247, 247);
           border-bottom-style: solid;
@@ -2838,7 +2246,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
-        .div-44 {
+        @media (max-width: 991px) {
+          .div-27 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .div-28 {
           border-bottom: 0px;
           border-bottom-color: rgb(179, 179, 179);
           border-color: rgb(179, 179, 179);
@@ -2871,7 +2285,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 9.42578px;
         }
-        .div-45 {
+        .div-29 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -2906,7 +2320,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 13px;
         }
-        .div-46 {
+        .div-30 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -2945,7 +2359,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 17.2461px 13px;
         }
-        .a-11 {
+        .a-7 {
           color: rgb(0, 90, 217);
           text-decoration: none rgb(0, 90, 217);
           text-decoration-color: rgb(0, 90, 217);
@@ -2985,7 +2399,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 15.0586px 13px;
         }
-        .div-47 {
+        .div-31 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3020,7 +2434,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 18.8555px;
         }
-        .div-48 {
+        .div-32 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3056,7 +2470,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 18.8555px;
         }
-        .span-7 {
+        .span-5 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3096,7 +2510,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 47.6875px 18.8555px;
         }
-        .div-49 {
+        .div-33 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3133,7 +2547,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 45.4961px 11px;
         }
-        .span-8 {
+        .span-6 {
           border-bottom: 0px;
           border-bottom-color: rgb(0, 178, 59);
           border-color: rgb(0, 178, 59);
@@ -3166,7 +2580,7 @@ export default function MyComponent() {
           transform-origin: 0px 0px;
           white-space: nowrap;
         }
-        .div-50 {
+        .div-34 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3203,13 +2617,19 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
+        @media (max-width: 991px) {
+          .div-34 {
+            width: auto;
+            flex-grow: 1;
+          }
+        }
         @media (max-width: 640px) {
-          .div-50 {
+          .div-34 {
             width: auto;
             flex-grow: 0;
           }
         }
-        .div-51 {
+        .div-35 {
           border-bottom: 1px solid rgb(247, 247, 247);
           border-bottom-color: rgb(247, 247, 247);
           border-bottom-style: solid;
@@ -3296,7 +2716,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
-        .div-52 {
+        @media (max-width: 991px) {
+          .div-35 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .div-36 {
           border-bottom: 0px;
           border-bottom-color: rgb(179, 179, 179);
           border-color: rgb(179, 179, 179);
@@ -3329,7 +2755,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 9.42578px;
         }
-        .div-53 {
+        .div-37 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3364,7 +2790,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 13px;
         }
-        .div-54 {
+        .div-38 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3403,7 +2829,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 70.293px 13px;
         }
-        .a-12 {
+        .a-8 {
           color: rgb(0, 90, 217);
           text-decoration: none rgb(0, 90, 217);
           text-decoration-color: rgb(0, 90, 217);
@@ -3443,7 +2869,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 15.0586px 13px;
         }
-        .div-55 {
+        .div-39 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3478,7 +2904,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 18.8555px;
         }
-        .div-56 {
+        .div-40 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3520,7 +2946,7 @@ export default function MyComponent() {
           min-inline-size: auto;
           min-width: auto;
         }
-        .div-57 {
+        .div-41 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3557,7 +2983,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
-        .div-58 {
+        @media (max-width: 991px) {
+          .div-41 {
+            width: auto;
+            flex-grow: 1;
+          }
+        }
+        .div-42 {
           border-bottom: 1px solid rgb(247, 247, 247);
           border-bottom-color: rgb(247, 247, 247);
           border-bottom-style: solid;
@@ -3644,7 +3076,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
-        .div-59 {
+        @media (max-width: 991px) {
+          .div-42 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .div-43 {
           border-bottom: 0px;
           border-bottom-color: rgb(179, 179, 179);
           border-color: rgb(179, 179, 179);
@@ -3677,7 +3115,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 9.42578px;
         }
-        .div-60 {
+        .div-44 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3712,7 +3150,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 13px;
         }
-        .div-61 {
+        .div-45 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3751,7 +3189,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 51.3125px 13px;
         }
-        .a-13 {
+        .a-9 {
           color: rgb(0, 90, 217);
           text-decoration: none rgb(0, 90, 217);
           text-decoration-color: rgb(0, 90, 217);
@@ -3791,7 +3229,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 15.0586px 13px;
         }
-        .div-62 {
+        .div-46 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3826,7 +3264,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 18.8555px;
         }
-        .div-63 {
+        .div-47 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3868,7 +3306,7 @@ export default function MyComponent() {
           min-inline-size: auto;
           min-width: auto;
         }
-        .div-64 {
+        .div-48 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -3905,7 +3343,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
-        .div-65 {
+        @media (max-width: 991px) {
+          .div-48 {
+            width: auto;
+            flex-grow: 1;
+          }
+        }
+        .div-49 {
           border-bottom: 1px solid rgb(247, 247, 247);
           border-bottom-color: rgb(247, 247, 247);
           border-bottom-style: solid;
@@ -3992,7 +3436,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
         }
-        .div-66 {
+        @media (max-width: 991px) {
+          .div-49 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .div-50 {
           border-bottom: 0px;
           border-bottom-color: rgb(179, 179, 179);
           border-color: rgb(179, 179, 179);
@@ -4025,7 +3475,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 9.42578px;
         }
-        .div-67 {
+        .div-51 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4060,7 +3510,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 13px;
         }
-        .div-68 {
+        @media (max-width: 991px) {
+          .div-51 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .div-52 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4099,7 +3555,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 40.5547px 13px;
         }
-        .a-14 {
+        .a-10 {
           color: rgb(0, 90, 217);
           text-decoration: none rgb(0, 90, 217);
           text-decoration-color: rgb(0, 90, 217);
@@ -4139,7 +3595,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 15.0586px 13px;
         }
-        .div-69 {
+        .div-53 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4174,7 +3630,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 18.8555px;
         }
-        .div-70 {
+        @media (max-width: 991px) {
+          .div-53 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .div-54 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4210,7 +3672,13 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 160.5px 18.8555px;
         }
-        .span-9 {
+        @media (max-width: 991px) {
+          .div-54 {
+            width: auto;
+            align-self: stretch;
+          }
+        }
+        .span-7 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4250,7 +3718,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 33.4023px 18.8555px;
         }
-        .div-71 {
+        .div-55 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4287,7 +3755,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 38.0977px 11px;
         }
-        .span-10 {
+        .span-8 {
           border-bottom: 0px;
           border-bottom-color: rgb(179, 179, 179);
           border-color: rgb(179, 179, 179);
@@ -4320,7 +3788,7 @@ export default function MyComponent() {
           transform-origin: 0px 0px;
           white-space: nowrap;
         }
-        .div-72 {
+        .div-56 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4361,12 +3829,12 @@ export default function MyComponent() {
           margin-bottom: 53px;
         }
         @media (max-width: 991px) {
-          .div-72 {
+          .div-56 {
             width: auto;
-            flex-grow: 0;
+            flex-grow: 1;
           }
         }
-        .div-73 {
+        .div-57 {
           border-bottom: 1px solid rgb(247, 247, 247);
           border-bottom-color: rgb(247, 247, 247);
           border-bottom-style: solid;
@@ -4454,12 +3922,12 @@ export default function MyComponent() {
           transform-origin: 383px 180.57px;
         }
         @media (max-width: 991px) {
-          .div-73 {
+          .div-57 {
             width: auto;
-            align-self: center;
+            align-self: stretch;
           }
         }
-        .div-74 {
+        .div-58 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4512,12 +3980,12 @@ export default function MyComponent() {
           transform-origin: 366px 155.57px;
         }
         @media (max-width: 991px) {
-          .div-74 {
+          .div-58 {
             width: auto;
             align-self: center;
           }
         }
-        .div-75 {
+        .div-59 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
           border-color: rgb(26, 26, 26);
@@ -4566,7 +4034,7 @@ export default function MyComponent() {
           width: 732px;
         }
         @media (max-width: 991px) {
-          .div-75 {
+          .div-59 {
             width: auto;
             flex-grow: 0;
           }
@@ -4615,7 +4083,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 116.199px 12px;
         }
-        .p-11 {
+        .p-6 {
           border-bottom: 0px;
           border-bottom-color: rgb(115, 115, 115);
           border-color: rgb(115, 115, 115);
@@ -4660,7 +4128,7 @@ export default function MyComponent() {
           width: 350px;
           margin-top: 13px;
         }
-        .a-15 {
+        .a-11 {
           color: rgb(0, 90, 217);
           text-decoration: none rgb(0, 90, 217);
           text-decoration-color: rgb(0, 90, 217);
@@ -4700,7 +4168,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 54.8672px 12.5703px;
         }
-        .div-76 {
+        .div-60 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -4731,16 +4199,16 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 991px) {
-          .div-76 {
+          .div-60 {
             margin-top: 427px;
           }
         }
         @media (max-width: 640px) {
-          .div-76 {
+          .div-60 {
             min-width: 260px;
           }
         }
-        .div-77 {
+        .div-61 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -4769,16 +4237,16 @@ export default function MyComponent() {
           transform-origin: 131.801px 100.992px;
         }
         @media (max-width: 991px) {
-          .div-77 {
+          .div-61 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-77 {
+          .div-61 {
             display: none;
           }
         }
-        .div-78 {
+        .div-62 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -4797,7 +4265,7 @@ export default function MyComponent() {
           margin-bottom: 8px;
           margin-block-end: 8px;
         }
-        .div-79 {
+        .div-63 {
           border-bottom: 0px;
           border-bottom-color: rgb(106, 111, 114);
           border-color: rgb(106, 111, 114);
@@ -4826,7 +4294,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(106, 111, 114);
           transform-origin: 32.7188px 9.41797px;
         }
-        .a-16 {
+        .a-12 {
           align-items: center;
           background-color: rgba(0, 0, 0, 1);
           border-block: 0px none rgb(255, 255, 255);
@@ -4880,7 +4348,7 @@ export default function MyComponent() {
           transform-origin: 53.2773px 18.5px;
           pointer-events: auto;
         }
-        .div-80 {
+        .div-64 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -4908,11 +4376,11 @@ export default function MyComponent() {
           transform-origin: 172.871px 100.992px;
         }
         @media (max-width: 991px) {
-          .div-80 {
+          .div-64 {
             display: flex;
           }
         }
-        .div-81 {
+        .div-65 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -4931,7 +4399,7 @@ export default function MyComponent() {
           margin-bottom: 8px;
           margin-block-end: 8px;
         }
-        .div-82 {
+        .div-66 {
           border-bottom: 0px;
           border-bottom-color: rgb(106, 111, 114);
           border-color: rgb(106, 111, 114);
@@ -4961,7 +4429,7 @@ export default function MyComponent() {
           text-decoration-line: line-through;
           transform-origin: 35.7188px 9.41797px;
         }
-        .a-17 {
+        .a-13 {
           align-items: center;
           background-color: rgba(0, 0, 0, 1);
           border-block: 0px none rgb(255, 255, 255);
@@ -5015,7 +4483,7 @@ export default function MyComponent() {
           transform-origin: 83.9336px 18.5px;
           pointer-events: auto;
         }
-        .div-83 {
+        .div-67 {
           border-bottom: 0px;
           border-bottom-color: rgb(106, 111, 114);
           border-color: rgb(106, 111, 114);
@@ -5044,7 +4512,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(106, 111, 114);
           transform-origin: 134.652px 7.84766px;
         }
-        .div-84 {
+        .div-68 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5079,7 +4547,7 @@ export default function MyComponent() {
           min-width: 259px;
         }
         @media (max-width: 640px) {
-          .div-84 {
+          .div-68 {
             background-image: url(https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2F9bad95a98b844fb68236e78bae828193);
             margin-top: auto;
             margin-bottom: auto;
@@ -5087,7 +4555,7 @@ export default function MyComponent() {
             min-width: 146px;
           }
         }
-        .div-85 {
+        .div-69 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5103,7 +4571,7 @@ export default function MyComponent() {
           display: flex;
           flex-direction: column;
         }
-        .div-86 {
+        .div-70 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5130,12 +4598,12 @@ export default function MyComponent() {
           align-self: center;
         }
         @media (max-width: 991px) {
-          .div-86 {
+          .div-70 {
             display: none;
           }
         }
         @media (max-width: 640px) {
-          .div-86 {
+          .div-70 {
             margin-top: 27px;
             padding-bottom: 0px;
             height: 187px;
@@ -5145,7 +4613,7 @@ export default function MyComponent() {
             margin-bottom: 20px;
           }
         }
-        .div-87 {
+        .div-71 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5174,16 +4642,16 @@ export default function MyComponent() {
           transform-origin: 131.801px 100.992px;
         }
         @media (max-width: 991px) {
-          .div-87 {
+          .div-71 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-87 {
+          .div-71 {
             display: none;
           }
         }
-        .div-88 {
+        .div-72 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5202,7 +4670,7 @@ export default function MyComponent() {
           margin-bottom: 8px;
           margin-block-end: 8px;
         }
-        .div-89 {
+        .div-73 {
           border-bottom: 0px;
           border-bottom-color: rgb(106, 111, 114);
           border-color: rgb(106, 111, 114);
@@ -5231,7 +4699,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(106, 111, 114);
           transform-origin: 32.7188px 9.41797px;
         }
-        .a-18 {
+        .a-14 {
           align-items: center;
           background-color: rgba(0, 0, 0, 1);
           border-block: 0px none rgb(255, 255, 255);
@@ -5285,7 +4753,7 @@ export default function MyComponent() {
           transform-origin: 53.2773px 18.5px;
           pointer-events: auto;
         }
-        .div-90 {
+        .div-74 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5319,7 +4787,7 @@ export default function MyComponent() {
           box-shadow: 1px 1px 11px -4px rgba(0, 0, 0, 1);
         }
         @media (max-width: 640px) {
-          .div-90 {
+          .div-74 {
             background-image: url(https://cdn.builder.io/api/v1/image/assets%2Fc1b3106624e34af79d2e33c90a9e9021%2Fdca54205299f45309f42ad291f75a507);
             max-width: 187px;
             min-width: 256px;
@@ -5329,7 +4797,7 @@ export default function MyComponent() {
             max-height: 112px;
           }
         }
-        .div-91 {
+        .div-75 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5345,7 +4813,7 @@ export default function MyComponent() {
           display: flex;
           flex-direction: column;
         }
-        .div-92 {
+        .div-76 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5373,18 +4841,18 @@ export default function MyComponent() {
           transform-origin: 172.871px 100.992px;
         }
         @media (max-width: 991px) {
-          .div-92 {
+          .div-76 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-92 {
+          .div-76 {
             display: flex;
             flex-direction: column;
             align-items: stretch;
           }
         }
-        .div-93 {
+        .div-77 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -5400,7 +4868,7 @@ export default function MyComponent() {
           margin-left: auto;
           margin-right: auto;
         }
-        .a-19 {
+        .a-15 {
           align-items: center;
           background-color: rgba(0, 0, 0, 1);
           border-block: 0px none rgb(255, 255, 255);
@@ -5455,14 +4923,14 @@ export default function MyComponent() {
           pointer-events: auto;
         }
         @media (max-width: 640px) {
-          .a-19 {
+          .a-15 {
             margin-top: 0px;
             margin-bottom: 54px;
             background-color: rgba(0, 0, 0, 1);
             box-shadow: 1px 1px 3px 0 rgba(238, 238, 238, 1);
           }
         }
-        .div-94 {
+        .div-78 {
           border-bottom: 0px;
           border-bottom-color: rgb(106, 111, 114);
           border-color: rgb(106, 111, 114);
@@ -5527,7 +4995,7 @@ export default function MyComponent() {
             padding-top: 31px;
           }
         }
-        .div-95 {
+        .div-79 {
           border-bottom: 1px solid rgb(242, 242, 242);
           border-bottom-color: rgb(242, 242, 242);
           border-bottom-style: solid;
@@ -5606,16 +5074,16 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 991px) {
-          .div-95 {
+          .div-79 {
             display: none;
           }
         }
         @media (max-width: 640px) {
-          .div-95 {
+          .div-79 {
             display: none;
           }
         }
-        .button-5 {
+        .button-3 {
           align-items: center;
           border-block: 0px none rgba(0, 0, 0, 0.26);
           border-block-color: rgba(0, 0, 0, 0.26);
@@ -5680,7 +5148,7 @@ export default function MyComponent() {
           visibility: hidden;
           background-color: rgba(0, 0, 0, 0);
         }
-        .span-11 {
+        .span-9 {
           border-bottom: 0px;
           border-color: rgba(0, 0, 0, 0.26);
           border-left: 0px;
@@ -5697,7 +5165,7 @@ export default function MyComponent() {
           transform-origin: 24px 14px;
           width: 48px;
         }
-        .button-6 {
+        .button-4 {
           align-items: center;
           border-block: 0px none rgb(128, 128, 128);
           border-block-color: rgb(128, 128, 128);
@@ -5759,7 +5227,7 @@ export default function MyComponent() {
           vertical-align: middle;
           background-color: rgba(0, 0, 0, 0);
         }
-        .span-12 {
+        .span-10 {
           border-bottom: 0px;
           border-color: rgb(255, 255, 255);
           border-left: 0px;
@@ -5798,7 +5266,301 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           width: 30px;
         }
-        .div-96 {
+        .div-80 {
+          border-bottom: 3px solid rgb(204, 204, 204);
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 3px;
+          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
+          border-left: 0px;
+          border-right: 0px;
+          border-style: none none solid;
+          border-top: 0px;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          font-size: 14px;
+          margin-left: 8px;
+          margin-right: 8px;
+          border-block-end: 3px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 3px;
+          height: 1px;
+          margin-inline: 8px;
+          margin-inline-end: 8px;
+          margin-inline-start: 8px;
+          perspective-origin: 24px 2px;
+          transform-origin: 24px 2px;
+          width: 48px;
+        }
+        .button-5 {
+          align-items: center;
+          border-block: 0px none rgb(128, 128, 128);
+          border-block-color: rgb(128, 128, 128);
+          border-block-end: 0px none rgb(128, 128, 128);
+          border-block-end-color: rgb(128, 128, 128);
+          border-block-start: 0px none rgb(128, 128, 128);
+          border-block-start-color: rgb(128, 128, 128);
+          border-bottom: 0px none rgb(128, 128, 128);
+          border-bottom-color: rgb(128, 128, 128);
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          border-color: rgb(128, 128, 128);
+          border-inline: 0px none rgb(128, 128, 128);
+          border-inline-color: rgb(128, 128, 128);
+          border-inline-end: 0px none rgb(128, 128, 128);
+          border-inline-end-color: rgb(128, 128, 128);
+          border-inline-start: 0px none rgb(128, 128, 128);
+          border-inline-start-color: rgb(128, 128, 128);
+          border-left: 0px none rgb(128, 128, 128);
+          border-left-color: rgb(128, 128, 128);
+          border-radius: 100px;
+          border-right: 0px none rgb(128, 128, 128);
+          border-right-color: rgb(128, 128, 128);
+          border-top: 0px none rgb(128, 128, 128);
+          border-top-color: rgb(128, 128, 128);
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          bottom: 0px;
+          caret-color: rgb(128, 128, 128);
+          color: rgb(128, 128, 128);
+          column-rule-color: rgb(128, 128, 128);
+          display: flex;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          inset: 0px;
+          justify-content: center;
+          left: 0px;
+          line-height: 28px;
+          min-inline-size: 64px;
+          min-width: 64px;
+          outline-color: rgb(128, 128, 128);
+          padding: 24px 12px;
+          padding-bottom: 24px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          perspective-origin: 75.0312px 24px;
+          pointer-events: none;
+          position: relative;
+          right: 0px;
+          text-decoration: none solid rgb(128, 128, 128);
+          text-decoration-color: rgb(128, 128, 128);
+          text-transform: capitalize;
+          top: 0px;
+          transform-origin: 75.0352px 24px;
+          transition-duration: 0.25s;
+          transition-property: background;
+          transition-timing-function: ease-out;
+          user-select: none;
+          vertical-align: middle;
+          background-color: rgba(0, 0, 0, 0);
+        }
+        .span-11 {
+          border-bottom: 1px solid rgb(204, 204, 204);
+          border-color: rgb(204, 204, 204);
+          border-left: 1px solid rgb(204, 204, 204);
+          border-right: 1px solid rgb(204, 204, 204);
+          border-top: 1px solid rgb(204, 204, 204);
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          perspective-origin: 15px 15px;
+          transform-origin: 15px 15px;
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-left-color: rgb(204, 204, 204);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right-color: rgb(204, 204, 204);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top-color: rgb(204, 204, 204);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          margin-right: 12px;
+          border-block: 1px solid rgb(204, 204, 204);
+          border-block-color: rgb(204, 204, 204);
+          border-block-end: 1px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(204, 204, 204);
+          border-block-start-color: rgb(204, 204, 204);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-inline: 1px solid rgb(204, 204, 204);
+          border-inline-color: rgb(204, 204, 204);
+          border-inline-end: 1px solid rgb(204, 204, 204);
+          border-inline-end-color: rgb(204, 204, 204);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(204, 204, 204);
+          border-inline-start-color: rgb(204, 204, 204);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 50%;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          margin-inline-end: 12px;
+          width: 28px;
+        }
+        .div-81 {
+          border-bottom: 3px solid rgb(204, 204, 204);
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 3px;
+          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
+          border-left: 0px;
+          border-right: 0px;
+          border-style: none none solid;
+          border-top: 0px;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          font-size: 14px;
+          margin-left: 8px;
+          margin-right: 8px;
+          border-block-end: 3px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 3px;
+          height: 1px;
+          margin-inline: 8px;
+          margin-inline-end: 8px;
+          margin-inline-start: 8px;
+          perspective-origin: 24px 2px;
+          transform-origin: 24px 2px;
+          width: 48px;
+        }
+        .button-6 {
+          align-items: center;
+          border-block: 0px none rgb(128, 128, 128);
+          border-block-color: rgb(128, 128, 128);
+          border-block-end: 0px none rgb(128, 128, 128);
+          border-block-end-color: rgb(128, 128, 128);
+          border-block-start: 0px none rgb(128, 128, 128);
+          border-block-start-color: rgb(128, 128, 128);
+          border-bottom: 0px none rgb(128, 128, 128);
+          border-bottom-color: rgb(128, 128, 128);
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          border-color: rgb(128, 128, 128);
+          border-inline: 0px none rgb(128, 128, 128);
+          border-inline-color: rgb(128, 128, 128);
+          border-inline-end: 0px none rgb(128, 128, 128);
+          border-inline-end-color: rgb(128, 128, 128);
+          border-inline-start: 0px none rgb(128, 128, 128);
+          border-inline-start-color: rgb(128, 128, 128);
+          border-left: 0px none rgb(128, 128, 128);
+          border-left-color: rgb(128, 128, 128);
+          border-radius: 100px;
+          border-right: 0px none rgb(128, 128, 128);
+          border-right-color: rgb(128, 128, 128);
+          border-top: 0px none rgb(128, 128, 128);
+          border-top-color: rgb(128, 128, 128);
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          bottom: 0px;
+          caret-color: rgb(128, 128, 128);
+          color: rgb(128, 128, 128);
+          column-rule-color: rgb(128, 128, 128);
+          display: flex;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          inset: 0px;
+          justify-content: center;
+          left: 0px;
+          line-height: 28px;
+          min-inline-size: 64px;
+          min-width: 64px;
+          outline-color: rgb(128, 128, 128);
+          padding: 24px 12px;
+          padding-bottom: 24px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          perspective-origin: 89.1172px 24px;
+          pointer-events: none;
+          position: relative;
+          right: 0px;
+          text-decoration: none solid rgb(128, 128, 128);
+          text-decoration-color: rgb(128, 128, 128);
+          text-transform: capitalize;
+          top: 0px;
+          transform-origin: 89.1172px 24px;
+          transition-duration: 0.25s;
+          transition-property: background;
+          transition-timing-function: ease-out;
+          user-select: none;
+          vertical-align: middle;
+          background-color: rgba(0, 0, 0, 0);
+        }
+        .span-12 {
+          border-bottom: 1px solid rgb(204, 204, 204);
+          border-color: rgb(204, 204, 204);
+          border-left: 1px solid rgb(204, 204, 204);
+          border-right: 1px solid rgb(204, 204, 204);
+          border-top: 1px solid rgb(204, 204, 204);
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          perspective-origin: 15px 15px;
+          transform-origin: 15px 15px;
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-left-color: rgb(204, 204, 204);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right-color: rgb(204, 204, 204);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top-color: rgb(204, 204, 204);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          margin-right: 12px;
+          border-block: 1px solid rgb(204, 204, 204);
+          border-block-color: rgb(204, 204, 204);
+          border-block-end: 1px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(204, 204, 204);
+          border-block-start-color: rgb(204, 204, 204);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-inline: 1px solid rgb(204, 204, 204);
+          border-inline-color: rgb(204, 204, 204);
+          border-inline-end: 1px solid rgb(204, 204, 204);
+          border-inline-end-color: rgb(204, 204, 204);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(204, 204, 204);
+          border-inline-start-color: rgb(204, 204, 204);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 50%;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          margin-inline-end: 12px;
+          width: 28px;
+        }
+        .div-82 {
           border-bottom: 3px solid rgb(204, 204, 204);
           border-bottom-color: rgb(204, 204, 204);
           border-bottom-style: solid;
@@ -5870,7 +5632,7 @@ export default function MyComponent() {
           padding-left: 12px;
           padding-right: 12px;
           padding-top: 24px;
-          perspective-origin: 75.0312px 24px;
+          perspective-origin: 68.7422px 24px;
           pointer-events: none;
           position: relative;
           right: 0px;
@@ -5878,7 +5640,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(128, 128, 128);
           text-transform: capitalize;
           top: 0px;
-          transform-origin: 75.0352px 24px;
+          transform-origin: 68.7422px 24px;
           transition-duration: 0.25s;
           transition-property: background;
           transition-timing-function: ease-out;
@@ -5944,304 +5706,10 @@ export default function MyComponent() {
           border-top-right-radius: 50%;
           margin-inline-end: 12px;
           width: 28px;
-        }
-        .div-97 {
-          border-bottom: 3px solid rgb(204, 204, 204);
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 3px;
-          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
-          border-left: 0px;
-          border-right: 0px;
-          border-style: none none solid;
-          border-top: 0px;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          font-size: 14px;
-          margin-left: 8px;
-          margin-right: 8px;
-          border-block-end: 3px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 3px;
-          height: 1px;
-          margin-inline: 8px;
-          margin-inline-end: 8px;
-          margin-inline-start: 8px;
-          perspective-origin: 24px 2px;
-          transform-origin: 24px 2px;
-          width: 48px;
-        }
-        .button-8 {
-          align-items: center;
-          border-block: 0px none rgb(128, 128, 128);
-          border-block-color: rgb(128, 128, 128);
-          border-block-end: 0px none rgb(128, 128, 128);
-          border-block-end-color: rgb(128, 128, 128);
-          border-block-start: 0px none rgb(128, 128, 128);
-          border-block-start-color: rgb(128, 128, 128);
-          border-bottom: 0px none rgb(128, 128, 128);
-          border-bottom-color: rgb(128, 128, 128);
-          border-bottom-left-radius: 100px;
-          border-bottom-right-radius: 100px;
-          border-color: rgb(128, 128, 128);
-          border-inline: 0px none rgb(128, 128, 128);
-          border-inline-color: rgb(128, 128, 128);
-          border-inline-end: 0px none rgb(128, 128, 128);
-          border-inline-end-color: rgb(128, 128, 128);
-          border-inline-start: 0px none rgb(128, 128, 128);
-          border-inline-start-color: rgb(128, 128, 128);
-          border-left: 0px none rgb(128, 128, 128);
-          border-left-color: rgb(128, 128, 128);
-          border-radius: 100px;
-          border-right: 0px none rgb(128, 128, 128);
-          border-right-color: rgb(128, 128, 128);
-          border-top: 0px none rgb(128, 128, 128);
-          border-top-color: rgb(128, 128, 128);
-          border-top-left-radius: 100px;
-          border-top-right-radius: 100px;
-          bottom: 0px;
-          caret-color: rgb(128, 128, 128);
-          color: rgb(128, 128, 128);
-          column-rule-color: rgb(128, 128, 128);
-          display: flex;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          inset: 0px;
-          justify-content: center;
-          left: 0px;
-          line-height: 28px;
-          min-inline-size: 64px;
-          min-width: 64px;
-          outline-color: rgb(128, 128, 128);
-          padding: 24px 12px;
-          padding-bottom: 24px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 24px;
-          perspective-origin: 89.1172px 24px;
-          pointer-events: none;
-          position: relative;
-          right: 0px;
-          text-decoration: none solid rgb(128, 128, 128);
-          text-decoration-color: rgb(128, 128, 128);
-          text-transform: capitalize;
-          top: 0px;
-          transform-origin: 89.1172px 24px;
-          transition-duration: 0.25s;
-          transition-property: background;
-          transition-timing-function: ease-out;
-          user-select: none;
-          vertical-align: middle;
-          background-color: rgba(0, 0, 0, 0);
-        }
-        .span-14 {
-          border-bottom: 1px solid rgb(204, 204, 204);
-          border-color: rgb(204, 204, 204);
-          border-left: 1px solid rgb(204, 204, 204);
-          border-right: 1px solid rgb(204, 204, 204);
-          border-top: 1px solid rgb(204, 204, 204);
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          perspective-origin: 15px 15px;
-          transform-origin: 15px 15px;
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-left-color: rgb(204, 204, 204);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right-color: rgb(204, 204, 204);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top-color: rgb(204, 204, 204);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          margin-right: 12px;
-          border-block: 1px solid rgb(204, 204, 204);
-          border-block-color: rgb(204, 204, 204);
-          border-block-end: 1px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(204, 204, 204);
-          border-block-start-color: rgb(204, 204, 204);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          border-inline: 1px solid rgb(204, 204, 204);
-          border-inline-color: rgb(204, 204, 204);
-          border-inline-end: 1px solid rgb(204, 204, 204);
-          border-inline-end-color: rgb(204, 204, 204);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(204, 204, 204);
-          border-inline-start-color: rgb(204, 204, 204);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 50%;
-          border-top-left-radius: 50%;
-          border-top-right-radius: 50%;
-          margin-inline-end: 12px;
-          width: 28px;
-        }
-        .div-98 {
-          border-bottom: 3px solid rgb(204, 204, 204);
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 3px;
-          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
-          border-left: 0px;
-          border-right: 0px;
-          border-style: none none solid;
-          border-top: 0px;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          font-size: 14px;
-          margin-left: 8px;
-          margin-right: 8px;
-          border-block-end: 3px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 3px;
-          height: 1px;
-          margin-inline: 8px;
-          margin-inline-end: 8px;
-          margin-inline-start: 8px;
-          perspective-origin: 24px 2px;
-          transform-origin: 24px 2px;
-          width: 48px;
-        }
-        .button-9 {
-          align-items: center;
-          border-block: 0px none rgb(128, 128, 128);
-          border-block-color: rgb(128, 128, 128);
-          border-block-end: 0px none rgb(128, 128, 128);
-          border-block-end-color: rgb(128, 128, 128);
-          border-block-start: 0px none rgb(128, 128, 128);
-          border-block-start-color: rgb(128, 128, 128);
-          border-bottom: 0px none rgb(128, 128, 128);
-          border-bottom-color: rgb(128, 128, 128);
-          border-bottom-left-radius: 100px;
-          border-bottom-right-radius: 100px;
-          border-color: rgb(128, 128, 128);
-          border-inline: 0px none rgb(128, 128, 128);
-          border-inline-color: rgb(128, 128, 128);
-          border-inline-end: 0px none rgb(128, 128, 128);
-          border-inline-end-color: rgb(128, 128, 128);
-          border-inline-start: 0px none rgb(128, 128, 128);
-          border-inline-start-color: rgb(128, 128, 128);
-          border-left: 0px none rgb(128, 128, 128);
-          border-left-color: rgb(128, 128, 128);
-          border-radius: 100px;
-          border-right: 0px none rgb(128, 128, 128);
-          border-right-color: rgb(128, 128, 128);
-          border-top: 0px none rgb(128, 128, 128);
-          border-top-color: rgb(128, 128, 128);
-          border-top-left-radius: 100px;
-          border-top-right-radius: 100px;
-          bottom: 0px;
-          caret-color: rgb(128, 128, 128);
-          color: rgb(128, 128, 128);
-          column-rule-color: rgb(128, 128, 128);
-          display: flex;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          inset: 0px;
-          justify-content: center;
-          left: 0px;
-          line-height: 28px;
-          min-inline-size: 64px;
-          min-width: 64px;
-          outline-color: rgb(128, 128, 128);
-          padding: 24px 12px;
-          padding-bottom: 24px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 24px;
-          perspective-origin: 68.7422px 24px;
-          pointer-events: none;
-          position: relative;
-          right: 0px;
-          text-decoration: none solid rgb(128, 128, 128);
-          text-decoration-color: rgb(128, 128, 128);
-          text-transform: capitalize;
-          top: 0px;
-          transform-origin: 68.7422px 24px;
-          transition-duration: 0.25s;
-          transition-property: background;
-          transition-timing-function: ease-out;
-          user-select: none;
-          vertical-align: middle;
-          background-color: rgba(0, 0, 0, 0);
-        }
-        .span-15 {
-          border-bottom: 1px solid rgb(204, 204, 204);
-          border-color: rgb(204, 204, 204);
-          border-left: 1px solid rgb(204, 204, 204);
-          border-right: 1px solid rgb(204, 204, 204);
-          border-top: 1px solid rgb(204, 204, 204);
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          perspective-origin: 15px 15px;
-          transform-origin: 15px 15px;
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-left-color: rgb(204, 204, 204);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right-color: rgb(204, 204, 204);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top-color: rgb(204, 204, 204);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          margin-right: 12px;
-          border-block: 1px solid rgb(204, 204, 204);
-          border-block-color: rgb(204, 204, 204);
-          border-block-end: 1px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(204, 204, 204);
-          border-block-start-color: rgb(204, 204, 204);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          border-inline: 1px solid rgb(204, 204, 204);
-          border-inline-color: rgb(204, 204, 204);
-          border-inline-end: 1px solid rgb(204, 204, 204);
-          border-inline-end-color: rgb(204, 204, 204);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(204, 204, 204);
-          border-inline-start-color: rgb(204, 204, 204);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 50%;
-          border-top-left-radius: 50%;
-          border-top-right-radius: 50%;
-          margin-inline-end: 12px;
-          width: 28px;
           background-color: rgba(106, 93, 249, 1);
           color: rgba(255, 255, 255, 1);
         }
-        .div-99 {
+        .div-83 {
           border-bottom: 0px;
           border-left: 0px;
           border-right: 0px;
@@ -6258,7 +5726,7 @@ export default function MyComponent() {
           perspective-origin: 34.7109px 16px;
           transform-origin: 34.7148px 16px;
         }
-        .span-16 {
+        .span-14 {
           border-bottom: 0px;
           border-left: 0px;
           border-right: 0px;
@@ -6272,7 +5740,7 @@ export default function MyComponent() {
           perspective-origin: 32.7109px 16px;
           transform-origin: 32.7148px 16px;
         }
-        .button-10 {
+        .button-8 {
           align-items: center;
           background-color: rgba(0, 0, 0, 1);
           border-block: 1px solid rgb(106, 93, 249);
@@ -6355,7 +5823,7 @@ export default function MyComponent() {
           text-overflow: ellipsis;
           white-space: nowrap;
         }
-        .div-100 {
+        .div-84 {
           align-items: center;
           display: flex;
           justify-content: space-between;
@@ -6367,7 +5835,7 @@ export default function MyComponent() {
           margin-left: auto;
         }
         @media (max-width: 991px) {
-          .div-100 {
+          .div-84 {
             display: flex;
             flex-direction: column;
             min-width: 200px;
@@ -6375,19 +5843,19 @@ export default function MyComponent() {
           }
         }
         @media (max-width: 640px) {
-          .div-100 {
+          .div-84 {
             margin-top: 105px;
           }
         }
-        .div-101 {
+        .div-85 {
           display: flex;
         }
         @media (max-width: 991px) {
-          .div-101 {
+          .div-85 {
             align-items: center;
           }
         }
-        .div-102 {
+        .div-86 {
           margin-right: 7px;
           align-items: center;
           border-radius: 33px;
@@ -6399,7 +5867,7 @@ export default function MyComponent() {
           width: 65px;
         }
         @media (max-width: 991px) {
-          .div-102 {
+          .div-86 {
             margin-right: 15px;
             height: 33px;
             width: 33px;
@@ -6415,7 +5883,7 @@ export default function MyComponent() {
             width: 18px;
           }
         }
-        .div-103 {
+        .div-87 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -6426,15 +5894,15 @@ export default function MyComponent() {
           margin-bottom: auto;
           font-family: "Play", sans-serif;
         }
-        .div-104 {
+        .div-88 {
           display: flex;
         }
         @media (max-width: 991px) {
-          .div-104 {
+          .div-88 {
             align-items: center;
           }
         }
-        .div-105 {
+        .div-89 {
           margin-right: 7px;
           align-items: center;
           border-radius: 33px;
@@ -6446,7 +5914,7 @@ export default function MyComponent() {
           width: 65px;
         }
         @media (max-width: 991px) {
-          .div-105 {
+          .div-89 {
             margin-right: 15px;
             height: 33px;
             width: 33px;
@@ -6462,7 +5930,7 @@ export default function MyComponent() {
             width: 18px;
           }
         }
-        .div-106 {
+        .div-90 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -6473,15 +5941,15 @@ export default function MyComponent() {
           margin-bottom: auto;
           font-family: "Play", sans-serif;
         }
-        .div-107 {
+        .div-91 {
           display: flex;
         }
         @media (max-width: 991px) {
-          .div-107 {
+          .div-91 {
             align-items: center;
           }
         }
-        .div-108 {
+        .div-92 {
           margin-right: 7px;
           align-items: center;
           border-radius: 33px;
@@ -6493,7 +5961,7 @@ export default function MyComponent() {
           width: 65px;
         }
         @media (max-width: 991px) {
-          .div-108 {
+          .div-92 {
             margin-right: 15px;
             height: 33px;
             width: 33px;
@@ -6509,7 +5977,7 @@ export default function MyComponent() {
             width: 18px;
           }
         }
-        .div-109 {
+        .div-93 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -6520,15 +5988,15 @@ export default function MyComponent() {
           margin-bottom: auto;
           font-family: "Play", sans-serif;
         }
-        .div-110 {
+        .div-94 {
           display: flex;
         }
         @media (max-width: 991px) {
-          .div-110 {
+          .div-94 {
             align-items: center;
           }
         }
-        .div-111 {
+        .div-95 {
           margin-right: 7px;
           align-items: center;
           border-radius: 33px;
@@ -6540,7 +6008,7 @@ export default function MyComponent() {
           width: 65px;
         }
         @media (max-width: 991px) {
-          .div-111 {
+          .div-95 {
             margin-right: 15px;
             height: 33px;
             width: 33px;
@@ -6556,7 +6024,7 @@ export default function MyComponent() {
             width: 18px;
           }
         }
-        .div-112 {
+        .div-96 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -6567,7 +6035,7 @@ export default function MyComponent() {
           margin-bottom: auto;
           font-family: "Play", sans-serif;
         }
-        .div-113 {
+        .div-97 {
           border-bottom: 0px;
           border-bottom-color: rgb(34, 34, 34);
           border-color: rgb(34, 34, 34);
@@ -6617,18 +6085,18 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 991px) {
-          .div-113 {
+          .div-97 {
             display: none;
           }
         }
         @media (max-width: 640px) {
-          .div-113 {
+          .div-97 {
             width: 300px;
             height: 809px;
             display: flex;
           }
         }
-        .div-114 {
+        .div-98 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6645,7 +6113,7 @@ export default function MyComponent() {
           transform-origin: 544px 13px;
           font-weight: 600;
         }
-        .h2-3 {
+        .h2 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6659,7 +6127,7 @@ export default function MyComponent() {
           perspective-origin: 79.0078px 13px;
           transform-origin: 79.0117px 13px;
         }
-        .div-115 {
+        .div-99 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6671,7 +6139,7 @@ export default function MyComponent() {
           perspective-origin: 77.1875px 12px;
           transform-origin: 77.1875px 12px;
         }
-        .a-20 {
+        .a-16 {
           color: rgb(17, 100, 169);
           text-decoration: none rgb(17, 100, 169);
           text-decoration-color: rgb(17, 100, 169);
@@ -6702,7 +6170,7 @@ export default function MyComponent() {
           text-align: right;
           transform-origin: 59.1875px 12px;
         }
-        .div-116 {
+        .div-100 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6719,7 +6187,7 @@ export default function MyComponent() {
           top: 0px;
           transform-origin: 12px 12px;
         }
-        .button-11 {
+        .button-9 {
           appearance: button;
           border-block: 0px none rgb(177, 177, 177);
           border-block-color: rgb(177, 177, 177);
@@ -6770,7 +6238,7 @@ export default function MyComponent() {
           perspective-origin: 12px 12px;
           transform-origin: 12px 12px;
         }
-        .span-17 {
+        .span-15 {
           border-bottom: 0px;
           border-color: rgb(177, 177, 177);
           border-left: 0px;
@@ -6811,7 +6279,7 @@ export default function MyComponent() {
           transform-origin: 0.5px 0.5px;
           width: 1px;
         }
-        .div-117 {
+        .div-101 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6822,7 +6290,7 @@ export default function MyComponent() {
           perspective-origin: 12px 0px;
           transform-origin: 12px 0px;
         }
-        .div-118 {
+        .div-102 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6842,7 +6310,7 @@ export default function MyComponent() {
           margin-top: auto;
           margin-bottom: auto;
         }
-        .div-119 {
+        .div-103 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6863,7 +6331,7 @@ export default function MyComponent() {
           top: 0px;
           transform-origin: 280px 73px;
         }
-        .div-120 {
+        .div-104 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6874,7 +6342,7 @@ export default function MyComponent() {
           perspective-origin: 264px 70px;
           transform-origin: 264px 70px;
         }
-        .div-121 {
+        .div-105 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6890,7 +6358,7 @@ export default function MyComponent() {
           margin-block: 0px 4px;
           font-weight: 600;
         }
-        .div-122 {
+        .div-106 {
           border-bottom: 0px;
           border-bottom-color: rgb(85, 85, 85);
           border-color: rgb(85, 85, 85);
@@ -6919,7 +6387,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(85, 85, 85);
           transform-origin: 264px 12px;
         }
-        .div-123 {
+        .div-107 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -6932,7 +6400,7 @@ export default function MyComponent() {
           text-align: center;
           transform-origin: 264px 36px;
         }
-        .div-124 {
+        .div-108 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34) rgb(229, 229, 229) rgb(34, 34, 34)
             rgb(34, 34, 34);
@@ -6994,7 +6462,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(177, 177, 177);
           transform-origin: 16px 16px;
         }
-        .div-125 {
+        .div-109 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7005,7 +6473,7 @@ export default function MyComponent() {
           perspective-origin: 47.3359px 12px;
           transform-origin: 47.3398px 12px;
         }
-        .div-126 {
+        .div-110 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7024,12 +6492,12 @@ export default function MyComponent() {
           transform-origin: 180.16px 36px;
         }
         @media (max-width: 991px) {
-          .div-126 {
+          .div-110 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-126 {
+          .div-110 {
             display: none;
           }
         }
@@ -7068,7 +6536,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(177, 177, 177);
           transform-origin: 16px 16px;
         }
-        .div-127 {
+        .div-111 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7079,7 +6547,7 @@ export default function MyComponent() {
           perspective-origin: 58.6797px 12px;
           transform-origin: 58.6836px 12px;
         }
-        .div-128 {
+        .div-112 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7100,7 +6568,7 @@ export default function MyComponent() {
           top: 0px;
           transform-origin: 280px 73px;
         }
-        .div-129 {
+        .div-113 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7111,7 +6579,7 @@ export default function MyComponent() {
           perspective-origin: 264px 73px;
           transform-origin: 264px 73px;
         }
-        .div-130 {
+        .div-114 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7131,7 +6599,7 @@ export default function MyComponent() {
           margin-inline-end: 12px;
           font-weight: 600;
         }
-        .div-131 {
+        .div-115 {
           border-bottom: 0px;
           border-bottom-color: rgb(85, 85, 85);
           border-color: rgb(85, 85, 85);
@@ -7160,7 +6628,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(85, 85, 85);
           transform-origin: 264px 12px;
         }
-        .div-132 {
+        .div-116 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -7169,7 +6637,7 @@ export default function MyComponent() {
           font-family: ProximaNova, sans-serif;
           font-size: 15px;
         }
-        .div-133 {
+        .div-117 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -7179,7 +6647,7 @@ export default function MyComponent() {
           padding-bottom: 30px;
         }
         @media (max-width: 640px) {
-          .div-133 {
+          .div-117 {
             width: auto;
             flex-grow: 1;
             padding-left: 18px;
@@ -7188,7 +6656,7 @@ export default function MyComponent() {
             padding-right: 30px;
           }
         }
-        .div-134 {
+        .div-118 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7252,12 +6720,12 @@ export default function MyComponent() {
           padding-right: 20px;
         }
         @media (max-width: 640px) {
-          .div-134 {
+          .div-118 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-135 {
+        .div-119 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7307,12 +6775,12 @@ export default function MyComponent() {
           flex-direction: row;
         }
         @media (max-width: 640px) {
-          .div-135 {
+          .div-119 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-136 {
+        .div-120 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7360,7 +6828,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           text-align: center;
         }
-        .div-137 {
+        .div-121 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7424,12 +6892,12 @@ export default function MyComponent() {
           padding-right: 20px;
         }
         @media (max-width: 640px) {
-          .div-137 {
+          .div-121 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-138 {
+        .div-122 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7479,12 +6947,12 @@ export default function MyComponent() {
           flex-direction: row;
         }
         @media (max-width: 640px) {
-          .div-138 {
+          .div-122 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-139 {
+        .div-123 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7532,7 +7000,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           text-align: center;
         }
-        .div-140 {
+        .div-124 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7596,12 +7064,12 @@ export default function MyComponent() {
           padding-right: 20px;
         }
         @media (max-width: 640px) {
-          .div-140 {
+          .div-124 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-141 {
+        .div-125 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7651,12 +7119,12 @@ export default function MyComponent() {
           flex-direction: row;
         }
         @media (max-width: 640px) {
-          .div-141 {
+          .div-125 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-142 {
+        .div-126 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7704,7 +7172,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           text-align: center;
         }
-        .div-143 {
+        .div-127 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7768,12 +7236,12 @@ export default function MyComponent() {
           padding-right: 20px;
         }
         @media (max-width: 640px) {
-          .div-143 {
+          .div-127 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-144 {
+        .div-128 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7823,12 +7291,12 @@ export default function MyComponent() {
           flex-direction: row;
         }
         @media (max-width: 640px) {
-          .div-144 {
+          .div-128 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-145 {
+        .div-129 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7876,7 +7344,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           text-align: center;
         }
-        .div-146 {
+        .div-130 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7940,12 +7408,12 @@ export default function MyComponent() {
           padding-right: 20px;
         }
         @media (max-width: 640px) {
-          .div-146 {
+          .div-130 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-147 {
+        .div-131 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -7995,12 +7463,12 @@ export default function MyComponent() {
           flex-direction: row;
         }
         @media (max-width: 640px) {
-          .div-147 {
+          .div-131 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-148 {
+        .div-132 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -8048,7 +7516,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           text-align: center;
         }
-        .div-149 {
+        .div-133 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -8060,11 +7528,11 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 640px) {
-          .div-149 {
+          .div-133 {
             max-width: 300px;
           }
         }
-        .div-150 {
+        .div-134 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -8085,7 +7553,7 @@ export default function MyComponent() {
           margin-right: auto;
           max-width: 545px;
         }
-        .div-151 {
+        .div-135 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -8097,7 +7565,7 @@ export default function MyComponent() {
           max-height: 233px;
         }
         @media (max-width: 640px) {
-          .div-151 {
+          .div-135 {
             border-radius: 21px;
             box-shadow: 1px 5px 13px -8px rgba(0, 0, 0, 1);
           }
@@ -8117,7 +7585,7 @@ export default function MyComponent() {
           pointer-events: none;
           font-size: 0;
         }
-        .div-152 {
+        .div-136 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8147,7 +7615,7 @@ export default function MyComponent() {
             padding-left: 6px;
           }
         }
-        .div-153 {
+        .div-137 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8159,7 +7627,7 @@ export default function MyComponent() {
           perspective-origin: 256px 29.5px;
           transform-origin: 256px 29.5px;
         }
-        .div-154 {
+        .div-138 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8172,6 +7640,262 @@ export default function MyComponent() {
           flex-wrap: wrap;
           perspective-origin: 256px 21.5px;
           transform-origin: 256px 21.5px;
+        }
+        .div-139 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-140 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-141 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-142 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-143 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-144 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-145 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-146 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-147 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-148 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-149 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-150 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-151 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-152 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-153 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
+        }
+        .div-154 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          margin-right: 4px;
+          background-color: rgb(229, 229, 229);
+          flex-grow: 1;
+          height: 3px;
+          margin-inline-end: 4px;
+          perspective-origin: 9.63281px 1.5px;
+          transform-origin: 9.63672px 1.5px;
         }
         .div-155 {
           border-bottom: 0px;
@@ -8277,262 +8001,6 @@ export default function MyComponent() {
           border-top: 0px;
           font-family: ProximaNova, sans-serif;
           font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-162 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-163 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-164 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-165 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-166 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-167 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-168 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-169 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-170 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-171 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-172 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-173 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-174 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-175 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-176 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          margin-right: 4px;
-          background-color: rgb(229, 229, 229);
-          flex-grow: 1;
-          height: 3px;
-          margin-inline-end: 4px;
-          perspective-origin: 9.63281px 1.5px;
-          transform-origin: 9.63672px 1.5px;
-        }
-        .div-177 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
           padding-top: 12px;
           align-items: center;
           display: flex;
@@ -8541,7 +8009,7 @@ export default function MyComponent() {
           perspective-origin: 256px 20px;
           transform-origin: 256px 20px;
         }
-        .p-12 {
+        .p-7 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8554,7 +8022,7 @@ export default function MyComponent() {
           perspective-origin: 30.7422px 14px;
           transform-origin: 30.7461px 14px;
         }
-        .div-178 {
+        .div-162 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8568,7 +8036,7 @@ export default function MyComponent() {
           perspective-origin: 56.3594px 14px;
           transform-origin: 56.3633px 14px;
         }
-        .div-179 {
+        .div-163 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -8626,7 +8094,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(177, 177, 177);
           transform-origin: 9.5px 8.5px;
         }
-        .p-13 {
+        .p-8 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8666,7 +8134,7 @@ export default function MyComponent() {
           perspective-origin: 256px 8.5px;
           transform-origin: 256px 8.5px;
         }
-        .p-14 {
+        .p-9 {
           border-bottom: 0px;
           border-bottom-color: rgb(85, 85, 85);
           border-color: rgb(85, 85, 85);
@@ -8693,7 +8161,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(85, 85, 85);
           transform-origin: 256px 48px;
         }
-        .div-180 {
+        .div-164 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8714,7 +8182,7 @@ export default function MyComponent() {
           perspective-origin: 272px 47px;
           transform-origin: 272px 47px;
         }
-        .div-181 {
+        .div-165 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8738,12 +8206,12 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 640px) {
-          .div-181 {
+          .div-165 {
             max-width: 74.33330000000001%;
             min-width: 275px;
           }
         }
-        .div-182 {
+        .div-166 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -8804,12 +8272,12 @@ export default function MyComponent() {
           min-width: 258px;
         }
         @media (max-width: 640px) {
-          .div-182 {
+          .div-166 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-183 {
+        .div-167 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -8859,12 +8327,12 @@ export default function MyComponent() {
           flex-direction: row;
         }
         @media (max-width: 640px) {
-          .div-183 {
+          .div-167 {
             padding-right: 0px;
             padding-left: 0px;
           }
         }
-        .div-184 {
+        .div-168 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -8912,7 +8380,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           text-align: center;
         }
-        .p-15 {
+        .p-10 {
           border-bottom: 0px;
           border-bottom-color: rgb(85, 85, 85);
           border-color: rgb(85, 85, 85);
@@ -8940,7 +8408,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(85, 85, 85);
           transform-origin: 72px 22px;
         }
-        .div-185 {
+        .div-169 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -8968,12 +8436,12 @@ export default function MyComponent() {
           margin-top: 61px;
         }
         @media (max-width: 640px) {
-          .div-185 {
+          .div-169 {
             margin-top: 27px;
             padding-top: 6px;
           }
         }
-        .div-186 {
+        .div-170 {
           border-bottom: 0px;
           border-bottom-color: rgb(177, 177, 177);
           border-color: rgb(177, 177, 177);
@@ -9007,7 +8475,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(177, 177, 177);
           transform-origin: 560px 20px;
         }
-        .div-187 {
+        .div-171 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -9052,7 +8520,7 @@ export default function MyComponent() {
           font-weight: 600;
         }
         @media (max-width: 640px) {
-          .div-187 {
+          .div-171 {
             margin-left: auto;
             margin-right: auto;
             padding-top: 20px;
@@ -9060,7 +8528,7 @@ export default function MyComponent() {
             padding-bottom: 16px;
           }
         }
-        .div-188 {
+        .div-172 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -9079,13 +8547,13 @@ export default function MyComponent() {
           transform-origin: 560px 63px;
         }
         @media (max-width: 640px) {
-          .div-188 {
+          .div-172 {
             display: flex;
             flex-direction: column;
             align-items: stretch;
           }
         }
-        .div-189 {
+        .div-173 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -9108,7 +8576,7 @@ export default function MyComponent() {
           max-height: 1280px;
           min-height: 150px;
         }
-        .div-190 {
+        .div-174 {
           border-bottom: 0px;
           border-color: rgb(34, 34, 34);
           border-left: 0px;
@@ -9123,13 +8591,13 @@ export default function MyComponent() {
           margin-bottom: 18px;
         }
         @media (max-width: 640px) {
-          .div-190 {
+          .div-174 {
             display: flex;
             flex-direction: row;
             overflow: auto;
           }
         }
-        .a-21 {
+        .a-17 {
           color: rgb(17, 100, 169);
           text-decoration: none rgb(17, 100, 169);
           text-decoration-color: rgb(17, 100, 169);
@@ -9168,12 +8636,828 @@ export default function MyComponent() {
           display: flex;
         }
         @media (max-width: 991px) {
-          .a-21 {
+          .a-17 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .a-21 {
+          .a-17 {
+            display: none;
+          }
+        }
+        .div-175 {
+          border-bottom: 1px solid rgb(229, 229, 229);
+          border-bottom-color: rgb(229, 229, 229);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-color: rgb(229, 229, 229);
+          border-left: 1px solid rgb(229, 229, 229);
+          border-left-color: rgb(229, 229, 229);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right: 1px solid rgb(229, 229, 229);
+          border-right-color: rgb(229, 229, 229);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid rgb(229, 229, 229);
+          border-top-color: rgb(229, 229, 229);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          border-block: 1px solid rgb(229, 229, 229);
+          border-block-color: rgb(229, 229, 229);
+          border-block-end: 1px solid rgb(229, 229, 229);
+          border-block-end-color: rgb(229, 229, 229);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(229, 229, 229);
+          border-block-start-color: rgb(229, 229, 229);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-inline: 1px solid rgb(229, 229, 229);
+          border-inline-color: rgb(229, 229, 229);
+          border-inline-end: 1px solid rgb(229, 229, 229);
+          border-inline-end-color: rgb(229, 229, 229);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(229, 229, 229);
+          border-inline-start-color: rgb(229, 229, 229);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          display: flex;
+          overflow: hidden;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          perspective-origin: 173.328px 63px;
+          transform-origin: 173.332px 63px;
+        }
+        .div-176 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          perspective-origin: 62px 62px;
+          transform-origin: 62px 62px;
+        }
+        .div-177 {
+          display: flex;
+          flex-direction: row;
+        }
+        .div-178 {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          width: 100%;
+          min-height: 20px;
+          min-width: 104px;
+          overflow: hidden;
+        }
+        .image-4 {
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+        .image-sizer-4 {
+          width: 100%;
+          padding-top: 100%;
+          pointer-events: none;
+          font-size: 0;
+        }
+        .div-179 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          padding-bottom: 12px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 12px;
+          padding: 12px;
+          perspective-origin: 110.328px 62px;
+          transform-origin: 110.332px 62px;
+          display: flex;
+          flex-direction: column;
+        }
+        .p-11 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(85, 85, 85);
+          border-color: rgb(85, 85, 85);
+          border-left: 0px;
+          border-left-color: rgb(85, 85, 85);
+          border-right: 0px;
+          border-right-color: rgb(85, 85, 85);
+          border-top: 0px;
+          border-top-color: rgb(85, 85, 85);
+          font-family: ProximaNova, sans-serif;
+          line-height: 24px;
+          border-block-color: rgb(85, 85, 85);
+          border-block-end-color: rgb(85, 85, 85);
+          border-block-start-color: rgb(85, 85, 85);
+          border-inline-color: rgb(85, 85, 85);
+          border-inline-end-color: rgb(85, 85, 85);
+          border-inline-start-color: rgb(85, 85, 85);
+          caret-color: rgb(85, 85, 85);
+          color: rgb(85, 85, 85);
+          column-rule-color: rgb(85, 85, 85);
+          outline-color: rgb(85, 85, 85);
+          perspective-origin: 98.3281px 24px;
+          text-decoration: none solid rgb(85, 85, 85);
+          text-decoration-color: rgb(85, 85, 85);
+          transform-origin: 98.332px 24px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .p-12 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          perspective-origin: 98.3281px 12px;
+          transform-origin: 98.332px 12px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .span-16 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(85, 85, 85);
+          border-color: rgb(85, 85, 85);
+          border-left: 0px;
+          border-left-color: rgb(85, 85, 85);
+          border-right: 0px;
+          border-right-color: rgb(85, 85, 85);
+          border-top: 0px;
+          border-top-color: rgb(85, 85, 85);
+          font-family: ProximaNova, sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          border-block-color: rgb(85, 85, 85);
+          border-block-end-color: rgb(85, 85, 85);
+          border-block-start-color: rgb(85, 85, 85);
+          border-inline-color: rgb(85, 85, 85);
+          border-inline-end-color: rgb(85, 85, 85);
+          border-inline-start-color: rgb(85, 85, 85);
+          caret-color: rgb(85, 85, 85);
+          color: rgb(85, 85, 85);
+          column-rule-color: rgb(85, 85, 85);
+          outline-color: rgb(85, 85, 85);
+          text-decoration: line-through solid rgb(85, 85, 85);
+          text-decoration-color: rgb(85, 85, 85);
+          text-decoration-line: line-through;
+        }
+        .span-17 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(228, 15, 10);
+          border-color: rgb(228, 15, 10);
+          border-left: 0px;
+          border-left-color: rgb(228, 15, 10);
+          border-right: 0px;
+          border-right-color: rgb(228, 15, 10);
+          border-top: 0px;
+          border-top-color: rgb(228, 15, 10);
+          font-family: ProximaNova, sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          border-block-color: rgb(228, 15, 10);
+          border-block-end-color: rgb(228, 15, 10);
+          border-block-start-color: rgb(228, 15, 10);
+          border-inline-color: rgb(228, 15, 10);
+          border-inline-end-color: rgb(228, 15, 10);
+          border-inline-start-color: rgb(228, 15, 10);
+          caret-color: rgb(228, 15, 10);
+          color: rgb(228, 15, 10);
+          column-rule-color: rgb(228, 15, 10);
+          outline-color: rgb(228, 15, 10);
+          text-decoration: none solid rgb(228, 15, 10);
+          text-decoration-color: rgb(228, 15, 10);
+        }
+        .div-180 {
+          border-bottom: 0px;
+          border-color: rgb(34, 34, 34);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          display: none;
+          flex-wrap: wrap;
+          perspective-origin: 544px 63px;
+          transform-origin: 544px 63px;
+        }
+        @media (max-width: 991px) {
+          .div-180 {
+            display: flex;
+          }
+        }
+        @media (max-width: 640px) {
+          .div-180 {
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            margin-top: 16px;
+          }
+        }
+        .a-18 {
+          color: rgb(17, 100, 169);
+          text-decoration: none rgb(17, 100, 169);
+          text-decoration-color: rgb(17, 100, 169);
+          border-bottom: 0px;
+          border-bottom-color: rgb(17, 100, 169);
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-left-color: rgb(17, 100, 169);
+          border-right: 0px;
+          border-right-color: rgb(17, 100, 169);
+          border-top: 0px;
+          border-top-color: rgb(17, 100, 169);
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          padding-right: 16px;
+          border-block-color: rgb(17, 100, 169);
+          border-block-end-color: rgb(17, 100, 169);
+          border-block-start-color: rgb(17, 100, 169);
+          border-inline-color: rgb(17, 100, 169);
+          border-inline-end-color: rgb(17, 100, 169);
+          border-inline-start-color: rgb(17, 100, 169);
+          bottom: 0px;
+          caret-color: rgb(17, 100, 169);
+          column-rule-color: rgb(17, 100, 169);
+          cursor: pointer;
+          flex-basis: 33.3333%;
+          inset: 0px;
+          left: 0px;
+          max-width: 33.3333%;
+          outline-color: rgb(17, 100, 169);
+          perspective-origin: 181.328px 63px;
+          position: relative;
+          right: 0px;
+          top: 0px;
+          transform-origin: 181.332px 63px;
+        }
+        @media (max-width: 640px) {
+          .a-18 {
+            padding-right: 0px;
+            padding-bottom: 0px;
+          }
+        }
+        .div-181 {
+          border-bottom: 1px solid rgb(229, 229, 229);
+          border-bottom-color: rgb(229, 229, 229);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-color: rgb(229, 229, 229);
+          border-left: 1px solid rgb(229, 229, 229);
+          border-left-color: rgb(229, 229, 229);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right: 1px solid rgb(229, 229, 229);
+          border-right-color: rgb(229, 229, 229);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid rgb(229, 229, 229);
+          border-top-color: rgb(229, 229, 229);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          border-block: 1px solid rgb(229, 229, 229);
+          border-block-color: rgb(229, 229, 229);
+          border-block-end: 1px solid rgb(229, 229, 229);
+          border-block-end-color: rgb(229, 229, 229);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(229, 229, 229);
+          border-block-start-color: rgb(229, 229, 229);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-inline: 1px solid rgb(229, 229, 229);
+          border-inline-color: rgb(229, 229, 229);
+          border-inline-end: 1px solid rgb(229, 229, 229);
+          border-inline-end-color: rgb(229, 229, 229);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(229, 229, 229);
+          border-inline-start-color: rgb(229, 229, 229);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          display: flex;
+          overflow: hidden;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          perspective-origin: 173.328px 63px;
+          transform-origin: 173.332px 63px;
+        }
+        @media (max-width: 640px) {
+          .div-181 {
+            width: 264.3281px;
+          }
+        }
+        .div-182 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          perspective-origin: 62px 62px;
+          transform-origin: 62px 62px;
+        }
+        .div-183 {
+          display: flex;
+          flex-direction: row;
+        }
+        .div-184 {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          width: 100%;
+          min-height: 20px;
+          min-width: 104px;
+          overflow: hidden;
+        }
+        @media (max-width: 640px) {
+          .div-184 {
+            padding-top: 16px;
+          }
+        }
+        .image-5 {
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+        .image-sizer-5 {
+          width: 100%;
+          padding-top: 100%;
+          pointer-events: none;
+          font-size: 0;
+        }
+        .div-185 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          padding-bottom: 12px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 12px;
+          padding: 12px;
+          perspective-origin: 110.328px 62px;
+          transform-origin: 110.332px 62px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .div-185 {
+            display: flex;
+          }
+        }
+        @media (max-width: 640px) {
+          .div-185 {
+            display: flex;
+          }
+        }
+        .p-13 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(85, 85, 85);
+          border-color: rgb(85, 85, 85);
+          border-left: 0px;
+          border-left-color: rgb(85, 85, 85);
+          border-right: 0px;
+          border-right-color: rgb(85, 85, 85);
+          border-top: 0px;
+          border-top-color: rgb(85, 85, 85);
+          font-family: ProximaNova, sans-serif;
+          line-height: 24px;
+          border-block-color: rgb(85, 85, 85);
+          border-block-end-color: rgb(85, 85, 85);
+          border-block-start-color: rgb(85, 85, 85);
+          border-inline-color: rgb(85, 85, 85);
+          border-inline-end-color: rgb(85, 85, 85);
+          border-inline-start-color: rgb(85, 85, 85);
+          caret-color: rgb(85, 85, 85);
+          color: rgb(85, 85, 85);
+          column-rule-color: rgb(85, 85, 85);
+          outline-color: rgb(85, 85, 85);
+          perspective-origin: 98.3281px 24px;
+          text-decoration: none solid rgb(85, 85, 85);
+          text-decoration-color: rgb(85, 85, 85);
+          transform-origin: 98.332px 24px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .p-13 {
+            display: flex;
+          }
+        }
+        @media (max-width: 640px) {
+          .p-13 {
+            display: none;
+            margin-top: 0px;
+          }
+        }
+        .p-14 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          perspective-origin: 98.3281px 12px;
+          transform-origin: 98.332px 12px;
+        }
+        .span-18 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(85, 85, 85);
+          border-color: rgb(85, 85, 85);
+          border-left: 0px;
+          border-left-color: rgb(85, 85, 85);
+          border-right: 0px;
+          border-right-color: rgb(85, 85, 85);
+          border-top: 0px;
+          border-top-color: rgb(85, 85, 85);
+          font-family: ProximaNova, sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          border-block-color: rgb(85, 85, 85);
+          border-block-end-color: rgb(85, 85, 85);
+          border-block-start-color: rgb(85, 85, 85);
+          border-inline-color: rgb(85, 85, 85);
+          border-inline-end-color: rgb(85, 85, 85);
+          border-inline-start-color: rgb(85, 85, 85);
+          caret-color: rgb(85, 85, 85);
+          color: rgb(85, 85, 85);
+          column-rule-color: rgb(85, 85, 85);
+          outline-color: rgb(85, 85, 85);
+          text-decoration: line-through solid rgb(85, 85, 85);
+          text-decoration-color: rgb(85, 85, 85);
+          text-decoration-line: line-through;
+        }
+        .span-19 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(228, 15, 10);
+          border-color: rgb(228, 15, 10);
+          border-left: 0px;
+          border-left-color: rgb(228, 15, 10);
+          border-right: 0px;
+          border-right-color: rgb(228, 15, 10);
+          border-top: 0px;
+          border-top-color: rgb(228, 15, 10);
+          font-family: ProximaNova, sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          border-block-color: rgb(228, 15, 10);
+          border-block-end-color: rgb(228, 15, 10);
+          border-block-start-color: rgb(228, 15, 10);
+          border-inline-color: rgb(228, 15, 10);
+          border-inline-end-color: rgb(228, 15, 10);
+          border-inline-start-color: rgb(228, 15, 10);
+          caret-color: rgb(228, 15, 10);
+          color: rgb(228, 15, 10);
+          column-rule-color: rgb(228, 15, 10);
+          outline-color: rgb(228, 15, 10);
+          text-decoration: none solid rgb(228, 15, 10);
+          text-decoration-color: rgb(228, 15, 10);
+        }
+        .a-19 {
+          color: rgb(17, 100, 169);
+          text-decoration: none rgb(17, 100, 169);
+          text-decoration-color: rgb(17, 100, 169);
+          border-bottom: 0px;
+          border-bottom-color: rgb(17, 100, 169);
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-left-color: rgb(17, 100, 169);
+          border-right: 0px;
+          border-right-color: rgb(17, 100, 169);
+          border-top: 0px;
+          border-top-color: rgb(17, 100, 169);
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          padding-right: 16px;
+          border-block-color: rgb(17, 100, 169);
+          border-block-end-color: rgb(17, 100, 169);
+          border-block-start-color: rgb(17, 100, 169);
+          border-inline-color: rgb(17, 100, 169);
+          border-inline-end-color: rgb(17, 100, 169);
+          border-inline-start-color: rgb(17, 100, 169);
+          bottom: 0px;
+          caret-color: rgb(17, 100, 169);
+          column-rule-color: rgb(17, 100, 169);
+          cursor: pointer;
+          flex-basis: 33.3333%;
+          inset: 0px;
+          left: 0px;
+          max-width: 33.3333%;
+          outline-color: rgb(17, 100, 169);
+          perspective-origin: 181.328px 63px;
+          position: relative;
+          right: 0px;
+          top: 0px;
+          transform-origin: 181.332px 63px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .a-19 {
+            display: flex;
+          }
+        }
+        @media (max-width: 640px) {
+          .a-19 {
+            display: none;
+          }
+        }
+        .div-186 {
+          border-bottom: 1px solid rgb(229, 229, 229);
+          border-bottom-color: rgb(229, 229, 229);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-color: rgb(229, 229, 229);
+          border-left: 1px solid rgb(229, 229, 229);
+          border-left-color: rgb(229, 229, 229);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right: 1px solid rgb(229, 229, 229);
+          border-right-color: rgb(229, 229, 229);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top: 1px solid rgb(229, 229, 229);
+          border-top-color: rgb(229, 229, 229);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          border-block: 1px solid rgb(229, 229, 229);
+          border-block-color: rgb(229, 229, 229);
+          border-block-end: 1px solid rgb(229, 229, 229);
+          border-block-end-color: rgb(229, 229, 229);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(229, 229, 229);
+          border-block-start-color: rgb(229, 229, 229);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-inline: 1px solid rgb(229, 229, 229);
+          border-inline-color: rgb(229, 229, 229);
+          border-inline-end: 1px solid rgb(229, 229, 229);
+          border-inline-end-color: rgb(229, 229, 229);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(229, 229, 229);
+          border-inline-start-color: rgb(229, 229, 229);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          display: flex;
+          overflow: hidden;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          perspective-origin: 173.328px 63px;
+          transform-origin: 173.332px 63px;
+        }
+        .div-187 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          perspective-origin: 62px 62px;
+          transform-origin: 62px 62px;
+        }
+        .div-188 {
+          display: flex;
+          flex-direction: row;
+        }
+        .div-189 {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          width: 100%;
+          min-height: 20px;
+          min-width: 104px;
+          overflow: hidden;
+        }
+        .image-6 {
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+        .image-sizer-6 {
+          width: 100%;
+          padding-top: 100%;
+          pointer-events: none;
+          font-size: 0;
+        }
+        .div-190 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          padding-bottom: 12px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 12px;
+          padding: 12px;
+          perspective-origin: 110.328px 62px;
+          transform-origin: 110.332px 62px;
+        }
+        .p-15 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(85, 85, 85);
+          border-color: rgb(85, 85, 85);
+          border-left: 0px;
+          border-left-color: rgb(85, 85, 85);
+          border-right: 0px;
+          border-right-color: rgb(85, 85, 85);
+          border-top: 0px;
+          border-top-color: rgb(85, 85, 85);
+          font-family: ProximaNova, sans-serif;
+          line-height: 24px;
+          border-block-color: rgb(85, 85, 85);
+          border-block-end-color: rgb(85, 85, 85);
+          border-block-start-color: rgb(85, 85, 85);
+          border-inline-color: rgb(85, 85, 85);
+          border-inline-end-color: rgb(85, 85, 85);
+          border-inline-start-color: rgb(85, 85, 85);
+          caret-color: rgb(85, 85, 85);
+          color: rgb(85, 85, 85);
+          column-rule-color: rgb(85, 85, 85);
+          outline-color: rgb(85, 85, 85);
+          perspective-origin: 98.3281px 24px;
+          text-decoration: none solid rgb(85, 85, 85);
+          text-decoration-color: rgb(85, 85, 85);
+          transform-origin: 98.332px 24px;
+        }
+        .p-16 {
+          border-bottom: 0px;
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-right: 0px;
+          border-top: 0px;
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          perspective-origin: 98.3281px 12px;
+          transform-origin: 98.332px 12px;
+        }
+        .span-20 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(85, 85, 85);
+          border-color: rgb(85, 85, 85);
+          border-left: 0px;
+          border-left-color: rgb(85, 85, 85);
+          border-right: 0px;
+          border-right-color: rgb(85, 85, 85);
+          border-top: 0px;
+          border-top-color: rgb(85, 85, 85);
+          font-family: ProximaNova, sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          border-block-color: rgb(85, 85, 85);
+          border-block-end-color: rgb(85, 85, 85);
+          border-block-start-color: rgb(85, 85, 85);
+          border-inline-color: rgb(85, 85, 85);
+          border-inline-end-color: rgb(85, 85, 85);
+          border-inline-start-color: rgb(85, 85, 85);
+          caret-color: rgb(85, 85, 85);
+          color: rgb(85, 85, 85);
+          column-rule-color: rgb(85, 85, 85);
+          outline-color: rgb(85, 85, 85);
+          text-decoration: line-through solid rgb(85, 85, 85);
+          text-decoration-color: rgb(85, 85, 85);
+          text-decoration-line: line-through;
+        }
+        .span-21 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(228, 15, 10);
+          border-color: rgb(228, 15, 10);
+          border-left: 0px;
+          border-left-color: rgb(228, 15, 10);
+          border-right: 0px;
+          border-right-color: rgb(228, 15, 10);
+          border-top: 0px;
+          border-top-color: rgb(228, 15, 10);
+          font-family: ProximaNova, sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          border-block-color: rgb(228, 15, 10);
+          border-block-end-color: rgb(228, 15, 10);
+          border-block-start-color: rgb(228, 15, 10);
+          border-inline-color: rgb(228, 15, 10);
+          border-inline-end-color: rgb(228, 15, 10);
+          border-inline-start-color: rgb(228, 15, 10);
+          caret-color: rgb(228, 15, 10);
+          color: rgb(228, 15, 10);
+          column-rule-color: rgb(228, 15, 10);
+          outline-color: rgb(228, 15, 10);
+          text-decoration: none solid rgb(228, 15, 10);
+          text-decoration-color: rgb(228, 15, 10);
+        }
+        .a-20 {
+          color: rgb(17, 100, 169);
+          text-decoration: none rgb(17, 100, 169);
+          text-decoration-color: rgb(17, 100, 169);
+          border-bottom: 0px;
+          border-bottom-color: rgb(17, 100, 169);
+          border-color: rgb(17, 100, 169);
+          border-left: 0px;
+          border-left-color: rgb(17, 100, 169);
+          border-right: 0px;
+          border-right-color: rgb(17, 100, 169);
+          border-top: 0px;
+          border-top-color: rgb(17, 100, 169);
+          font-family: ProximaNova, sans-serif;
+          font-size: 15px;
+          padding-right: 16px;
+          border-block-color: rgb(17, 100, 169);
+          border-block-end-color: rgb(17, 100, 169);
+          border-block-start-color: rgb(17, 100, 169);
+          border-inline-color: rgb(17, 100, 169);
+          border-inline-end-color: rgb(17, 100, 169);
+          border-inline-start-color: rgb(17, 100, 169);
+          bottom: 0px;
+          caret-color: rgb(17, 100, 169);
+          column-rule-color: rgb(17, 100, 169);
+          cursor: pointer;
+          flex-basis: 33.3333%;
+          inset: 0px;
+          left: 0px;
+          max-width: 33.3333%;
+          outline-color: rgb(17, 100, 169);
+          perspective-origin: 181.328px 63px;
+          position: relative;
+          right: 0px;
+          top: 0px;
+          transform-origin: 181.332px 63px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .a-20 {
+            display: flex;
+          }
+        }
+        @media (max-width: 640px) {
+          .a-20 {
             display: none;
           }
         }
@@ -9259,7 +9543,7 @@ export default function MyComponent() {
           min-width: 104px;
           overflow: hidden;
         }
-        .image-4 {
+        .image-7 {
           object-fit: cover;
           object-position: center;
           position: absolute;
@@ -9268,7 +9552,7 @@ export default function MyComponent() {
           top: 0;
           left: 0;
         }
-        .image-sizer-4 {
+        .image-sizer-7 {
           width: 100%;
           padding-top: 100%;
           pointer-events: none;
@@ -9289,53 +9573,9 @@ export default function MyComponent() {
           padding: 12px;
           perspective-origin: 110.328px 62px;
           transform-origin: 110.332px 62px;
-          display: flex;
-          flex-direction: column;
-        }
-        .p-16 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(85, 85, 85);
-          border-color: rgb(85, 85, 85);
-          border-left: 0px;
-          border-left-color: rgb(85, 85, 85);
-          border-right: 0px;
-          border-right-color: rgb(85, 85, 85);
-          border-top: 0px;
-          border-top-color: rgb(85, 85, 85);
-          font-family: ProximaNova, sans-serif;
-          line-height: 24px;
-          border-block-color: rgb(85, 85, 85);
-          border-block-end-color: rgb(85, 85, 85);
-          border-block-start-color: rgb(85, 85, 85);
-          border-inline-color: rgb(85, 85, 85);
-          border-inline-end-color: rgb(85, 85, 85);
-          border-inline-start-color: rgb(85, 85, 85);
-          caret-color: rgb(85, 85, 85);
-          color: rgb(85, 85, 85);
-          column-rule-color: rgb(85, 85, 85);
-          outline-color: rgb(85, 85, 85);
-          perspective-origin: 98.3281px 24px;
-          text-decoration: none solid rgb(85, 85, 85);
-          text-decoration-color: rgb(85, 85, 85);
-          transform-origin: 98.332px 24px;
-          margin-left: auto;
-          margin-right: auto;
         }
         .p-17 {
           border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          perspective-origin: 98.3281px 12px;
-          transform-origin: 98.332px 12px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .span-18 {
-          border-bottom: 0px;
           border-bottom-color: rgb(85, 85, 85);
           border-color: rgb(85, 85, 85);
           border-left: 0px;
@@ -9345,7 +9585,6 @@ export default function MyComponent() {
           border-top: 0px;
           border-top-color: rgb(85, 85, 85);
           font-family: ProximaNova, sans-serif;
-          font-weight: 700;
           line-height: 24px;
           border-block-color: rgb(85, 85, 85);
           border-block-end-color: rgb(85, 85, 85);
@@ -9357,531 +9596,12 @@ export default function MyComponent() {
           color: rgb(85, 85, 85);
           column-rule-color: rgb(85, 85, 85);
           outline-color: rgb(85, 85, 85);
-          text-decoration: line-through solid rgb(85, 85, 85);
+          perspective-origin: 98.3281px 24px;
+          text-decoration: none solid rgb(85, 85, 85);
           text-decoration-color: rgb(85, 85, 85);
-          text-decoration-line: line-through;
-        }
-        .span-19 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(228, 15, 10);
-          border-color: rgb(228, 15, 10);
-          border-left: 0px;
-          border-left-color: rgb(228, 15, 10);
-          border-right: 0px;
-          border-right-color: rgb(228, 15, 10);
-          border-top: 0px;
-          border-top-color: rgb(228, 15, 10);
-          font-family: ProximaNova, sans-serif;
-          font-weight: 700;
-          line-height: 24px;
-          border-block-color: rgb(228, 15, 10);
-          border-block-end-color: rgb(228, 15, 10);
-          border-block-start-color: rgb(228, 15, 10);
-          border-inline-color: rgb(228, 15, 10);
-          border-inline-end-color: rgb(228, 15, 10);
-          border-inline-start-color: rgb(228, 15, 10);
-          caret-color: rgb(228, 15, 10);
-          color: rgb(228, 15, 10);
-          column-rule-color: rgb(228, 15, 10);
-          outline-color: rgb(228, 15, 10);
-          text-decoration: none solid rgb(228, 15, 10);
-          text-decoration-color: rgb(228, 15, 10);
-        }
-        .div-196 {
-          border-bottom: 0px;
-          border-color: rgb(34, 34, 34);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          display: none;
-          flex-wrap: wrap;
-          perspective-origin: 544px 63px;
-          transform-origin: 544px 63px;
-        }
-        @media (max-width: 991px) {
-          .div-196 {
-            display: flex;
-          }
-        }
-        @media (max-width: 640px) {
-          .div-196 {
-            display: flex;
-            flex-direction: row;
-            overflow: auto;
-            margin-top: 16px;
-          }
-        }
-        .a-22 {
-          color: rgb(17, 100, 169);
-          text-decoration: none rgb(17, 100, 169);
-          text-decoration-color: rgb(17, 100, 169);
-          border-bottom: 0px;
-          border-bottom-color: rgb(17, 100, 169);
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-left-color: rgb(17, 100, 169);
-          border-right: 0px;
-          border-right-color: rgb(17, 100, 169);
-          border-top: 0px;
-          border-top-color: rgb(17, 100, 169);
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          padding-right: 16px;
-          border-block-color: rgb(17, 100, 169);
-          border-block-end-color: rgb(17, 100, 169);
-          border-block-start-color: rgb(17, 100, 169);
-          border-inline-color: rgb(17, 100, 169);
-          border-inline-end-color: rgb(17, 100, 169);
-          border-inline-start-color: rgb(17, 100, 169);
-          bottom: 0px;
-          caret-color: rgb(17, 100, 169);
-          column-rule-color: rgb(17, 100, 169);
-          cursor: pointer;
-          flex-basis: 33.3333%;
-          inset: 0px;
-          left: 0px;
-          max-width: 33.3333%;
-          outline-color: rgb(17, 100, 169);
-          perspective-origin: 181.328px 63px;
-          position: relative;
-          right: 0px;
-          top: 0px;
-          transform-origin: 181.332px 63px;
-        }
-        @media (max-width: 640px) {
-          .a-22 {
-            padding-right: 0px;
-            padding-bottom: 0px;
-          }
-        }
-        .div-197 {
-          border-bottom: 1px solid rgb(229, 229, 229);
-          border-bottom-color: rgb(229, 229, 229);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgb(229, 229, 229);
-          border-left: 1px solid rgb(229, 229, 229);
-          border-left-color: rgb(229, 229, 229);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right: 1px solid rgb(229, 229, 229);
-          border-right-color: rgb(229, 229, 229);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(229, 229, 229);
-          border-top-color: rgb(229, 229, 229);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          border-block: 1px solid rgb(229, 229, 229);
-          border-block-color: rgb(229, 229, 229);
-          border-block-end: 1px solid rgb(229, 229, 229);
-          border-block-end-color: rgb(229, 229, 229);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(229, 229, 229);
-          border-block-start-color: rgb(229, 229, 229);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
-          border-inline: 1px solid rgb(229, 229, 229);
-          border-inline-color: rgb(229, 229, 229);
-          border-inline-end: 1px solid rgb(229, 229, 229);
-          border-inline-end-color: rgb(229, 229, 229);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(229, 229, 229);
-          border-inline-start-color: rgb(229, 229, 229);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 5px;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
-          display: flex;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          perspective-origin: 173.328px 63px;
-          transform-origin: 173.332px 63px;
-        }
-        @media (max-width: 640px) {
-          .div-197 {
-            width: 264.3281px;
-          }
-        }
-        .div-198 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          perspective-origin: 62px 62px;
-          transform-origin: 62px 62px;
-        }
-        .div-199 {
-          display: flex;
-          flex-direction: row;
-        }
-        .div-200 {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          width: 100%;
-          min-height: 20px;
-          min-width: 104px;
-          overflow: hidden;
-        }
-        @media (max-width: 640px) {
-          .div-200 {
-            padding-top: 16px;
-          }
-        }
-        .image-5 {
-          object-fit: cover;
-          object-position: center;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-        }
-        .image-sizer-5 {
-          width: 100%;
-          padding-top: 100%;
-          pointer-events: none;
-          font-size: 0;
-        }
-        .div-201 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          padding-bottom: 12px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 12px;
-          padding: 12px;
-          perspective-origin: 110.328px 62px;
-          transform-origin: 110.332px 62px;
-          display: flex;
-        }
-        @media (max-width: 991px) {
-          .div-201 {
-            display: flex;
-          }
-        }
-        @media (max-width: 640px) {
-          .div-201 {
-            display: flex;
-          }
+          transform-origin: 98.332px 24px;
         }
         .p-18 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(85, 85, 85);
-          border-color: rgb(85, 85, 85);
-          border-left: 0px;
-          border-left-color: rgb(85, 85, 85);
-          border-right: 0px;
-          border-right-color: rgb(85, 85, 85);
-          border-top: 0px;
-          border-top-color: rgb(85, 85, 85);
-          font-family: ProximaNova, sans-serif;
-          line-height: 24px;
-          border-block-color: rgb(85, 85, 85);
-          border-block-end-color: rgb(85, 85, 85);
-          border-block-start-color: rgb(85, 85, 85);
-          border-inline-color: rgb(85, 85, 85);
-          border-inline-end-color: rgb(85, 85, 85);
-          border-inline-start-color: rgb(85, 85, 85);
-          caret-color: rgb(85, 85, 85);
-          color: rgb(85, 85, 85);
-          column-rule-color: rgb(85, 85, 85);
-          outline-color: rgb(85, 85, 85);
-          perspective-origin: 98.3281px 24px;
-          text-decoration: none solid rgb(85, 85, 85);
-          text-decoration-color: rgb(85, 85, 85);
-          transform-origin: 98.332px 24px;
-          display: flex;
-        }
-        @media (max-width: 991px) {
-          .p-18 {
-            display: flex;
-          }
-        }
-        @media (max-width: 640px) {
-          .p-18 {
-            display: none;
-            margin-top: 0px;
-          }
-        }
-        .p-19 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          perspective-origin: 98.3281px 12px;
-          transform-origin: 98.332px 12px;
-        }
-        .span-20 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(85, 85, 85);
-          border-color: rgb(85, 85, 85);
-          border-left: 0px;
-          border-left-color: rgb(85, 85, 85);
-          border-right: 0px;
-          border-right-color: rgb(85, 85, 85);
-          border-top: 0px;
-          border-top-color: rgb(85, 85, 85);
-          font-family: ProximaNova, sans-serif;
-          font-weight: 700;
-          line-height: 24px;
-          border-block-color: rgb(85, 85, 85);
-          border-block-end-color: rgb(85, 85, 85);
-          border-block-start-color: rgb(85, 85, 85);
-          border-inline-color: rgb(85, 85, 85);
-          border-inline-end-color: rgb(85, 85, 85);
-          border-inline-start-color: rgb(85, 85, 85);
-          caret-color: rgb(85, 85, 85);
-          color: rgb(85, 85, 85);
-          column-rule-color: rgb(85, 85, 85);
-          outline-color: rgb(85, 85, 85);
-          text-decoration: line-through solid rgb(85, 85, 85);
-          text-decoration-color: rgb(85, 85, 85);
-          text-decoration-line: line-through;
-        }
-        .span-21 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(228, 15, 10);
-          border-color: rgb(228, 15, 10);
-          border-left: 0px;
-          border-left-color: rgb(228, 15, 10);
-          border-right: 0px;
-          border-right-color: rgb(228, 15, 10);
-          border-top: 0px;
-          border-top-color: rgb(228, 15, 10);
-          font-family: ProximaNova, sans-serif;
-          font-weight: 700;
-          line-height: 24px;
-          border-block-color: rgb(228, 15, 10);
-          border-block-end-color: rgb(228, 15, 10);
-          border-block-start-color: rgb(228, 15, 10);
-          border-inline-color: rgb(228, 15, 10);
-          border-inline-end-color: rgb(228, 15, 10);
-          border-inline-start-color: rgb(228, 15, 10);
-          caret-color: rgb(228, 15, 10);
-          color: rgb(228, 15, 10);
-          column-rule-color: rgb(228, 15, 10);
-          outline-color: rgb(228, 15, 10);
-          text-decoration: none solid rgb(228, 15, 10);
-          text-decoration-color: rgb(228, 15, 10);
-        }
-        .a-23 {
-          color: rgb(17, 100, 169);
-          text-decoration: none rgb(17, 100, 169);
-          text-decoration-color: rgb(17, 100, 169);
-          border-bottom: 0px;
-          border-bottom-color: rgb(17, 100, 169);
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-left-color: rgb(17, 100, 169);
-          border-right: 0px;
-          border-right-color: rgb(17, 100, 169);
-          border-top: 0px;
-          border-top-color: rgb(17, 100, 169);
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          padding-right: 16px;
-          border-block-color: rgb(17, 100, 169);
-          border-block-end-color: rgb(17, 100, 169);
-          border-block-start-color: rgb(17, 100, 169);
-          border-inline-color: rgb(17, 100, 169);
-          border-inline-end-color: rgb(17, 100, 169);
-          border-inline-start-color: rgb(17, 100, 169);
-          bottom: 0px;
-          caret-color: rgb(17, 100, 169);
-          column-rule-color: rgb(17, 100, 169);
-          cursor: pointer;
-          flex-basis: 33.3333%;
-          inset: 0px;
-          left: 0px;
-          max-width: 33.3333%;
-          outline-color: rgb(17, 100, 169);
-          perspective-origin: 181.328px 63px;
-          position: relative;
-          right: 0px;
-          top: 0px;
-          transform-origin: 181.332px 63px;
-          display: flex;
-        }
-        @media (max-width: 991px) {
-          .a-23 {
-            display: flex;
-          }
-        }
-        @media (max-width: 640px) {
-          .a-23 {
-            display: none;
-          }
-        }
-        .div-202 {
-          border-bottom: 1px solid rgb(229, 229, 229);
-          border-bottom-color: rgb(229, 229, 229);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgb(229, 229, 229);
-          border-left: 1px solid rgb(229, 229, 229);
-          border-left-color: rgb(229, 229, 229);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right: 1px solid rgb(229, 229, 229);
-          border-right-color: rgb(229, 229, 229);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(229, 229, 229);
-          border-top-color: rgb(229, 229, 229);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          border-block: 1px solid rgb(229, 229, 229);
-          border-block-color: rgb(229, 229, 229);
-          border-block-end: 1px solid rgb(229, 229, 229);
-          border-block-end-color: rgb(229, 229, 229);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(229, 229, 229);
-          border-block-start-color: rgb(229, 229, 229);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
-          border-inline: 1px solid rgb(229, 229, 229);
-          border-inline-color: rgb(229, 229, 229);
-          border-inline-end: 1px solid rgb(229, 229, 229);
-          border-inline-end-color: rgb(229, 229, 229);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(229, 229, 229);
-          border-inline-start-color: rgb(229, 229, 229);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 5px;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
-          display: flex;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          perspective-origin: 173.328px 63px;
-          transform-origin: 173.332px 63px;
-        }
-        .div-203 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          perspective-origin: 62px 62px;
-          transform-origin: 62px 62px;
-        }
-        .div-204 {
-          display: flex;
-          flex-direction: row;
-        }
-        .div-205 {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          width: 100%;
-          min-height: 20px;
-          min-width: 104px;
-          overflow: hidden;
-        }
-        .image-6 {
-          object-fit: cover;
-          object-position: center;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-        }
-        .image-sizer-6 {
-          width: 100%;
-          padding-top: 100%;
-          pointer-events: none;
-          font-size: 0;
-        }
-        .div-206 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          padding-bottom: 12px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 12px;
-          padding: 12px;
-          perspective-origin: 110.328px 62px;
-          transform-origin: 110.332px 62px;
-        }
-        .p-20 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(85, 85, 85);
-          border-color: rgb(85, 85, 85);
-          border-left: 0px;
-          border-left-color: rgb(85, 85, 85);
-          border-right: 0px;
-          border-right-color: rgb(85, 85, 85);
-          border-top: 0px;
-          border-top-color: rgb(85, 85, 85);
-          font-family: ProximaNova, sans-serif;
-          line-height: 24px;
-          border-block-color: rgb(85, 85, 85);
-          border-block-end-color: rgb(85, 85, 85);
-          border-block-start-color: rgb(85, 85, 85);
-          border-inline-color: rgb(85, 85, 85);
-          border-inline-end-color: rgb(85, 85, 85);
-          border-inline-start-color: rgb(85, 85, 85);
-          caret-color: rgb(85, 85, 85);
-          color: rgb(85, 85, 85);
-          column-rule-color: rgb(85, 85, 85);
-          outline-color: rgb(85, 85, 85);
-          perspective-origin: 98.3281px 24px;
-          text-decoration: none solid rgb(85, 85, 85);
-          text-decoration-color: rgb(85, 85, 85);
-          transform-origin: 98.332px 24px;
-        }
-        .p-21 {
           border-bottom: 0px;
           border-color: rgb(17, 100, 169);
           border-left: 0px;
@@ -9945,259 +9665,7 @@ export default function MyComponent() {
           text-decoration: none solid rgb(228, 15, 10);
           text-decoration-color: rgb(228, 15, 10);
         }
-        .a-24 {
-          color: rgb(17, 100, 169);
-          text-decoration: none rgb(17, 100, 169);
-          text-decoration-color: rgb(17, 100, 169);
-          border-bottom: 0px;
-          border-bottom-color: rgb(17, 100, 169);
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-left-color: rgb(17, 100, 169);
-          border-right: 0px;
-          border-right-color: rgb(17, 100, 169);
-          border-top: 0px;
-          border-top-color: rgb(17, 100, 169);
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          padding-right: 16px;
-          border-block-color: rgb(17, 100, 169);
-          border-block-end-color: rgb(17, 100, 169);
-          border-block-start-color: rgb(17, 100, 169);
-          border-inline-color: rgb(17, 100, 169);
-          border-inline-end-color: rgb(17, 100, 169);
-          border-inline-start-color: rgb(17, 100, 169);
-          bottom: 0px;
-          caret-color: rgb(17, 100, 169);
-          column-rule-color: rgb(17, 100, 169);
-          cursor: pointer;
-          flex-basis: 33.3333%;
-          inset: 0px;
-          left: 0px;
-          max-width: 33.3333%;
-          outline-color: rgb(17, 100, 169);
-          perspective-origin: 181.328px 63px;
-          position: relative;
-          right: 0px;
-          top: 0px;
-          transform-origin: 181.332px 63px;
-          display: flex;
-        }
-        @media (max-width: 991px) {
-          .a-24 {
-            display: flex;
-          }
-        }
-        @media (max-width: 640px) {
-          .a-24 {
-            display: none;
-          }
-        }
-        .div-207 {
-          border-bottom: 1px solid rgb(229, 229, 229);
-          border-bottom-color: rgb(229, 229, 229);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-color: rgb(229, 229, 229);
-          border-left: 1px solid rgb(229, 229, 229);
-          border-left-color: rgb(229, 229, 229);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right: 1px solid rgb(229, 229, 229);
-          border-right-color: rgb(229, 229, 229);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top: 1px solid rgb(229, 229, 229);
-          border-top-color: rgb(229, 229, 229);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          border-block: 1px solid rgb(229, 229, 229);
-          border-block-color: rgb(229, 229, 229);
-          border-block-end: 1px solid rgb(229, 229, 229);
-          border-block-end-color: rgb(229, 229, 229);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(229, 229, 229);
-          border-block-start-color: rgb(229, 229, 229);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
-          border-inline: 1px solid rgb(229, 229, 229);
-          border-inline-color: rgb(229, 229, 229);
-          border-inline-end: 1px solid rgb(229, 229, 229);
-          border-inline-end-color: rgb(229, 229, 229);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(229, 229, 229);
-          border-inline-start-color: rgb(229, 229, 229);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 5px;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
-          display: flex;
-          overflow: hidden;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          perspective-origin: 173.328px 63px;
-          transform-origin: 173.332px 63px;
-        }
-        .div-208 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          perspective-origin: 62px 62px;
-          transform-origin: 62px 62px;
-        }
-        .div-209 {
-          display: flex;
-          flex-direction: row;
-        }
-        .div-210 {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          width: 100%;
-          min-height: 20px;
-          min-width: 104px;
-          overflow: hidden;
-        }
-        .image-7 {
-          object-fit: cover;
-          object-position: center;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-        }
-        .image-sizer-7 {
-          width: 100%;
-          padding-top: 100%;
-          pointer-events: none;
-          font-size: 0;
-        }
-        .div-211 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          padding-bottom: 12px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 12px;
-          padding: 12px;
-          perspective-origin: 110.328px 62px;
-          transform-origin: 110.332px 62px;
-        }
-        .p-22 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(85, 85, 85);
-          border-color: rgb(85, 85, 85);
-          border-left: 0px;
-          border-left-color: rgb(85, 85, 85);
-          border-right: 0px;
-          border-right-color: rgb(85, 85, 85);
-          border-top: 0px;
-          border-top-color: rgb(85, 85, 85);
-          font-family: ProximaNova, sans-serif;
-          line-height: 24px;
-          border-block-color: rgb(85, 85, 85);
-          border-block-end-color: rgb(85, 85, 85);
-          border-block-start-color: rgb(85, 85, 85);
-          border-inline-color: rgb(85, 85, 85);
-          border-inline-end-color: rgb(85, 85, 85);
-          border-inline-start-color: rgb(85, 85, 85);
-          caret-color: rgb(85, 85, 85);
-          color: rgb(85, 85, 85);
-          column-rule-color: rgb(85, 85, 85);
-          outline-color: rgb(85, 85, 85);
-          perspective-origin: 98.3281px 24px;
-          text-decoration: none solid rgb(85, 85, 85);
-          text-decoration-color: rgb(85, 85, 85);
-          transform-origin: 98.332px 24px;
-        }
-        .p-23 {
-          border-bottom: 0px;
-          border-color: rgb(17, 100, 169);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-family: ProximaNova, sans-serif;
-          font-size: 15px;
-          perspective-origin: 98.3281px 12px;
-          transform-origin: 98.332px 12px;
-        }
-        .span-24 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(85, 85, 85);
-          border-color: rgb(85, 85, 85);
-          border-left: 0px;
-          border-left-color: rgb(85, 85, 85);
-          border-right: 0px;
-          border-right-color: rgb(85, 85, 85);
-          border-top: 0px;
-          border-top-color: rgb(85, 85, 85);
-          font-family: ProximaNova, sans-serif;
-          font-weight: 700;
-          line-height: 24px;
-          border-block-color: rgb(85, 85, 85);
-          border-block-end-color: rgb(85, 85, 85);
-          border-block-start-color: rgb(85, 85, 85);
-          border-inline-color: rgb(85, 85, 85);
-          border-inline-end-color: rgb(85, 85, 85);
-          border-inline-start-color: rgb(85, 85, 85);
-          caret-color: rgb(85, 85, 85);
-          color: rgb(85, 85, 85);
-          column-rule-color: rgb(85, 85, 85);
-          outline-color: rgb(85, 85, 85);
-          text-decoration: line-through solid rgb(85, 85, 85);
-          text-decoration-color: rgb(85, 85, 85);
-          text-decoration-line: line-through;
-        }
-        .span-25 {
-          border-bottom: 0px;
-          border-bottom-color: rgb(228, 15, 10);
-          border-color: rgb(228, 15, 10);
-          border-left: 0px;
-          border-left-color: rgb(228, 15, 10);
-          border-right: 0px;
-          border-right-color: rgb(228, 15, 10);
-          border-top: 0px;
-          border-top-color: rgb(228, 15, 10);
-          font-family: ProximaNova, sans-serif;
-          font-weight: 700;
-          line-height: 24px;
-          border-block-color: rgb(228, 15, 10);
-          border-block-end-color: rgb(228, 15, 10);
-          border-block-start-color: rgb(228, 15, 10);
-          border-inline-color: rgb(228, 15, 10);
-          border-inline-end-color: rgb(228, 15, 10);
-          border-inline-start-color: rgb(228, 15, 10);
-          caret-color: rgb(228, 15, 10);
-          color: rgb(228, 15, 10);
-          column-rule-color: rgb(228, 15, 10);
-          outline-color: rgb(228, 15, 10);
-          text-decoration: none solid rgb(228, 15, 10);
-          text-decoration-color: rgb(228, 15, 10);
-        }
-        .div-212 {
+        .div-196 {
           border-bottom: 0px;
           border-bottom-color: rgba(147, 147, 147, 0.16);
           border-bottom-style: solid;
@@ -10248,12 +9716,12 @@ export default function MyComponent() {
           word-wrap: break-word;
         }
         @media (max-width: 640px) {
-          .div-212 {
+          .div-196 {
             width: 286px;
             margin-top: 58px;
           }
         }
-        .div-213 {
+        .div-197 {
           display: none;
           flex-direction: column;
           position: relative;
@@ -10268,18 +9736,19 @@ export default function MyComponent() {
           align-self: center;
         }
         @media (max-width: 991px) {
-          .div-213 {
+          .div-197 {
             min-width: 469px;
             max-width: 667px;
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-213 {
-            min-width: 255px;
+          .div-197 {
+            min-width: 226px;
             width: 100vw;
-            margin-left: calc(50% - 50vw);
             display: flex;
+            min-height: 291px;
+            margin-left: calc(50% - 50vw);
           }
         }
         .image-8 {
@@ -10297,7 +9766,7 @@ export default function MyComponent() {
           pointer-events: none;
           font-size: 0;
         }
-        .div-214 {
+        .div-198 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -10308,7 +9777,7 @@ export default function MyComponent() {
           margin-left: calc(50% - 50vw);
         }
         @media (max-width: 640px) {
-          .div-214 {
+          .div-198 {
             min-height: 511px;
           }
         }
@@ -10341,7 +9810,7 @@ export default function MyComponent() {
             padding-top: 55px;
           }
         }
-        .div-215 {
+        .div-199 {
           max-width: 1290px;
           display: flex;
           margin-left: auto;
@@ -10350,11 +9819,11 @@ export default function MyComponent() {
           height: 100vh;
         }
         @media (max-width: 991px) {
-          .div-215 {
+          .div-199 {
             flex-wrap: wrap;
           }
         }
-        .div-216 {
+        .div-200 {
           width: 25%;
           display: flex;
           position: relative;
@@ -10371,11 +9840,11 @@ export default function MyComponent() {
           order: 0;
         }
         @media (max-width: 991px) {
-          .div-216 {
+          .div-200 {
             width: 100%;
           }
         }
-        .div-217 {
+        .div-201 {
           align-content: center;
           align-items: center;
           display: flex;
@@ -10387,7 +9856,7 @@ export default function MyComponent() {
           position: relative;
           width: 100%;
         }
-        .div-218 {
+        .div-202 {
           width: 100%;
           position: relative;
           align-content: normal;
@@ -10401,7 +9870,7 @@ export default function MyComponent() {
           justify-content: normal;
           order: 0;
         }
-        .div-219 {
+        .div-203 {
           margin-bottom: 10px;
           transition: background 0.3s ease 0s, border 0.3s ease 0s,
             border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s,
@@ -10420,12 +9889,12 @@ export default function MyComponent() {
           color: rgba(0, 0, 0, 1);
         }
         @media (max-width: 991px) {
-          .div-219 {
+          .div-203 {
             margin-bottom: 8px;
             font-size: 11px;
           }
         }
-        .div-220 {
+        .div-204 {
           width: 100%;
           position: relative;
           align-content: normal;
@@ -10439,7 +9908,7 @@ export default function MyComponent() {
           justify-content: normal;
           order: 0;
         }
-        .div-221 {
+        .div-205 {
           margin-bottom: 15px;
           transition: background 0.3s ease 0s, border 0.3s ease 0s,
             border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s,
@@ -10456,12 +9925,12 @@ export default function MyComponent() {
           color: rgba(0, 0, 0, 1);
         }
         @media (max-width: 991px) {
-          .div-221 {
+          .div-205 {
             margin-bottom: 8px;
             font-size: 26px;
           }
         }
-        .div-222 {
+        .div-206 {
           width: 100%;
           position: relative;
           align-content: normal;
@@ -10475,7 +9944,7 @@ export default function MyComponent() {
           justify-content: normal;
           order: 0;
         }
-        .div-223 {
+        .div-207 {
           margin-bottom: 32px;
           transition: background 0.3s ease 0s, border 0.3s ease 0s,
             border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s,
@@ -10490,12 +9959,12 @@ export default function MyComponent() {
           line-height: 1.5em;
         }
         @media (max-width: 991px) {
-          .div-223 {
+          .div-207 {
             margin-bottom: 16px;
             font-size: 14px;
           }
         }
-        .a-25 {
+        .a-21 {
           width: 100%;
           position: relative;
           align-content: normal;
@@ -10512,7 +9981,7 @@ export default function MyComponent() {
           cursor: pointer;
           pointer-events: auto;
         }
-        .div-224 {
+        .div-208 {
           transition: background 0.3s ease 0s, border 0.3s ease 0s,
             border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s,
             -webkit-box-shadow 0.3s ease 0s;
@@ -10524,7 +9993,7 @@ export default function MyComponent() {
           width: auto;
           flex-grow: 1;
         }
-        .div-225 {
+        .div-209 {
           text-align: center;
           text-decoration: none;
           font-weight: 500;
@@ -10574,7 +10043,7 @@ export default function MyComponent() {
           vertical-align: middle;
           pointer-events: auto;
         }
-        .div-226 {
+        .div-210 {
           width: 50%;
           display: flex;
           position: relative;
@@ -10590,7 +10059,7 @@ export default function MyComponent() {
           justify-content: normal;
           order: 0;
         }
-        .div-227 {
+        .div-211 {
           align-content: center;
           align-items: center;
           display: flex;
@@ -10602,7 +10071,7 @@ export default function MyComponent() {
           position: relative;
           width: 100%;
         }
-        .div-228 {
+        .div-212 {
           width: 100%;
           text-align: center;
           position: relative;
@@ -10617,7 +10086,7 @@ export default function MyComponent() {
           justify-content: normal;
           order: 0;
         }
-        .div-229 {
+        .div-213 {
           transition: background 0.3s ease 0s, border 0.3s ease 0s,
             border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s,
             -webkit-box-shadow 0.3s ease 0s;
@@ -10627,7 +10096,7 @@ export default function MyComponent() {
             -webkit-box-shadow;
           transition-timing-function: ease, ease, ease, ease, ease;
         }
-        .div-230 {
+        .div-214 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -10637,12 +10106,12 @@ export default function MyComponent() {
           overflow: hidden;
         }
         @media (max-width: 991px) {
-          .div-230 {
+          .div-214 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-230 {
+          .div-214 {
             display: none;
           }
         }
@@ -10661,7 +10130,7 @@ export default function MyComponent() {
           pointer-events: none;
           font-size: 0;
         }
-        .div-231 {
+        .div-215 {
           width: 25%;
           display: flex;
           position: relative;
@@ -10678,11 +10147,11 @@ export default function MyComponent() {
           order: 0;
         }
         @media (max-width: 991px) {
-          .div-231 {
+          .div-215 {
             width: 50%;
           }
         }
-        .div-232 {
+        .div-216 {
           align-content: center;
           align-items: center;
           display: flex;
@@ -10694,7 +10163,7 @@ export default function MyComponent() {
           position: relative;
           width: 100%;
         }
-        .div-233 {
+        .div-217 {
           width: 100%;
           text-align: center;
           position: relative;
@@ -10709,7 +10178,7 @@ export default function MyComponent() {
           justify-content: normal;
           order: 0;
         }
-        .div-234 {
+        .div-218 {
           transition: background 0.3s ease 0s, border 0.3s ease 0s,
             border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s,
             -webkit-box-shadow 0.3s ease 0s;
@@ -10719,7 +10188,7 @@ export default function MyComponent() {
             -webkit-box-shadow;
           transition-timing-function: ease, ease, ease, ease, ease;
         }
-        .div-235 {
+        .div-219 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -10730,12 +10199,12 @@ export default function MyComponent() {
           overflow: hidden;
         }
         @media (max-width: 991px) {
-          .div-235 {
+          .div-219 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-235 {
+          .div-219 {
             display: none;
           }
         }
@@ -10754,7 +10223,7 @@ export default function MyComponent() {
           pointer-events: none;
           font-size: 0;
         }
-        .div-236 {
+        .div-220 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -10765,12 +10234,12 @@ export default function MyComponent() {
           overflow: hidden;
         }
         @media (max-width: 991px) {
-          .div-236 {
+          .div-220 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-236 {
+          .div-220 {
             display: none;
           }
         }
@@ -10789,7 +10258,7 @@ export default function MyComponent() {
           pointer-events: none;
           font-size: 0;
         }
-        .div-237 {
+        .div-221 {
           display: none;
           flex-direction: column;
           position: relative;
@@ -10798,21 +10267,21 @@ export default function MyComponent() {
           flex-grow: 1;
         }
         @media (max-width: 991px) {
-          .div-237 {
+          .div-221 {
             margin-left: auto;
             margin-right: auto;
           }
         }
         @media (max-width: 640px) {
-          .div-237 {
+          .div-221 {
             min-width: 165px;
           }
         }
-        .div-238 {
+        .div-222 {
           display: flex;
         }
         @media (max-width: 999px) {
-          .div-238 {
+          .div-222 {
             flex-direction: column;
             align-items: stretch;
           }
@@ -10829,7 +10298,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-239 {
+        .div-223 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -10839,7 +10308,7 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 640px) {
-          .div-239 {
+          .div-223 {
             height: auto;
             flex-grow: 0;
             min-width: 86px;
@@ -10932,7 +10401,7 @@ export default function MyComponent() {
             line-height: 1.5rem;
           }
         }
-        .button-12 {
+        .button-10 {
           font-size: 1.25rem;
           line-height: 1.4;
           padding-left: 32px;
@@ -10961,7 +10430,7 @@ export default function MyComponent() {
           border-color: rgba(0, 0, 0, 0);
         }
         @media (max-width: 991px) {
-          .button-12 {
+          .button-10 {
             font-size: 1.125rem;
             line-height: 1;
             padding-left: 24px;
@@ -10971,7 +10440,7 @@ export default function MyComponent() {
           }
         }
         @media (max-width: 640px) {
-          .button-12 {
+          .button-10 {
             font-size: 1rem;
             padding-left: 20px;
             padding-right: 20px;
@@ -10990,7 +10459,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-240 {
+        .div-224 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11000,7 +10469,7 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 640px) {
-          .div-240 {
+          .div-224 {
             height: auto;
             flex-grow: 0;
           }
@@ -11064,7 +10533,7 @@ export default function MyComponent() {
             line-height: 1.5rem;
           }
         }
-        .button-13 {
+        .button-11 {
           font-size: 1.25rem;
           line-height: 1.4;
           padding-left: 32px;
@@ -11093,7 +10562,7 @@ export default function MyComponent() {
           border-color: rgba(0, 0, 0, 0);
         }
         @media (max-width: 991px) {
-          .button-13 {
+          .button-11 {
             font-size: 1.125rem;
             line-height: 1;
             padding-left: 24px;
@@ -11103,7 +10572,7 @@ export default function MyComponent() {
           }
         }
         @media (max-width: 640px) {
-          .button-13 {
+          .button-11 {
             font-size: 1rem;
             padding-left: 20px;
             padding-right: 20px;
@@ -11122,7 +10591,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-241 {
+        .div-225 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11132,7 +10601,7 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 640px) {
-          .div-241 {
+          .div-225 {
             height: auto;
             flex-grow: 0;
           }
@@ -11196,7 +10665,7 @@ export default function MyComponent() {
             line-height: 1.5rem;
           }
         }
-        .button-14 {
+        .button-12 {
           font-size: 1.25rem;
           line-height: 1.4;
           padding-left: 32px;
@@ -11225,7 +10694,7 @@ export default function MyComponent() {
           border-color: rgba(0, 0, 0, 0);
         }
         @media (max-width: 991px) {
-          .button-14 {
+          .button-12 {
             font-size: 1.125rem;
             line-height: 1;
             padding-left: 24px;
@@ -11235,7 +10704,7 @@ export default function MyComponent() {
           }
         }
         @media (max-width: 640px) {
-          .button-14 {
+          .button-12 {
             font-size: 1rem;
             padding-left: 20px;
             padding-right: 20px;
@@ -11254,7 +10723,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-242 {
+        .div-226 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11322,7 +10791,7 @@ export default function MyComponent() {
             line-height: 1.5rem;
           }
         }
-        .button-15 {
+        .button-13 {
           font-size: 1.25rem;
           line-height: 1.4;
           padding-left: 32px;
@@ -11351,7 +10820,7 @@ export default function MyComponent() {
           border-color: rgba(0, 0, 0, 0);
         }
         @media (max-width: 991px) {
-          .button-15 {
+          .button-13 {
             font-size: 1.125rem;
             line-height: 1;
             padding-left: 24px;
@@ -11361,14 +10830,14 @@ export default function MyComponent() {
           }
         }
         @media (max-width: 640px) {
-          .button-15 {
+          .button-13 {
             font-size: 1rem;
             padding-left: 20px;
             padding-right: 20px;
             height: 2.75rem;
           }
         }
-        .div-243 {
+        .div-227 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11378,20 +10847,20 @@ export default function MyComponent() {
           margin-bottom: 44px;
         }
         @media (max-width: 991px) {
-          .div-243 {
+          .div-227 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-243 {
+          .div-227 {
             display: none;
           }
         }
-        .div-244 {
+        .div-228 {
           display: flex;
         }
         @media (max-width: 999px) {
-          .div-244 {
+          .div-228 {
             flex-direction: column;
             align-items: stretch;
           }
@@ -11408,7 +10877,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-245 {
+        .div-229 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11426,7 +10895,7 @@ export default function MyComponent() {
           border-radius: 20px;
         }
         @media (max-width: 640px) {
-          .div-245 {
+          .div-229 {
             border-radius: 37px;
             box-shadow: 1px 1px 13px -7px rgba(0, 0, 0, 1);
             margin-top: 25px;
@@ -11461,7 +10930,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-246 {
+        .div-230 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11479,12 +10948,12 @@ export default function MyComponent() {
           border-radius: 11px;
         }
         @media (max-width: 991px) {
-          .div-246 {
+          .div-230 {
             display: flex;
           }
         }
         @media (max-width: 640px) {
-          .div-246 {
+          .div-230 {
             border-radius: 14px;
             box-shadow: 1px 1px 13px -8px rgba(0, 0, 0, 1);
             padding-top: 0px;
@@ -11519,7 +10988,7 @@ export default function MyComponent() {
             width: 100%;
           }
         }
-        .div-247 {
+        .div-231 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -11534,7 +11003,7 @@ export default function MyComponent() {
           margin-bottom: 0px;
         }
         @media (max-width: 640px) {
-          .div-247 {
+          .div-231 {
             width: 86%;
           }
         }
@@ -11553,7 +11022,7 @@ export default function MyComponent() {
           pointer-events: none;
           font-size: 0;
         }
-        .div-248 {
+        .div-232 {
           display: none;
           flex-direction: column;
           position: relative;
@@ -11576,7 +11045,7 @@ export default function MyComponent() {
           margin-left: auto;
           margin-right: auto;
         }
-        .div-249 {
+        .div-233 {
           border-bottom: 0px;
           border-bottom-color: rgb(106, 111, 114);
           border-color: rgb(106, 111, 114);
@@ -11608,7 +11077,7 @@ export default function MyComponent() {
           padding-top: 22px;
           padding-bottom: 24px;
         }
-        .a-26 {
+        .a-22 {
           align-items: center;
           background-color: rgba(0, 0, 0, 1);
           border-block: 0px none rgb(255, 255, 255);
@@ -11662,7 +11131,7 @@ export default function MyComponent() {
           transform-origin: 53.2773px 18.5px;
           pointer-events: auto;
         }
-        .div-250 {
+        .div-234 {
           border-bottom: 1px solid rgb(242, 242, 242);
           border-bottom-color: rgb(242, 242, 242);
           border-bottom-style: solid;
@@ -11741,16 +11210,16 @@ export default function MyComponent() {
           margin-right: auto;
         }
         @media (max-width: 991px) {
-          .div-250 {
+          .div-234 {
             display: none;
           }
         }
         @media (max-width: 640px) {
-          .div-250 {
+          .div-234 {
             display: none;
           }
         }
-        .button-16 {
+        .button-14 {
           align-items: center;
           border-block: 0px none rgba(0, 0, 0, 0.26);
           border-block-color: rgba(0, 0, 0, 0.26);
@@ -11815,7 +11284,7 @@ export default function MyComponent() {
           visibility: hidden;
           background-color: rgba(0, 0, 0, 0);
         }
-        .span-26 {
+        .span-24 {
           border-bottom: 0px;
           border-color: rgba(0, 0, 0, 0.26);
           border-left: 0px;
@@ -11832,7 +11301,7 @@ export default function MyComponent() {
           transform-origin: 24px 14px;
           width: 48px;
         }
-        .button-17 {
+        .button-15 {
           align-items: center;
           border-block: 0px none rgb(128, 128, 128);
           border-block-color: rgb(128, 128, 128);
@@ -11894,7 +11363,7 @@ export default function MyComponent() {
           vertical-align: middle;
           background-color: rgba(0, 0, 0, 0);
         }
-        .span-27 {
+        .span-25 {
           border-bottom: 0px;
           border-color: rgb(255, 255, 255);
           border-left: 0px;
@@ -11933,7 +11402,301 @@ export default function MyComponent() {
           text-decoration-color: rgb(255, 255, 255);
           width: 30px;
         }
-        .div-251 {
+        .div-235 {
+          border-bottom: 3px solid rgb(204, 204, 204);
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 3px;
+          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
+          border-left: 0px;
+          border-right: 0px;
+          border-style: none none solid;
+          border-top: 0px;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          font-size: 14px;
+          margin-left: 8px;
+          margin-right: 8px;
+          border-block-end: 3px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 3px;
+          height: 1px;
+          margin-inline: 8px;
+          margin-inline-end: 8px;
+          margin-inline-start: 8px;
+          perspective-origin: 24px 2px;
+          transform-origin: 24px 2px;
+          width: 48px;
+        }
+        .button-16 {
+          align-items: center;
+          border-block: 0px none rgb(128, 128, 128);
+          border-block-color: rgb(128, 128, 128);
+          border-block-end: 0px none rgb(128, 128, 128);
+          border-block-end-color: rgb(128, 128, 128);
+          border-block-start: 0px none rgb(128, 128, 128);
+          border-block-start-color: rgb(128, 128, 128);
+          border-bottom: 0px none rgb(128, 128, 128);
+          border-bottom-color: rgb(128, 128, 128);
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          border-color: rgb(128, 128, 128);
+          border-inline: 0px none rgb(128, 128, 128);
+          border-inline-color: rgb(128, 128, 128);
+          border-inline-end: 0px none rgb(128, 128, 128);
+          border-inline-end-color: rgb(128, 128, 128);
+          border-inline-start: 0px none rgb(128, 128, 128);
+          border-inline-start-color: rgb(128, 128, 128);
+          border-left: 0px none rgb(128, 128, 128);
+          border-left-color: rgb(128, 128, 128);
+          border-radius: 100px;
+          border-right: 0px none rgb(128, 128, 128);
+          border-right-color: rgb(128, 128, 128);
+          border-top: 0px none rgb(128, 128, 128);
+          border-top-color: rgb(128, 128, 128);
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          bottom: 0px;
+          caret-color: rgb(128, 128, 128);
+          color: rgb(128, 128, 128);
+          column-rule-color: rgb(128, 128, 128);
+          display: flex;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          inset: 0px;
+          justify-content: center;
+          left: 0px;
+          line-height: 28px;
+          min-inline-size: 64px;
+          min-width: 64px;
+          outline-color: rgb(128, 128, 128);
+          padding: 24px 12px;
+          padding-bottom: 24px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          perspective-origin: 75.0312px 24px;
+          pointer-events: none;
+          position: relative;
+          right: 0px;
+          text-decoration: none solid rgb(128, 128, 128);
+          text-decoration-color: rgb(128, 128, 128);
+          text-transform: capitalize;
+          top: 0px;
+          transform-origin: 75.0352px 24px;
+          transition-duration: 0.25s;
+          transition-property: background;
+          transition-timing-function: ease-out;
+          user-select: none;
+          vertical-align: middle;
+          background-color: rgba(0, 0, 0, 0);
+        }
+        .span-26 {
+          border-bottom: 1px solid rgb(204, 204, 204);
+          border-color: rgb(204, 204, 204);
+          border-left: 1px solid rgb(204, 204, 204);
+          border-right: 1px solid rgb(204, 204, 204);
+          border-top: 1px solid rgb(204, 204, 204);
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          perspective-origin: 15px 15px;
+          transform-origin: 15px 15px;
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-left-color: rgb(204, 204, 204);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right-color: rgb(204, 204, 204);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top-color: rgb(204, 204, 204);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          margin-right: 12px;
+          border-block: 1px solid rgb(204, 204, 204);
+          border-block-color: rgb(204, 204, 204);
+          border-block-end: 1px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(204, 204, 204);
+          border-block-start-color: rgb(204, 204, 204);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-inline: 1px solid rgb(204, 204, 204);
+          border-inline-color: rgb(204, 204, 204);
+          border-inline-end: 1px solid rgb(204, 204, 204);
+          border-inline-end-color: rgb(204, 204, 204);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(204, 204, 204);
+          border-inline-start-color: rgb(204, 204, 204);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 50%;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          margin-inline-end: 12px;
+          width: 28px;
+        }
+        .div-236 {
+          border-bottom: 3px solid rgb(204, 204, 204);
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 3px;
+          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
+          border-left: 0px;
+          border-right: 0px;
+          border-style: none none solid;
+          border-top: 0px;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          font-size: 14px;
+          margin-left: 8px;
+          margin-right: 8px;
+          border-block-end: 3px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 3px;
+          height: 1px;
+          margin-inline: 8px;
+          margin-inline-end: 8px;
+          margin-inline-start: 8px;
+          perspective-origin: 24px 2px;
+          transform-origin: 24px 2px;
+          width: 48px;
+        }
+        .button-17 {
+          align-items: center;
+          border-block: 0px none rgb(128, 128, 128);
+          border-block-color: rgb(128, 128, 128);
+          border-block-end: 0px none rgb(128, 128, 128);
+          border-block-end-color: rgb(128, 128, 128);
+          border-block-start: 0px none rgb(128, 128, 128);
+          border-block-start-color: rgb(128, 128, 128);
+          border-bottom: 0px none rgb(128, 128, 128);
+          border-bottom-color: rgb(128, 128, 128);
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          border-color: rgb(128, 128, 128);
+          border-inline: 0px none rgb(128, 128, 128);
+          border-inline-color: rgb(128, 128, 128);
+          border-inline-end: 0px none rgb(128, 128, 128);
+          border-inline-end-color: rgb(128, 128, 128);
+          border-inline-start: 0px none rgb(128, 128, 128);
+          border-inline-start-color: rgb(128, 128, 128);
+          border-left: 0px none rgb(128, 128, 128);
+          border-left-color: rgb(128, 128, 128);
+          border-radius: 100px;
+          border-right: 0px none rgb(128, 128, 128);
+          border-right-color: rgb(128, 128, 128);
+          border-top: 0px none rgb(128, 128, 128);
+          border-top-color: rgb(128, 128, 128);
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          bottom: 0px;
+          caret-color: rgb(128, 128, 128);
+          color: rgb(128, 128, 128);
+          column-rule-color: rgb(128, 128, 128);
+          display: flex;
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          inset: 0px;
+          justify-content: center;
+          left: 0px;
+          line-height: 28px;
+          min-inline-size: 64px;
+          min-width: 64px;
+          outline-color: rgb(128, 128, 128);
+          padding: 24px 12px;
+          padding-bottom: 24px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          perspective-origin: 89.1172px 24px;
+          pointer-events: none;
+          position: relative;
+          right: 0px;
+          text-decoration: none solid rgb(128, 128, 128);
+          text-decoration-color: rgb(128, 128, 128);
+          text-transform: capitalize;
+          top: 0px;
+          transform-origin: 89.1172px 24px;
+          transition-duration: 0.25s;
+          transition-property: background;
+          transition-timing-function: ease-out;
+          user-select: none;
+          vertical-align: middle;
+          background-color: rgba(0, 0, 0, 0);
+        }
+        .span-27 {
+          border-bottom: 1px solid rgb(204, 204, 204);
+          border-color: rgb(204, 204, 204);
+          border-left: 1px solid rgb(204, 204, 204);
+          border-right: 1px solid rgb(204, 204, 204);
+          border-top: 1px solid rgb(204, 204, 204);
+          font-family: Inter, -apple-system, Arial, sans-serif;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          perspective-origin: 15px 15px;
+          transform-origin: 15px 15px;
+          border-bottom-color: rgb(204, 204, 204);
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-left-color: rgb(204, 204, 204);
+          border-left-style: solid;
+          border-left-width: 1px;
+          border-right-color: rgb(204, 204, 204);
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top-color: rgb(204, 204, 204);
+          border-top-style: solid;
+          border-top-width: 1px;
+          border-width: 1px;
+          margin-right: 12px;
+          border-block: 1px solid rgb(204, 204, 204);
+          border-block-color: rgb(204, 204, 204);
+          border-block-end: 1px solid rgb(204, 204, 204);
+          border-block-end-color: rgb(204, 204, 204);
+          border-block-end-style: solid;
+          border-block-end-width: 1px;
+          border-block-start: 1px solid rgb(204, 204, 204);
+          border-block-start-color: rgb(204, 204, 204);
+          border-block-start-style: solid;
+          border-block-start-width: 1px;
+          border-block-style: solid;
+          border-block-width: 1px;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-inline: 1px solid rgb(204, 204, 204);
+          border-inline-color: rgb(204, 204, 204);
+          border-inline-end: 1px solid rgb(204, 204, 204);
+          border-inline-end-color: rgb(204, 204, 204);
+          border-inline-end-style: solid;
+          border-inline-end-width: 1px;
+          border-inline-start: 1px solid rgb(204, 204, 204);
+          border-inline-start-color: rgb(204, 204, 204);
+          border-inline-start-style: solid;
+          border-inline-start-width: 1px;
+          border-inline-style: solid;
+          border-inline-width: 1px;
+          border-radius: 50%;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          margin-inline-end: 12px;
+          width: 28px;
+        }
+        .div-237 {
           border-bottom: 3px solid rgb(204, 204, 204);
           border-bottom-color: rgb(204, 204, 204);
           border-bottom-style: solid;
@@ -12005,7 +11768,7 @@ export default function MyComponent() {
           padding-left: 12px;
           padding-right: 12px;
           padding-top: 24px;
-          perspective-origin: 75.0312px 24px;
+          perspective-origin: 68.7422px 24px;
           pointer-events: none;
           position: relative;
           right: 0px;
@@ -12013,7 +11776,7 @@ export default function MyComponent() {
           text-decoration-color: rgb(128, 128, 128);
           text-transform: capitalize;
           top: 0px;
-          transform-origin: 75.0352px 24px;
+          transform-origin: 68.7422px 24px;
           transition-duration: 0.25s;
           transition-property: background;
           transition-timing-function: ease-out;
@@ -12080,301 +11843,7 @@ export default function MyComponent() {
           margin-inline-end: 12px;
           width: 28px;
         }
-        .div-252 {
-          border-bottom: 3px solid rgb(204, 204, 204);
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 3px;
-          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
-          border-left: 0px;
-          border-right: 0px;
-          border-style: none none solid;
-          border-top: 0px;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          font-size: 14px;
-          margin-left: 8px;
-          margin-right: 8px;
-          border-block-end: 3px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 3px;
-          height: 1px;
-          margin-inline: 8px;
-          margin-inline-end: 8px;
-          margin-inline-start: 8px;
-          perspective-origin: 24px 2px;
-          transform-origin: 24px 2px;
-          width: 48px;
-        }
-        .button-19 {
-          align-items: center;
-          border-block: 0px none rgb(128, 128, 128);
-          border-block-color: rgb(128, 128, 128);
-          border-block-end: 0px none rgb(128, 128, 128);
-          border-block-end-color: rgb(128, 128, 128);
-          border-block-start: 0px none rgb(128, 128, 128);
-          border-block-start-color: rgb(128, 128, 128);
-          border-bottom: 0px none rgb(128, 128, 128);
-          border-bottom-color: rgb(128, 128, 128);
-          border-bottom-left-radius: 100px;
-          border-bottom-right-radius: 100px;
-          border-color: rgb(128, 128, 128);
-          border-inline: 0px none rgb(128, 128, 128);
-          border-inline-color: rgb(128, 128, 128);
-          border-inline-end: 0px none rgb(128, 128, 128);
-          border-inline-end-color: rgb(128, 128, 128);
-          border-inline-start: 0px none rgb(128, 128, 128);
-          border-inline-start-color: rgb(128, 128, 128);
-          border-left: 0px none rgb(128, 128, 128);
-          border-left-color: rgb(128, 128, 128);
-          border-radius: 100px;
-          border-right: 0px none rgb(128, 128, 128);
-          border-right-color: rgb(128, 128, 128);
-          border-top: 0px none rgb(128, 128, 128);
-          border-top-color: rgb(128, 128, 128);
-          border-top-left-radius: 100px;
-          border-top-right-radius: 100px;
-          bottom: 0px;
-          caret-color: rgb(128, 128, 128);
-          color: rgb(128, 128, 128);
-          column-rule-color: rgb(128, 128, 128);
-          display: flex;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          inset: 0px;
-          justify-content: center;
-          left: 0px;
-          line-height: 28px;
-          min-inline-size: 64px;
-          min-width: 64px;
-          outline-color: rgb(128, 128, 128);
-          padding: 24px 12px;
-          padding-bottom: 24px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 24px;
-          perspective-origin: 89.1172px 24px;
-          pointer-events: none;
-          position: relative;
-          right: 0px;
-          text-decoration: none solid rgb(128, 128, 128);
-          text-decoration-color: rgb(128, 128, 128);
-          text-transform: capitalize;
-          top: 0px;
-          transform-origin: 89.1172px 24px;
-          transition-duration: 0.25s;
-          transition-property: background;
-          transition-timing-function: ease-out;
-          user-select: none;
-          vertical-align: middle;
-          background-color: rgba(0, 0, 0, 0);
-        }
-        .span-29 {
-          border-bottom: 1px solid rgb(204, 204, 204);
-          border-color: rgb(204, 204, 204);
-          border-left: 1px solid rgb(204, 204, 204);
-          border-right: 1px solid rgb(204, 204, 204);
-          border-top: 1px solid rgb(204, 204, 204);
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          perspective-origin: 15px 15px;
-          transform-origin: 15px 15px;
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-left-color: rgb(204, 204, 204);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right-color: rgb(204, 204, 204);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top-color: rgb(204, 204, 204);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          margin-right: 12px;
-          border-block: 1px solid rgb(204, 204, 204);
-          border-block-color: rgb(204, 204, 204);
-          border-block-end: 1px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(204, 204, 204);
-          border-block-start-color: rgb(204, 204, 204);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          border-inline: 1px solid rgb(204, 204, 204);
-          border-inline-color: rgb(204, 204, 204);
-          border-inline-end: 1px solid rgb(204, 204, 204);
-          border-inline-end-color: rgb(204, 204, 204);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(204, 204, 204);
-          border-inline-start-color: rgb(204, 204, 204);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 50%;
-          border-top-left-radius: 50%;
-          border-top-right-radius: 50%;
-          margin-inline-end: 12px;
-          width: 28px;
-        }
-        .div-253 {
-          border-bottom: 3px solid rgb(204, 204, 204);
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 3px;
-          border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204);
-          border-left: 0px;
-          border-right: 0px;
-          border-style: none none solid;
-          border-top: 0px;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          font-size: 14px;
-          margin-left: 8px;
-          margin-right: 8px;
-          border-block-end: 3px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 3px;
-          height: 1px;
-          margin-inline: 8px;
-          margin-inline-end: 8px;
-          margin-inline-start: 8px;
-          perspective-origin: 24px 2px;
-          transform-origin: 24px 2px;
-          width: 48px;
-        }
-        .button-20 {
-          align-items: center;
-          border-block: 0px none rgb(128, 128, 128);
-          border-block-color: rgb(128, 128, 128);
-          border-block-end: 0px none rgb(128, 128, 128);
-          border-block-end-color: rgb(128, 128, 128);
-          border-block-start: 0px none rgb(128, 128, 128);
-          border-block-start-color: rgb(128, 128, 128);
-          border-bottom: 0px none rgb(128, 128, 128);
-          border-bottom-color: rgb(128, 128, 128);
-          border-bottom-left-radius: 100px;
-          border-bottom-right-radius: 100px;
-          border-color: rgb(128, 128, 128);
-          border-inline: 0px none rgb(128, 128, 128);
-          border-inline-color: rgb(128, 128, 128);
-          border-inline-end: 0px none rgb(128, 128, 128);
-          border-inline-end-color: rgb(128, 128, 128);
-          border-inline-start: 0px none rgb(128, 128, 128);
-          border-inline-start-color: rgb(128, 128, 128);
-          border-left: 0px none rgb(128, 128, 128);
-          border-left-color: rgb(128, 128, 128);
-          border-radius: 100px;
-          border-right: 0px none rgb(128, 128, 128);
-          border-right-color: rgb(128, 128, 128);
-          border-top: 0px none rgb(128, 128, 128);
-          border-top-color: rgb(128, 128, 128);
-          border-top-left-radius: 100px;
-          border-top-right-radius: 100px;
-          bottom: 0px;
-          caret-color: rgb(128, 128, 128);
-          color: rgb(128, 128, 128);
-          column-rule-color: rgb(128, 128, 128);
-          display: flex;
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          inset: 0px;
-          justify-content: center;
-          left: 0px;
-          line-height: 28px;
-          min-inline-size: 64px;
-          min-width: 64px;
-          outline-color: rgb(128, 128, 128);
-          padding: 24px 12px;
-          padding-bottom: 24px;
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 24px;
-          perspective-origin: 68.7422px 24px;
-          pointer-events: none;
-          position: relative;
-          right: 0px;
-          text-decoration: none solid rgb(128, 128, 128);
-          text-decoration-color: rgb(128, 128, 128);
-          text-transform: capitalize;
-          top: 0px;
-          transform-origin: 68.7422px 24px;
-          transition-duration: 0.25s;
-          transition-property: background;
-          transition-timing-function: ease-out;
-          user-select: none;
-          vertical-align: middle;
-          background-color: rgba(0, 0, 0, 0);
-        }
-        .span-30 {
-          border-bottom: 1px solid rgb(204, 204, 204);
-          border-color: rgb(204, 204, 204);
-          border-left: 1px solid rgb(204, 204, 204);
-          border-right: 1px solid rgb(204, 204, 204);
-          border-top: 1px solid rgb(204, 204, 204);
-          font-family: Inter, -apple-system, Arial, sans-serif;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          perspective-origin: 15px 15px;
-          transform-origin: 15px 15px;
-          border-bottom-color: rgb(204, 204, 204);
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-          border-left-color: rgb(204, 204, 204);
-          border-left-style: solid;
-          border-left-width: 1px;
-          border-right-color: rgb(204, 204, 204);
-          border-right-style: solid;
-          border-right-width: 1px;
-          border-style: solid;
-          border-top-color: rgb(204, 204, 204);
-          border-top-style: solid;
-          border-top-width: 1px;
-          border-width: 1px;
-          margin-right: 12px;
-          border-block: 1px solid rgb(204, 204, 204);
-          border-block-color: rgb(204, 204, 204);
-          border-block-end: 1px solid rgb(204, 204, 204);
-          border-block-end-color: rgb(204, 204, 204);
-          border-block-end-style: solid;
-          border-block-end-width: 1px;
-          border-block-start: 1px solid rgb(204, 204, 204);
-          border-block-start-color: rgb(204, 204, 204);
-          border-block-start-style: solid;
-          border-block-start-width: 1px;
-          border-block-style: solid;
-          border-block-width: 1px;
-          border-bottom-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          border-inline: 1px solid rgb(204, 204, 204);
-          border-inline-color: rgb(204, 204, 204);
-          border-inline-end: 1px solid rgb(204, 204, 204);
-          border-inline-end-color: rgb(204, 204, 204);
-          border-inline-end-style: solid;
-          border-inline-end-width: 1px;
-          border-inline-start: 1px solid rgb(204, 204, 204);
-          border-inline-start-color: rgb(204, 204, 204);
-          border-inline-start-style: solid;
-          border-inline-start-width: 1px;
-          border-inline-style: solid;
-          border-inline-width: 1px;
-          border-radius: 50%;
-          border-top-left-radius: 50%;
-          border-top-right-radius: 50%;
-          margin-inline-end: 12px;
-          width: 28px;
-        }
-        .div-254 {
+        .div-238 {
           display: flex;
           flex-direction: column;
           position: relative;
@@ -12387,7 +11856,7 @@ export default function MyComponent() {
           align-self: center;
         }
         @media (max-width: 640px) {
-          .div-254 {
+          .div-238 {
             height: auto;
             flex-grow: 0;
           }
@@ -12451,7 +11920,7 @@ export default function MyComponent() {
             line-height: 1.5rem;
           }
         }
-        .button-21 {
+        .button-19 {
           font-size: 1.25rem;
           line-height: 1.4;
           padding-left: 32px;
@@ -12480,7 +11949,7 @@ export default function MyComponent() {
           border-color: rgba(0, 0, 0, 0);
         }
         @media (max-width: 991px) {
-          .button-21 {
+          .button-19 {
             font-size: 1.125rem;
             line-height: 1;
             padding-left: 24px;
@@ -12490,14 +11959,14 @@ export default function MyComponent() {
           }
         }
         @media (max-width: 640px) {
-          .button-21 {
+          .button-19 {
             font-size: 1rem;
             padding-left: 20px;
             padding-right: 20px;
             height: 2.75rem;
           }
         }
-        .div-255 {
+        .div-239 {
           display: flex;
           flex-direction: column;
           position: relative;
