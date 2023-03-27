@@ -58,7 +58,7 @@ const Nav = () => (
 	<header className="hidden sm:flex w-24 xl:col-span-2">
 		<div className="flex flex-1 xl:w-60 flex-col fixed h-full">
 			<div className="flex flex-col flex-1">
-				<NavItem href="/home" width="inline" size="default">
+				<NavItem href="/flow" width="inline" size="default">
 				<Image src="https://res.cloudinary.com/unlimitednow/image/upload/v1673587332/favicon_upb50k.png"   alt="gallery"
       width={80}
       height={60} />
