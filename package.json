@@ -18,6 +18,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fingerprintjs/fingerprintjs-pro-react": "^2.3.0",
+    "@heroicons/react": "^2.0.16",
     "@mantine/carousel": "^5.10.4",
     "@mantine/core": "^5.10.4",
     "@mantine/dates": "^5.10.4",
