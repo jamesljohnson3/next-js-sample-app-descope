@@ -16,15 +16,15 @@ import {
 } from '@heroicons/react/24/outline'
 
 const solutions = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
+    { name: 'Engagement', description: 'Speak directly to your customers', href: 'https://space.unlimitpotential.com/flow', icon: CursorArrowRaysIcon },
+    { name: 'Security', description: "Your customers' data will be safe and secure", href: 'https://account.unlimitpotential.com/flow', icon: FingerPrintIcon },
+    { name: 'Integrations', description: 'Connect with third-party tools', href: 'https://studio.unlimitpotential.com/flow', icon: SquaresPlusIcon },
+    { name: 'Automations', description: 'Build strategic funnels that will convert', href: 'https://console.unlimitpotential.com/flow', icon: ArrowPathIcon },
   ]
   const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
+    { name: 'Sellers Accounts', href: 'https://lillieai-betav1b.unlimitpotential.com/', icon: PlayCircleIcon },
+    { name: 'Goals & Settings', href: 'https://go.unlimitpotential.com/', icon: PhoneIcon },
   ]
 export default function MyComponent() {
   return (
