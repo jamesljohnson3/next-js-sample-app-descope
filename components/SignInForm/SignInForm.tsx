@@ -107,7 +107,7 @@ export function SignInForm() {
 
   const signUpComplete = async (createdSessionId: string) => {
     /** Couldn't the signin be updated and have the createdSessionId ? */
-    setSession(createdSessionId, () => router.push("/start"));
+    setSession(createdSessionId, () => router.push("/flow"));
   };
 
   return (
