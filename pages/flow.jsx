@@ -306,7 +306,7 @@ export default function MyComponent() {
           border-top: 0px solid currentcolor;
           border-top-color: currentcolor;
           background-color: rgba(255, 255, 255, 1);
-          max-height: 59px;
+          max-height: 75px;
         }
         @media (max-width: 640px) {
           .nav {
@@ -2625,7 +2625,7 @@ export default function MyComponent() {
           font-weight: 600;
           line-height: 24px;
           margin-bottom: 8px;
-          margin-top: 24px;
+          margin-top: 37px;
           block-size: 24px;
           border-block-color: rgb(26, 26, 26);
           border-block-end-color: rgb(26, 26, 26);
@@ -2697,6 +2697,7 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 175px 44px;
           width: 350px;
+          margin-top: 13px;
         }
         .a-12 {
           color: rgb(0, 90, 217);
@@ -4493,15 +4494,15 @@ export default function MyComponent() {
         }
         @media (max-width: 991px) {
           .div-66 {
-            left: 95px;
-            top: 102px;
+            left: 135px;
+            top: 110px;
           }
         }
         @media (max-width: 640px) {
           .div-66 {
-            left: 21px;
+            left: 10px;
             top: 110px;
-            width: 375px;
+            width: 373px;
           }
         }
         .div-67 {
