@@ -19,8 +19,8 @@ const solutions = [
     { name: 'Analytics', description: 'See what others see', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
     { name: 'Engagement', description: 'Direct to Consumer', href: 'https://space.unlimitpotential.com/flow', icon: CursorArrowRaysIcon },
     { name: 'Security', description: "Update Preferences", href: 'https://accounts.unlimitpotential.com/flow', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Automations', href: 'https://studio.unlimitpotential.com/flow', icon: SquaresPlusIcon },
-    { name: 'Distribute', description: 'Go Live', href: 'https://console.unlimitpotential.com/flow', icon: ArrowPathIcon },
+ { name: 'Integrations', description: 'Automations', href: 'https://studio.unlimitpotential.com/flow', icon: SquaresPlusIcon },
+    { name: 'Automations', description: 'Go Live', href: 'https://console.unlimitpotential.com/flow', icon: ArrowPathIcon },
   ]
   const callsToAction = [
     { name: 'Sellers Accounts', href: 'https://lillieai-betav1b.unlimitpotential.com/flow', icon: PlayCircleIcon },
