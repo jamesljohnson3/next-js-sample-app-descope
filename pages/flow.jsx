@@ -264,6 +264,14 @@ export default function MyComponent() {
               </span>
             </div>
           </div>
+          <div className="div-66">
+            <div className="div-67">
+              <div className="div-68">
+                <div className="div-69" />
+                <div className="div-70" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -271,8 +279,15 @@ export default function MyComponent() {
           display: flex;
           flex-direction: column;
           position: relative;
-          height: 100vh;
+          height: auto;
           background-color: rgba(255, 255, 255, 1);
+          flex-grow: 0;
+        }
+        @media (max-width: 991px) {
+          .div {
+            width: auto;
+            align-self: stretch;
+          }
         }
         .nav {
           display: flex;
@@ -290,7 +305,8 @@ export default function MyComponent() {
           border-right-color: currentcolor;
           border-top: 0px solid currentcolor;
           border-top-color: currentcolor;
-          background-color: rgba(250, 250, 250, 1);
+          background-color: rgba(255, 255, 255, 1);
+          max-height: 59px;
         }
         @media (max-width: 640px) {
           .nav {
@@ -623,12 +639,11 @@ export default function MyComponent() {
           font-size: 12px;
           font-weight: 300;
           line-height: 18.84px;
-          margin-top: 0px;
           padding-bottom: 24px;
           padding-left: 24px;
           padding-right: 24px;
           padding-top: 0px;
-          background-color: rgba(242, 242, 242, 0.5);
+          background-color: rgba(246, 248, 248, 0.5);
           border-block-color: rgb(234, 234, 234) rgb(34, 34, 34);
           border-block-end-color: rgb(34, 34, 34);
           border-block-start: 8px solid rgb(234, 234, 234);
@@ -656,6 +671,7 @@ export default function MyComponent() {
           border-width: 1px;
           display: flex;
           flex-direction: column;
+          height: 100vh;
         }
         @media (max-width: 991px) {
           .div-6 {
@@ -718,6 +734,19 @@ export default function MyComponent() {
           margin-left: auto;
           margin-right: auto;
         }
+        @media (max-width: 991px) {
+          .div-7 {
+            margin-top: 80px;
+          }
+        }
+        @media (max-width: 640px) {
+          .div-7 {
+            width: 100vw;
+            align-self: center;
+            margin-left: calc(50% - 50vw);
+            padding-left: 12px;
+          }
+        }
         .div-8 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
@@ -754,6 +783,12 @@ export default function MyComponent() {
           text-rendering: optimizelegibility;
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
+        }
+        @media (max-width: 640px) {
+          .div-8 {
+            width: auto;
+            flex-grow: 0;
+          }
         }
         .div-9 {
           border-bottom: 1px solid rgb(247, 247, 247);
@@ -1206,6 +1241,12 @@ export default function MyComponent() {
           text-rendering: optimizelegibility;
           text-size-adjust: 100%;
           transform-origin: 185.5px 78.2812px;
+        }
+        @media (max-width: 640px) {
+          .div-16 {
+            width: auto;
+            flex-grow: 0;
+          }
         }
         .div-17 {
           border-bottom: 1px solid rgb(247, 247, 247);
@@ -2356,6 +2397,13 @@ export default function MyComponent() {
           text-rendering: optimizelegibility;
           text-size-adjust: 100%;
           transform-origin: 383px 180.57px;
+          margin-bottom: 53px;
+        }
+        @media (max-width: 991px) {
+          .div-38 {
+            width: auto;
+            flex-grow: 0;
+          }
         }
         .div-39 {
           border-bottom: 1px solid rgb(247, 247, 247);
@@ -2444,6 +2492,12 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 383px 180.57px;
         }
+        @media (max-width: 991px) {
+          .div-39 {
+            width: auto;
+            align-self: center;
+          }
+        }
         .div-40 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
@@ -2496,6 +2550,12 @@ export default function MyComponent() {
           top: 0px;
           transform-origin: 366px 155.57px;
         }
+        @media (max-width: 991px) {
+          .div-40 {
+            width: auto;
+            align-self: center;
+          }
+        }
         .div-41 {
           border-bottom: 0px;
           border-bottom-color: rgb(26, 26, 26);
@@ -2543,6 +2603,12 @@ export default function MyComponent() {
           text-size-adjust: 100%;
           transform-origin: 366px 155.57px;
           width: 732px;
+        }
+        @media (max-width: 991px) {
+          .div-41 {
+            width: auto;
+            flex-grow: 0;
+          }
         }
         .h4 {
           border-bottom: 0px;
@@ -2698,6 +2764,14 @@ export default function MyComponent() {
           width: auto;
           align-self: center;
           box-shadow: 1px 1px 9px -7px rgba(0, 0, 0, 1);
+          margin-left: auto;
+          margin-top: 62px;
+          margin-right: auto;
+        }
+        @media (max-width: 991px) {
+          .div-42 {
+            margin-top: 427px;
+          }
         }
         @media (max-width: 640px) {
           .div-42 {
@@ -4318,6 +4392,270 @@ export default function MyComponent() {
           transform-origin: 15.7148px 8.5px;
           text-overflow: ellipsis;
           white-space: nowrap;
+        }
+        .div-66 {
+          border-bottom: 2px solid rgba(0, 0, 0, 0);
+          border-bottom-color: rgba(0, 0, 0, 0);
+          border-bottom-style: solid;
+          border-bottom-width: 2px;
+          border-color: rgba(0, 0, 0, 0);
+          border-left: 2px solid rgba(0, 0, 0, 0);
+          border-left-color: rgba(0, 0, 0, 0);
+          border-left-style: solid;
+          border-left-width: 2px;
+          border-right: 2px solid rgba(0, 0, 0, 0);
+          border-right-color: rgba(0, 0, 0, 0);
+          border-right-style: solid;
+          border-right-width: 2px;
+          border-style: solid;
+          border-top: 2px solid rgba(0, 0, 0, 0);
+          border-top-color: rgba(0, 0, 0, 0);
+          border-top-style: solid;
+          border-top-width: 2px;
+          border-width: 2px;
+          font-family: "Square Sans Text VF", "Square Sans Text", Helvetica,
+            Arial, sans-serif;
+          font-size: 14px;
+          line-height: 22px;
+          padding-bottom: 10px;
+          padding-left: 24px;
+          padding-right: 24px;
+          padding-top: 10px;
+          align-items: center;
+          background-color: rgb(255, 255, 255);
+          block-size: 72px;
+          border-block: 2px solid rgba(0, 0, 0, 0);
+          border-block-color: rgba(0, 0, 0, 0);
+          border-block-end: 2px solid rgba(0, 0, 0, 0);
+          border-block-end-color: rgba(0, 0, 0, 0);
+          border-block-end-style: solid;
+          border-block-end-width: 2px;
+          border-block-start: 2px solid rgba(0, 0, 0, 0);
+          border-block-start-color: rgba(0, 0, 0, 0);
+          border-block-start-style: solid;
+          border-block-start-width: 2px;
+          border-block-style: solid;
+          border-block-width: 2px;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          border-end-end-radius: 6px;
+          border-end-start-radius: 6px;
+          border-inline: 2px solid rgba(0, 0, 0, 0);
+          border-inline-color: rgba(0, 0, 0, 0);
+          border-inline-end: 2px solid rgba(0, 0, 0, 0);
+          border-inline-end-color: rgba(0, 0, 0, 0);
+          border-inline-end-style: solid;
+          border-inline-end-width: 2px;
+          border-inline-start: 2px solid rgba(0, 0, 0, 0);
+          border-inline-start-color: rgba(0, 0, 0, 0);
+          border-inline-start-style: solid;
+          border-inline-start-width: 2px;
+          border-inline-style: solid;
+          border-inline-width: 2px;
+          border-radius: 6px;
+          border-start-end-radius: 6px;
+          border-start-start-radius: 6px;
+          border-top-left-radius: 6px;
+          border-top-right-radius: 6px;
+          bottom: -33px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px,
+            rgba(0, 0, 0, 0.1) 0px 0px 4px 0px;
+          caret-color: rgb(26, 26, 26);
+          color: rgb(26, 26, 26);
+          column-rule-color: rgb(26, 26, 26);
+          display: flex;
+          inline-size: 389px;
+          inset: 199px 804px -33px 32px;
+          inset-block: 199px -33px;
+          inset-block-end: -33px;
+          inset-block-start: 199px;
+          inset-inline: 32px 804px;
+          inset-inline-end: 804px;
+          inset-inline-start: 32px;
+          left: 336px;
+          outline-color: rgb(26, 26, 26);
+          padding: 10px 24px;
+          padding-block: 10px;
+          padding-block-end: 10px;
+          padding-block-start: 10px;
+          padding-inline: 24px;
+          padding-inline-end: 24px;
+          padding-inline-start: 24px;
+          perspective-origin: 194.5px 36px;
+          position: absolute;
+          right: 804px;
+          text-decoration: none solid rgb(26, 26, 26);
+          text-decoration-color: rgb(26, 26, 26);
+          text-rendering: optimizelegibility;
+          text-size-adjust: 100%;
+          top: 498px;
+          transform-origin: 194.5px 36px;
+        }
+        @media (max-width: 991px) {
+          .div-66 {
+            left: 95px;
+            top: 102px;
+          }
+        }
+        @media (max-width: 640px) {
+          .div-66 {
+            left: 21px;
+            top: 110px;
+            width: 375px;
+          }
+        }
+        .div-67 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(26, 26, 26);
+          border-color: rgb(26, 26, 26);
+          border-left: 0px;
+          border-left-color: rgb(26, 26, 26);
+          border-right: 0px;
+          border-right-color: rgb(26, 26, 26);
+          border-top: 0px;
+          border-top-color: rgb(26, 26, 26);
+          font-family: "Square Sans Text VF", "Square Sans Text", Helvetica,
+            Arial, sans-serif;
+          font-size: 14px;
+          line-height: 22px;
+          block-size: 48px;
+          border-block-color: rgb(26, 26, 26);
+          border-block-end-color: rgb(26, 26, 26);
+          border-block-start-color: rgb(26, 26, 26);
+          border-inline-color: rgb(26, 26, 26);
+          border-inline-end-color: rgb(26, 26, 26);
+          border-inline-start-color: rgb(26, 26, 26);
+          caret-color: rgb(26, 26, 26);
+          color: rgb(26, 26, 26);
+          column-rule-color: rgb(26, 26, 26);
+          float: left;
+          inline-size: 320px;
+          min-block-size: auto;
+          min-height: auto;
+          min-inline-size: auto;
+          min-width: auto;
+          outline-color: rgb(26, 26, 26);
+          perspective-origin: 160px 24px;
+          text-decoration: none solid rgb(26, 26, 26);
+          text-decoration-color: rgb(26, 26, 26);
+          text-rendering: optimizelegibility;
+          text-size-adjust: 100%;
+          transform-origin: 160px 24px;
+        }
+        .div-68 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(26, 26, 26);
+          border-color: rgb(26, 26, 26);
+          border-left: 0px;
+          border-left-color: rgb(26, 26, 26);
+          border-right: 0px;
+          border-right-color: rgb(26, 26, 26);
+          border-top: 0px;
+          border-top-color: rgb(26, 26, 26);
+          font-family: "Square Sans Text VF", "Square Sans Text", Helvetica,
+            Arial, sans-serif;
+          font-size: 14px;
+          line-height: 22px;
+          block-size: 48px;
+          border-block-color: rgb(26, 26, 26);
+          border-block-end-color: rgb(26, 26, 26);
+          border-block-start-color: rgb(26, 26, 26);
+          border-inline-color: rgb(26, 26, 26);
+          border-inline-end-color: rgb(26, 26, 26);
+          border-inline-start-color: rgb(26, 26, 26);
+          bottom: 0px;
+          caret-color: rgb(26, 26, 26);
+          color: rgb(26, 26, 26);
+          column-rule-color: rgb(26, 26, 26);
+          inline-size: 320px;
+          inset: 0px;
+          inset-block: 0px;
+          inset-block-end: 0px;
+          inset-block-start: 0px;
+          inset-inline: 0px;
+          inset-inline-end: 0px;
+          inset-inline-start: 0px;
+          left: 0px;
+          min-block-size: 48px;
+          min-height: 48px;
+          outline-color: rgb(26, 26, 26);
+          perspective-origin: 160px 24px;
+          position: relative;
+          right: 0px;
+          text-decoration: none solid rgb(26, 26, 26);
+          text-decoration-color: rgb(26, 26, 26);
+          text-rendering: optimizelegibility;
+          text-size-adjust: 100%;
+          top: 0px;
+          transform-origin: 160px 24px;
+          width: 320px;
+        }
+        .div-69 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(26, 26, 26);
+          border-color: rgb(26, 26, 26);
+          border-left: 0px;
+          border-left-color: rgb(26, 26, 26);
+          border-right: 0px;
+          border-right-color: rgb(26, 26, 26);
+          border-top: 0px;
+          border-top-color: rgb(26, 26, 26);
+          font-family: "Square Sans Text VF", "Square Sans Text", Helvetica,
+            Arial, sans-serif;
+          font-size: 14px;
+          line-height: 22px;
+          block-size: 48px;
+          border-block-color: rgb(26, 26, 26);
+          border-block-end-color: rgb(26, 26, 26);
+          border-block-start-color: rgb(26, 26, 26);
+          border-inline-color: rgb(26, 26, 26);
+          border-inline-end-color: rgb(26, 26, 26);
+          border-inline-start-color: rgb(26, 26, 26);
+          caret-color: rgb(26, 26, 26);
+          color: rgb(26, 26, 26);
+          column-rule-color: rgb(26, 26, 26);
+          inline-size: 320px;
+          outline-color: rgb(26, 26, 26);
+          perspective-origin: 160px 24px;
+          text-decoration: none solid rgb(26, 26, 26);
+          text-decoration-color: rgb(26, 26, 26);
+          text-rendering: optimizelegibility;
+          text-size-adjust: 100%;
+          transform-origin: 160px 24px;
+        }
+        .div-70 {
+          border-bottom: 0px;
+          border-bottom-color: rgb(26, 26, 26);
+          border-color: rgb(26, 26, 26);
+          border-left: 0px;
+          border-left-color: rgb(26, 26, 26);
+          border-right: 0px;
+          border-right-color: rgb(26, 26, 26);
+          border-top: 0px;
+          border-top-color: rgb(26, 26, 26);
+          font-family: "Square Sans Text VF", "Square Sans Text", Helvetica,
+            Arial, sans-serif;
+          font-size: 14px;
+          line-height: 22px;
+          block-size: 0px;
+          border-block-color: rgb(26, 26, 26);
+          border-block-end-color: rgb(26, 26, 26);
+          border-block-start-color: rgb(26, 26, 26);
+          border-inline-color: rgb(26, 26, 26);
+          border-inline-end-color: rgb(26, 26, 26);
+          border-inline-start-color: rgb(26, 26, 26);
+          caret-color: rgb(26, 26, 26);
+          color: rgb(26, 26, 26);
+          column-rule-color: rgb(26, 26, 26);
+          height: 0px;
+          inline-size: 320px;
+          outline-color: rgb(26, 26, 26);
+          perspective-origin: 160px 0px;
+          text-decoration: none solid rgb(26, 26, 26);
+          text-decoration-color: rgb(26, 26, 26);
+          text-rendering: optimizelegibility;
+          text-size-adjust: 100%;
+          transform-origin: 160px 0px;
         }
       `}</style>
     </>
