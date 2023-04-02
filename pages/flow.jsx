@@ -17,14 +17,14 @@ import {
 
 const solutions = [
     { name: 'Analytics', description: 'See what others see', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Direct to Consumer', href: 'https://space.unlimitpotential.com/flow', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: "Update Preferences", href: 'https://accounts.unlimitpotential.com/flow', icon: FingerPrintIcon },
- { name: 'Integrations', description: 'Automations', href: 'https://studio.unlimitpotential.com/flow', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Go Live', href: 'https://console.unlimitpotential.com/flow', icon: ArrowPathIcon },
+    { name: 'Engagement', description: 'Direct to Consumer', href: 'https://space.unlimitpotential.com/upgrade', icon: CursorArrowRaysIcon },
+    { name: 'Security', description: "Update Preferences", href: 'https://accounts.unlimitpotential.com/upgrade', icon: FingerPrintIcon },
+ { name: 'Integrations', description: 'Automations', href: 'https://studio.unlimitpotential.com/upgrade', icon: SquaresPlusIcon },
+    { name: 'Automations', description: 'Go Live', href: 'https://console.unlimitpotential.com/upgrade', icon: ArrowPathIcon },
   ]
   const callsToAction = [
-    { name: 'Sellers Accounts', href: 'https://lillieai-betav1b.unlimitpotential.com/flow', icon: PlayCircleIcon },
-    { name: 'Goals & Settings', href: 'https://feed.unlimitpotential.com/flow', icon: PhoneIcon },
+    { name: 'Sellers Accounts', href: 'https://lillieai-betav1b.unlimitpotential.com/upgrade', icon: PlayCircleIcon },
+    { name: 'Goals & Settings', href: 'https://feed.unlimitpotential.com/upgrade', icon: PhoneIcon },
   ]
 export default function MyComponent() {
   return (
