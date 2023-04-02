@@ -29,37 +29,37 @@ const solutions = [
   {
     name: 'Engagement',
     description: 'Direct to Consumer',
-    href: 'https://space.unlimitpotential.com/flow',
+    href: 'https://space.unlimitpotential.com/upgrade',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Security',
     description: 'Update Preferences',
-    href: 'https://accounts.unlimitpotential.com/flow',
+    href: 'https://accounts.unlimitpotential.com/upgrade',
     icon: FingerPrintIcon,
   },
   {
     name: 'Integrations',
     description: 'Automations',
-    href: 'https://studio.unlimitpotential.com/flow',
+    href: 'https://studio.unlimitpotential.com/upgrade',
     icon: SquaresPlusIcon,
   },
   {
     name: 'Automations',
     description: 'Go Live',
-    href: 'https://console.unlimitpotential.com/flow',
+    href: 'https://console.unlimitpotential.com/upgrade',
     icon: ArrowPathIcon,
   },
 ]
 const callsToAction = [
   {
     name: 'Sellers Accounts',
-    href: 'https://lillieai-betav1b.unlimitpotential.com/flow',
+    href: 'https://lillieai-betav1b.unlimitpotential.com/upgrade',
     icon: PlayCircleIcon,
   },
   {
     name: 'Goals & Settings',
-    href: 'https://feed.unlimitpotential.com/flow',
+    href: 'https://feed.unlimitpotential.com/upgrade',
     icon: PhoneIcon,
   },
 ]
