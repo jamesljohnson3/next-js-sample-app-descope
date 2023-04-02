@@ -13,18 +13,13 @@ export default function MyComponent(props: any) {
 
           <div className="div-3">
           <SignInForm />
-            <button type="button" className="button">
-              <p>Login with Social </p>
-            </button>{" "}
+           
             <a className="a">
-              Continue with Email
             </a>{" "}
             <hr className="hr" />{" "}
             <p className="p">
-              <p>By clicking continue, you agree to our t</p>
             </p>
           </div>{" "}
-          <p className="p-2">Don't have an account? </p>
         </div>
         <div className="div-4">
           <div className="div-5">
@@ -319,7 +314,7 @@ export default function MyComponent(props: any) {
           grid-template-rows: 42px 42px 17px 40px;
           inline-size: 544px;
           min-block-size: auto;
-          min-height: auto;
+          min-height: 500px;
           min-inline-size: auto;
           min-width: auto;
           outline-color: rgb(223, 236, 245);
