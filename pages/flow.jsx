@@ -19,7 +19,7 @@ import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 const solutions = [
     { name: 'Analytics', description: 'See what others see', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
     { name: 'Engagement', description: 'Direct to Consumer', href: 'https://space.unlimitpotential.com/upgrade', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: "Update Preferences", href: 'https://accounts.unlimitpotential.com/upgrade', icon: FingerPrintIcon },
+    { name: 'Apps & Security', description: "Update Preferences", href: 'https://accounts.unlimitpotential.com/upgrade', icon: FingerPrintIcon },
  { name: 'Integrations', description: 'Automations', href: 'https://studio.unlimitpotential.com/upgrade', icon: SquaresPlusIcon },
     { name: 'Automations', description: 'Go Live', href: 'https://console.unlimitpotential.com/upgrade', icon: ArrowPathIcon },
   ]
