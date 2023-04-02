@@ -2,9 +2,16 @@
 /* eslint-disable react/no-unknown-property */
 import * as React from "react";
 import {SignInForm} from "../../components/SignInForm";
+import {SignedIn, SignedOut} from "@clerk/nextjs";
+import Box from "../ma";
+
 export default function MyComponent(props: any) {
   return (
-    <>
+    <><SignedIn>
+    <Box/>
+       </SignedIn>
+           <SignedOut>
+           
       <div className="div">
         <div className="div-2">
           <h1 className="h1">It's time to build</h1>{" "}
@@ -48,7 +55,8 @@ export default function MyComponent(props: any) {
             </span>
           </span>
         </div>
-      </div>
+      </div> 
+           </SignedOut>
       <style jsx>{`
         .div {
           border-bottom: 0px;
