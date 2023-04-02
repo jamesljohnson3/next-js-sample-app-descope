@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import * as React from "react";
 import {SignInForm} from "../../components/SignInForm";
