@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import { Fragment } from 'react'
-
+import { Fragment } from 'react';
+import Box from './ma';
 import * as React from "react";
 import Image from 'next/image'
 import { Popover, Transition } from '@headlessui/react'
@@ -116,7 +116,7 @@ export default function MyComponent() {
             </div>
           </div>
         </nav>
-
+<SignedOut><Box/></SignedOut>
 <SignedIn>
         <div className="dashboard-style-2">
           <div className="div-6">
