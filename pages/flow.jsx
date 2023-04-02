@@ -116,7 +116,7 @@ export default function MyComponent() {
             </div>
           </div>
         </nav>
-<SignedOut><Box/></SignedOut>
+<Box/>
 <SignedIn>
         <div className="dashboard-style-2">
           <div className="div-6">
