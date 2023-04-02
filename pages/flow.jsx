@@ -14,6 +14,7 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
 } from '@heroicons/react/24/outline'
+import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 
 const solutions = [
     { name: 'Analytics', description: 'See what others see', href: 'https://connect.unlimitpotential.com/flow', icon: ChartPieIcon },
@@ -116,7 +117,7 @@ export default function MyComponent() {
           </div>
         </nav>
 
-
+<SignedIn>
         <div className="dashboard-style-2">
           <div className="div-6">
             <div className="div-7">
@@ -223,7 +224,7 @@ export default function MyComponent() {
             </div>
           </div>
         </div>
-        
+        </SignedIn>
       </div>{" "}
       <style jsx>{`
         .div {
