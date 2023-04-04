@@ -146,29 +146,7 @@ import { useForm } from '@mantine/form';
       Keep reading to learn all of our tips and tricks for creating content, live grind and surf online algorithm, discover a community to help create a discussion around the topic "is my idea solving a problem?", and probability.
     </Text>
   
-        <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-          {features}
-        </SimpleGrid>
-        <Box sx={{ maxWidth: 300 }} mx="auto">
-      <form onSubmit={form.onSubmit((values) => console.log(values))}>
-        <TextInput
-          withAsterisk
-          label="Email"
-          placeholder="your@email.com"
-          {...form.getInputProps('email')}
-        />
-
-        <Checkbox
-          mt="md"
-          label="I agree to the privacy policy"
-          {...form.getInputProps('termsOfService', { type: 'checkbox' })}
-        />
-
-        <Group position="right" mt="md">
-          <Button type="submit">Submit</Button>
-        </Group>
-      </form>
-    </Box>
+       
       </Container>
     );
   }
