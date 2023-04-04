@@ -104,37 +104,22 @@ import { useForm } from '@mantine/form';
     ));
     return (
       <Container size="lg" py="xl">
-        <Group position="center">
-          <Badge variant="filled" size="lg">
-            Best company ever
-          </Badge>
-        </Group>
-  
-        <Title order={2} className={classes.title} align="center" mt="sm">
-      Earn more by Buying, Building, Editing, Selling, Testing, and Promoting
-    </Title>
-
-    <Text color="dimmed" className={classes.description} align="center" mt="md">
-      We have all been called to do great things in life. Find instructions and tools to build your business and center yourself creatively in the field or at the office by selecting the right gear and software.
-    </Text>
-
+      <Group position="center">
+        <Badge variant="filled" size="lg">
+          The Best Way to Earn More
+        </Badge>
+      </Group>
+      <Title order={2} className={classes.title} align="center" mt="sm">
+        Integrate Effortlessly with Any Technology Stack
+      </Title>
+      <Text color="dimmed" className={classes.description} align="center" mt="md">
+        Looking to level up your skills? We offer tools and resources to help you buy, build, edit, sell, test, and promote your creations. 
+      </Text>
     <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-      <Box>
-        <Heading as="h3" size="lg">View Pricing</Heading>
-        <Divider my={2} />
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit odio auctor, laoreet nibh vel, bibendum nibh. Sed commodo lorem at nisl dictum convallis. Duis faucibus libero vitae dolor pulvinar, nec aliquam tellus elementum. Donec maximus neque eget tortor dictum luctus.</Text>
-      </Box>
-      <Box>
-        <Heading as="h3" size="lg">🚀 How to start selling?</Heading>
-        <Divider my={2} />
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit odio auctor, laoreet nibh vel, bibendum nibh. Sed commodo lorem at nisl dictum convallis. Duis faucibus libero vitae dolor pulvinar, nec aliquam tellus elementum. Donec maximus neque eget tortor dictum luctus.</Text>
-      </Box>
-      <Box>
-        <Heading as="h3" size="lg">🌍 Log back in</Heading>
-        <Divider my={2} />
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit odio auctor, laoreet nibh vel, bibendum nibh. Sed commodo lorem at nisl dictum convallis. Duis faucibus libero vitae dolor pulvinar, nec aliquam tellus elementum. Donec maximus neque eget tortor dictum luctus.</Text>
-      </Box>
+    {features}
     </SimpleGrid>
+    
+    
     
     <Box sx={{ maxWidth: 300 }} mx="auto">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
