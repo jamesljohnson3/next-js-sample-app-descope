@@ -150,9 +150,12 @@ import { useForm } from '@mantine/form';
           {...form.getInputProps('termsOfService', { type: 'checkbox' })}
         />
 
-      <Group position="center" mt="md">
-  <Button type="submit" color="dark">Submit</Button>
+      <Group position="right" mt="md">
+  <Button type="submit" colorScheme={{ color: "black", _hover: { color: "gray.500", bgColor: "gray.100" } }}>
+    Submit
+  </Button>
 </Group>
+
 
 
       </form>
