@@ -144,7 +144,7 @@ export default function MyComponent(props: any) {
         <div className="div-5">
           <div className="div-6">
             <h1 className="h1">
-              <h2>Automations</h2>
+              <h2>The Online Payment Gateway Market is Increasing at an exceptional Pace to Reach around USD 86.5 Billion by 2028</h2>
             </h1>
             <p className="p">
               <p>
