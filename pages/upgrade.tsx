@@ -165,7 +165,7 @@ export default function MyComponent(props: any) {
         </div>
         <div className="div-7">
           <a
-            href="https://unlimitednow.createsend1.com/t/ViewEmail/y/470B785D3EE1252C2540EF23F30FEDED"
+            href="https://lillieai-betav1b.unlimitpotential.com/upgrade"
             className="a-8"
           >
             <div className="div-8">
