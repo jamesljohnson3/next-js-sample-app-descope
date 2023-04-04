@@ -24,7 +24,7 @@ const solutions = [
     { name: 'Engage', description: 'Speak directly to your customers', href: 'https://space.unlimitpotential.com/upgrade', icon: CursorArrowRaysIcon },
     { name:  'Manage', description: "Your data will be safe and secure", href: 'https://accounts.unlimitpotential.com/upgrade', icon: FingerPrintIcon },
     { name: 'Integrate', description: 'Automations', href: 'https://studio.unlimitpotential.com/upgrade', icon: SquaresPlusIcon },
-    { name: 'Automate', description: 'Go Live', href: 'https://console.unlimitpotential.com/upgrade', icon: ArrowPathIcon },
+    { name: 'Channel', description: 'Go Live', href: 'https://console.unlimitpotential.com/upgrade', icon: ArrowPathIcon },
   ]
 const callsToAction = [
   {
