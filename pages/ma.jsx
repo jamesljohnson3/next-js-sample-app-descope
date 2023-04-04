@@ -122,7 +122,21 @@ import { useForm } from '@mantine/form';
     
     
     <Box sx={{ maxWidth: 300 }} mx="auto">
-      <form onSubmit={form.onSubmit((values) => console.log(values))}>
+    <form onSubmit={form.onSubmit((values) => {
+    fetch('https://connect.unlimitednow.site/fetch', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    })
+    .then(response => {
+      // Handle the response from the server
+    })
+    .catch(error => {
+      // Handle any errors that occur during the fetch call
+    });
+})}>
         <TextInput
           withAsterisk
           label="Email"
