@@ -150,7 +150,7 @@ import { useForm } from '@mantine/form';
           {...form.getInputProps('termsOfService', { type: 'checkbox' })}
         />
 
-      <Group position="right" mt="md">
+      <Group position="center" mt="md">
   <Button type="submit" color="dark">Submit</Button>
 </Group>
 
