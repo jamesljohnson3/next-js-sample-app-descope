@@ -123,7 +123,7 @@ import { useForm } from '@mantine/form';
     
     <Box sx={{ maxWidth: 300 }} mx="auto">
     <form onSubmit={form.onSubmit((values) => {
-    fetch('https://connect.unlimitednow.site/fetch', {
+    fetch('https://connect.unlimitednow.site', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
