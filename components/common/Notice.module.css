@@ -13,7 +13,7 @@
 }
 
 .notice a {
-  color: var(--color-primary);
+  color: #fff;
   font-size: 12px;
   text-decoration: underline;
   margin-left: 4px;
