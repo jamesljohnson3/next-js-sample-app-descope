@@ -175,7 +175,7 @@ const HeroSection: React.FC = () => {
 Manage Site          </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="http://command.unlimitpotential.com/"
+                  href="http://command.unlimitpotential.com/guide"
                   variant="outline"
                   rightIcon={
                     <Icon
