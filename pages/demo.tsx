@@ -171,11 +171,11 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="https://accounts.unlimitpotential.com/">
+                <ButtonLink colorScheme="primary" size="lg" href="https://accounts.unlimitpotential.com/upgrade">
 Manage Site          </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://connect.unlimitpotential.com/"
+                  href="http://command.unlimitpotential.com/"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -190,7 +190,7 @@ Manage Site          </ButtonLink>
                     />
                   }
                 >
-                  View Feed
+                  Connect Feed
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
