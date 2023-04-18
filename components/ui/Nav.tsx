@@ -81,7 +81,7 @@ const Nav = () => (
 				<DialogDemo />
 			</div>
 			<div>
-			<a href="https://space.unlimitpotential.com/">	Open Bid</a>
+			<a href="https://unlimitpotential.com">	© 2022 Unlimited Now</a>
 
 			</div>
 		</div>
