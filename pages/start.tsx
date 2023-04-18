@@ -105,9 +105,7 @@ export default function Home (props: any) {
         <Gate feature="feature1" negate>
           Plan does not have &quot;feature1&quot;
         </Gate>{" "}
-        <button onClick={() => alertResponse("/api/tryFeature1")}>
-          Test the backend!
-        </button>
+        
       </div>
 						<Panel title="What's happening" href="/">
 						<Greeting />
