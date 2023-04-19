@@ -4,7 +4,7 @@ import type { User } from '@prisma/client';
 const prisma = new PrismaClient({
   datasources: {
     db: {
-      url: 'prisma://aws-us-east-1.prisma-data.com/?api_key=UClUDQbgbwrScqUxWoPPQB_iEaWMuBuyxtIRb7dn6xcqRTcQRHXudBbyjvpePA_q',
+      url: 'mysql://8jd7h694wwl5klteql3j:pscale_pw_HsX9YblRT63tKWxiNmx2hM2ziNM1HPsO4N6I1T2Rhr0@aws.connect.psdb.cloud/dub-next-beam?sslaccept=strict',
     },
   },
 });
