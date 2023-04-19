@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "vercel-build": "npm run prisma:generate && npm run prisma:migrate && next build",
     "prisma:generate": "prisma generate --data-proxy",
     "build": "next build",
     "start": "next start",
