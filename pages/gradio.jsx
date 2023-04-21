@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import base64 from "js-base64";
 
-export default function Home() {
+export default function Page() {
   const [text, setText] = useState("");
   const [audio, setAudio] = useState("");
 
