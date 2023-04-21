@@ -7,9 +7,6 @@
     "build": "next build",
     "start": "next start",
     "vercel-build": "next build",
-
-
-
     "lint": "next lint"
   },
   "dependencies": {
@@ -18,7 +15,7 @@
     "@chakra-ui/skip-nav": "^2.0.15",
     "@clerk/nextjs": "^4.10.2",
     "@descope/node-sdk": "^1.0.4-alpha.7",
-    "@descope/react-sdk": "0.0.52-alpha.24",
+    "@descope/react-sdk": "^0.0.52-alpha.24",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fingerprintjs/fingerprintjs-pro-react": "^2.3.0",
