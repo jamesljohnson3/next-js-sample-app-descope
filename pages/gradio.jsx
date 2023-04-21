@@ -24,7 +24,9 @@ export default function Page() {
   return (
     <div>
       <h1>Text to Speech App powered by Gradio API hosted on 🤗</h1>
-      <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+
+<input type="text" value={text} name="text" onChange={(e) => setText(e.target.value)} />
+
       <button onClick={handleButtonClick}>⚡️ Text to speech magic ⚡️</button>
       {audio && (
         <audio controls>
