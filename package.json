@@ -94,6 +94,7 @@
     "flowbite": "^1.6.4",
     "flowbite-react": "^0.4.2",
     "framer-motion": "^6.5.1",
+    "js-base64": "^3.7.5",
     "lucide-react": "0.105.0-alpha.4",
     "mixpanel-browser": "^2.45.0",
     "next": "13.0.3",
