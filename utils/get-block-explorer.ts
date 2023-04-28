@@ -1,7 +1,8 @@
 import { Networks } from './networks';
+import Cookies from 'js-cookie';
 
 export const getBlockExplorer = () => {
-  const network = localStorage.getItem('network');
+  const network = Cookies.get('network');
   switch (network) {
     case Networks.Polygon:
       return 'https://mumbai.polygonscan.com/';
