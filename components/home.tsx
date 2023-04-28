@@ -41,10 +41,9 @@ export default function Home() {
   // Refresh the page when a user changes networks,
   const handleChainChanged = () => {
     if (typeof window !== 'undefined') {
-      // Access the window object here
-    }
+      location.reload();    }
     
-    location.reload();
+   
   };
   
   useEffect(() => {

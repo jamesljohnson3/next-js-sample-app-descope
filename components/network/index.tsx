@@ -12,14 +12,13 @@ const Network = () => {
 
   const handleNetworkSelected = (networkOption: Networks) => {
     if (typeof window !== 'undefined') {
-      // Access the window object here
+      location.reload();
     }
     
     if (networkOption !== network) {
       setNetwork(networkOption);
       Cookies.set('network', networkOption);
-      location.reload();
-    }
+  
   };
 
   const ActiveNetwork = ({ network }: { network: string }) => {
