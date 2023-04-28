@@ -9,6 +9,7 @@ import { Networks } from '../../utils/networks';
 import { useUser } from '../../contexts/UserContext';
 import { useWeb3 } from '../../contexts/Web3Context';
 import { logout } from '../../utils/logout';
+import Cookies from 'js-cookie';
 
 const UserInfo = () => {
   const { user, setUser } = useUser();
@@ -16,7 +17,7 @@ const UserInfo = () => {
   const [balance, setBalance] = useState('...');
   const [copied, setCopied] = useState('Copy');
   const [isRefreshing, setIsRefreshing] = useState(false);
-  const network = localStorage.getItem('network');
+const network = Cookies.get('network');
   const tokenSymbol = network === Networks.Polygon ? 'MATIC' : 'ETH';
 
   const copy = () => {
