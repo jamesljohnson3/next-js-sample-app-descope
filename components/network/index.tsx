@@ -18,7 +18,8 @@ const Network = () => {
     if (networkOption !== network) {
       setNetwork(networkOption);
       Cookies.set('network', networkOption);
-  
+    } // added closing brace here
+    
   };
 
   const ActiveNetwork = ({ network }: { network: string }) => {
