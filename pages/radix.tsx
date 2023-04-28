@@ -1,4 +1,4 @@
-import { AppleMusicDemo } from "../components/apple-music-demo"
+import { AppleMusicDemo } from "../components/login"
 import {
 	createTheme,
 	NextUIProvider } from "@nextui-org/react";
