@@ -9,6 +9,7 @@ import { useUser } from '../contexts/UserContext';
 import { magic } from '../libs/magic';
 import { useWeb3 } from '../contexts/Web3Context';
 import { getWeb3 } from '../libs/web3';
+import Cookies from 'js-cookie';
 
 const Login = () => {
   const { setUser } = useUser();
@@ -21,8 +22,8 @@ const Login = () => {
       const accounts = await magic.wallet.connectWithUI();
       setDisabled(false);
       console.log('Logged in user:', accounts[0]);
-      localStorage.setItem('user', accounts[0]);
-
+      Cookies.set('user', accounts[0]);
+  
       // Once user is logged in, re-initialize web3 instance to use the new provider (if connected with third party wallet)
       const web3 = await getWeb3();
       setWeb3(web3);
@@ -32,6 +33,7 @@ const Login = () => {
       console.error(error);
     }
   };
+  
 
   return (
     <div

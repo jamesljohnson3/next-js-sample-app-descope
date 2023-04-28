@@ -15,11 +15,12 @@ import { Networks } from '../utils/networks';
 import { useWeb3 } from '../contexts/Web3Context';
 import { useUser } from '../contexts/UserContext';
 import { logout } from '../utils/logout';
+import Cookies from 'js-cookie';
 
 export default function Home() {
   const { user, setUser } = useUser();
   const { web3, setWeb3 } = useWeb3();
-  const network = (localStorage.getItem('network') as Networks) || Networks.Sepolia;
+  const network = (Cookies.get('network') as Networks) || Networks.Sepolia;
 
   // Update state for newly connected wallet
   const handleDisconnect = () => {
@@ -33,11 +34,11 @@ export default function Home() {
     if (!acc[0]) {
       handleDisconnect();
     } else {
-      localStorage.setItem('user', acc[0]);
+      Cookies.set('user', acc[0]);
       setUser(acc[0]);
     }
   };
-
+  
   // Refresh the page when a user changes networks,
   const handleChainChanged = () => {
     window.location.reload();
