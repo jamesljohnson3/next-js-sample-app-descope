@@ -1,8 +1,9 @@
 import { EthNetworkConfiguration, Magic } from 'magic-sdk';
 import { Networks } from '../utils/networks';
+import Cookies from 'js-cookie';
 
 const formattedNetwork = (): EthNetworkConfiguration => {
-  const network = localStorage.getItem('network');
+  const network = Cookies.get('network') ;
   switch (network) {
     case Networks.Optimism:
       return {
