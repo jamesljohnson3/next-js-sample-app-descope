@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import DownArrow from '../../images/down-arrow.svg';
 import Check from '../../images/check.svg';
 import { Networks } from '../../utils/networks';
+import Cookies from 'js-cookie';
+
 
 const Network = () => {
   const networkOptions = [Networks.Sepolia, Networks.Goerli, Networks.Polygon, Networks.Optimism];
   const [isOpen, setIsOpen] = useState(false);
-  const [network, setNetwork] = useState(localStorage.getItem('network') || Networks.Sepolia);
+  const [network, setNetwork] = useState(Cookies.get('network') || Networks.Sepolia);
 
   const handleNetworkSelected = (networkOption: Networks) => {
     if (networkOption !== network) {
