@@ -16,7 +16,7 @@ import { useWeb3 } from '../contexts/Web3Context';
 import { useUser } from '../contexts/UserContext';
 import { logout } from '../utils/logout';
 
-export default function Home() {
+export function Home() {
   const { user, setUser } = useUser();
   const { web3, setWeb3 } = useWeb3();
   const network = (localStorage.getItem('network') as Networks) || Networks.Sepolia;
