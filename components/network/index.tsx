@@ -13,7 +13,7 @@ const Network = () => {
   const handleNetworkSelected = (networkOption: Networks) => {
     if (networkOption !== network) {
       setNetwork(networkOption);
-      localStorage.setItem('network', networkOption);
+      Cookies.set('network', networkOption);
       window.location.reload();
     }
   };
