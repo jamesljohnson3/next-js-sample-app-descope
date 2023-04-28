@@ -1,7 +1,8 @@
 import { Networks } from './networks';
+import Cookies from 'js-cookie';
 
 export const getStorageContractAddress = () => {
-  const network = localStorage.getItem('network');
+  const network = Cookies.get('network');
   switch (network) {
     case Networks.Polygon:
       return '0xB7e7313C95b4dB35aB50760c31f29d1AA4679452';
@@ -15,7 +16,7 @@ export const getStorageContractAddress = () => {
 };
 
 export const getNftContractAddress = () => {
-  const network = localStorage.getItem('network');
+  const network = Cookies.get('network');
   switch (network) {
     case Networks.Polygon:
       return '0xfdBa8E462e9442b6077B1FC7B230205CAece2033';
@@ -29,7 +30,7 @@ export const getNftContractAddress = () => {
 };
 
 export const getTokenContractAddress = () => {
-  const network = localStorage.getItem('network');
+  const network = Cookies.get('network');
   switch (network) {
     case Networks.Polygon:
       return '0x96d71155fcA2eD56Da251591F59E1DC5ff4095e4';
