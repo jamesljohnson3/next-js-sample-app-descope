@@ -41,9 +41,9 @@ export default function Home() {
   
   // Refresh the page when a user changes networks,
   const handleChainChanged = () => {
-    window.location.reload();
+    location.reload();
   };
-
+  
   useEffect(() => {
     if (!web3 || !user) return;
     // Once a user is connected, check if the wallet is on the correct network
