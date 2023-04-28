@@ -12,44 +12,45 @@ import { getWeb3 } from '../libs/web3';
 import Cookies from 'js-cookie';
 
 const Login = () => {
-  const { setUser } = useUser();
-  const { setWeb3 } = useWeb3();
-  const [disabled, setDisabled] = useState(false);
-
-  const connect = async () => {
-    try {
-      setDisabled(true);
-      const accounts = await magic.wallet.connectWithUI();
-      setDisabled(false);
-      console.log('Logged in user:', accounts[0]);
-      Cookies.set('user', accounts[0]);
-
-      // Once user is logged in, re-initialize web3 instance to use the new provider (if connected with third party wallet)
-      const web3 = await getWeb3();
-      setWeb3(web3);
-      setUser(accounts[0]);
-    } catch (error) {
-      setDisabled(false);
-      console.error(error);
-    }
+    const { setUser } = useUser();
+    const { setWeb3 } = useWeb3();
+    const [disabled, setDisabled] = useState(false);
+  
+    const connect = async () => {
+      try {
+        setDisabled(true);
+        const accounts = await magic.wallet.connectWithUI();
+        setDisabled(false);
+        console.log('Logged in user:', accounts[0]);
+        Cookies.set('user', accounts[0]);
+    
+        // Once user is logged in, re-initialize web3 instance to use the new provider (if connected with third party wallet)
+        const web3 = await getWeb3();
+        setWeb3(web3);
+        setUser(accounts[0]);
+      } catch (error) {
+        setDisabled(false);
+        console.error(error);
+      }
+    };
+    
+  
+    return (
+      <div
+        className="login-page"
+        style={{
+          backgroundImage: `url(${LoginPageBackground})`,
+        }}
+      >
+        <AppHeader />
+        <Spacer size={30} />
+        <Network />
+        <Spacer size={20} />
+        <ConnectButton onClick={connect} disabled={disabled} />
+        <Links footer />
+      </div>
+    );
   };
-
-
-  return (
-    <div
-      className="login-page"
-      style={{
-        backgroundImage: `url(${LoginPageBackground})`,
-      }}
-    >
-      <AppHeader />
-      <Spacer size={30} />
-      <Network />
-      <Spacer size={20} />
-      <ConnectButton onClick={connect} disabled={disabled} />
-      <Links footer />
-    </div>
-  );
-};
+  
 
 export default Login;
