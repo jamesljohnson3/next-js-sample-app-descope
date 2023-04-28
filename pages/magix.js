@@ -1,43 +1,54 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
-import { magic } from '../libs/magic';
+import { useState } from 'react';
+import { Magic } from '@magic-sdk/react-native';
+import AppHeader from '../components/app-header';
+import Links from '../components/links';
+import Network from '../components/network';
+import ConnectButton from '../components/ui/connect-button';
+import Spacer from '../components/ui/spacer';
+import LoginPageBackground from '../images/login.svg';
 import { useUser } from '../contexts/UserContext';
-import { useWeb3 } from '../contexts/Web3Context';
+import { getWeb3 } from '../libs/web3';
+import Cookies from 'js-cookie';
 
 const Login = () => {
-  const { user, setUser } = useUser();
-  const { setWeb3 } = useWeb3();
-  const [isLoggingIn, setIsLoggingIn] = useState(false);
-  const router = useRouter();
+  const { setUser } = useUser();
+  const [disabled, setDisabled] = useState(false);
 
-  const handleLogin = async (event) => {
-    event.preventDefault();
-    setIsLoggingIn(true);
+  const magic = new Magic(process.env.REACT_APP_MAGIC_API_KEY);
+
+  const connect = async () => {
     try {
-      const email = event.target.email.value;
-      await magic.auth.loginWithMagicLink({ email });
-      const web3 = await magic.web3.getProvider();
-      const address = web3.selectedAddress;
-      setUser(address);
-      setWeb3(web3);
-      setIsLoggingIn(false);
-      router.push('/');
+      setDisabled(true);
+      await magic.auth.loginWithPopup();
+      setDisabled(false);
+      const address = await magic.eth.getAccounts();
+      console.log('Logged in user:', address);
+      Cookies.set('user', address[0]);
+
+      // Once user is logged in, initialize web3 instance to use the new provider (if connected with third party wallet)
+      const web3 = await getWeb3();
+      setUser(address[0]);
     } catch (error) {
+      setDisabled(false);
       console.error(error);
-      setIsLoggingIn(false);
     }
   };
+  
 
   return (
-    <form onSubmit={handleLogin}>
-      <label>
-        Email
-        <input type="email" name="email" />
-      </label>
-      <button type="submit" disabled={isLoggingIn}>
-        {isLoggingIn ? 'Logging in...' : 'Log in with Magic'}
-      </button>
-    </form>
+    <div
+      className="login-page"
+      style={{
+        backgroundImage: `url(${LoginPageBackground})`,
+      }}
+    >
+      <AppHeader />
+      <Spacer size={30} />
+      <Network />
+      <Spacer size={20} />
+      <ConnectButton onClick={connect} disabled={disabled} />
+      <Links footer />
+    </div>
   );
 };
 
