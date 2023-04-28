@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Loading from '../../images/loading.svg';
-import Toast from '../ui/toast';
+import Toast from '../ui/toast2';
 import { magic } from '../../libs/magic';
 
 const RequestUserInfo = () => {
