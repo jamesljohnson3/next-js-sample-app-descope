@@ -11,6 +11,10 @@ const Network = () => {
   const [network, setNetwork] = useState(Cookies.get('network') || Networks.Sepolia);
 
   const handleNetworkSelected = (networkOption: Networks) => {
+    if (typeof window !== 'undefined') {
+      // Access the window object here
+    }
+    
     if (networkOption !== network) {
       setNetwork(networkOption);
       Cookies.set('network', networkOption);
