@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import TableOfContents from '../components/table-of-contents';
 import AppHeader from '../components/app-header';
 import Wallet from '../components/wallet';
 import WalletMethods from '../components/wallet-methods';
@@ -88,7 +87,6 @@ export default function Home() {
       <Spacer size={20} />
       <Links />
       <Spacer size={125} />
-      <TableOfContents />
       <div className="cards-container">
         <Wallet />
         <WalletMethods />
