@@ -12,6 +12,7 @@ import { Networks } from '../../utils/networks';
 import { getFaucetUrl } from '../../utils/faucet';
 import { useUser } from '../../contexts/UserContext';
 import { useWeb3 } from '../../contexts/Web3Context';
+import Cookies from 'js-cookie';
 
 const SendTransaction = () => {
   const { user } = useUser();
@@ -22,7 +23,7 @@ const SendTransaction = () => {
   const [hash, setHash] = useState('');
   const [toAddressError, setToAddressError] = useState(false);
   const [amountError, setAmountError] = useState(false);
-  const network = localStorage.getItem('network');
+  const network = Cookies.get('network');
   const tokenSymbol = network === Networks.Polygon ? 'MATIC' : 'ETH';
 
   useEffect(() => {
