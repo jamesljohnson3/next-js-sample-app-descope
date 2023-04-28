@@ -14,7 +14,7 @@ const Network = () => {
     if (networkOption !== network) {
       setNetwork(networkOption);
       Cookies.set('network', networkOption);
-      window.location.reload();
+      location.reload();
     }
   };
 
