@@ -151,7 +151,7 @@ export default function Home (props: any) {
 								initials="RB"
 							/>
 						</Panel>{!authenticated && (
-          <><Link href="/login" passHref>
+          <><Link href="https://feed.unlimitpotential.com/" passHref>
 									  <button>Login</button>
 								  </Link></>   
         )}
