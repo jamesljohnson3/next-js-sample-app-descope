@@ -115,9 +115,7 @@ export function SignInForm() {
       {formStep !== SignInFormSteps.EMAIL && (
         <BackButton onClick={() => setFormStep(SignInFormSteps.EMAIL)} />
       )}
-      <div>
-        Logo
-      </div>
+      
       <Title
         content={"Sign in to your account"}
         subtitle={`Welcome back ${firstName}`}

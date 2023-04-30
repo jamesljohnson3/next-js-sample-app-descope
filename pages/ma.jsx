@@ -137,25 +137,7 @@ import { useForm } from '@mantine/form';
       // Handle any errors that occur during the fetch call
     });
 })}>
-        <TextInput
-          withAsterisk
-          label="Email"
-          placeholder="your@email.com"
-          {...form.getInputProps('email')}
-        />
-
-        <Checkbox
-          mt="md"
-          label="I agree to the privacy policy"
-          {...form.getInputProps('termsOfService', { type: 'checkbox' })}
-        />
-
-      <Group position="right" mt="md">
-  <Button type="submit" colorScheme={{ color: "black", _hover: { color: "gray.500", bgColor: "gray.100" } }}>
-    Submit
-  </Button>
-</Group>
-
+       
 
 
       </form>
