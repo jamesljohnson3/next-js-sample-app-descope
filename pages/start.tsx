@@ -12,6 +12,7 @@ import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/nextjs";
 import {SignInForm} from "../components/SignInForm";
 import { Gate, useSubscription } from "use-stripe-subscription";
+import { ModalsProvider, useModals } from '@saas-ui/react'
 
 import { EmptyState } from '@saas-ui/react'
 import { useAuth } from "@descope/react-sdk";
@@ -81,6 +82,7 @@ export default function Home (props: any) {
   };
   
   
+  const modals = useModals()
 
   return (
     <div className={styles.container}>
@@ -96,7 +98,22 @@ export default function Home (props: any) {
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /> </SignedIn>       <SignedOut>    <EmptyState
+					<SignedIn><Tabs /> <Button
+      colorScheme="red"
+      onClick={() =>
+        modals.confirm({
+          title: 'Delete user',
+          body: 'Are you sure you want to delete this user?',
+          confirmProps: {
+            colorScheme: 'red',
+            label: 'Delete',
+          },
+          onConfirm: () => {}, // action
+        })
+      }
+    >
+      Delete user
+    </Button> </SignedIn>       <SignedOut>    <EmptyState
   colorScheme="primary"
   icon=""
   title="No customers yet"
