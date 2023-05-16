@@ -13,7 +13,7 @@ import { SignIn } from "@clerk/nextjs";
 import {SignInForm} from "../components/SignInForm";
 import { Gate, useSubscription } from "use-stripe-subscription";
 
-
+import { EmptyState } from '@saas-ui/react'
 import { useAuth } from "@descope/react-sdk";
 import { GetServerSideProps } from "next";
 import Link from "next/link";
@@ -21,7 +21,9 @@ import { SyntheticEvent, useCallback, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 import { builder, BuilderComponent } from '@builder.io/react'
-
+import {
+	Button
+  } from '@chakra-ui/react'
 import {
 	createTheme,
 	NextUIProvider } from "@nextui-org/react";
@@ -94,7 +96,18 @@ export default function Home (props: any) {
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /> </SignedIn>       <SignedOut>          <SignInForm />
+					<SignedIn><Tabs /> </SignedIn>       <SignedOut>    <EmptyState
+  colorScheme="primary"
+  icon=""
+  title="No customers yet"
+  description="You haven't imported any customers yet."
+  actions={
+    <>
+      <Button colorScheme="primary" />
+      <Button  />
+    </>
+  }
+/>
 </SignedOut>   
 
 				</main>
