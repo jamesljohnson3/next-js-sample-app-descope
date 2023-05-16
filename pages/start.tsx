@@ -153,7 +153,7 @@ export default function Home (props: any) {
           body: 'Step 1',
           footer: (
             <>
-              <Button onClick={next} label="Next" />
+              <Button onClick={next}  />
             </>
           ),
         })
