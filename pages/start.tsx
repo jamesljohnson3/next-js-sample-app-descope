@@ -13,6 +13,7 @@ import { SignIn } from "@clerk/nextjs";
 import {SignInForm} from "../components/SignInForm";
 import { Gate, useSubscription } from "use-stripe-subscription";
 import { ModalsProvider, useModals } from '@saas-ui/react'
+import { useSnackbar } from '@saas-ui/react'
 
 import { EmptyState } from '@saas-ui/react'
 import { useAuth } from "@descope/react-sdk";
@@ -81,7 +82,8 @@ export default function Home (props: any) {
 	}
   };
   
-  
+  const snackbar = useSnackbar()
+
   const modals = useModals()
   const next = () => {
     const id = modals.open({
@@ -109,7 +111,19 @@ export default function Home (props: any) {
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /> <Button
+					<SignedIn><Tabs /><Button
+      onClick={() =>
+        snackbar({
+          title: 'Account created.',
+          description: "We've created your account for you.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }
+    >
+      Show Snackbar
+    </Button> <Button
       colorScheme="red"
       onClick={() =>
         modals.confirm({
