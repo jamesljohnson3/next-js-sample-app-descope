@@ -83,7 +83,18 @@ export default function Home (props: any) {
   
   
   const modals = useModals()
-
+  const next = () => {
+    const id = modals.open({
+      title: 'Modal step 2',
+      body: 'Step 2',
+      footer: (
+        <>
+          <Button onClick={() => modals.close(id)} mr="3"  />
+          <Button onClick={() => modals.closeAll()}  />
+        </>
+      ),
+    })
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -135,7 +146,21 @@ export default function Home (props: any) {
         <Gate feature="feature1" negate>
           Plan does not have &quot;feature1&quot;
         </Gate>{" "}
-        
+        <Button
+      onClick={() =>
+        modals.open({
+          title: 'Modal step 1',
+          body: 'Step 1',
+          footer: (
+            <>
+              <Button onClick={next} label="Next" />
+            </>
+          ),
+        })
+      }
+    >
+      Open modal
+    </Button>
       </div>
 						<Panel title="What's happening" href="/">
 						<Greeting />
