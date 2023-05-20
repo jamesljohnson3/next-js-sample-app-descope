@@ -14,7 +14,12 @@ import {SignInForm} from "../components/SignInForm";
 import { Gate, useSubscription } from "use-stripe-subscription";
 import { ModalsProvider, useModals } from '@saas-ui/react'
 import { useSnackbar } from '@saas-ui/react'
-
+import { Field, FormLayout} from '@saas-ui/react'
+import {
+  StepForm,
+  FormStep,
+  NextButton,
+} from '@saas-ui/react'
 import { EmptyState } from '@saas-ui/react'
 import { useAuth } from "@descope/react-sdk";
 import { GetServerSideProps } from "next";
@@ -44,7 +49,13 @@ import {
     alert(`Path requested: ${path}\nResponse: ${body}`);
   };
 export default function Home (props: any) {
-  
+   const onSubmit = (params: any) => {
+    console.log(params)
+    return new Promise((resolve) => {
+      setTimeout(resolve, 1000)
+    })
+  }
+
   const { authenticated, user, logout, me } = useAuth();
   const onLogout = useCallback(() => {
     // Delete Descope refresh token cookie.
@@ -138,7 +149,35 @@ export default function Home (props: any) {
       }
     >
       Delete user
-    </Button> </SignedIn>       <SignedOut>    <EmptyState
+    </Button> </SignedIn>       <SignedOut>   
+   <StepForm
+      defaultValues={{
+        name: '',
+        email: '',
+        password: '',
+      }}
+      onSubmit={onSubmit}
+    >
+      <FormLayout>
+        <FormStep name="profile">
+          <FormLayout>
+            <Field name="name" label="Name" rules={{ required: true }} />
+            <Field name="email" label="Email" rules={{ required: true }} />
+            <NextButton />
+          </FormLayout>
+        </FormStep>
+        <FormStep name="password">
+          <FormLayout>
+            <Field
+              name="password"
+              label="Password"
+              rules={{ required: true, minLength: 4 }}
+            />
+            <NextButton />
+          </FormLayout>
+        </FormStep>
+      </FormLayout>
+    </StepForm> <EmptyState
   colorScheme="primary"
   icon=""
   title="No customers yet"
