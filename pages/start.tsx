@@ -50,12 +50,32 @@ import {
     alert(`Path requested: ${path}\nResponse: ${body}`);
   };
 export default function Home (props: any) {
-   const onSubmit = (params: any) => {
-    console.log(params)
-    return new Promise((resolve) => {
-      setTimeout(resolve, 1000)
-    })
-  }
+  const onSubmit = (params: any) => {
+    console.log(params);
+    return new Promise((resolve, reject) => {
+      fetch('https://hook.us1.make.com/e727pmawescz23ls88greva6s24l9yma', {
+        method: 'POST', // Adjust the HTTP method as needed (e.g., GET, POST, PUT, DELETE)
+        headers: {
+          'Content-Type': 'application/json', // Set the appropriate content type for your API
+        },
+        body: JSON.stringify(params), // Convert params to JSON string
+      })
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('API request failed');
+          }
+        })
+        .then(data => {
+          resolve(data);
+        })
+        .catch(error => {
+          reject(error);
+        });
+    });
+  };
+  
 
   const { authenticated, user, logout, me } = useAuth();
   const onLogout = useCallback(() => {

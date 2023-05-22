@@ -64,7 +64,31 @@ function Greeting({ user }) {
       console.error('Failed to delete row:', error);
     }
   };
-
+  const onSubmit = (params) => {
+    console.log(params);
+    return new Promise((resolve, reject) => {
+      fetch('https://hook.us1.make.com/e727pmawescz23ls88greva6s24l9yma', {
+        method: 'POST', // Adjust the HTTP method as needed (e.g., GET, POST, PUT, DELETE)
+        headers: {
+          'Content-Type': 'application/json', // Set the appropriate content type for your API
+        },
+        body: JSON.stringify(params), // Convert params to JSON string
+      })
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('API request failed');
+          }
+        })
+        .then(data => {
+          resolve(data);
+        })
+        .catch(error => {
+          reject(error);
+        });
+    });
+  };
   return (
     <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             <h1>{tableTitle}</h1> {/* Render the dynamic title */}
