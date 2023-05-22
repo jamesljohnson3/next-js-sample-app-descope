@@ -51,7 +51,7 @@ const fullName = user?.fullName ?? '';
             value={input}
             onChange={(e) => setInput(e.target.value)}
             type="text"
-            placeholder="What's up?"
+            placeholder="E.g. Anything"
             className="w-full px-4 py-3 text-xl border-transparent placeholder:text-slate-600 outline-0 focus:outline-none appearance-none focus:ring-0 focus:border-transparent"
           />
         </div>

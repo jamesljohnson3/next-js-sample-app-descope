@@ -137,7 +137,7 @@ function Greeting({ user }) {
                 <Field
                   name="name"
                   isRequired
-                  placeholder="Enter Asset ID"
+                  placeholder="Your Asset ID"
                   label="auto-generated"
                   value={item.age} // Set the value prop to {item.age}
                 />
