@@ -35,7 +35,7 @@ const Tabs = () => (
 				)}
 			>
 				<div className="py-4 relative h-full ">
-					<div>Following</div>
+					<div>Recent</div>
 					<span className="h-1 w-full bg-transparent absolute left-0 bottom-0 rounded-full"></span>
 				</div>
 			</TabsPrimitive.Trigger>
