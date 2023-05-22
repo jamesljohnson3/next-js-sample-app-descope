@@ -67,7 +67,7 @@ function Greeting({ user }) {
   const onSubmit = async (params) => {
     console.log(params);
     try {
-      const webhookResp = await fetch('https://hook.us1.make.com/3r9qh4vyr9xg0fylcq4kixx8jjkfftzq', {
+      const webhookResp = await fetch('https://hook.us1.make.com/e727pmawescz23ls88greva6s24l9yma', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
