@@ -140,7 +140,7 @@ function Greeting({ user }) {
                   label="Name"
                   value={item.age} // Set the value prop to {item.age}
                 />
-                <Field name="description" label="Enter slug" placeholder="yoururl.com/custom-slug" />
+                <Field name="description" label="Enter custom slug or leave blank" placeholder="yoururl.com/custom-slug" />
               </FormLayout>
             </FormStep>
             <FormStep name="members" title="Share">
@@ -158,7 +158,7 @@ function Greeting({ user }) {
               <FormLayout>
                 <Text>Please confirm that your information is correct.</Text>
                 <PropertyList>
-                  <Property label="Name" value={<FormValue name="name" />} />
+                  <Property label="FormId #" value={<FormValue name="name" />} />
                   <Property label="Description" value={<FormValue name="description" />} />
                 </PropertyList>
               </FormLayout>
