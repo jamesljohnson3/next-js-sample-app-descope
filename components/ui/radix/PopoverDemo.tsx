@@ -29,8 +29,8 @@ const items: NavLinkItem[] = [
 		icon: <HiListBullet className="w-6 h-6" />,
 	},
 	{
-		href: '/twitter-circle',
-		text: 'Twitter Circle',
+		href: '/https://workspace.unlimitpotential.com/create-space',
+		text: 'Create Space',
 		icon: <HiOutlineUserGroup className="w-6 h-6" />,
 	},
 ];
