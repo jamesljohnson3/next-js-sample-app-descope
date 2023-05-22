@@ -140,7 +140,7 @@ function Greeting({ user }) {
                   placeholder="Your Asset ID"
                   label="Your tracking Id auto-generated"
                   value={item.age} // Set the value prop to {item.age}
-                />
+                />Copy
                 <Field name="description" label="Enter custom slug or leave blank" placeholder="yoururl.com/custom-slug" />
               </FormLayout>
             </FormStep>
