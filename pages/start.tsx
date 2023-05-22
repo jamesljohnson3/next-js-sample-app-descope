@@ -29,7 +29,7 @@ import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 import { builder, BuilderComponent } from '@builder.io/react'
 import {
-	Button, ButtonGroup, Text
+	Button, ButtonGroup, Spacer, Text
   } from '@chakra-ui/react'
 import {
 	createTheme,
@@ -159,7 +159,7 @@ export default function Home (props: any) {
       onSubmit={onSubmit}
     >
       <FormLayout>
-        <FormStepper orientation="vertical">
+        <FormStepper>
           <FormStep
             name="project"
             title="Project details"
@@ -167,7 +167,6 @@ export default function Home (props: any) {
             <FormLayout>
               <Field name="name" isRequired label="Name" />
               <Field name="description" label="Description" />
-              <NextButton />
             </FormLayout>
           </FormStep>
           <FormStep
@@ -182,10 +181,6 @@ export default function Home (props: any) {
                 placeholder="hello@saas-ui.dev, etc"
                 autoFocus
               />
-              <ButtonGroup>
-                <NextButton />
-                <PrevButton variant="ghost" />
-              </ButtonGroup>
             </FormLayout>
           </FormStep>
           <FormStep name="confirm" title="Confirm">
@@ -198,10 +193,6 @@ export default function Home (props: any) {
                   value={<FormValue name="description" />}
                 />
               </PropertyList>
-              <ButtonGroup>
-                <NextButton />
-                <PrevButton variant="ghost" />
-              </ButtonGroup>
             </FormLayout>
           </FormStep>
 
@@ -209,6 +200,11 @@ export default function Home (props: any) {
             <Loader>We are setting up your project, just a moment...</Loader>
           </StepperCompleted>
         </FormStepper>
+        <ButtonGroup w="full">
+          <PrevButton variant="ghost" />
+          <Spacer />
+          <NextButton />
+        </ButtonGroup>
       </FormLayout>
     </StepForm></div> <EmptyState
   colorScheme="primary"
