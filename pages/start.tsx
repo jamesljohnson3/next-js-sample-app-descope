@@ -135,7 +135,18 @@ export default function Home (props: any) {
       className="mt-6 lg:mt-14 max-h-24"
       src="https://i.imgur.com/5JzWVvz.png"
       alt=""
-    />
+    /><EmptyState
+    colorScheme="primary"
+    icon=""
+    title="No customers yet"
+    description="You haven't imported any customers yet."
+    actions={
+      <>
+        <Button colorScheme="primary" />
+        <Button  />
+      </>
+    }
+  />
   </div>           <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
     <StepForm
@@ -194,18 +205,7 @@ export default function Home (props: any) {
           <NextButton />
         </ButtonGroup>
       </FormLayout>
-    </StepForm></div> <EmptyState
-  colorScheme="primary"
-  icon=""
-  title="No customers yet"
-  description="You haven't imported any customers yet."
-  actions={
-    <>
-      <Button colorScheme="primary" />
-      <Button  />
-    </>
-  }
-/>
+    </StepForm></div> 
 </SignedOut>   
 
 				</main>
