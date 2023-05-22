@@ -90,8 +90,7 @@ function Greeting({ user }) {
       {selectedImage ? (
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
-            src={selectedImage.url}
-            alt={selectedImage.title}
+            src={unsafeMetadata.featuredImage}
             className="object-cover w-full h-48"
           />
           <div className="p-4">
