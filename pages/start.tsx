@@ -136,7 +136,7 @@ export default function Home (props: any) {
         <FormStepper>
           <FormStep
             name="project"
-            title="Project details"
+            title="Create"
           >
             <FormLayout>
               <Field name="name" isRequired label="Name" />
@@ -145,7 +145,7 @@ export default function Home (props: any) {
           </FormStep>
           <FormStep
             name="members"
-            title="Invite your team"
+            title="Share"
           >
             <FormLayout>
               <Field
@@ -157,7 +157,7 @@ export default function Home (props: any) {
               />
             </FormLayout>
           </FormStep>
-          <FormStep name="confirm" title="Confirm">
+          <FormStep name="confirm" title="Manage">
             <FormLayout>
               <Text>Please confirm that your information is correct.</Text>
               <PropertyList>
