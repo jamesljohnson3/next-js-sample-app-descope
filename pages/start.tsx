@@ -12,7 +12,7 @@ import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/nextjs";
 import {SignInForm} from "../components/SignInForm";
 import { Gate, useSubscription } from "use-stripe-subscription";
-import { ModalsProvider, useModals } from '@saas-ui/react'
+import { FormStepper, FormValue, Loader, ModalsProvider, PrevButton, Property, PropertyList, StepperCompleted, useModals } from '@saas-ui/react'
 import { useSnackbar } from '@saas-ui/react'
 import { Field, FormLayout} from '@saas-ui/react'
 import {
@@ -29,7 +29,7 @@ import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 import { builder, BuilderComponent } from '@builder.io/react'
 import {
-	Button
+	Button, ButtonGroup, Text
   } from '@chakra-ui/react'
 import {
 	createTheme,
@@ -150,7 +150,7 @@ export default function Home (props: any) {
     >
       Delete user
     </Button> </SignedIn>       <SignedOut>   
-   <StepForm
+    <StepForm
       defaultValues={{
         name: '',
         email: '',
@@ -159,23 +159,56 @@ export default function Home (props: any) {
       onSubmit={onSubmit}
     >
       <FormLayout>
-        <FormStep name="profile">
-          <FormLayout>
-            <Field name="name" label="Name" rules={{ required: true }} />
-            <Field name="email" label="Email" rules={{ required: true }} />
-            <NextButton />
-          </FormLayout>
-        </FormStep>
-        <FormStep name="password">
-          <FormLayout>
-            <Field
-              name="password"
-              label="Password"
-              rules={{ required: true, minLength: 4 }}
-            />
-            <NextButton />
-          </FormLayout>
-        </FormStep>
+        <FormStepper orientation="vertical">
+          <FormStep
+            name="project"
+            title="Project details"
+          >
+            <FormLayout>
+              <Field name="name" isRequired label="Name" />
+              <Field name="description" label="Description" />
+              <NextButton />
+            </FormLayout>
+          </FormStep>
+          <FormStep
+            name="members"
+            title="Invite your team"
+          >
+            <FormLayout>
+              <Field
+                name="members"
+                type="textarea"
+                label="Invite people"
+                placeholder="hello@saas-ui.dev, etc"
+                autoFocus
+              />
+              <ButtonGroup>
+                <NextButton />
+                <PrevButton variant="ghost" />
+              </ButtonGroup>
+            </FormLayout>
+          </FormStep>
+          <FormStep name="confirm" title="Confirm">
+            <FormLayout>
+              <Text>Please confirm that your information is correct.</Text>
+              <PropertyList>
+                <Property label="Name" value={<FormValue name="name" />} />
+                <Property
+                  label="Description"
+                  value={<FormValue name="description" />}
+                />
+              </PropertyList>
+              <ButtonGroup>
+                <NextButton />
+                <PrevButton variant="ghost" />
+              </ButtonGroup>
+            </FormLayout>
+          </FormStep>
+
+          <StepperCompleted>
+            <Loader>We are setting up your project, just a moment...</Loader>
+          </StepperCompleted>
+        </FormStepper>
       </FormLayout>
     </StepForm> <EmptyState
   colorScheme="primary"

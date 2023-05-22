@@ -148,6 +148,7 @@ function Greeting({ user }) {
         </div>
       )}
     </div>
+    
   );
 }
 
