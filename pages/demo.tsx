@@ -140,11 +140,7 @@ const HeroSection: React.FC = () => {
             <div >
               Hello {getUserDisplayName(user)}
             </div>
-            <button onClick={onLogout}>Logout</button>
-            <div >Submit API Form</div>
-            <form onSubmit={handleSubmit}>
-              <button type="submit">Upgrade</button>
-            </form>
+          
           </>
         )}
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
