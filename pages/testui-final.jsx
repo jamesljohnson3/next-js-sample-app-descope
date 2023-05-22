@@ -89,6 +89,7 @@ function Greeting({ user }) {
         });
     });
   };
+  
   return (
     <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             <h1>{tableTitle}</h1> {/* Render the dynamic title */}
@@ -122,61 +123,60 @@ function Greeting({ user }) {
           style={{ cursor: 'pointer' }}
         >
           {item.age}🧠 {item.city} - {item.name}
-        </p><StepForm
-          defaultValues={{
-            name: '',
-            email: '',
-            password: '',
-          }}
-          onSubmit={onSubmit}
-        >
-            <FormLayout>
-              <FormStepper>
-                <FormStep
-                  name="project"
-                  title="Create"
-                >
-                  <FormLayout>
-                    <Field name="name" isRequired label="Name" />
-                    <Field name="description" label="Description" />
-                  </FormLayout>
-                </FormStep>
-                <FormStep
+        </p>
+         <StepForm
+        defaultValues={{
+          name: '',
+          email: '',
+          password: '',
+        }}
+        onSubmit={onSubmit}
+      >
+        <FormLayout>
+          <FormStepper>
+            <FormStep name="project" title="Create">
+              <FormLayout>
+                <Field
+                  name="name"
+                  isRequired
+                  label="Name"
+                  value={item.age} // Set the value prop to {item.age}
+                />
+                <Field name="description" label="Description" />
+              </FormLayout>
+            </FormStep>
+            <FormStep name="members" title="Share">
+              <FormLayout>
+                <Field
                   name="members"
-                  title="Share"
-                >
-                  <FormLayout>
-                    <Field
-                      name="members"
-                      type="textarea"
-                      label="Invite people"
-                      placeholder="hello@saas-ui.dev, etc"
-                      autoFocus />
-                  </FormLayout>
-                </FormStep>
-                <FormStep name="confirm" title="Manage">
-                  <FormLayout>
-                    <Text>Please confirm that your information is correct.</Text>
-                    <PropertyList>
-                      <Property label="Name" value={<FormValue name="name" />} />
-                      <Property
-                        label="Description"
-                        value={<FormValue name="description" />} />
-                    </PropertyList>
-                  </FormLayout>
-                </FormStep>
+                  type="textarea"
+                  label="Invite people"
+                  placeholder="hello@saas-ui.dev, etc"
+                  autoFocus
+                />
+              </FormLayout>
+            </FormStep>
+            <FormStep name="confirm" title="Manage">
+              <FormLayout>
+                <Text>Please confirm that your information is correct.</Text>
+                <PropertyList>
+                  <Property label="Name" value={<FormValue name="name" />} />
+                  <Property label="Description" value={<FormValue name="description" />} />
+                </PropertyList>
+              </FormLayout>
+            </FormStep>
 
-                <StepperCompleted>
-                  <Loader>We are setting up your project, just a moment...</Loader>
-                </StepperCompleted>
-              </FormStepper>
-              <ButtonGroup w="full">
-                <PrevButton variant="ghost" />
-                <Spacer />
-                <NextButton />
-              </ButtonGroup>
-            </FormLayout>
-          </StepForm></>
+            <StepperCompleted>
+              <Loader>We are setting up your project, just a moment...</Loader>
+            </StepperCompleted>
+          </FormStepper>
+          <ButtonGroup w="full">
+            <PrevButton variant="ghost" />
+            <Spacer />
+            <NextButton />
+          </ButtonGroup>
+        </FormLayout>
+      </StepForm></>
       ))}
       
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
