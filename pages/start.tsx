@@ -132,7 +132,7 @@ export default function Home (props: any) {
       dashboard. Make decisions with confidence.
     </p>
     <img
-      className="mt-6 lg:mt-14"
+      className="mt-6 lg:mt-14 max-h-24"
       src="https://i.imgur.com/5JzWVvz.png"
       alt=""
     />
