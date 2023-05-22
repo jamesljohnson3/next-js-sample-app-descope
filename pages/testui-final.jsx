@@ -116,12 +116,13 @@ function Greeting({ user }) {
     
       </Table>
       {postData && postData.map((item) => (
-        <><p
+        <><a
+        href="https://accounts.unlimitpotential.com/testui-final"
           key={item.name}
           style={{ cursor: 'pointer' }}
         >
         🧠 {item.city} - {item.name}
-        </p>
+        </a>
          <StepForm
         defaultValues={{
           name: '',
