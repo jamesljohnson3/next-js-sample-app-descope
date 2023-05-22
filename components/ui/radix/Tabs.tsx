@@ -20,7 +20,7 @@ const Tabs = () => (
 				)}
 			>
 				<div className="py-4 relative h-full ">
-					<div>For you</div>
+					<div>Home</div>
 					<span className="h-1 w-full bg-transparent absolute left-0 bottom-0 rounded-full"></span>
 				</div>
 			</TabsPrimitive.Trigger>

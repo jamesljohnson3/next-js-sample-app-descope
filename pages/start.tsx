@@ -142,7 +142,7 @@ export default function Home (props: any) {
 			<Nav />
 
 				<main className="col-span-5 w-full border-x border-slate-200">
-					<Header title="Home" />
+					<Header title="Unlimited Now" />
 					<SignedIn><Tabs /><Boxui/> </SignedIn>       <SignedOut>  {!authenticated && (
           <Link href="/login" passHref>
             <button>Login</button>
