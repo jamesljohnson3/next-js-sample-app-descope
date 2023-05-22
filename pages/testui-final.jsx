@@ -64,31 +64,29 @@ function Greeting({ user }) {
       console.error('Failed to delete row:', error);
     }
   };
-  const onSubmit = (params) => {
+  const onSubmit = async (params) => {
     console.log(params);
-    return new Promise((resolve, reject) => {
-      fetch('https://hook.us1.make.com/e727pmawescz23ls88greva6s24l9yma', {
-        method: 'POST', // Adjust the HTTP method as needed (e.g., GET, POST, PUT, DELETE)
+    try {
+      const webhookResp = await fetch('https://hook.us1.make.com/3r9qh4vyr9xg0fylcq4kixx8jjkfftzq', {
+        method: 'POST',
         headers: {
-          'Content-Type': 'application/json', // Set the appropriate content type for your API
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(params), // Convert params to JSON string
-      })
-        .then(response => {
-          if (response.ok) {
-            return response.json();
-          } else {
-            throw new Error('API request failed');
-          }
-        })
-        .then(data => {
-          resolve(data);
-        })
-        .catch(error => {
-          reject(error);
-        });
-    });
+        body: JSON.stringify({ phone2: params.phone2, phone: params.phone, userId: params.userId })
+      });
+  
+      const webhookData = await webhookResp.json();
+      console.log(webhookData);
+  
+      if (webhookData.link) {
+        window.location.href = webhookData.link;
+      }
+    } catch (error) {
+      console.error('API request failed:', error);
+      throw error;
+    }
   };
+  
   
   return (
     <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
