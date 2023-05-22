@@ -229,21 +229,7 @@ export default function Home (props: any) {
         <Gate feature="feature1" negate>
           Plan does not have &quot;feature1&quot;
         </Gate>{" "}
-        <Button
-      onClick={() =>
-        modals.open({
-          title: 'Modal step 1',
-          body: 'Step 1',
-          footer: (
-            <>
-              <Button onClick={next}  />
-            </>
-          ),
-        })
-      }
-    >
-      Open modal
-    </Button>
+    
       </div>
 						<Panel title="What's happening" href="/">
 						<Greeting />
