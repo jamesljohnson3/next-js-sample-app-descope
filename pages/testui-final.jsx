@@ -74,46 +74,9 @@ function Greeting({ user }) {
           <Table.Column>Actions</Table.Column>
         </Table.Header>
         <Table.Body>
-          {postData ? (
-            (selectedArray ? selectedArray.galleryImg : postData[0]?.galleryImg || []).map((item) => (
-              <Table.Row
-                key={item.id}
-                onClick={() => handleRowClick(item)}
-                selected={findRowById(item.id) !== null}
-              >
-                <Table.Cell>{item.id}</Table.Cell>
-                <Table.Cell>{item.url}</Table.Cell>
-                <Table.Cell>{item.title}</Table.Cell>
-                <Table.Cell>
-                  <img
-                    src={item.url}
-                    alt={item.title}
-                    className="object-cover w-10 h-10 rounded"
-                  />
-                </Table.Cell>
-                <Table.Cell>
-                  <a href={`https://feed.unlimitpotential.com/edit/${item.id}`} className="mr-2">
-                    Edit
-                  </a>
-                  <button onClick={() => deleteRow(item.id)}>Delete</button>
-                </Table.Cell>
-              </Table.Row>
-            ))
-          ) : (
-            <Table.Row>
-              <Table.Cell colSpan={5}>You are not signed in.</Table.Cell>
-            </Table.Row>
-          )}
+          
         </Table.Body>
-        {postData && (
-          <Table.Pagination
-            shadow
-            noMargin
-            align="center"
-            rowsPerPage={3}
-            onPageChange={(page) => console.log({ page })}
-          />
-        )}
+    
       </Table>
       {postData && postData.map((item) => (
         <p
