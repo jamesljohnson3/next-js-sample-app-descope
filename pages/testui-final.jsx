@@ -87,7 +87,7 @@ function Greeting({ user }) {
           {item.age}🧠 {item.city} - {item.name}  -Click to preview collection
         </p>
       ))}
-      {selectedImage ? (
+      
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={unsafeMetadata.featuredImage}
@@ -99,16 +99,7 @@ function Greeting({ user }) {
             <p className="text-gray-500">Views: {selectedImage.views}</p>
           </div>
         </div>
-      ) : (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          {/* Blank card */}
-          <div className="w-full h-48" />
-          <div className="p-4">
-            <h3 className="text-lg font-medium mb-2">No image selected</h3>
-            <p className="text-gray-500">Please select an image from the table</p>
-          </div>
-        </div>
-      )}
+    
     </div>
     
   );
