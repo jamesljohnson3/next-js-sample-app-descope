@@ -122,34 +122,7 @@ export default function Home (props: any) {
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /><Button
-      onClick={() =>
-        snackbar({
-          title: 'Account created.',
-          description: "We've created your account for you.",
-          status: 'success',
-          duration: 9000,
-          isClosable: true,
-        })
-      }
-    >
-      Show Snackbar
-    </Button> <Button
-      colorScheme="red"
-      onClick={() =>
-        modals.confirm({
-          title: 'Delete user',
-          body: 'Are you sure you want to delete this user?',
-          confirmProps: {
-            colorScheme: 'red',
-            label: 'Delete',
-          },
-          onConfirm: () => {}, // action
-        })
-      }
-    >
-      Delete user
-    </Button> </SignedIn>       <SignedOut>                   <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+					<SignedIn><Tabs /> </SignedIn>       <SignedOut>                   <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
     <StepForm
       defaultValues={{
