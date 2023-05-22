@@ -89,14 +89,10 @@ function Greeting({ user }) {
       
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
-            src={unsafeMetadata.featuredImage}
+            src="https://res.cloudinary.com/unlimitpotential/image/upload/v1682803495/29cc522d-4d91-4fc3-a0b8-3c8d1eafab5e_606c8e791bef161df00079d3_Web_1366_27_2x-p-800_png_r28t9t.png"
             className="object-cover w-full h-48"
           />
-          <div className="p-4">
-            <h3 className="text-lg font-medium mb-2">{selectedImage.title}</h3>
-            <p className="text-gray-500">Likes: {selectedImage.likes}</p>
-            <p className="text-gray-500">Views: {selectedImage.views}</p>
-          </div>
+         
         </div>
     
     </div>
