@@ -149,7 +149,7 @@ export default function Home (props: any) {
       }
     >
       Delete user
-    </Button> </SignedIn>       <SignedOut>   
+    </Button> </SignedIn>       <SignedOut>        <div className="max-w-3xl mx-auto">
     <StepForm
       defaultValues={{
         name: '',
@@ -210,7 +210,7 @@ export default function Home (props: any) {
           </StepperCompleted>
         </FormStepper>
       </FormLayout>
-    </StepForm> <EmptyState
+    </StepForm></div> <EmptyState
   colorScheme="primary"
   icon=""
   title="No customers yet"
