@@ -122,7 +122,7 @@ function Greeting({ user }) {
           key={item.name}
           style={{ cursor: 'pointer' }}
         >
-          {item.age}🧠 {item.city} - {item.name}
+        🧠 {item.city} - {item.name}
         </p>
          <StepForm
         defaultValues={{
@@ -142,7 +142,7 @@ function Greeting({ user }) {
                   label="Name"
                   value={item.age} // Set the value prop to {item.age}
                 />
-                <Field name="description" label="Description" />
+                <Field name="description" label="Enter slug" placeholder="yoururl.com/custom-slug" />
               </FormLayout>
             </FormStep>
             <FormStep name="members" title="Share">
