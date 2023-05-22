@@ -34,7 +34,7 @@ import {
 import {
 	createTheme,
 	NextUIProvider } from "@nextui-org/react";
-  
+  import Boxui from './testui-final';
   const lightTheme = createTheme({
 	type: "light",
 	theme: {
@@ -122,7 +122,7 @@ export default function Home (props: any) {
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /> </SignedIn>       <SignedOut>                   <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+					<SignedIn><Tabs /><Boxui/> </SignedIn>       <SignedOut>                   <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
     <StepForm
       defaultValues={{
