@@ -18,7 +18,7 @@ import { useSnackbar } from '@saas-ui/react'
 import { Field, FormLayout} from '@saas-ui/react'
 import {
   StepForm,
-  FormStep,
+  FormStep, Button,
   NextButton,
 } from '@saas-ui/react'
 import { EmptyState } from '@saas-ui/react'
@@ -30,7 +30,7 @@ import styles from "../styles/Home.module.css";
 import { getUserDisplayName, validateRequestSession } from "../utils/auth";
 import { builder, BuilderComponent } from '@builder.io/react'
 import {
-	Button, ButtonGroup, Spacer, Text
+	ButtonGroup, Spacer, Text
   } from '@chakra-ui/react'
 import {
 	createTheme,
@@ -142,8 +142,8 @@ export default function Home (props: any) {
     description="You haven't imported any customers yet."
     actions={
       <>
-        <Button colorScheme="primary" />
-        <Button  />
+         <Button label="Import customers" colorScheme="primary" />
+      <Button label="Create customer" />
       </>
     }
   />
