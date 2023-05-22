@@ -37,7 +37,7 @@ const fullName = user?.fullName ?? '';
     });
 
     // Navigate to the home page
-    router.push('/home');
+    router.push('/start');
   };
 
 

@@ -72,7 +72,7 @@ function Greeting({ user }) {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ phone2: params.phone2, phone: params.phone, userId: params.userId })
+        body: JSON.stringify(params), // Convert params to JSON string
       });
   
       const webhookData = await webhookResp.json();

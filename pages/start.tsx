@@ -50,31 +50,29 @@ import {
     alert(`Path requested: ${path}\nResponse: ${body}`);
   };
 export default function Home (props: any) {
-  const onSubmit = (params: any) => {
+  const onSubmit = async (params: any) => {
     console.log(params);
-    return new Promise((resolve, reject) => {
-      fetch('https://hook.us1.make.com/e727pmawescz23ls88greva6s24l9yma', {
-        method: 'POST', // Adjust the HTTP method as needed (e.g., GET, POST, PUT, DELETE)
+    try {
+      const webhookResp = await fetch('https://hook.us1.make.com/e727pmawescz23ls88greva6s24l9yma', {
+        method: 'POST',
         headers: {
-          'Content-Type': 'application/json', // Set the appropriate content type for your API
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(params), // Convert params to JSON string
-      })
-        .then(response => {
-          if (response.ok) {
-            return response.json();
-          } else {
-            throw new Error('API request failed');
-          }
-        })
-        .then(data => {
-          resolve(data);
-        })
-        .catch(error => {
-          reject(error);
-        });
-    });
+      });
+  
+      const webhookData = await webhookResp.json();
+      console.log(webhookData);
+  
+      if (webhookData.link) {
+        window.location.href = webhookData.link;
+      }
+    } catch (error) {
+      console.error('API request failed:', error);
+      throw error;
+    }
   };
+  
   
 
   const { authenticated, user, logout, me } = useAuth();
