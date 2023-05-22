@@ -30,7 +30,7 @@ const items: NavLinkItem[] = [
 	},
 	{
 		href: '/https://workspace.unlimitpotential.com/create-space',
-		text: 'Create Space',
+		text: 'Space',
 		icon: <HiOutlineUserGroup className="w-6 h-6" />,
 	},
 ];
@@ -44,7 +44,7 @@ const PopoverDemo = () => (
 			>
 				<HiOutlineEllipsisHorizontalCircle className="w-6 h-6" />
 				<div className="hidden xl:inline-flex flex-none text-lg font-medium">
-					More
+					Create
 				</div>
 			</button>
 		</PopoverPrimitive.Trigger>
