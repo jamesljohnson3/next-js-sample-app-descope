@@ -143,8 +143,14 @@ export default function Home (props: any) {
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Home" />
-					<SignedIn><Tabs /><Boxui/> </SignedIn>       <SignedOut>   
-  <div className="grid grid-flow-col rounded-3xl bg-layer-2 p-8 md:col-span-2" >
+					<SignedIn><Tabs /><Boxui/> </SignedIn>       <SignedOut>  {!authenticated && (
+          <Link href="/login" passHref>
+            <button>Login</button>
+          </Link>
+        )}
+        {authenticated && (
+          <>
+<div className="grid grid-flow-col rounded-3xl bg-layer-2 p-8 md:col-span-2" >
   <div><h2 className="bg-gradient-to-r bg-clip-text text-2xl font-semibold text-gradient gradient-cotton-candy md:text-3xl">
       You're in control.
     </h2>
@@ -226,7 +232,9 @@ export default function Home (props: any) {
           <NextButton />
         </ButtonGroup>
       </FormLayout>
-    </StepForm></div> 
+    </StepForm></div>           </>
+        )} 
+  
 </SignedOut>   
 
 				</main>
