@@ -43,20 +43,7 @@ const fullName = user?.fullName ?? '';
 
   
   return (
-    <div className={TweetFormStyles({ width })}><div className="rounded-3xl bg-layer-2 p-8 md:col-span-2">
-    <h2 className="bg-gradient-to-r bg-clip-text text-2xl font-semibold text-gradient gradient-cotton-candy md:text-3xl">
-      You're in control.
-    </h2>
-    <p className="mt-4 text-lg">
-      All of your stats are displayed in an easy to understand
-      dashboard. Make decisions with confidence.
-    </p>
-    <img
-      className="mt-6 lg:mt-14"
-      src="https://i.imgur.com/5JzWVvz.png"
-      alt=""
-    />
-  </div>
+    <div className={TweetFormStyles({ width })}>
       <Avatar src={profileImageUrl} alt={fullName} initials="RQ" />
       <form className="flex flex-col flex-1 gap-y-4">
         <div className="flex flex-1">
