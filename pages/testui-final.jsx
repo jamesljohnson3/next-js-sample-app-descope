@@ -81,10 +81,9 @@ function Greeting({ user }) {
       {postData && postData.map((item) => (
         <p
           key={item.name}
-          onClick={() => handleArraySelect(item)}
           style={{ cursor: 'pointer' }}
         >
-          {item.age}🧠 {item.city} - {item.name}  -Click to preview collection
+          {item.age}🧠 {item.city} - {item.name} 
         </p>
       ))}
       
