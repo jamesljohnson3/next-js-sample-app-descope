@@ -2,7 +2,7 @@ import * as TabsPrimitive from '@radix-ui/react-tabs';
 import cx from 'classnames';
 import TweetForm from '../../ui/TweetForm';
 import Feed from '../../ui/Feed';
-
+import Box from './testui-final'
 const Tabs = () => (
 	<TabsPrimitive.Root className="TabsRoot" defaultValue="tab1">
 		<TabsPrimitive.List
@@ -61,7 +61,7 @@ const Tabs = () => (
 		</TabsPrimitive.Content>
 		<TabsPrimitive.Content value="tab2" className="TabsContent ">
 			<TweetForm width="default" />
-			Hello
+<Box/>
 		</TabsPrimitive.Content>
 		<TabsPrimitive.Content value="tab3" className="TabsContent ">
 			<TweetForm width="default" />
