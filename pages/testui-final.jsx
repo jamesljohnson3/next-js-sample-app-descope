@@ -138,7 +138,7 @@ function Greeting({ user }) {
                   name="name"
                   isRequired
                   placeholder="Your Asset ID"
-                  label="auto-generated"
+                  label="Your tracking Id auto-generated"
                   value={item.age} // Set the value prop to {item.age}
                 />
                 <Field name="description" label="Enter custom slug or leave blank" placeholder="yoururl.com/custom-slug" />
