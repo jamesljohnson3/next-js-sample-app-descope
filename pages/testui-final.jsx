@@ -1,6 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from '@nextui-org/react';
 import { withUser } from '@clerk/nextjs';
+import {
+	Button, ButtonGroup, Spacer, Text
+  } from '@chakra-ui/react'
+  import { Field, FormLayout} from '@saas-ui/react'
+
+  import {
+    StepForm,
+    FormStep,
+    NextButton,
+  } from '@saas-ui/react'
+  import { EmptyState } from '@saas-ui/react'
+  import { FormStepper, FormValue, Loader, ModalsProvider, PrevButton, Property, PropertyList, StepperCompleted, useModals } from '@saas-ui/react'
+  import { useSnackbar } from '@saas-ui/react'
+
 
 function Greeting({ user }) {
   const [selectedArray, setSelectedArray] = useState(null);
@@ -79,12 +93,66 @@ function Greeting({ user }) {
     
       </Table>
       {postData && postData.map((item) => (
-        <p
+        <><p
           key={item.name}
           style={{ cursor: 'pointer' }}
         >
-          {item.age}🧠 {item.city} - {item.name} 
-        </p>
+          {item.age}🧠 {item.city} - {item.name}
+        </p><StepForm
+          defaultValues={{
+            name: '',
+            email: '',
+            password: '',
+          }}
+          onSubmit={onSubmit}
+        >
+            <FormLayout>
+              <FormStepper>
+                <FormStep
+                  name="project"
+                  title="Create"
+                >
+                  <FormLayout>
+                    <Field name="name" isRequired label="Name" />
+                    <Field name="description" label="Description" />
+                  </FormLayout>
+                </FormStep>
+                <FormStep
+                  name="members"
+                  title="Share"
+                >
+                  <FormLayout>
+                    <Field
+                      name="members"
+                      type="textarea"
+                      label="Invite people"
+                      placeholder="hello@saas-ui.dev, etc"
+                      autoFocus />
+                  </FormLayout>
+                </FormStep>
+                <FormStep name="confirm" title="Manage">
+                  <FormLayout>
+                    <Text>Please confirm that your information is correct.</Text>
+                    <PropertyList>
+                      <Property label="Name" value={<FormValue name="name" />} />
+                      <Property
+                        label="Description"
+                        value={<FormValue name="description" />} />
+                    </PropertyList>
+                  </FormLayout>
+                </FormStep>
+
+                <StepperCompleted>
+                  <Loader>We are setting up your project, just a moment...</Loader>
+                </StepperCompleted>
+              </FormStepper>
+              <ButtonGroup w="full">
+                <PrevButton variant="ghost" />
+                <Spacer />
+                <NextButton />
+              </ButtonGroup>
+            </FormLayout>
+          </StepForm></>
       ))}
       
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
