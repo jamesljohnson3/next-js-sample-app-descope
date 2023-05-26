@@ -117,7 +117,7 @@ function Greeting({ user }) {
       </Table>
       {postData && postData.map((item) => (
         <><a
-        href="https://accounts.unlimitpotential.com/testui-final"
+        href="https://spaces.unlimitpotential.com/edit-testing"
           key={item.name}
           style={{ cursor: 'pointer' }}
         >
