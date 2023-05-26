@@ -32,8 +32,44 @@ function UploadForm() {
   const [nameOnCard, setNameOnCard] = useState('');
   const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(deliveryMethods[0]);
 
+ 
   const uppy = useUppy(() => {
-    // Uppy configuration
+    const instance = new Uppy({
+      autoProceed: true
+    });
+
+    instance.on('complete', (result) => {
+      console.log(result);
+    });
+
+    instance.use(Transloadit, {
+      params: {
+        auth: { key: TRANSLOADIT_KEY },
+        template_id: TEMPLATE_ID,
+      },
+    });
+
+    instance.on('transloadit:complete', (assembly) => {
+      const files = assembly.results[':original'];
+      setUploadedFiles(files);
+    });
+
+    instance.on('transloadit:error', (error) => {
+      console.error(error);
+    });
+
+    instance.on('complete', (result) => {
+      if (result.successful && result.successful.length > 0) {
+        const { uploadURLs } = result.successful[0];
+        if (uploadURLs && uploadURLs.length > 0) {
+          const { url } = uploadURLs[0];
+          setUploadedImageUrl(url);
+          console.log('Upload complete! We\'ve uploaded these files: ', result.successful);
+        }
+      }
+    });
+
+    return instance;
   });
 
   const handleFormSubmit = async (e) => {
