@@ -77,13 +77,16 @@ function UploadForm() {
     e.preventDefault();
 
     try {
+           // Update uploadedFiles state with the files
+      const files = uppy.getFiles();
+      setUploadedFiles(files);
       const response = await fetch('https://hook.us1.make.com/u86xn8shxxnyc2khlghth7ck9dctzb7m', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          result: uploadedFiles,
+            result: uploadedFiles.map((file) => ({ id: file.id, url: file.uploadURLs[0].url })),
         }),
       });
 
