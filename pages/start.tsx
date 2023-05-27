@@ -140,11 +140,7 @@ export default function Home (props: any) {
       <>
         	<Nav />
           </>
-		{!authenticated && (
-          <Link href="/login" passHref>
-            <button>Login</button>
-          </Link>
-        )}
+
        
 
 				<main className="col-span-5 w-full border-x border-slate-200">
