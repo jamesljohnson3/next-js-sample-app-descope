@@ -4,6 +4,7 @@ import PopoverDemo from '../ui/radix/PopoverDemo';
 import NavItem from './NavItem';
 import AccountNavItem from './AccountNavItem';
 import { Image } from '@nextui-org/react';
+import { UserButton,  useUser, SignedIn, SignedOut } from "@clerk/clerk-react";
 
 import { SiTwitter } from 'react-icons/si';
 import {
@@ -62,6 +63,7 @@ const Nav = () => (
 				<Image src="https://res.cloudinary.com/unlimitednow/image/upload/v1673587332/favicon_upb50k.png"   alt="gallery"
       width={80}
       height={60} />
+	
 				</NavItem>
 				{items.map(({ href, text, icon }, i) => (
 					<div
@@ -69,12 +71,12 @@ const Nav = () => (
 						// value={`item-${i + 1}`}
 						className="rounded-lg focus:outline-none overflow-hidden"
 					>
-						<NavItem href={href} width="inline" size="default">
+					  <SignedIn>	<NavItem href={href} width="inline" size="default">
 							{icon}
 							<div className="hidden xl:inline-flex flex-none text-lg font-medium">
 								{text}
 							</div>
-						</NavItem>
+						</NavItem></SignedIn>
 					</div>
 				))}
 				<PopoverDemo />
