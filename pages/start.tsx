@@ -145,13 +145,7 @@ export default function Home (props: any) {
             <button>Login</button>
           </Link>
         )}
-        {authenticated && (
-          <>
-        
-        
-        hello
-          </>
-        )}
+       
 
 				<main className="col-span-5 w-full border-x border-slate-200">
 					<Header title="Unlimited Now" />
