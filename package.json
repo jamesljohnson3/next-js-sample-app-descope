@@ -35,6 +35,7 @@
     "@mantine/spotlight": "^5.10.4",
     "@mantine/tiptap": "^5.10.4",
     "@metamask/eth-sig-util": "^5.0.2",
+    "@microlink/react": "^5.5.15",
     "@next/font": "^13.1.6",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@prisma/client": "^4.13.0",
