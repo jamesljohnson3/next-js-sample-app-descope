@@ -137,6 +137,9 @@ export default function Home (props: any) {
 			</Head>   
 <NextUIProvider theme={lightTheme}>
 			<div className="min-h-screen flex max-w-7xl mx-auto xl:grid xl:grid-cols-10 gap-5">
+      <>
+        	<Nav />
+          </>
 		{!authenticated && (
           <Link href="/login" passHref>
             <button>Login</button>
@@ -144,7 +147,9 @@ export default function Home (props: any) {
         )}
         {authenticated && (
           <>
-        	<Nav />
+        
+        
+        hello
           </>
         )}
 
