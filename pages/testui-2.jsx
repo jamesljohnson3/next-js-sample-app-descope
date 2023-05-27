@@ -21,7 +21,7 @@ function Greeting() {
                 </li>
               ))}
               {galleryImgs.map((item) => (
-                <p key={item.name}>🧠 {item.city} - {item.name}</p>
+                <><p key={item.name}>🧠 {item.city} - {item.name}</p><Microlink url='https://www.netflix.com/title/80057281' fetchData /></>
               ))}
             </div>
           );
