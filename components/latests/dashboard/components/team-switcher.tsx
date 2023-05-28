@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { Check, ChevronsUpDown, PlusCircle } from "lucide-react"
+import { ClerkProvider, useUser, SignIn, SignedOut, useClerk } from '@clerk/nextjs'
 
 import { cn } from "../../../../lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "../../../../components/ui/avatar"
@@ -31,6 +32,28 @@ import {
   SelectValue,
 } from "../../../../components/ui/select"
 
+
+
+interface PostData {
+  index: number;
+  id: string;
+  featuredImage: string;
+  title: string;
+  desc: string;
+  date: string;
+  href: string;
+  commentCount: number;
+  viewedCount: number;
+  readingTime: number;
+  bookmark: { count: number; isBookmarked: boolean };
+  like: { count: number; isLiked: boolean };
+  authorId: number;
+  categoriesId: number[];
+  postType: string;
+  galleryImgs: string[];
+  company:string[];
+  country:string[];
+}
 const groups = [
   {
     label: "Personal Account",
@@ -68,6 +91,17 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   const [selectedTeam, setSelectedTeam] = React.useState<Team>(
     groups[0].teams[0]
   )
+  const { isLoaded, isSignedIn, user } = useUser()
+
+  if (!isLoaded || !isSignedIn) {
+    return null
+  }
+
+
+  let postData: PostData | null = null;
+  if (user && user.unsafeMetadata) {
+    postData = user.unsafeMetadata as unknown as PostData;
+  }
 
   return (
     <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
