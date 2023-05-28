@@ -1,3 +1,4 @@
+// eslint-disable-next-line react-hooks/rules-of-hooks
 import { ClerkProvider, useUser, SignIn, SignedOut, useClerk } from '@clerk/nextjs'
 import * as React from "react"
 import { Check, ChevronsUpDown, PlusCircle } from "lucide-react"
