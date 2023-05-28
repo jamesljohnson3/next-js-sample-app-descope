@@ -102,6 +102,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   if (user && user.unsafeMetadata) {
     postData = user.unsafeMetadata as unknown as PostData;
   }
+  const { signOut } = useClerk();
 
   return (
     <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
@@ -122,7 +123,16 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
               />
               <AvatarFallback>SC</AvatarFallback>
             </Avatar>
-            {selectedTeam.label}
+            {postData ? (
+        <>         <p> 🧠 {postData.title} </p>
+
+ </>
+        ) : (
+          <>
+            <p>You are not signed in.</p>
+          </>
+        )}
+
             <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
