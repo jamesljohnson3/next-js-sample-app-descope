@@ -106,7 +106,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   };
 
   const findRowById = (id: string) => {
-    const selectedRow = selectedArray ? selectedArray.galleryImgs.find((row) => row === id) : null;
+    const selectedRow = selectedArray ? selectedArray.galleryImgs.find((row: string) => row === id) : null;
     return selectedRow;
   };
 
