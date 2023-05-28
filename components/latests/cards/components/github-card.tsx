@@ -18,7 +18,6 @@ import {
   DropdownMenuTrigger,
 } from "../../../../components/ui/dropdown-menu"
 import { Separator } from "../../../../components/ui/separator"
-import { ButtonGroup } from "@knocklabs/react-notification-feed"
 
 export function DemoGithub() {
   return (
@@ -32,10 +31,7 @@ export function DemoGithub() {
           </CardDescription>
         </div>
         <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
-          <ButtonGroup className="px-3">
-            <Star className="mr-2 h-4 w-4" />
-            Star
-          </ButtonGroup>
+          
           <Separator orientation="vertical" className="h-[20px]" />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
