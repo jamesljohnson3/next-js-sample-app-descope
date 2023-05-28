@@ -187,7 +187,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
           <p>You are not signed in.</p>
         </>
       )}
-      {findRowById(postData?.id ?? '')}
+     
     </>
   )
 }
