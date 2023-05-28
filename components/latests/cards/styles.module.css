@@ -1,6 +1,8 @@
-[data-section="cards"] {
+.section-cards[data-section="cards"] {
   --background: 0 0% 100%;
   --foreground: 222.2 47.4% 11.2%;
+
+
 
   --muted: 214 95% 93%;
   --muted-foreground: 215.4 16.3% 46.9%;
@@ -30,7 +32,6 @@
 
   --radius: 1.2rem;
 }
-
 .dark [data-section="cards"] {
   --background: 224 71% 4%;
   --foreground: 213 31% 91%;
