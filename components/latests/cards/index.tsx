@@ -10,7 +10,7 @@ import { DemoPaymentMethod } from "./components/payment-method"
 import { DemoReportAnIssue } from "./components/report-an-issue"
 import { DemoShareDocument } from "./components/share-document"
 import { DemoTeamMembers } from "./components/team-members"
-import "./styles.css"
+import "./cards.module.styles.css"
 import Image from "next/image"
 
 
