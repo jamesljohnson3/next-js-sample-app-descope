@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../ui/card';
+import Card from '../ui/card2';
 import CardHeader from '../ui/card-header';
 import Divider from '../ui/divider';
 import PersonalSign from './personal-sign';

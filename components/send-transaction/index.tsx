@@ -4,7 +4,7 @@ import FormButton from '../ui/form-button';
 import Link from '../../images/link.svg';
 import Spacer from '../ui/spacer';
 import FormInput from '../ui/form-input';
-import Card from '../ui/card';
+import Card from '../ui/card2';
 import CardHeader from '../ui/card-header';
 import TransactionHistory from '../ui/transaction-history';
 import ErrorText from '../ui/error';

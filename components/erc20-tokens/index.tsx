@@ -3,7 +3,7 @@ import TransferToken from './transfer-token';
 import MintToken from './mint-token';
 import TokenBalance from './token-balance';
 import Divider from '../ui/divider';
-import Card from '../ui/card';
+import Card from '../ui/card2';
 import CardHeader from '../ui/card-header';
 
 export const Erc20Tokens = () => {
