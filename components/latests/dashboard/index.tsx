@@ -51,7 +51,7 @@ export default function DashboardPage() {
               <CalendarDateRangePicker />
               <Button size="sm">
                 <Download className="mr-2 h-4 w-4" />
-                Download
+                Update Collection
               </Button>
             </div>
           </div>
