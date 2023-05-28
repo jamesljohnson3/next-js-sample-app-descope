@@ -4,7 +4,7 @@ import GetWalletInfo from './get-info';
 import RequestUserInfo from './request-user-info';
 import ShowUI from './show-ui';
 import Divider from '../ui/divider';
-import Card from '../ui/card';
+import Card from '../ui/card2';
 import CardHeader from '../ui/card-header';
 
 const WalletMethods = () => {

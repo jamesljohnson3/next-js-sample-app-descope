@@ -3,7 +3,7 @@ import Divider from '../ui/divider';
 import Loading from '../../images/loading.svg';
 import Network from '../network';
 import CardLabel from '../ui/card-label';
-import Card from '../ui/card';
+import Card from '../ui/card2';
 import CardHeader from '../ui/card-header';
 import { Networks } from '../../utils/networks';
 import { useUser } from '../../contexts/UserContext';
