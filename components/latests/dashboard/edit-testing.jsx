@@ -9,6 +9,7 @@ import '@uppy/status-bar/dist/style.css';
 import '@uppy/drag-drop/dist/style.css';
 import { RadioGroup } from '@headlessui/react';
 import { useUser, SignIn, SignedIn, SignedOut, withUser, useClerk } from '@clerk/nextjs';
+import Box2 from "./testui-2";
 
 const TRANSLOADIT_KEY = '5fbf6af63e0e445abcc83a050048a887';
 const TEMPLATE_ID = '9e9d24fbce8146369ce9faab869bfba1';
@@ -106,6 +107,7 @@ function UploadForm() {
   return (
     <>
     Uppy Transloadit Test
+    <Box2/>
     <DragDrop uppy={uppy} />
     <form className="needs-validation" onSubmit={handleFormSubmit}>
         <div className="transloadit-drop-area">
