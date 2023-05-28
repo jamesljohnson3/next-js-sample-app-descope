@@ -93,86 +93,87 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
     postData = user.unsafeMetadata as unknown as PostData;
   }
 
-  return (
-    <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
-      <Popover open={open} onOpenChange={setOpen}>
-        <PopoverTrigger asChild>
-          <Button
-            variant="outline"
-            size="sm"
-            role="combobox"
-            aria-expanded={open}
-            aria-label="Select a team"
-            className={cn("w-[200px] justify-between", className)}
-          >
-            <Avatar className="mr-2 h-5 w-5">
-              <AvatarImage
-                src={`https://avatar.vercel.sh/${selectedTeam.value}.png`}
-                alt={selectedTeam.label}
-              />
-              <AvatarFallback>SC</AvatarFallback>
-            </Avatar>
-            {postData ? (
-        <>         <p> 🧠 {postData.title} </p>
+  return ( <>   {postData ? (
+    <>        <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <Button
+          variant="outline"
+          size="sm"
+          role="combobox"
+          aria-expanded={open}
+          aria-label="Select a team"
+          className={cn("w-[200px] justify-between", className)}
+        >
+          <Avatar className="mr-2 h-5 w-5">
+            <AvatarImage
+              src={postData.featuredImage}
+              alt="avatar"
+            />
+            <AvatarFallback>SC</AvatarFallback>
+          </Avatar>
+          {postData.title}
 
- </>
-        ) : (
-          <>
-            <p>You are not signed in.</p>
-          </>
-        )}
-
-            <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
-          </Button>
-        </PopoverTrigger>
-        <PopoverContent className="w-[200px] p-0">
-         
-        </PopoverContent>
-      </Popover>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Create team</DialogTitle>
-          <DialogDescription>
-            Add a new team to manage products and customers.
-          </DialogDescription>
-        </DialogHeader>
-        <div>
-          <div className="space-y-4 py-2 pb-4">
-            <div className="space-y-2">
-              <Label htmlFor="name">Team name</Label>
-              <Input id="name" placeholder="Acme Inc." />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="plan">Subscription plan</Label>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select a plan" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="free">
-                    <span className="font-medium">Free</span> -{" "}
-                    <span className="text-muted-foreground">
-                      Trial for two weeks
-                    </span>
-                  </SelectItem>
-                  <SelectItem value="pro">
-                    <span className="font-medium">Pro</span> -{" "}
-                    <span className="text-muted-foreground">
-                      $9/month per user
-                    </span>
-                  </SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
+          <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-[200px] p-0">
+       
+      </PopoverContent>
+    </Popover>
+    <DialogContent>
+      <DialogHeader>
+        <DialogTitle>Create team</DialogTitle>
+        <DialogDescription>
+          Add a new team to manage products and customers.
+        </DialogDescription>
+      </DialogHeader>
+      <div>
+        <div className="space-y-4 py-2 pb-4">
+          <div className="space-y-2">
+            <Label htmlFor="name">Team name</Label>
+            <Input id="name" placeholder="Acme Inc." />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="plan">Subscription plan</Label>
+            <Select>
+              <SelectTrigger>
+                <SelectValue placeholder="Select a plan" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="free">
+                  <span className="font-medium">Free</span> -{" "}
+                  <span className="text-muted-foreground">
+                    Trial for two weeks
+                  </span>
+                </SelectItem>
+                <SelectItem value="pro">
+                  <span className="font-medium">Pro</span> -{" "}
+                  <span className="text-muted-foreground">
+                    $9/month per user
+                  </span>
+                </SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
-        <DialogFooter>
-          <Button variant="outline" onClick={() => setShowNewTeamDialog(false)}>
-            Cancel
-          </Button>
-          <Button type="submit">Continue</Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+      </div>
+      <DialogFooter>
+        <Button variant="outline" onClick={() => setShowNewTeamDialog(false)}>
+          Cancel
+        </Button>
+        <Button type="submit">Continue</Button>
+      </DialogFooter>
+    </DialogContent>
+  </Dialog>
+
+
+</>
+    ) : (
+      <>
+        <p>You are not signed in.</p>
+      </>
+    )}
+</>
   )
 }
