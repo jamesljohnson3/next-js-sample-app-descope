@@ -65,11 +65,6 @@ interface TeamSwitcherProps extends PopoverTriggerProps {
 }
 
 export default function TeamSwitcher({ className }: TeamSwitcherProps) {
-  const [open, setOpen] = React.useState(false)
-  const [showNewTeamDialog, setShowNewTeamDialog] = React.useState(false)
-  const [selectedTeam, setSelectedTeam] = React.useState<Team>(
-    groups[0].teams[0]
-  )
   const { isLoaded, isSignedIn, user } = useUser()
 
   if (!isLoaded || !isSignedIn) {
@@ -83,6 +78,12 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   }
 
   const postData: PostData | null = clerkUser.unsafeMetadata as unknown as PostData | null;
+
+  const [open, setOpen] = React.useState(false)
+  const [showNewTeamDialog, setShowNewTeamDialog] = React.useState(false)
+  const [selectedTeam, setSelectedTeam] = React.useState<Team>(
+    groups[0].teams[0]
+  )
 
   const [selectedArray, setSelectedArray] = React.useState<PostData | null>(null);
   const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
@@ -105,7 +106,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   };
 
   const findRowById = (id: string) => {
-    const selectedRow = selectedArray ? selectedArray.galleryImgs.find((row: string) => row === id) : null;
+    const selectedRow = selectedArray ? selectedArray.galleryImgs.find((row) => row === id) : null;
     return selectedRow;
   };
 
