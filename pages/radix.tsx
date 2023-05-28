@@ -1,5 +1,4 @@
 import { AppleMusicDemo } from "../components/apple-music-demo"
-import DashboardPage from "../components/dashboard"
 import {
 	createTheme,
 	NextUIProvider } from "@nextui-org/react";
@@ -15,7 +14,7 @@ export default function IndexPage() {
     return (
         <><NextUIProvider theme={lightTheme}>
 
-            <AppleMusicDemo />     <DashboardPage /></NextUIProvider> 
+            <AppleMusicDemo />    </NextUIProvider> 
       
         </>
       )
