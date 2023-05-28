@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { Check, ChevronsUpDown, PlusCircle } from "lucide-react"
-import { ClerkProvider, useUser, SignIn, SignedOut, useClerk } from '@clerk/nextjs'
+import {  useUser} from '@clerk/nextjs'
 
 import { cn } from "../../../../lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "../../../../components/ui/avatar"
@@ -92,7 +92,6 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   if (user && user.unsafeMetadata) {
     postData = user.unsafeMetadata as unknown as PostData;
   }
-  const { signOut } = useClerk();
 
   return (
     <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
