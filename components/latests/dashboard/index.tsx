@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Activity, CreditCard, DollarSign, Download, Users } from "lucide-react"
 
 import { Button } from "../../../components/ui/button"
-
+import Box from "./edit-testing";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../components/ui/tabs"
 import { CalendarDateRangePicker } from "./components/date-range-picker"
 import { MainNav } from "./components/main-nav"
@@ -70,7 +70,7 @@ export default function DashboardPage() {
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-               
+               <Box/>
               </div>
             </TabsContent>
           </Tabs>
