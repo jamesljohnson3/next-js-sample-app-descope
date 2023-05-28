@@ -66,14 +66,17 @@ interface TeamSwitcherProps extends PopoverTriggerProps {
 
 export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   const { isLoaded, isSignedIn, user } = useUser()
-  const { isLoaded: clerkLoaded, user: clerkUser } = useClerk();
 
-  if (!isLoaded || !isSignedIn || !clerkLoaded || !clerkUser) {
-    return null;
+  if (!isLoaded || !isSignedIn) {
+    return null
   }
 
-  const postData: PostData | null = clerkUser.unsafeMetadata as unknown as PostData | null;
 
+
+  let postData: PostData | null = null;
+  if (user && user.unsafeMetadata) {
+    postData = user.unsafeMetadata as unknown as PostData;
+  }
   const [open, setOpen] = React.useState(false)
   const [showNewTeamDialog, setShowNewTeamDialog] = React.useState(false)
   const [selectedTeam, setSelectedTeam] = React.useState<Team>(
