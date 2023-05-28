@@ -66,14 +66,9 @@ interface TeamSwitcherProps extends PopoverTriggerProps {
 
 export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   const { isLoaded, isSignedIn, user } = useUser()
-
-  if (!isLoaded || !isSignedIn) {
-    return null
-  }
-
   const { isLoaded: clerkLoaded, user: clerkUser } = useClerk();
 
-  if (!clerkLoaded || !clerkUser) {
+  if (!isLoaded || !isSignedIn || !clerkLoaded || !clerkUser) {
     return null;
   }
 
@@ -191,5 +186,5 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
       )}
       {findRowById(postData?.id ?? '')}
     </>
-  );
+  )
 }
