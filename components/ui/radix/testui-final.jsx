@@ -16,7 +16,7 @@ function Greeting({ user }) {
   const handleArraySelect = (array) => {
     setSelectedArray(array);
     setSelectedImage(null);
-    setTableTitle(array.name); // Update the table title when a new array is selected
+    setTableTitle(array.city); // Update the table title when a new array is selected
 
   };
 
@@ -121,7 +121,7 @@ function Greeting({ user }) {
           onClick={() => handleArraySelect(item)}
           style={{ cursor: 'pointer' }}
         >
-          {item.age}🧠 {item.city} - {item.name}  -Click to preview collection
+          Preview collection
         </p>
       ))}
       {selectedImage ? (
