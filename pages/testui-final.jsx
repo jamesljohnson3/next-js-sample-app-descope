@@ -121,7 +121,7 @@ function Greeting({ user }) {
           key={item.name}
           style={{ cursor: 'pointer' }}
         >
-        🧠 Preview Collection
+        Edit
         </a>
          <StepForm
         defaultValues={{
