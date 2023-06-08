@@ -106,7 +106,7 @@ function UploadForm() {
 
   return (
     <>
-          <div>
+   
 
     <Box2/>   <div                 className="relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
 >Uppy Transloadit Test</div> 
@@ -196,7 +196,7 @@ function UploadForm() {
 
         <button type="submit">Upload</button>
       </form>
-    <StatusBar uppy={uppy} /></div>
+    <StatusBar uppy={uppy} />
   </>
   );
 }
