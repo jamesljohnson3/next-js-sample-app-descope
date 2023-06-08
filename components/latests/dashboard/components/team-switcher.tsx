@@ -99,17 +99,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
     <>        <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button   ref={(ref: { current: HTMLElement | null; }) => {
-    if (ref) {
-      // Add your logic here if needed
-      // ...
-      // Assign the ref to the desired element
-      ref.current = document.getElementById(`https://connect.unlimitpotential.com/${username}`);
-    }
-  }}
-          variant="outline"
-          size="sm"
-          role="combobox"
+        <Link  href={`https://connect.unlimitpotential.com/${username}`}
           aria-expanded={open}
           aria-label="Select a team"
           className={cn("w-[200px] justify-between", className)}
@@ -124,7 +114,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
           {postData.title}
 
           <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
-        </Button>
+        </Link>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
        
