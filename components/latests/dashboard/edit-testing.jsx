@@ -106,7 +106,7 @@ function UploadForm() {
 
   return (
     <>
-          <div className="max-w-2xl mx-auto px-4 space-y-12 sm:px-6 lg:max-w-7xl lg:space-y-0 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div>
 
     <Box2/>   <div                 className="relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
 >Uppy Transloadit Test</div> 
