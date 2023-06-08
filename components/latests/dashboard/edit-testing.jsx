@@ -106,8 +106,8 @@ function UploadForm() {
 
   return (
     <>
-    Uppy Transloadit Test
-    <Box2/>
+
+    <Box2/>    Uppy Transloadit Test
     <DragDrop uppy={uppy} />
     <form className="needs-validation" onSubmit={handleFormSubmit}>
         <div className="transloadit-drop-area">
