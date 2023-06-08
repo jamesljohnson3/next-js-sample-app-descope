@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Check, ChevronsUpDown, PlusCircle } from "lucide-react"
 import {  useUser} from '@clerk/nextjs'
+import Link from 'next/link';
 
 import { cn } from "../../../../lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "../../../../components/ui/avatar"
@@ -98,7 +99,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
     <>        <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <a   href={`https://connect.unlimitpotential.com/${username}`}
+        <Link  href={`https://connect.unlimitpotential.com/${username}`}
           variant="outline"
           size="sm"
           role="combobox"
@@ -116,7 +117,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
           {postData.title}
 
           <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
-        </a>
+        </Link>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
        
