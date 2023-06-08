@@ -98,7 +98,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
     <>        <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <a   href={`/${username}`}
+        <a   href={`https://connect.unlimitpotential.com/${username}`}
           variant="outline"
           size="sm"
           role="combobox"
