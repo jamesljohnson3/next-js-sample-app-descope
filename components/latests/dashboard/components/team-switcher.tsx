@@ -92,12 +92,13 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   if (user && user.unsafeMetadata) {
     postData = user.unsafeMetadata as unknown as PostData;
   }
+  const username = user.username;
 
   return ( <>   {postData ? (
     <>        <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button
+        <a   href={`/${username}`}
           variant="outline"
           size="sm"
           role="combobox"
@@ -115,7 +116,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
           {postData.title}
 
           <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50" />
-        </Button>
+        </a>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
        
