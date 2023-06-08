@@ -106,6 +106,7 @@ function UploadForm() {
 
   return (
     <>
+          <div className="max-w-2xl mx-auto px-4 space-y-12 sm:px-6 lg:max-w-7xl lg:space-y-0 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
 
     <Box2/>    Uppy Transloadit Test
     <DragDrop uppy={uppy} />
@@ -194,7 +195,7 @@ function UploadForm() {
 
         <button type="submit">Upload</button>
       </form>
-    <StatusBar uppy={uppy} />
+    <StatusBar uppy={uppy} /></div>
   </>
   );
 }
