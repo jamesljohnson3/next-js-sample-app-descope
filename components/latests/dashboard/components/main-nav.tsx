@@ -33,7 +33,7 @@ export function MainNav({
         href="https://connect.unlimitpotential.com/"
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
-        Analytics
+        Campaigns
       </Link>
     </nav>
   )
