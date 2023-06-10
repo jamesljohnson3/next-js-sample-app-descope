@@ -18,6 +18,7 @@ import { SubscriptionProvider } from "use-stripe-subscription";
 import { getCurrentBrowserFingerPrint } from '@rajesh896/broprint.js';
 import { useState } from "react";
 import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react';
+import { ChakraProvider, GlobalStyle, Image } from "@chakra-ui/react";
 
 builder.init('c1b3106624e34af79d2e33c90a9e9021');
 
@@ -81,15 +82,15 @@ export default function App({ Component, pageProps }: AppProps) {
     <AuthProvider
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
-    > 
-    <SaasProvider theme={theme}>
+    >  <ChakraProvider theme={GlobalStyle}>   <SaasProvider theme={theme}>
     <Layout
           announcementProps={announcement}
           headerProps={header}
           footerProps={footer}
         >
    <Component {...pageProps} /> </Layout>
-   </SaasProvider>
+   </SaasProvider></ChakraProvider>
+ 
 
     </AuthProvider>
     </ClerkProvider>    </SubscriptionProvider>
