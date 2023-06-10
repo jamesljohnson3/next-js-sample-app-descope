@@ -44,9 +44,11 @@ const colors = {
 }
 
 export const theme = extendTheme(
-  {
-    // your overrides
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
   },
+
 
   glassTheme,
   baseTheme)
