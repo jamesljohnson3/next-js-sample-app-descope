@@ -10,7 +10,7 @@ import {
     NavGroup,
     NavItem,
   } from '@saas-ui/sidebar'
-  import { Box, Flex, Text, Checkbox } from "@chakra-ui/react";
+  import { Box, Badge, HStack, Flex, Text, Checkbox } from "@chakra-ui/react";
 
 
 const navigation = [
