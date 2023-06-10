@@ -82,14 +82,14 @@ export default function App({ Component, pageProps }: AppProps) {
     <AuthProvider
       projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
       baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
-    >  <ChakraProvider theme={GlobalStyle}>   <SaasProvider theme={theme}>
+    >  <div><ChakraProvider theme={GlobalStyle}>   <SaasProvider theme={theme}>
     <Layout
           announcementProps={announcement}
           headerProps={header}
           footerProps={footer}
         >
    <Component {...pageProps} /> </Layout>
-   </SaasProvider></ChakraProvider>
+   </SaasProvider></ChakraProvider></div>
  
 
     </AuthProvider>
