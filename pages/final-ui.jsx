@@ -44,24 +44,68 @@ export default function Example() {
 
   return (
     <AppShell
-  navbar={
-    <Box as="header" borderBottomWidth="1px" py="2" px="4">
-Logo  
-
-  </Box>
-  }
-  sidebar={
-    <Sidebar>
-      <SidebarSection>
-        <NavItem>Home</NavItem>
-        <NavItem>Settings</NavItem>
-      </SidebarSection>
-    </Sidebar>
-  }
->
-  <Box as="main" flex="1" py="2" px="4" overflowY="auto">
-    Your application content
-  </Box>
-</AppShell>
+    sidebar={
+      <HStack spacing="0" alignItems="stretch">
+        <Sidebar variant="condensed" bg="purple.500" borderWidth="0" spacing="3">
+          <SidebarSection>
+            <Image
+              src="https://saas-ui.dev/favicons/favicon-96x96.png"
+              boxSize="7"
+            />
+          </SidebarSection>
+          <SidebarSection>
+            <NavItem icon={<FiHome size="1.2em" color="white" />}>Home</NavItem>
+            <NavItem icon={<FiUsers size="1.2em" color="white" />} isActive>
+              Users
+            </NavItem>
+            <NavItem icon={<FiSettings size="1.2em" color="white" />}>
+              Settings
+            </NavItem>
+          </SidebarSection>
+        </Sidebar>
+        <Sidebar>
+          <SidebarSection direction="row" mt="2" px="4">
+            <Heading size="sm" fontWeight="semibold">
+              Users
+            </Heading>
+          </SidebarSection>
+          <SidebarSection flex="1" overflowY="auto">
+            <NavGroup>
+              <NavItem icon={<FiUsers />} isActive>
+                Overview
+              </NavItem>
+            </NavGroup>
+  
+            <NavGroup title="Teams" isCollapsible>
+              <NavItem>Sales</NavItem>
+              <NavItem>Support</NavItem>
+            </NavGroup>
+  
+            <NavGroup title="Tags" isCollapsible>
+              <NavItem
+                icon={<Badge bg="purple.500" boxSize="2" borderRadius="full" />}
+              >
+                <Text>Lead</Text>
+                <Badge opacity="0.6" borderRadius="full" bg="none" ms="auto">
+                  83
+                </Badge>
+              </NavItem>
+              <NavItem
+                icon={<Badge bg="cyan.500" boxSize="2" borderRadius="full" />}
+              >
+                <Text>Customer</Text>
+                <Badge opacity="0.6" borderRadius="full" bg="none" ms="auto">
+                  210
+                </Badge>
+              </NavItem>
+            </NavGroup>
+          </SidebarSection>
+          <SidebarSection>
+            <NavItem icon={<FiHelpCircle />}>Documentation</NavItem>
+          </SidebarSection>
+        </Sidebar>
+      </HStack>
+    }
+  />
   )
 }
