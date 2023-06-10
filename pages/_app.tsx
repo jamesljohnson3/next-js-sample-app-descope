@@ -43,15 +43,15 @@ const colors = {
   },
 }
 
-export const theme = extendTheme(
+const theme = extendTheme({
   config: {
     initialColorMode: "light",
     useSystemColorMode: false,
   },
+},
+baseTheme
+);
 
-
-  glassTheme,
-  baseTheme)
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const { announcement, header, footer } = pageProps
