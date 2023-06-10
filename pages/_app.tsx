@@ -61,42 +61,45 @@ export default function App({ Component, pageProps }: AppProps) {
       setBrowserFingerPrint(JSON.stringify(err))
     })
  }
-  return (<FpjsProvider
-    loadOptions={{
-      apiKey: "L97FAMI8f2OvG1SdVJjl"
-    }}
-  > <NextThemesProvider
-    defaultTheme="system"
-    attribute="class"
-    value={{
-      light: lightTheme.className,
-      dark: darkTheme.className
-    }}
-  >
-  <NextUIProvider>
-  <SubscriptionProvider
-      stripePublishableKey='pk_live_51JAmIGBrSm8eSKa6hU793rP2rh9ELoTELaxp0lZDHVzuVKvXMGya86NF7VtUyVtjH5VboYcxVH3jEsFDcp0iDln700WeOC9jix'
+  return (
+    <FpjsProvider
+      loadOptions={{
+        apiKey: "L97FAMI8f2OvG1SdVJjl"
+      }}
     >
-    <ClerkProvider {...pageProps} >
-
-    <AuthProvider
-      projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
-      baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
-    >  <div><ChakraProvider theme={GlobalStyle}>   <SaasProvider theme={theme}>
-    <Layout
-          announcementProps={announcement}
-          headerProps={header}
-          footerProps={footer}
-        >
-   <Component {...pageProps} /> </Layout>
-   </SaasProvider></ChakraProvider></div>
- 
-
-    </AuthProvider>
-    </ClerkProvider>    </SubscriptionProvider>
-
-  </NextUIProvider>
-</NextThemesProvider></FpjsProvider>
-
+      <NextThemesProvider
+        defaultTheme="system"
+        attribute="class"
+        value={{
+          light: lightTheme.className,
+          dark: darkTheme.className
+        }}
+      >
+        <NextUIProvider>
+          <SubscriptionProvider
+            stripePublishableKey='pk_live_51JAmIGBrSm8eSKa6hU793rP2rh9ELoTELaxp0lZDHVzuVKvXMGya86NF7VtUyVtjH5VboYcxVH3jEsFDcp0iDln700WeOC9jix'
+          >
+            <ClerkProvider {...pageProps}>
+              <AuthProvider
+                projectId={process.env.NEXT_PUBLIC_DESCOPE_PROJECT_ID!}
+                baseUrl={process.env.NEXT_PUBLIC_DESCOPE_BASE_URL}
+              >
+                <ChakraProvider theme={theme}>
+                  <SaasProvider theme={theme}>
+                    <Layout
+                      announcementProps={announcement}
+                      headerProps={header}
+                      footerProps={footer}
+                    >
+                      <Component {...pageProps} />
+                    </Layout>
+                  </SaasProvider>
+                </ChakraProvider>
+              </AuthProvider>
+            </ClerkProvider>
+          </SubscriptionProvider>
+        </NextUIProvider>
+      </NextThemesProvider>
+    </FpjsProvider>
   );
 }
