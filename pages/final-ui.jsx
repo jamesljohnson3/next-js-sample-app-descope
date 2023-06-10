@@ -10,7 +10,7 @@ import {
     NavGroup,
     NavItem,
   } from '@saas-ui/sidebar'
-  import { Box, Badge, HStack, Flex, Text, Checkbox } from "@chakra-ui/react";
+  import { Box, Badge,Image, Heading, HStack, Flex, Text, Checkbox } from "@chakra-ui/react";
 
 
 const navigation = [
@@ -54,11 +54,11 @@ export default function Example() {
             />
           </SidebarSection>
           <SidebarSection>
-            <NavItem icon={<FiHome size="1.2em" color="white" />}>Home</NavItem>
-            <NavItem icon={<FiUsers size="1.2em" color="white" />} isActive>
+            <NavItem >Home</NavItem>
+            <NavItem isActive>
               Users
             </NavItem>
-            <NavItem icon={<FiSettings size="1.2em" color="white" />}>
+            <NavItem >
               Settings
             </NavItem>
           </SidebarSection>
@@ -71,7 +71,7 @@ export default function Example() {
           </SidebarSection>
           <SidebarSection flex="1" overflowY="auto">
             <NavGroup>
-              <NavItem icon={<FiUsers />} isActive>
+              <NavItem isActive>
                 Overview
               </NavItem>
             </NavGroup>
@@ -83,7 +83,7 @@ export default function Example() {
   
             <NavGroup title="Tags" isCollapsible>
               <NavItem
-                icon={<Badge bg="purple.500" boxSize="2" borderRadius="full" />}
+                
               >
                 <Text>Lead</Text>
                 <Badge opacity="0.6" borderRadius="full" bg="none" ms="auto">
@@ -91,7 +91,7 @@ export default function Example() {
                 </Badge>
               </NavItem>
               <NavItem
-                icon={<Badge bg="cyan.500" boxSize="2" borderRadius="full" />}
+             
               >
                 <Text>Customer</Text>
                 <Badge opacity="0.6" borderRadius="full" bg="none" ms="auto">
@@ -101,7 +101,7 @@ export default function Example() {
             </NavGroup>
           </SidebarSection>
           <SidebarSection>
-            <NavItem icon={<FiHelpCircle />}>Documentation</NavItem>
+            <NavItem>Documentation</NavItem>
           </SidebarSection>
         </Sidebar>
       </HStack>
