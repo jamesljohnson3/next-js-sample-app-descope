@@ -30,7 +30,7 @@ export function MainNav({
         Products
       </Link>
       <Link
-        href="https://connect.unlimitpotential.com/"
+        href="https://connect.unlimitpotential.com/collections"
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
         Campaigns
