@@ -12,7 +12,7 @@ export function MainNav({
       {...props}
     >
       <Link
-        href="https://connect.unlimitpotential.com/"
+        href="https://connect.unlimitpotential.com/stats"
         className="text-sm font-medium transition-colors hover:text-primary"
       >
         Overview
