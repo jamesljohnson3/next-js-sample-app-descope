@@ -26,7 +26,7 @@ const items: AccordionItem[] = [
 		header: 'Creator Studio',
 		content: (
 			<>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://connect.unlimitpotential.com/stats" width="full" size="default">
 					<HiOutlineChartBarSquare className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
 						Analytics
@@ -42,19 +42,19 @@ const items: AccordionItem[] = [
 				<NavItem href="/" width="full" size="default">
 					<HiOutlineIdentification className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Twitter for Professionals
+						Tools for Sellers
 					</div>
 				</NavItem>
 				<NavItem href="/" width="full" size="default">
 					<HiOutlineFilm className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Twitter Ads
+						Distribute Ads
 					</div>
 				</NavItem>
 				<NavItem href="/" width="full" size="default">
 					<HiOutlineBanknotes className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Monetization
+					 Goals & Settings
 					</div>
 				</NavItem>
 			</>
