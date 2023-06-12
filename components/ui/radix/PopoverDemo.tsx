@@ -19,18 +19,18 @@ interface NavLinkItem {
 
 const items: NavLinkItem[] = [
 	{
-		href: '/topics',
-		text: 'Topics',
+		href: 'https://lillieai-betav1b.unlimitpotential.com/chat',
+		text: 'Actions',
 		icon: <HiOutlineChatBubbleBottomCenterText className="w-6 h-6" />,
 	},
 	{
-		href: '/lists',
-		text: 'Lists',
+		href: 'https://lillieai-betav1b.unlimitpotential.com/helpin',
+		text: 'Threads',
 		icon: <HiListBullet className="w-6 h-6" />,
 	},
 	{
 		href: 'https://workspace.unlimitpotential.com/create-space',
-		text: 'Space',
+		text: 'Spaces',
 		icon: <HiOutlineUserGroup className="w-6 h-6" />,
 	},
 ];
