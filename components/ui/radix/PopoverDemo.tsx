@@ -29,7 +29,7 @@ const items: NavLinkItem[] = [
 		icon: <HiListBullet className="w-6 h-6" />,
 	},
 	{
-		href: 'https://workspace.unlimitpotential.com/create-space',
+		href: 'https://workspace.unlimitpotential.com/dashboard',
 		text: 'Spaces',
 		icon: <HiOutlineUserGroup className="w-6 h-6" />,
 	},
