@@ -39,22 +39,22 @@ const items: AccordionItem[] = [
 		header: 'Professional Tools',
 		content: (
 			<>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://lillieai-betav1b.unlimitpotential.com/" width="full" size="default">
 					<HiOutlineIdentification className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
 						Tools for Sellers
 					</div>
 				</NavItem>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://go.unlimitpotential.com/connect" width="full" size="default">
 					<HiOutlineFilm className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
 						Distribute Ads
 					</div>
 				</NavItem>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://go.unlimitpotential.com/connect" width="full" size="default">
 					<HiOutlineBanknotes className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-					 Goals & Settings
+					more
 					</div>
 				</NavItem>
 			</>
@@ -64,22 +64,22 @@ const items: AccordionItem[] = [
 		header: 'Settings and Support',
 		content: (
 			<>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://go.unlimitpotential.com/preferences" width="full" size="default">
 					<HiOutlineCog8Tooth className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Settings and Privacy
+						Security and Privacy
 					</div>
 				</NavItem>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://unlimitpotential.com/dashboard" width="full" size="default">
 					<HiOutlineLifebuoy className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
 						Help Center
 					</div>
 				</NavItem>
-				<NavItem href="/" width="full" size="default">
+				<NavItem href="https://developers.unlimitednow.me/" width="full" size="default">
 					<HiOutlineComputerDesktop className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Display
+						Read Documentation
 					</div>
 				</NavItem>
 				{/* <NavItem href="/" width="full" size="default">
