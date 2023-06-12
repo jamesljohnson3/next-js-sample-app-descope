@@ -59,13 +59,13 @@ export default function DashboardPage() {
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
               <TabsTrigger value="overview">Quick Edit</TabsTrigger>
-              <TabsTrigger value="analytics" disabled>
+             <a href="https://space.unlimitpotential.com/blueprints" ><TabsTrigger value="analytics" disabled>
                Use A.I.
               </TabsTrigger>
-            
+              </a> <a href="https://console.unlimitpotential.com/start" >
               <TabsTrigger value="notifications" disabled>
                Go to Console
-              </TabsTrigger>
+              </TabsTrigger></a>
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
