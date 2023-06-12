@@ -62,7 +62,7 @@ export default function DashboardPage() {
              <a href="https://space.unlimitpotential.com/blueprints" ><TabsTrigger value="analytics" disabled>
                Use A.I.
               </TabsTrigger>
-              </a> <a href="https://console.unlimitpotential.com/start" >
+              </a> <a href="https://console.unlimitpotential.com/start" target="_blank" rel="noreferrer" >
               <TabsTrigger value="notifications" disabled>
                Go to Console
               </TabsTrigger></a>
