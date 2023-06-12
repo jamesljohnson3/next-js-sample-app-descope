@@ -26,35 +26,35 @@ const items: AccordionItem[] = [
 		header: 'Creator Studio',
 		content: (
 			<>
-				<NavItem href="https://connect.unlimitpotential.com/stats" width="full" size="default">
+				<NavItem href="https://go.unlimitpotential.com/dashboard" width="full" size="default">
 					<HiOutlineChartBarSquare className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Analytics
+						Dashboard
 					</div>
 				</NavItem>
 			</>
 		),
 	},
 	{
-		header: 'Professional Tools',
+		header: 'Advanced Options',
 		content: (
 			<>
 				<NavItem href="https://workspace.unlimitpotential.com/directus-final3" width="full" size="default">
 					<HiOutlineIdentification className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Analytics 
+						Find
 					</div>
 				</NavItem>
 				<NavItem href="https://go.unlimitpotential.com/connect" width="full" size="default">
 					<HiOutlineFilm className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Content
+						Modify
 					</div>
 				</NavItem>
-				<NavItem href="https://lillieai-betav1b.unlimitpotential.com/" width="full" size="default">
+				<NavItem href="https://lillieai-betav1b.unlimitpotential.com/chat" width="full" size="default">
 					<HiOutlineBanknotes className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-					View All
+					Ask
 					</div>
 				</NavItem>
 			</>
