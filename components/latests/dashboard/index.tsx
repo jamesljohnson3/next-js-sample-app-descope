@@ -60,13 +60,11 @@ export default function DashboardPage() {
             <TabsList>
               <TabsTrigger value="overview">Quick Edit</TabsTrigger>
               <TabsTrigger value="analytics" disabled>
-                Analytics
+               Use A.I.
               </TabsTrigger>
-              <TabsTrigger value="reports" disabled>
-                Reports
-              </TabsTrigger>
+            
               <TabsTrigger value="notifications" disabled>
-                Notifications
+               Go to Console
               </TabsTrigger>
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
