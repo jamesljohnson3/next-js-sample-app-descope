@@ -39,22 +39,22 @@ const items: AccordionItem[] = [
 		header: 'Professional Tools',
 		content: (
 			<>
-				<NavItem href="https://lillieai-betav1b.unlimitpotential.com/" width="full" size="default">
+				<NavItem href="https://workspace.unlimitpotential.com/directus-final3" width="full" size="default">
 					<HiOutlineIdentification className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Tools for Sellers
+						Analytics 
 					</div>
 				</NavItem>
 				<NavItem href="https://go.unlimitpotential.com/connect" width="full" size="default">
 					<HiOutlineFilm className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-						Distribute Ads
+						Content
 					</div>
 				</NavItem>
-				<NavItem href="https://go.unlimitpotential.com/connect" width="full" size="default">
+				<NavItem href="https://lillieai-betav1b.unlimitpotential.com/" width="full" size="default">
 					<HiOutlineBanknotes className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
-					more
+					View All
 					</div>
 				</NavItem>
 			</>
