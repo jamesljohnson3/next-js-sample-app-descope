@@ -13,6 +13,7 @@ import { Search } from "./components/search"
 import TeamSwitcher from "./components/team-switcher"
 import { UserNav } from "./components/user-nav"
 import { ClerkProvider, useUser, SignIn, SignedOut, useClerk } from '@clerk/nextjs'
+import Link from 'next/link'
 
 
 interface PostData {
@@ -89,7 +90,7 @@ export default function DashboardPage() {
 
               {postData.href && postData.desc ? (
   <>
-    <a href={postData.href} target="_blank" rel="noreferrer">
+    <Link href={postData.href} target="_blank" rel="noreferrer">
       <Button size="sm">
         <Download className="mr-2 h-4 w-4" />
        {postData.desc}
@@ -103,7 +104,7 @@ export default function DashboardPage() {
         <Download className="mr-2 h-4 w-4" />
         Connect or Customize
       </Button>
-    </a>
+    </Link>
   </>
 )}
 
