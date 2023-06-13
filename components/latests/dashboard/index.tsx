@@ -85,13 +85,30 @@ export default function DashboardPage() {
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
             <div className="flex items-center space-x-2">
               <CalendarDateRangePicker />
-              <a href={postData.href} target="_blank" rel="noreferrer">
+             
+
+              {postData ? (
+        <>     <a href={postData.href} target="_blank" rel="noreferrer">
          
-          <Button size="sm">
+        <Button size="sm">
+       
+              <Download className="mr-2 h-4 w-4" />
+              Download {postData.desc} 
+            </Button></a>
+
+ </>
+        ) : (
+          <>
+          <a href="/preferences">
          
-                <Download className="mr-2 h-4 w-4" />
-                Download {postData.desc} 
-              </Button></a>
+         <Button size="sm">
+        
+               <Download className="mr-2 h-4 w-4" />
+             Connect or Customize
+             </Button></a>
+          </>
+        )}
+
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
