@@ -90,12 +90,12 @@ export default function DashboardPage() {
 
               {postData.href && postData.desc ? (
   <>
-    <Link href={postData.href} target="_blank" rel="noreferrer">
+    <a href={postData.href} target="_blank" rel="noreferrer">
       <Button size="sm">
         <Download className="mr-2 h-4 w-4" />
        {postData.desc}
       </Button>
-    </Link>
+    </a>
   </>
 ) : (
   <>
