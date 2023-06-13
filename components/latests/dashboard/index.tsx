@@ -92,7 +92,7 @@ export default function DashboardPage() {
     <a href={postData.href} target="_blank" rel="noreferrer">
       <Button size="sm">
         <Download className="mr-2 h-4 w-4" />
-        Download {postData.desc}
+       {postData.desc}
       </Button>
     </a>
   </>
