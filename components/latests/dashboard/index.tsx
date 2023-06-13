@@ -88,7 +88,7 @@ export default function DashboardPage() {
               <CalendarDateRangePicker />
              
 
-              {postData.href && postData.desc ? (
+              {postData?.href && postData?.desc ? (
   <>
     <a href={postData.href} target="_blank" rel="noreferrer">
       <Button size="sm">
@@ -107,6 +107,7 @@ export default function DashboardPage() {
     </Link>
   </>
 )}
+
 
 
 
