@@ -95,14 +95,14 @@ export default function DashboardPage() {
         <Download className="mr-2 h-4 w-4" />
        {postData.desc}
       </Button>
-    </a>
+    </Link>
   </>
 ) : (
   <>
-    <a href="/preferences">
+    <Link href="/preferences">
       <Button size="sm">
         <Download className="mr-2 h-4 w-4" />
-        Connect or Customize
+        Console or Customize Button
       </Button>
     </Link>
   </>
