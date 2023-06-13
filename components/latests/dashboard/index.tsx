@@ -87,27 +87,26 @@ export default function DashboardPage() {
               <CalendarDateRangePicker />
              
 
-              {postData ? (
-        <>     <a href={postData.href} target="_blank" rel="noreferrer">
-         
-        <Button size="sm">
-       
-              <Download className="mr-2 h-4 w-4" />
-              Download {postData.desc} 
-            </Button></a>
+              {postData.href && postData.desc ? (
+  <>
+    <a href={postData.href} target="_blank" rel="noreferrer">
+      <Button size="sm">
+        <Download className="mr-2 h-4 w-4" />
+        Download {postData.desc}
+      </Button>
+    </a>
+  </>
+) : (
+  <>
+    <a href="/preferences">
+      <Button size="sm">
+        <Download className="mr-2 h-4 w-4" />
+        Connect or Customize
+      </Button>
+    </a>
+  </>
+)}
 
- </>
-        ) : (
-          <>
-          <a href="/preferences">
-         
-         <Button size="sm">
-        
-               <Download className="mr-2 h-4 w-4" />
-             Connect or Customize
-             </Button></a>
-          </>
-        )}
 
             </div>
           </div>
