@@ -102,7 +102,7 @@ export default function DashboardPage() {
     <Link href="/preferences">
       <Button size="sm">
         <Download className="mr-2 h-4 w-4" />
-        Console or Customize Button
+        Console
       </Button>
     </Link>
   </>
