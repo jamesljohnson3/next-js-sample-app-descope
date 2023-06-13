@@ -86,7 +86,7 @@ export default function DashboardPage() {
             <div className="flex items-center space-x-2">
               <CalendarDateRangePicker />
               <Button size="sm">
-              <a href={postData.href} type="button" className="inline-flex items-center justify-center py-2 px-3 rounded-xl bg-white text-gray-800 hover:text-green-500 text-sm font-semibold transition">
+              <a href={postData.href} target="_blank" rel="noreferrer">
          
      
                 <Download className="mr-2 h-4 w-4" />
