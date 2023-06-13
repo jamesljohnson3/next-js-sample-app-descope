@@ -90,8 +90,8 @@ export default function DashboardPage() {
           <Button size="sm">
          
                 <Download className="mr-2 h-4 w-4" />
-                Download
-              </Button>     </a><br></br> <a>{postData.desc} </a> 
+                Download {postData.desc} 
+              </Button></a>
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
