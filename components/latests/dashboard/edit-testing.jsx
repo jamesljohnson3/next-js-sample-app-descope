@@ -109,7 +109,8 @@ function UploadForm() {
    
 
     <Box2/>   <div                 className="relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
->Uppy Transloadit Test</div> 
+>$
+  </div> 
     <DragDrop uppy={uppy} />
     <form className="needs-validation" onSubmit={handleFormSubmit}>
         <div className="transloadit-drop-area">
