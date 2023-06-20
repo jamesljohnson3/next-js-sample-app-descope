@@ -99,7 +99,7 @@ export default function DashboardPage() {
   </>
 ) : (
   <>
-    <Link target="_blank" href="https://console.unlimitpotential.com/">
+    <Link target="_blank" href="https://console.unlimitpotential.com/start">
       <Button size="sm">
         <Download className="mr-2 h-4 w-4" />
         Console
