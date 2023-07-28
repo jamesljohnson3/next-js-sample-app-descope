@@ -7,7 +7,7 @@ export default function Page() {
   const [audio, setAudio] = useState("");
 
   const handleButtonClick = async () => {
-    const response = await axios.post("https://abidlabs-speak.hf.space/run/predict/", {
+    const response = await axios.post("https://abidlabs-music-separation.hf.space/run/predict/", {
       data: [text],
     });
     const audioUrl = response.data.data[0];
